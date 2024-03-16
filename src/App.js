@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import ViveHeader from './componentes/ViveHeader.js';
+import Section1 from './componentes/Section1.js';
+import Section2 from './componentes/Section2.js';
+import Section3 from './componentes/Section3.js';
+import Section4 from './componentes/Section4.js';
+import Section5 from './componentes/Section5.js';
+import Section6 from './componentes/Section6.js';
+import React  from 'react';
+import { useState } from 'react';
+
 
 function App() {
+  const [minHeight, setMinHeight] = useState(window.innerHeight);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ViveHeader />
+      <Section1  minHeight={minHeight} />
+      <Section2  minHeight={minHeight} />
+      <Section3  minHeight={minHeight} />
+      <Section4  minHeight={minHeight} />
+      <Section5  minHeight={minHeight} />
+      <Section6  minHeight={minHeight} />
+
     </div>
   );
 }

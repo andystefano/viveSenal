@@ -1,0 +1,79 @@
+import React from 'react';
+import { useEffect, useState } from "react";
+import CountDown from "./CountDown.js";
+import { IoTicket } from "react-icons/io5";
+import { FaLongArrowAltLeft } from "react-icons/fa";
+
+
+function Section({minHeight}) {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <section
+      class=""
+      style={{
+        backgroundImage: "url(images/bg_senal_home.png)",
+        backgroundSize: "cover",
+        backgroundColor: "black",
+        minHeight: `${minHeight}px`, // Use minHeight state here
+      }}
+    >
+      <div class="grid grid-cols-2">
+        <div class="col-span-1  p-4 ">
+          <br />
+          <br />
+          <br />
+          <CountDown />
+        </div>
+        <div class="col-span-1 p-4">
+          <br />
+          <br />
+          <h1 class="mt-10 pr-4 mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-white text-right font-unbounded text-right">
+            Encuentros de
+            <br />
+            arte y música.
+          </h1>
+
+          <div className="w-8/12 mt-10">
+            <p className="text-xl text-white mb-4 font-libre-franklin text-justify">
+              Una señal es un llamado, un signo, una forma de transmitir
+              información. También es el nombre de un nuevo programa de
+              experiencias que te invita a conocer Santiago y el mundo del arte
+              y la cultura de una forma innovadora:{" "}
+              <span className="font-bold">
+                a través de conversaciones cercanas y buena música.
+              </span>
+            </p>
+            <p className="text-xl text-white mb-4 font-libre-franklin text-justify">
+              <span className="font-bold">SEÑAL</span> es un proyecto de{" "}
+              <span className="font-bold">Fundación Antenna</span>
+            </p>
+            <button
+      className="flex items-center px-6 py-1 bg-black text-white text-2xl font-bold rounded-full border-2 border-pink-500 mt-8 font-unbounded"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {hovered ? <IoTicket  size={15} className="w-6 h-6" /> : <FaLongArrowAltLeft  size={15} className="w-6 h-6" />}
+    </button>
+          </div>
+        </div>
+      </div>
+      <a
+            href="http://google.cl"
+            className="flex items-center justify-center text-white font-extrabold text-2xl text-left absolute bottom-0 mb-4 left-0 ml-2"
+          >
+            SEÑAL es una forma de crear comunidad y de apoyar espacios
+            culturales.
+          </a>
+
+      <a
+            href="http://google.cl"
+            className="flex items-center justify-center text-white font-extrabold text-2xl text-right absolute right-0  bottom-0 mb-4 mr-2"
+            >
+            SEÑAL es presentado por BTG Pactual
+          </a>
+      
+    </section>
+  );
+}
+
+export default Section;

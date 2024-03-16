@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+/* Importar la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  cursor: url('../public/images/cursor.png'), auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a, button {
+  cursor: url('../public/images/pointer.png'), auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, p {
+  cursor: url('../public/images/text.png'), auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.font-unbounded {
+  font-family: 'Unbounded', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.font-libre-franklin {
+  font-family: "Libre Franklin", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mt-10{
+  margin-top: 5rem;
 }
+
+.mt-8{
+  margin-top: 4rem;
+}
+
+.mt-6{
+  margin-top: 3rem;
+}
+
+.mt-5{
+  margin-top: 2.5rem;
+}
+
+
+.mb-10{
+  margin-bottom: 5rem;
+}
+
+.mb-8{
+  margin-bottom: 4rem;
+}
+
+.mb-5{
+  margin-bottom: 2.5rem;
+}
+
+.mb-6{
+  margin-bottom: 3rem;
+}
+
+
+.border-2{
+  border-width: 2px;
+}
+
+
+
+
+.bgTRed {
+  background-image: url('../public/images/bgtred.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  background-color: #E01C24;
+}
+
+.bgTGreen {
+  background-image: url('../public/images/bgtgreen.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  background-color: #019E5B;
+}
+
+.bgTPink {
+  background-image: url('../public/images/bgtpink.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  background-color: #F676A6;
+}
+
