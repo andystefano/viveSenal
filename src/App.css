@@ -56,12 +56,34 @@ h1, p {
 }
 
 
+.m-5{
+  margin: 2.5rem;
+}
+.m-10{
+  margin: 5rem;
+}
+
+
 .border-2{
   border-width: 2px;
 }
 
 
+.acordeon-radius{
+  border-radius: 30px;
+}
 
+.text-cream{
+  color:#e9eedc;
+}
+
+.bg-cream{
+  background-color:#e9eedc;
+}
+
+.bg-dark-senal{
+  background-color: #262626;
+}
 
 .bgTRed {
   background-image: url('../public/images/bgtred.png');
@@ -81,3 +103,17 @@ h1, p {
   background-color: #F676A6;
 }
 
+
+
+@keyframes circle-out-top-left {
+  from {
+    clip-path: circle(125%);
+  }
+  to {
+    clip-path: circle(0% at top left);
+  }
+}
+
+[transition-style="out:circle:top-left"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-out-top-left both;
+}

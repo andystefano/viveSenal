@@ -6,6 +6,8 @@ import Section3 from './componentes/Section3.js';
 import Section4 from './componentes/Section4.js';
 import Section5 from './componentes/Section5.js';
 import Section6 from './componentes/Section6.js';
+import ViveFooter from './componentes/ViveFooter.js';
+
 import React  from 'react';
 import { useState } from 'react';
 
@@ -21,7 +23,7 @@ function App() {
       <Section4  minHeight={minHeight} />
       <Section5  minHeight={minHeight} />
       <Section6  minHeight={minHeight} />
-
+      <ViveFooter />
     </div>
   );
 }
