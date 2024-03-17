@@ -47,13 +47,13 @@ function ViveFooter({ minHeight }) {
         <div class="col-span-1 row-span-1">
         </div>
         <div class="col-span-1">
-          <img alt="Fundación Antenna" src="images/logoAntennaBlack.png" />
+          <a href="http://www.antenna.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Fundación Antenna" src="images/logoAntennaBlack.png" /></a>
         </div>
         <div class="col-span-1">
-          <img alt="BGT Pactual" src="images/logoBGTPactualBlack.png" />
+          <a href="https://btgpactual.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="BGT Pactual" src="images/logoBGTPactualBlack.png" /></a>
         </div>
         <div class="col-span-1">
-          <img alt="LOA Cerveceria" src="images/logoLOABlack.png" />
+          <a href="https://cervezaloa.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="LOA Cerveceria" src="images/logoLOABlack.png" /></a>
         </div>
         <div class="col-span-1"></div>
         <div class="col-span-1 ">
