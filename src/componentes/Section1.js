@@ -17,7 +17,7 @@ function Section({minHeight}) {
         minHeight: `${minHeight}px`, // Use minHeight state here
       }}
     >
-      <div class="grid grid-cols-2">
+      <div class="grid lg:grid-cols-2 sd:grid-cols-1">
         <div class="col-span-1  p-4 ">
           <br />
           <br />
@@ -27,13 +27,13 @@ function Section({minHeight}) {
         <div class="col-span-1 p-4">
           <br />
           <br />
-          <h1 class="mt-10 pr-4 mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-white text-right font-unbounded text-right">
+          <h1 className="mt-10 pr-4 mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-white font-unbounded lg:text-right sd:text-left">
             Encuentros de
             <br />
             arte y música.
           </h1>
 
-          <div className="w-8/12 mt-10">
+          <div className="lg:w-8/12 sd:w-full mt-10">
             <p className="text-xl text-white mb-4 font-libre-franklin text-justify">
               Una señal es un llamado, un signo, una forma de transmitir
               información. También es el nombre de un nuevo programa de

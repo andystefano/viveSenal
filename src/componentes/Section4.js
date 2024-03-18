@@ -24,21 +24,21 @@ function Section({minHeight}) {
               textAlign: "center",
             }}
           >
-            ¿QUE TE ESPERA EN ESTA <br /> ÉPICA EXPERIENCIA?
+            ¿QUE TE ESPERA EN ESTA <br className="hidden lg:block" /> ÉPICA EXPERIENCIA?
           </h1>
         </div>
       </div>
 
       <div class="flex mt-10">
-        <div class="w-5/12 ">&nbsp</div>
-        <div class="w-7/12">
+        <div class="lg:w-5/12 sd:hidden"></div>
+        <div class="lg:w-7/12 sd:w-full">
           <div class="w-full">
             <div class="flex items-center ml-1">
               <span class="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
                 <MdTripOrigin size={30} />
               </span>
               <div
-                className="text-black  unbounded-200  ml-2 font-normal text-left"
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
                 <h1 class="text-white text-4xl font-unbounded text-left mt-4">
@@ -51,7 +51,7 @@ function Section({minHeight}) {
                 <MdTripOrigin size={30} />
               </span>
               <div
-                className="text-black  unbounded-200  ml-2 font-normal text-left"
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
                 <p class="font-unbounded text-base text-white  text-left w-8/12">
@@ -67,7 +67,7 @@ function Section({minHeight}) {
                 <MdTripOrigin size={30} />
               </span>
               <div
-                className="text-black  unbounded-200  ml-2 font-normal text-left"
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
                 <h1 class="text-white text-4xl font-unbounded text-left mt-4">
@@ -80,7 +80,7 @@ function Section({minHeight}) {
                 <MdTripOrigin size={30} />
               </span>
               <div
-                className="text-black  unbounded-200  ml-2 font-normal text-left"
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
                 <p class="font-unbounded text-base text-white  text-left w-8/12">
@@ -94,21 +94,16 @@ function Section({minHeight}) {
       </div>
 
 
-      <div class="flex mt-10 mb-10">
-        <div class="w-6/12 ">
-
-
+      <div class="lg:flex lg:mt-10 mb-10 mt-4">
+        <div class="lg:w-6/12  sd:w-full">
  
-
-
-
 
         <div class="flex items-center ml-auto mt-6">
               <span class="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
                 <MdTripOrigin size={30} />
               </span>
               <div
-                className="text-black  unbounded-200  ml-2 font-normal text-left"
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
                 <h1 class="text-white text-4xl font-unbounded text-left mt-4">
@@ -121,7 +116,7 @@ function Section({minHeight}) {
                 <MdTripOrigin size={30} />
               </span>
               <div
-                className="text-black  unbounded-200  ml-2 font-normal text-left"
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
                 <p class="font-unbounded text-base text-white  text-left w-8/12">
@@ -131,19 +126,16 @@ function Section({minHeight}) {
         </div>
 
         </div>
-        <div class="w-6/12">
+        <div class="lg:w-6/12 sd:w-full">
 
-
-
-
-
+ 
 
         <div class="flex items-center ml-1 mt-6">
               <span class="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
                 <MdTripOrigin size={30} />
               </span>
               <div
-                className="text-black  unbounded-200  ml-2 font-normal text-left"
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
                 <h1 class="text-white text-4xl font-unbounded text-left mt-4">
@@ -157,7 +149,7 @@ function Section({minHeight}) {
                 <MdTripOrigin size={30} />
               </span>
               <div
-                className="text-black  unbounded-200  ml-2 font-normal text-left"
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
                 <p class="font-unbounded text-base text-white  text-left w-8/12">

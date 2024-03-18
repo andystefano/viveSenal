@@ -15,8 +15,6 @@ import React, { useState, useEffect } from "react";
 function App() {
   const [minHeight, setMinHeight] = useState(window.innerHeight);
 
-
-
   useEffect(() => {
     const handleResize = () => {
       setMinHeight(window.innerHeight);

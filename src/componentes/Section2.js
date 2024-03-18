@@ -1,10 +1,12 @@
-import React  from 'react';
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
 import { MdTripOrigin } from "react-icons/md";
 import { IoTicket } from "react-icons/io5";
 import { FaLongArrowAltLeft } from "react-icons/fa";
+import { GrLinkNext } from "react-icons/gr";
+import { GrLinkPrevious } from "react-icons/gr";
 
-function Section({minHeight}) {
+function Section({ minHeight }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -17,7 +19,7 @@ function Section({minHeight}) {
         minHeight: `${minHeight}px`,
       }}
     >
-      <div class="grid grid-cols-2">
+      <div class="grid lg:grid-cols-2 sd:grid-cols-1">
         <div class="col-span-1  p-4 ">
           <h1
             class="mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-white text-left font-unbounded pt-8"
@@ -32,9 +34,9 @@ function Section({minHeight}) {
             el poder del arte!
           </h1>
 
-          <div>
+          <div className="hidden lg:block ">
             <div
-              class="flex items-center"
+              class="flex items-center sd:hidden"
               style={{
                 paddingLeft: "12.9rem",
                 paddingTop: "4.9rem",
@@ -48,7 +50,7 @@ function Section({minHeight}) {
                 <MdTripOrigin size={30} />
               </span>
               <div
-                className="text-black  unbounded-200  ml-2 font-normal text-left"
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
                 <p
@@ -68,7 +70,7 @@ function Section({minHeight}) {
               </div>
             </div>
             <div
-              class="flex items-center"
+              class="flex items-center  sd:hidden"
               style={{
                 paddingLeft: "12.9rem",
                 paddingTop: "4.9rem",
@@ -82,7 +84,7 @@ function Section({minHeight}) {
                 <MdTripOrigin size={30} />
               </span>
               <div
-                className="text-black  unbounded-200  ml-2 font-normal text-left"
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
                 <p
@@ -100,10 +102,26 @@ function Section({minHeight}) {
                 </p>
               </div>
             </div>
-            
           </div>
         </div>
-        <div class="col-span-1  p-4 "></div>
+        <div class="col-span-1  p-4 ">
+          <div
+            class="text-pink-400 font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5 transform skew-y-3"
+            style={{
+              maxWidth: "338px",
+              border: "2px solid #f175a3",
+              padding: "45px",
+              borderRadius: "50%",
+              paddingLeft: "50px",
+              paddingRight: "50px",
+              textAlign: "center",
+            }}
+          >
+            <p class="text-xl font-bold">
+              Si tienes entre 25 y 40 años te invitamos a ser parte de SEÑAL.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="flex justify-center items-center w-1/2">
@@ -119,6 +137,19 @@ function Section({minHeight}) {
             <FaLongArrowAltLeft size={15} className="w-6 h-6" />
           )}
         </button>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 justify-between mb-5 mx-8">
+        <div class="flex justify-start">
+          <button className="flex items-center px-6 py-1  text-white text-3xl font-bold rounded-full border-2 border-white font-unbounded py-3 hover:border-orange-200  hover:text-orange-200	">
+          <GrLinkPrevious  className="w-8 h-8" />
+          </button>
+        </div>
+        <div class="flex justify-end">
+          <button className="flex items-center px-6 py-1  text-white text-3xl font-bold rounded-full border-2 border-white  font-unbounded py-3 hover:border-orange-200  hover:text-orange-200	">
+          <GrLinkNext  className="w-8 h-8" />
+          </button>
+        </div>
       </div>
     </section>
   );

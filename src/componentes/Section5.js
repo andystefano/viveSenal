@@ -52,7 +52,7 @@ function Section({minHeight}) {
 
 <div class="w-full">
 
-<div class="grid grid-cols-2 gap-x-20 gap-y-0  py-3 px-20 mx-20">
+<div class="grid sd:grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-0  py-3 px-20 mx-20">
   <div class="p-4 text-center">
       
    <img class="" src="./images/ticketRosa.png" alt="imagen de fondo" style={{ 

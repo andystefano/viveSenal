@@ -24,23 +24,21 @@ function Section({minHeight}) {
             paddingLeft: '4rem',
             color: '#000'
 }}>ABRIL / JUNIO</h1>
-
+ 
 </div>
 
 
-
-
-<div class="grid grid-cols-3 gap-12 p-12">
+<div class="grid  sm:grid-cols-1 lg:grid-cols-3 gap-12 p-12">
                 <div class="relative">
                     <img src="images/p1.png" alt="Imagen" class="w-full" />
                     <div class="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
                         <div class="text-center w-full h-full px-7 py-7">
                             <div>
-                                <h1 class="text-3xl text-left font-bold unbounded-200 ">Lugar</h1>
-                                <p class="text-2xl text-left unbounded-200 mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
+                                <h1 class="text-3xl text-left font-bold font-unbounded ">Lugar</h1>
+                                <p class="text-2xl text-left font-unbounded mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
 
                             </div>
-                            <button class="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 unbounded-200 hover:text-white hover:border-white">
+                            <button class="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                                 Tickets  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
                                 <span class="material-icons">
                                 <FaLongArrowAltLeft />
@@ -55,11 +53,11 @@ function Section({minHeight}) {
                     <div class="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
                         <div class="text-center w-full h-full px-7 py-7">
                             <div>
-                                <h1 class="text-3xl text-left font-bold unbounded-200 ">Lugar</h1>
-                                <p class="text-2xl text-left unbounded-200 mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
+                                <h1 class="text-3xl text-left font-bold font-unbounded ">Lugar</h1>
+                                <p class="text-2xl text-left font-unbounded mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
 
                             </div>
-                            <button class="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 unbounded-200 hover:text-white hover:border-white">
+                            <button class="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                                 Tickets  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
                                 <span class="material-icons">
                                 <FaLongArrowAltLeft />
@@ -73,11 +71,11 @@ function Section({minHeight}) {
                     <div class="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
                         <div class="text-center w-full h-full px-7 py-7">
                             <div>
-                                <h1 class="text-3xl text-left font-bold unbounded-200 ">Lugar</h1>
-                                <p class="text-2xl text-left unbounded-200 mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
+                                <h1 class="text-3xl text-left font-bold font-unbounded ">Lugar</h1>
+                                <p class="text-2xl text-left font-unbounded mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
 
                             </div>
-                            <button class="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 unbounded-200 hover:text-white hover:border-white">
+                            <button class="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                                 Tickets  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
                                 <span class="material-icons">
                                 <FaLongArrowAltLeft />

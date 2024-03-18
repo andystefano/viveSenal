@@ -15,7 +15,7 @@ function ViveHeader() {
               href="https://www.btgpactual.cl/"
               className=" focus:ring-4 font-medium rounded-lg text-sm py-2 lg:py-2.5 sm:mr-2 lg:mr-0  focus:outline-none "
             >
-              <img className="h-6 sm:h-9" src="images/btgLogo.png" />
+              <img className="h-11" alt="Señal es presentado por BTG Pactual" src="images/btlLogoTop.png" />
             </a>
             <button
               data-collapse-toggle="mobile-menu-2"
