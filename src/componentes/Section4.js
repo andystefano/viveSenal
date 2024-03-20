@@ -24,7 +24,7 @@ function Section({minHeight}) {
               textAlign: "center",
             }}
           >
-            ¿QUE TE ESPERA EN ESTA <br className="hidden lg:block" /> ÉPICA EXPERIENCIA?
+            ¿QUÉ TE ESPERA EN ESTA <br className="hidden lg:block" /> ÉPICA EXPERIENCIA?
           </h1>
         </div>
       </div>

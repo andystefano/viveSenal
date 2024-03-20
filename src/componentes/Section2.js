@@ -29,9 +29,8 @@ function Section({ minHeight }) {
               color: "#ff799a",
             }}
           >
-            ¡Bienvenido a <br />
-            SEÑAL descubre <br />
-            el poder del arte!
+            ¿CÓMO SER PARTE DE SEÑAL? 
+
           </h1>
 
           <div className="hidden lg:block ">
@@ -62,10 +61,7 @@ function Section({ minHeight }) {
                     lineHeight: "1.5rem",
                   }}
                 >
-                  <strong>SEÑAL</strong> es una experiencia que tiene <br /> 11
-                  encuentros, que se realizan mensualmente y que inician en
-                  abril de 2024 en distintos espacios de arte y creación en
-                  Santiago de Chile.
+                  <strong>SEÑAL</strong> es un evento que se realiza una vez al mes en distintos espacios de arte y creación en Santiago de Chile. Son 10 encuentros que se realizan a lo largo del año, con la curatoría y mediación de Fundación Antenna. 
                 </p>
               </div>
             </div>
@@ -96,9 +92,9 @@ function Section({ minHeight }) {
                     lineHeight: "1.5rem",
                   }}
                 >
-                  En los encuentros <strong>SEÑAL</strong>, podrás conocer a los
-                  artistas detrás de las exposiciones más entretenidas y
-                  conversar con otras personas como tú.
+                  Las sesiones <strong>SEÑAL</strong> están pensadas como un programa para conocer espacios fundamentales para la cultura de Santiago. Para sumarte a SEÑAL, te recomendamos inscribirte al programa completo, que tiene un 17% de descuento, para que puedas conectar con esta comunidad y conocer todos los espacios y artistas que hacen parte de la programación. 
+Con tu aporte SEÑAL estás apoyando a Fundación Antenna en el desarrollo de nuevos proyectos que benefician a artistas y espacios culturales. 
+
                 </p>
               </div>
             </div>

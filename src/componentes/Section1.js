@@ -30,18 +30,12 @@ function Section({minHeight}) {
           <h1 className="mt-10 pr-4 mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-white font-unbounded lg:text-right sd:text-left">
             Encuentros de
             <br />
-            arte y música.
+            arte.
           </h1>
 
           <div className="lg:w-8/12 sd:w-full mt-10">
             <p className="text-xl text-white mb-4 font-libre-franklin text-justify">
-              Una señal es un llamado, un signo, una forma de transmitir
-              información. También es el nombre de un nuevo programa de
-              experiencias que te invita a conocer Santiago y el mundo del arte
-              y la cultura de una forma innovadora:{" "}
-              <span className="font-bold">
-                a través de conversaciones cercanas y buena música.
-              </span>
+            También es el nombre de una nueva experiencia que te invita a conocer Santiago y el mundo del arte y la cultura a través de conversaciones cercanas y música experimental. 
             </p>
             <p className="text-xl text-white mb-4 font-libre-franklin text-justify">
               <span className="font-bold">SEÑAL</span> es un proyecto de{" "}
