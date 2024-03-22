@@ -1,5 +1,6 @@
 import { MdTripOrigin } from "react-icons/md";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaTiktok  } from "react-icons/fa6";
+import { FaLinkedin  } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 
@@ -58,7 +59,8 @@ function ViveFooter({ minHeight }) {
         <div class="col-span-1"></div>
         <div class="col-span-1 ">
           <div class="flex items-center justify-center  mt-4">
-            <div class="p-4" size={30}><a href="https://web.facebook.com/antennaorg/"><FaXTwitter/></a></div>
+          <div class="p-4" size={30}><a href="https://www.tiktok.com/@antennaorg"><FaTiktok/></a></div>
+          <div class="p-4" size={30}><a href="https://www.linkedin.com/company/antennaorg/"><FaLinkedin/></a></div> 
             <div class="p-4" size={30}><a href="https://www.instagram.com/antennaorg/"><FaInstagram/></a></div>
             <div class=" p-4" size={30}><a href="https://web.facebook.com/antennaorg/"><FaFacebookF/></a></div>
           </div>

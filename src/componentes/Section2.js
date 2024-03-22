@@ -14,9 +14,12 @@ function Section({ minHeight }) {
       class="border-t border-black relative overflow-hidden"
       style={{
         position: "relative",
-        backgroundImage: "url(images/t2.png)",
-        backgroundSize: "cover",
+        backgroundImage: "url(images/t2bg.png)",
         minHeight: `${minHeight}px`,
+        backgroundColor: "#1a1a19",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+        backgroundPosition: "right center"
       }}
     >
       <div class="grid lg:grid-cols-2 sd:grid-cols-1">
@@ -101,22 +104,52 @@ Con tu aporte SEÑAL estás apoyando a Fundación Antenna en el desarrollo de nu
           </div>
         </div>
         <div class="col-span-1  p-4 ">
+
+
+
+        <div class="grid grid-cols-2">
+        <div class="p-4">
           <div
-            class="text-pink-400 font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5 transform skew-y-3"
-            style={{
-              maxWidth: "338px",
-              border: "2px solid #f175a3",
-              padding: "45px",
-              borderRadius: "50%",
-              paddingLeft: "50px",
-              paddingRight: "50px",
-              textAlign: "center",
-            }}
-          >
-            <p class="text-xl font-bold">
-              Si tienes entre 25 y 40 años te invitamos a ser parte de SEÑAL.
-            </p>
-          </div>
+              class="text-white font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5 transform skew-y-[170deg] hover:skew-y-[175deg]"
+              style={{
+                maxWidth: "338px",
+                padding: "45px",
+                paddingLeft: "50px",
+                paddingRight: "50px",
+                textAlign: "center",
+                backgroundImage: "url(images/wavesCloud.png)",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat"
+              }}
+            >
+              <p class="text-xl font-bold">
+              No es necesario saber de arte, solo ganas de vivir una experiencia transformadora.
+              </p>
+            </div>
+        </div>
+        <div class="p-4">
+          <div
+              class="text-pink-400 font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5 transform  skew-y-[3deg] hover:skew-y-[5deg]"
+              style={{
+                maxWidth: "338px",
+                border: "2px solid #f175a3",
+                padding: "45px",
+                borderRadius: "50%",
+                paddingLeft: "50px",
+                paddingRight: "50px",
+                textAlign: "center",
+              }}
+            >
+              <p class="text-xl font-bold">
+                Si tienes entre 25 y 40 años te invitamos a ser parte de SEÑAL.
+              </p>
+            </div>
+        </div>
+      </div>
+
+
+          
+
         </div>
       </div>
 

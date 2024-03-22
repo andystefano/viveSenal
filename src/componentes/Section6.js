@@ -1,5 +1,3 @@
-import { TiPlus } from "react-icons/ti";
-import { TiMinus } from "react-icons/ti";
 import AcordeonTab from "./AcordeonTab.js";
 
 
