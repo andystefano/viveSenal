@@ -175,7 +175,7 @@ function Section({minHeight}) {
           <div class="flex items-start">
               <span class="material-icons w-6 h-6 text-gray-700  mt-1.5">
               </span>
-              <div class="text-red-500  font-unbounded  ml-2 font-normal text-left text-m">
+              <div class="text-red-500 font-libre-franklin italic  ml-2 font-light text-left text-m">
                   Sí decides que quieres seguir haciendo parte después de esta prueba, tu pago inicial se cuenta como abono para seguir con el programa SEÑAL completo. 
               </div>
           </div>
