@@ -175,8 +175,8 @@ function Section({minHeight}) {
           <div class="flex items-start">
               <span class="material-icons w-6 h-6 text-gray-700  mt-1.5">
               </span>
-              <div class="text-red-500 font-libre-franklin italic  ml-2 font-light text-left text-m">
-                  Sí decides que quieres seguir haciendo parte después de esta prueba, tu pago inicial se cuenta como abono para seguir con el programa SEÑAL completo. 
+              <div class="text-red-500 font-libre-franklin italic  ml-2 font-light text-left text-xl">
+                  Sí decides que quieres seguir haciendo parte después <br/> de esta prueba, tu pago inicial se cuenta como abono <br/> para seguir con el programa SEÑAL completo. 
               </div>
           </div>
       </div>
@@ -206,8 +206,10 @@ function Section({minHeight}) {
 </div>
 
 
+<img src='images/2024_negro_horizontal.png' alt='' className='absolute bottom-7 right-10 h-20'/>
 
 </div>
+
 
 
 </section> );

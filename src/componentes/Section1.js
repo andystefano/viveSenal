@@ -88,11 +88,8 @@ function Section({ minHeight }) {
       </a>
 
 
-      <div class="absolute inset-0 flex justify-center items-center pr-7">
-        <div class="absolute right-0">
-          <img className="w-20 mx-7 my-7 mt-52" src="images/2024_blanco.png" alt="2024" />
-        </div>
-      </div>
+          <img className=" absolute right-0 bottom-1/4 w-20 mx-7 my-7 mt-52" src="images/2024_blanco.png" alt="2024" />
+         
     </section>
   );
 }
