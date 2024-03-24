@@ -64,7 +64,7 @@ function Section({minHeight}) {
       lineHeight: '1.5rem',
       paddingTop: '3.3rem',
       paddingRight: '1.2rem',
-    }}><strong>SEÑAL</strong> no es una fiesta ni un evento convencional. Es un espacio que que se crea una vez al mes y facilita la creación de comunidad y la promoción del arte. Al hacer parte de SEÑAL no solo estás pudiendo acceder a una experiencia transformadora: <strong>tu donación está apoyando los programas de Fundación Antenna que impactan a personas en todo Chile</strong>. </p>
+    }}><strong>SEÑAL</strong> no es una fiesta ni un evento convencional. Es un espacio que que se crea una vez al mes y que facilita la creación de comunidad. <strong> Al aportar a SEÑAL estás apoyando los programas de Fundación Antenna que impactan a artistas y espacios culturales.</strong> </p>
 
 
 </div>

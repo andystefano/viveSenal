@@ -168,6 +168,9 @@ function Section({ minHeight }) {
           </div>
         </div>
       </div>
+
+      <img className="absolute right-0 bottom-1/4" src="images/presentado.png" alt="" />
+      
     </section>
   );
 }
