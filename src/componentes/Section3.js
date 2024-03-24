@@ -1,16 +1,34 @@
 import { FaLongArrowAltLeft } from "react-icons/fa";
+import { useEffect, useInsertionEffect, useRef } from "react";
 
 function Section({minHeight}) {
+
+
+    const headerRef = useRef(null);
+
+    useEffect(() => {
+      if (headerRef.current) {
+        const headerHeight = headerRef.current.offsetHeight;
+        console.log('Altura del encabezado:', headerHeight);
+      }
+    }, []);
+    
+
   return ( <section
   className="border-t border-black relative overflow-hidden"
   style={{
     position: "relative",
     backgroundImage: "url(images/t3.png)",
-    backgroundSize: "cover",
+    backgroundSize: "contain",
+    backgroundPosition: "right top",
     minHeight: `${minHeight}px`, 
-    backgroundColor: '#0cb259' 
+    backgroundColor: '#0cb259', 
+    backgroundRepeat: 'no-repeat'
   }}
   >
+
+
+
 
 <div className="w-full">
 <h1 className="mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8" style={{
@@ -90,20 +108,6 @@ function Section({minHeight}) {
 
 
 
-
-  <div className="w-full"  style={{
-    backgroundColor: '#0cb259' 
-  }}>
-  <marquee class="text-2xl text-white font-bold mx-0" scrollamount="12" loop="100" vspace="1%" hspace="1%" scrolldelay="-1">
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.
-  </marquee>
-  </div>
 </section>
   );
 }

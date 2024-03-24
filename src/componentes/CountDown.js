@@ -25,11 +25,11 @@ function CountDown() {
       setInterval(countdown, 1000);
 
   return (
-    <div class="w-full flex items-center justify-center flex-col mt-10 ">
+    <div id="countDown" class="w-full flex items-center justify-start flex-col  ">
       <div class="sm:w-2/2 text-white">
         <div class="grid grid-cols-7 mx-auto sm:min-w-[430px] md:min-w-[430px] lg:min-w-[430px] xl:min-w-[430px] 2xl:min-w-[430px]">
           <div class="text-center flex-grow">
-            <div class="text-4xl font-unbounded mb-1" id="days">
+            <div class="text-4xl font-unbounded mb-1 font-extralight" id="days">
               00
             </div>
             <div class="text-xs font-bold">DÍAS</div>
@@ -40,7 +40,7 @@ function CountDown() {
           </div>
 
           <div class="text-center flex-grow">
-            <div class="text-4xl font-unbounded mb-1" id="hours">
+            <div class="text-4xl font-unbounded mb-1 font-extralight" id="hours">
              00
             </div>
             <div class="text-xs font-bold">HRS</div>
@@ -51,7 +51,7 @@ function CountDown() {
           </div>
 
           <div class="text-center flex-grow">
-            <div class="text-4xl font-unbounded mb-1" id="minutes">
+            <div class="text-4xl font-unbounded mb-1 font-extralight" id="minutes">
               00
             </div>
             <div class="text-xs font-bold">MIN</div>
@@ -62,7 +62,7 @@ function CountDown() {
           </div>
 
           <div class="text-center flex-grow">
-            <div class="text-4xl font-unbounded mb-1" id="seconds">
+            <div class="text-4xl font-unbounded mb-1  font-extralight" id="seconds">
               00
             </div>
             <div class="text-xs font-bold">SEG</div>
@@ -72,7 +72,7 @@ function CountDown() {
       <div class="w-full p-4">
         <img
           src="images/logoContador.gif"
-          class="max-w-full md:max-w-[547px] lg:max-w-[547px] sm:max-w-[547px]  mx-auto"
+          class="max-w-full md:max-w-[75%] lg:max-w-[70%]sm:max-w-[547px]  mx-auto"
         />
       </div>
     </div>

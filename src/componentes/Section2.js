@@ -19,7 +19,7 @@ function Section({ minHeight }) {
         backgroundColor: "#1a1a19",
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
-        backgroundPosition: "right center"
+        backgroundPosition: "right top"
       }}
     >
       <div class="grid lg:grid-cols-2 sd:grid-cols-1">
@@ -32,7 +32,7 @@ function Section({ minHeight }) {
               color: "#ff799a",
             }}
           >
-            ¿CÓMO SER PARTE DE SEÑAL? 
+            ¿Cómo ser parte de señal? 
 
           </h1>
 
@@ -56,12 +56,10 @@ function Section({ minHeight }) {
                 style={{ fontSize: "1.33rem" }}
               >
                 <p
-                  class="font-libre-franklin"
+                  class="font-libre-franklin font-extralight	"
                   style={{
-                    fontWeight: 400,
                     color: "white",
                     fontSize: "1.3rem",
-                    lineHeight: "1.5rem",
                   }}
                 >
                   <strong>SEÑAL</strong> es un evento que se realiza una vez al mes en distintos espacios de arte y creación en Santiago de Chile. Son 10 encuentros que se realizan a lo largo del año, con la curatoría y mediación de Fundación Antenna. 
@@ -87,9 +85,8 @@ function Section({ minHeight }) {
                 style={{ fontSize: "1.33rem" }}
               >
                 <p
-                  class="font-libre-franklin"
+                  class="font-libre-franklin font-extralight"
                   style={{
-                    fontWeight: 400,
                     color: "white",
                     fontSize: "1.3rem",
                     lineHeight: "1.5rem",
@@ -180,6 +177,24 @@ Con tu aporte SEÑAL estás apoyando a Fundación Antenna en el desarrollo de nu
           </button>
         </div>
       </div>
+
+      
+      
+<div className="w-full"  style={{
+    backgroundColor: '#0cb259' 
+  }}>
+  <marquee class="text-2xl text-white font-bold mx-0" scrollamount="12" loop="100" vspace="1%" hspace="1%" scrolldelay="-1">
+      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
+      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
+      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
+      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
+      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
+      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
+      Desafia lo convencional y abraza lo extraordinario en estos encuentros.
+  </marquee>
+  </div>
+
+  
     </section>
   );
 }

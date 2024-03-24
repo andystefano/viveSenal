@@ -129,6 +129,21 @@ h1, p {
   background-color: #F676A6;
 }
 
+.mt-44{
+  margin-top: 11rem;
+
+}
+
+.mt-56{
+  margin-top: 14rem;
+
+}
+
+.text-h1{
+  font-size: 4.75rem;
+  line-height: 1;
+}
+
 
 
 @keyframes circle-out-top-left {

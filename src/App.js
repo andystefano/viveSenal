@@ -26,7 +26,12 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App"       style={{
+      backgroundImage: "url(images/bg_senal_home.png)",
+      backgroundSize: "cover",
+      backgroundColor: "black",
+      minHeight: `${minHeight}px`, // Use minHeight state here
+    }} >
       <ViveHeader />
       <Section1 minHeight={minHeight} />
       <Section2 minHeight={minHeight} />
