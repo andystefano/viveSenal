@@ -72,7 +72,7 @@ function CountDown() {
       <div className="w-full p-4">
         <img
           src="images/logoContador.gif"
-          className="max-w-full md:max-w-[75%] lg:max-w-[70%]sm:max-w-[547px]  mx-auto"
+          className="max-w-full md:max-w-[75%] lg:max-w-[70%] sm:max-w-[70%]  mx-auto"
         />
       </div>
     </div>

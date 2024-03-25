@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CountDown from "./CountDown.js";
 import { IoTicket } from "react-icons/io5";
 import { FaLongArrowAltLeft } from "react-icons/fa";
@@ -7,9 +7,6 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 function Section({ minHeight }) {
 
   const [hovered, setHovered] = useState(false);
-  const [ntam, setNtam] = useState(0); // Definir ntam como un estado
-
- 
 
   return (
     <section
@@ -25,8 +22,8 @@ function Section({ minHeight }) {
         <div className="col-span-1  p-4 pt-0 min-h-screen pt-44 ">
           <CountDown />
         </div>
-        <div className="col-span-1 p-4 pr-10">
-          <h1 className="mt-10  font-thin	pr-4 mb-4 mr-14 text-4xl leading-none text-h1 text-white font-unbounded lg:text-right sd:text-left">
+        <div className="col-span-1 p-4 md:pr-10">
+          <h1 className="text-6xl md:mt-10  font-thin	pr-4 mb-4 mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
             Encuentros <br />
             de arte.
           </h1>
@@ -63,14 +60,14 @@ function Section({ minHeight }) {
       
       <a
         href="#"
-        className="flex items-center justify-center  text-white  font-unbounded font-extralight  text-3xl text-right absolute left-0  bottom-0 mb-4 ml-7"
+        className="flex items-center justify-center  text-white  font-unbounded font-extralight  text-3xl text-right md:absolute md:left-0  md:bottom-0 mb-4 ml-7"
       >
       <div className="grid grid-cols-[auto,auto] gap-4">
         <div className=" ">
           <img className="w-16 pl-2" src="/images/spiral.png" alt="" />
         </div>
         <div className=" text-2xl flex items-center justify-center	">
-        SEÑAL es una forma de crear comunidad <br />y de apoyar espacios
+        SEÑAL es una forma de crear comunidad <br className="hidden sm:block" />y de apoyar espacios
         culturales.
         </div>        
       </div>
@@ -79,7 +76,7 @@ function Section({ minHeight }) {
 
       <a
         href="http://google.cl"
-        className="flex items-center justify-center  text-white  font-unbounded font-extralight  text-2xl text-right absolute right-0  bottom-0 mb-4 mr-7"
+        className="flex items-center justify-center  text-white  font-unbounded font-extralight  text-2xl text-right md:absolute md:right-0  md:bottom-0 mb-4 mr-7"
       >
       <div className="grid lg:grid-cols-2 sd:grid-cols-1 pr-2">
         <div className="col-span-1 text-base flex items-center justify-center	">
@@ -92,7 +89,7 @@ function Section({ minHeight }) {
       </a>
 
 
-          <img className=" absolute right-0 bottom-1/4 w-20 mx-7 my-7 mt-52" src="images/2024_blanco.png" alt="2024" />
+          <img className="hidden sm:block absolute right-0 bottom-1/4 w-20 mx-7 my-7 mt-52" src="images/2024_blanco.png" alt="2024" />
          
     </section>
   );
