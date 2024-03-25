@@ -7,9 +7,13 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 function Section({ minHeight }) {
 
   const [hovered, setHovered] = useState(false);
+  const [ntam, setNtam] = useState(0); // Definir ntam como un estado
+
+ 
+
   return (
     <section
-      class=""
+      className=""
       style={{
         backgroundImage: "url(images/bg_senal_home.png)",
         backgroundSize: "cover",
@@ -17,11 +21,11 @@ function Section({ minHeight }) {
         minHeight: `${minHeight}px`, // Use minHeight state here
       }}
     >
-      <div class="grid lg:grid-cols-2 sd:grid-cols-1">
-        <div class="col-span-1  p-4 pt-0 min-h-screen pt-44 ">
+      <div className="grid lg:grid-cols-2 sd:grid-cols-1">
+        <div className="col-span-1  p-4 pt-0 min-h-screen pt-44 ">
           <CountDown />
         </div>
-        <div class="col-span-1 p-4 pr-10">
+        <div className="col-span-1 p-4 pr-10">
           <h1 className="mt-10  font-thin	pr-4 mb-4 mr-14 text-4xl leading-none text-h1 text-white font-unbounded lg:text-right sd:text-left">
             Encuentros <br />
             de arte.
@@ -61,11 +65,11 @@ function Section({ minHeight }) {
         href="#"
         className="flex items-center justify-center  text-white  font-unbounded font-extralight  text-3xl text-right absolute left-0  bottom-0 mb-4 ml-7"
       >
-      <div class="grid grid-cols-[auto,auto] gap-4">
-        <div class=" ">
+      <div className="grid grid-cols-[auto,auto] gap-4">
+        <div className=" ">
           <img className="w-16 pl-2" src="/images/spiral.png" alt="" />
         </div>
-        <div class=" text-2xl flex items-center justify-center	">
+        <div className=" text-2xl flex items-center justify-center	">
         SEÑAL es una forma de crear comunidad <br />y de apoyar espacios
         culturales.
         </div>        
@@ -77,11 +81,11 @@ function Section({ minHeight }) {
         href="http://google.cl"
         className="flex items-center justify-center  text-white  font-unbounded font-extralight  text-2xl text-right absolute right-0  bottom-0 mb-4 mr-7"
       >
-      <div class="grid lg:grid-cols-2 sd:grid-cols-1 pr-2">
-        <div class="col-span-1 text-base flex items-center justify-center	">
+      <div className="grid lg:grid-cols-2 sd:grid-cols-1 pr-2">
+        <div className="col-span-1 text-base flex items-center justify-center	">
           Colabora:
         </div>
-        <div class="col-span-1  ">
+        <div className="col-span-1  ">
           <img className="w-28 pr-2" src="/images/LOA_white.png" alt="" />
         </div>
       </div>

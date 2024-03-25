@@ -38,7 +38,7 @@ function Section({minHeight}) {
             fontWeight: '900',
             fontSize: '4.6rem'
 }}>PROGRAMACION</h1>
-<h1 class=" text-4xl leading-none md:text-5xl xl:text-6xl text-white text-left font-unbounded"  style={{
+<h1 className=" text-4xl leading-none md:text-5xl xl:text-6xl text-white text-left font-unbounded"  style={{
             paddingLeft: '4rem',
             color: '#000'
 }}>ABRIL / JUNIO</h1>
@@ -46,19 +46,19 @@ function Section({minHeight}) {
 </div>
 
 
-<div class="grid  sm:grid-cols-1 lg:grid-cols-3 gap-12 p-12">
-                <div class="relative">
-                    <img src="images/p1.png" alt="Imagen" class="w-full" />
-                    <div class="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
-                        <div class="text-center w-full h-full px-7 py-7">
+<div className="grid  sm:grid-cols-1 lg:grid-cols-3 gap-12 p-12">
+                <div className="relative">
+                    <img src="images/p1.png" alt="Imagen" className="w-full" />
+                    <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
+                        <div className="text-center w-full h-full px-7 py-7">
                             <div>
-                                <h1 class="text-3xl text-left font-bold font-unbounded ">Lugar</h1>
-                                <p class="text-2xl text-left font-unbounded mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
+                                <h1 className="text-3xl text-left font-bold font-unbounded ">Lugar</h1>
+                                <p className="text-2xl text-left font-unbounded mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
 
                             </div>
-                            <button class="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                            <button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                                 Tickets  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                                <span class="material-icons">
+                                <span className="material-icons">
                                 <FaLongArrowAltLeft />
                                     </span>
                             </button>
@@ -66,36 +66,36 @@ function Section({minHeight}) {
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <img src="images/p2.png" alt="Imagen" class="w-full" />
-                    <div class="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
-                        <div class="text-center w-full h-full px-7 py-7">
+                <div className="relative">
+                    <img src="images/p2.png" alt="Imagen" className="w-full" />
+                    <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
+                        <div className="text-center w-full h-full px-7 py-7">
                             <div>
-                                <h1 class="text-3xl text-left font-bold font-unbounded ">Lugar</h1>
-                                <p class="text-2xl text-left font-unbounded mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
+                                <h1 className="text-3xl text-left font-bold font-unbounded ">Lugar</h1>
+                                <p className="text-2xl text-left font-unbounded mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
 
                             </div>
-                            <button class="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                            <button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                                 Tickets  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                                <span class="material-icons">
+                                <span className="material-icons">
                                 <FaLongArrowAltLeft />
                                     </span>
                             </button>                         
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <img src="images/p3.png" alt="Imagen" class="w-full" />
-                    <div class="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
-                        <div class="text-center w-full h-full px-7 py-7">
+                <div className="relative">
+                    <img src="images/p3.png" alt="Imagen" className="w-full" />
+                    <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
+                        <div className="text-center w-full h-full px-7 py-7">
                             <div>
-                                <h1 class="text-3xl text-left font-bold font-unbounded ">Lugar</h1>
-                                <p class="text-2xl text-left font-unbounded mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
+                                <h1 className="text-3xl text-left font-bold font-unbounded ">Lugar</h1>
+                                <p className="text-2xl text-left font-unbounded mt-10">Descripción del artista Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer </p>
 
                             </div>
-                            <button class="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                            <button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                                 Tickets  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                                <span class="material-icons">
+                                <span className="material-icons">
                                 <FaLongArrowAltLeft />
                                     </span>
                             </button>                    
