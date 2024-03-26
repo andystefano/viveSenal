@@ -4,24 +4,19 @@ import { MdTripOrigin } from "react-icons/md";
 
 function Section({minHeight}) {
 
-  return ( <section className="border-t border-black relative overflow-hidden" style={{ position: 'relative' }}>
-  <img className="" src="./images/t5.png" alt="imagen de fondo" style={{ 
-      width: '100%',
-      height: 'auto',
-    }} />
+  return ( <section className="border-t border-black relative overflow-hidden" style={{  }}>
+
 
     
   <div className="" style={{ 
-      position: 'absolute',
-      top: 0,
-      left: 0,
+      backgroundColor: '#eaeedd',
       width: '100%',
       color: 'white',
       zIndex: 2,
     }}>
 
 <div className="flex">
-<div className="w-4/12  p-4">
+<div className="w-full  sm:w-4/12 lg:w-4/12  p-4">
 <h1 className="mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8" style={{ 
       paddingTop: '2.5rem',
       paddingLeft: '3.75rem',
@@ -33,7 +28,7 @@ function Section({minHeight}) {
     }}>¡HAZ TU <br /> DONACIÓN!</h1>
 
 </div>
-<div className="w-3/12  p-4">
+<div className="w-full  sm:w-3/12 lg:w-3/12  p-4">
 
 
 <div
@@ -54,7 +49,7 @@ function Section({minHeight}) {
             </div>
 
 </div>
-<div className="w-5/12  p-4">
+<div className="w-full sm:w-5/12 lg:w-5/12  p-4">
  
 
 <p className="font-libre-franklin text-justify pl-4" style={{ 
@@ -72,7 +67,7 @@ function Section({minHeight}) {
 
 <div className="w-full">
 
-<div className="grid sd:grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-0  py-3 px-20 mx-20">
+<div className="grid sd:grid-cols-1 sd:grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-0  sm:py-3 sm:px-20 sm:mx-20">
   <div className="p-4 text-center">
       
    <img className="" src="./images/ticketRosa.png" alt="imagen de fondo" style={{ 

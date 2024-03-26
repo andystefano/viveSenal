@@ -16,8 +16,26 @@ function Section({ minHeight }) {
         minHeight: `${minHeight}px`,
       }}
     >
+         
+
+      <div>
+        <div className="mr-auto place-self-center lg:col-span-7 text-white text-left">
+          <h1
+            className="mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
+            style={{
+              paddingTop: "5.5rem",
+              /* padding-left: '3.75rem', */ // Puedes comentar líneas usando esta sintaxis en JSX
+              color: "white",
+              fontWeight: 400,
+              textAlign: "center",
+            }}
+          >
+            ¿QUÉ TE ESPERA EN ESTA <br className="hidden lg:block" /> ÉPICA
+            EXPERIENCIA?
+          </h1>
+
           <button
-              className="z-10  absolute top-0 right-14 flex items-center px-6 py-1 bg-black text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 mt-8 font-unbounded"
+              className="z-10 py-1 mt-6 ml-5 md:py-1 md:mt-8 sm:absolute sm:top-0 sm:right-14 flex items-center px-6  text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
             >
@@ -29,27 +47,11 @@ function Section({ minHeight }) {
               )}
             </button>
 
-      <div>
-        <div className="mr-auto place-self-center lg:col-span-7 text-white text-left">
-          <h1
-            className="mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
-            style={{
-              paddingTop: "5.5rem",
-              /* padding-left: '3.75rem', */ // Puedes comentar líneas usando esta sintaxis en JSX
-              color: "white",
-              fontWeight: 400,
-              fontSize: "4.4rem",
-              textAlign: "center",
-            }}
-          >
-            ¿QUÉ TE ESPERA EN ESTA <br className="hidden lg:block" /> ÉPICA
-            EXPERIENCIA?
-          </h1>
         </div>
       </div>
 
-      <div className="flex mt-10">
-        <div className="lg:w-5/12 flex items-center justify-center sd:hidden ">
+      <div className="sd:flex md:flex lg:flex md:mt-10 lg:mt-10 xl:mt-10">
+        <div className="w-full lg:w-5/12 flex items-center justify-center sd:hidden ">
 
         <div
               className="text-white font-libre-franklin max-w-300 rounded-full  ml-6  mt-1.5 transform  skew-y-[170deg] hover:skew-y-[175deg]"
@@ -69,7 +71,7 @@ function Section({ minHeight }) {
             </div>
 
         </div>
-        <div className="lg:w-7/12 sd:w-full">
+        <div className="w-full  lg:w-7/12 sd:w-full">
           <div className="w-full">
             <div className="flex items-center ml-1">
               <span className="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
@@ -85,7 +87,7 @@ function Section({ minHeight }) {
                 </h1>
               </div>
             </div>
-            <div className="flex items-center ml-1">
+            <div className="flex sd:flex md:flex lg:flex items-center ml-1">
               <span
                 className="text-transparent opacity-0  mt-1.5"
                 style={{ marginLeft: "2.3rem" }}
@@ -127,8 +129,8 @@ function Section({ minHeight }) {
         </div>
       </div>
 
-      <div className="flex ml-52">
-        <div className="flex items-center">
+      <div className="md:flex md:ml-52">
+        <div className="flex items-center justify-center ">
           <img src="images/LOA_white.png" className="h-48 mt-12" alt="" />
         </div>
 
