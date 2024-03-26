@@ -24,7 +24,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
         backgroundPosition: "right top",
       }}
     >
-      <div className="flex flex-col w-full absolute bottom-14 mx-34 my-34">
+      <div className="flex flex-col w-full absolute bottom-6 mx-34 my-34">
         <div className="grid grid-cols-2 gap-4 pl-32 pr-32">
           <div className=" col-span-1 p-4">
             <div className="flex items-start">

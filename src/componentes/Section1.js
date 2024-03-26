@@ -19,11 +19,11 @@ function Section({ minHeight }) {
       }}
     >
       <div className="grid lg:grid-cols-2 sd:grid-cols-1">
-        <div className="col-span-1  p-4 pt-0 min-h-screen pt-44 ">
+        <div className="col-span-1  p-0 sd:p-4 pt-0 sd:min-h-screen pt-10 md:pt-44 ">
           <CountDown />
         </div>
         <div className="col-span-1 p-4 md:pr-10">
-          <h1 className="text-6xl md:mt-10  font-thin	pr-4 mb-4 mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
+          <h1 className="text-6xl mt-10 font-thin	pr-4 mb-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
             Encuentros <br />
             de arte.
           </h1>
@@ -60,10 +60,10 @@ function Section({ minHeight }) {
       
       <a
         href="#"
-        className="flex items-center justify-center  text-white  font-unbounded font-extralight  text-3xl text-right md:absolute md:left-0  md:bottom-0 mb-4 ml-7"
+        className="hidden sm:block  flex items-center justify-center  text-white  font-unbounded font-extralight  text-3xl text-right md:absolute md:left-0  md:bottom-0 mb-4 ml-7"
       >
-      <div className="grid grid-cols-[auto,auto] gap-4">
-        <div className=" ">
+      <div className=" grid grid-cols-[auto,auto] gap-4">
+        <div className="hidden sd:block ">
           <img className="w-16 pl-2" src="/images/spiral.png" alt="" />
         </div>
         <div className=" text-2xl flex items-center justify-center	">
@@ -76,9 +76,9 @@ function Section({ minHeight }) {
 
       <a
         href="http://google.cl"
-        className="flex items-center justify-center  text-white  font-unbounded font-extralight  text-2xl text-right md:absolute md:right-0  md:bottom-0 mb-4 mr-7"
+        className="hidden sm:block  flex items-center justify-center  text-white  font-unbounded font-extralight  text-2xl text-right md:absolute md:right-0  md:bottom-0 mb-4 mr-7"
       >
-      <div className="grid lg:grid-cols-2 sd:grid-cols-1 pr-2">
+      <div className=" hidden sm:block  grid lg:grid-cols-2 sd:grid-cols-1 pr-2">
         <div className="col-span-1 text-base flex items-center justify-center	">
           Colabora:
         </div>

@@ -27,7 +27,7 @@ function CountDown() {
   return (
     <div id="countDown" className="w-full flex items-center justify-start flex-col  ">
       <div className="sm:w-2/2 text-white">
-        <div className="grid grid-cols-7 mx-auto sm:min-w-[430px] md:min-w-[430px] lg:min-w-[430px] xl:min-w-[430px] 2xl:min-w-[430px]">
+        <div className="grid grid-cols-7 mx-auto min-w-[300px] max-w-[75%] sm:min-w-[430px] md:min-w-[430px] lg:min-w-[430px] xl:min-w-[430px] 2xl:min-w-[430px]">
           <div className="text-center flex-grow">
             <div className="text-4xl font-unbounded mb-1 font-extralight" id="days">
               00
@@ -72,7 +72,7 @@ function CountDown() {
       <div className="w-full p-4">
         <img
           src="images/logoContador.gif"
-          className="max-w-full md:max-w-[75%] lg:max-w-[70%] sm:max-w-[70%]  mx-auto"
+          className="max-w-full max-w-[90%] md:max-w-[75%] lg:max-w-[70%] sm:max-w-[70%]  mx-auto"
         />
       </div>
     </div>
