@@ -50,7 +50,7 @@ function Section({ minHeight }) {
 
       <div className="grid  sm:grid-cols-1 lg:grid-cols-3 gap-12 p-12">
         <div className="relative">
-          <img src="images/p1.png" alt="Imagen" className="w-full" />
+          <img src="images/p3.png" alt="Imagen" className="w-full" />
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
             <div className="text-center w-full h-full px-7 py-7">
               <div>
@@ -96,7 +96,7 @@ function Section({ minHeight }) {
           </div>
         </div>
         <div className="relative">
-          <img src="images/p3.png" alt="Imagen" className="w-full" />
+          <img src="images/p1.png" alt="Imagen" className="w-full" />
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
             <div className="text-center w-full h-full px-7 py-7">
               <div>

@@ -39,7 +39,7 @@ function Section({ minHeight }) {
             </p>
             <p className="text-p text-white mb-4 font-libre-franklin text-justify">
               <span className="font-bold">SEÑAL</span> es un proyecto de{" "}
-              <span className="font-bold">Fundación Antenna</span>
+              <span className="font-bold">Fundación Antenna.</span>
             </p>
             <button
               className="z-10 flex items-center px-6 py-1 text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 mt-8 font-unbounded"
@@ -63,7 +63,7 @@ function Section({ minHeight }) {
         className="hidden sm:block  flex items-center justify-center  text-white  font-unbounded font-extralight  text-3xl text-right md:absolute md:left-0  md:bottom-0 mb-4 ml-7"
       >
       <div className=" grid grid-cols-[auto,auto] gap-4">
-        <div className="hidden sd:block ">
+        <div className="hidden sm:block md:block lg:block xl:block  ">
           <img className="w-16 pl-2" src="/images/spiral.png" alt="" />
         </div>
         <div className=" text-2xl flex items-center justify-center	">
@@ -76,7 +76,7 @@ function Section({ minHeight }) {
 
       <a
         href="http://google.cl"
-        className="hidden sm:block  flex items-center justify-center  text-white  font-unbounded font-extralight  text-2xl text-right md:absolute md:right-0  md:bottom-0 mb-4 mr-7"
+        className="hidden sm:block md:block lg:block xl:block  flex items-center justify-center  text-white  font-unbounded font-extralight  text-2xl text-right md:absolute md:right-0  md:bottom-0 mb-4 mr-7"
       >
       <div className=" hidden sm:block  grid lg:grid-cols-2 sd:grid-cols-1 pr-2">
         <div className="col-span-1 text-base flex items-center justify-center	">
@@ -89,7 +89,7 @@ function Section({ minHeight }) {
       </a>
 
 
-          <img className="hidden sm:block absolute right-0 bottom-1/4 w-20 mx-7 my-7 mt-52" src="images/2024_blanco.png" alt="2024" />
+          <img className="hidden sm:block absolute right-0 bottom-1/4 w-16 mx-7 my-7 mt-52" src="images/2024_blanco.png" alt="2024" />
          
     </section>
   );

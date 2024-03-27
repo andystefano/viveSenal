@@ -59,16 +59,13 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                 style={{ fontSize: "1.33rem" }}
               >
                 <p
-                  className="font-libre-franklin font-extralight	"
+                  className="font-unbounded font-extralight	"
                   style={{
                     color: "white",
                     fontSize: "1.3rem",
                   }}
                 >
-                  <strong>SEÑAL</strong> es un evento que se realiza una vez al
-                  mes en distintos espacios de arte y creación en Santiago de
-                  Chile. Son 10 encuentros que se realizan a lo largo del año,
-                  con la curatoría y mediación de Fundación Antenna.
+                  <strong>SEÑAL</strong> es un evento que se realiza una vez al mes en distintos espacios de arte y creación en Santiago de Chile. Son 10 encuentros que se realizan a lo largo del año, con la curatoría y mediación de Fundación Antenna. 
                 </p>
               </div>
             </div>
@@ -91,23 +88,25 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                 style={{ fontSize: "1.33rem" }}
               >
                 <p
-                  className="font-libre-franklin font-extralight"
+                  className="font-unbounded font-extralight"
+                  style={{
+                    color: "white",
+                    fontSize: "1.3rem",
+                  }}
+                >
+Las sesiones SEÑAL están pensadas como un programa para conocer espacios fundamentales para la cultura de Santiago. 
+                </p>
+
+                <p
+                  className="font-unbounded font-extralight"
                   style={{
                     color: "white",
                     fontSize: "1.3rem",
                     lineHeight: "1.5rem",
                   }}
                 >
-                  Las sesiones <strong>SEÑAL</strong> están pensadas como un
-                  programa para conocer espacios fundamentales para la cultura
-                  de Santiago. Para sumarte a SEÑAL, te recomendamos inscribirte
-                  al programa completo, que tiene un 17% de descuento, para que
-                  puedas conectar con esta comunidad y conocer todos los
-                  espacios y artistas que hacen parte de la programación. Con tu
-                  aporte SEÑAL estás apoyando a Fundación Antenna en el
-                  desarrollo de nuevos proyectos que benefician a artistas y
-                  espacios culturales.
-                </p>
+Para sumarte a SEÑAL, te recomendamos inscribirte al programa completo, que tiene un 17% de descuento, para que puedas conectar con esta comunidad y conocer todos los espacios y artistas que hacen parte de la programación. 
+                </p>                
               </div>
             </div>
           </div>
@@ -116,7 +115,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
           <div className="grid grid-cols-2">
             <div className="p-4">
               <div
-                className="text-white font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5 transform skew-y-[170deg]"
+                className="text-white font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5  "
                 style={{
                   maxWidth: "338px",
                   textAlign: "center",
@@ -124,18 +123,18 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                  <img src="images/wavesCloud1.png" />
+                  <img src="images/Cloud2.png" />
               </div>
             </div>
             <div className="p-4">
               <div
-                className="text-pink-400 font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5 transform  skew-y-[3deg]"
+                className="text-pink-400 font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5  "
                 style={{
                   maxWidth: "338px",
                   textAlign: "center",
                 }}
               >
-                  <img src="images/Cloud2.png" />
+                  <img src="images/wavesCloud1.png" />
               </div>
             </div>
           </div>

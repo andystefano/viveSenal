@@ -54,7 +54,7 @@ function Section({ minHeight }) {
         <div className="w-full lg:w-5/12 flex items-center justify-center sd:hidden ">
 
         <div
-              className="text-white font-libre-franklin max-w-300 rounded-full  ml-6  mt-1.5 transform  skew-y-[170deg]"
+              className="text-white font-libre-franklin max-w-300 rounded-full  ml-6  mt-1.5  "
               style={{
                 maxWidth: "338px",
                 textAlign: "center",
@@ -95,7 +95,7 @@ function Section({ minHeight }) {
                 <p className="font-libre-franklin text-base text-white  text-left w-8/12">
                   Lo más interesante delarte son las conversaciones que éste
                   inspira, en SEÑAL conocerás a los creadores detrás de las
-                  obras..{" "}
+                  obras.{" "}
                 </p>
               </div>
             </div>
@@ -109,10 +109,9 @@ function Section({ minHeight }) {
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
-                style={{ fontSize: "1.33rem" }}
-              >
+                style={{ fontSize: "1.33rem" }}>
                 <p className="font-libre-franklin text-base text-white  text-left w-8/12">
-                  ...{" "}
+                  {" "}
                 </p>
               </div>
             </div>
@@ -152,7 +151,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <p className="font-unbounded text-base text-white  text-left w-8/12">
+                <p className="font-libre-franklin text-base text-white  text-left w-12/12">
                   para que puedas compartir con los<br/> artistas y demás
                   participantes.
                 </p>
