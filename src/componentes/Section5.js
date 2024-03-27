@@ -8,7 +8,7 @@ function Section({minHeight}) {
 
 
     
-  <div className="" style={{ 
+  <div className=" pb-20" style={{ 
       backgroundColor: '#eaeedd',
       width: '100%',
       color: 'white',
@@ -32,20 +32,13 @@ function Section({minHeight}) {
 
 
 <div
-              className="text-red-500 font-libre-franklin max-w-300 rounded-full border-pink-400 ml-6  mt-1.5 transform  skew-y-[170deg] hover:skew-y-[175deg]"
+              className="text-red-500 font-libre-franklin max-w-300 rounded-full border-pink-400 ml-6  mt-1.5 transform  skew-y-[170deg] "
               style={{
                 maxWidth: "338px",
-                border: "2px solid red",
-                padding: "25px",
-                borderRadius: "50%",
-                paddingLeft: "50px",
-                paddingRight: "50px",
-                textAlign: "center",
               }}
             >
-              <p className="text-xl font-bold">
-              Los tickets SEÑAL son personales e intransferibles y están activos hasta el 28 de febrero de 2025. 
-              </p>
+                                <img src="images/Cloud4.png" />
+
             </div>
 
 </div>

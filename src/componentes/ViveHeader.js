@@ -57,7 +57,7 @@ function ViveHeader() {
               <li>
                 <a
                   href="#"
-                  className="relative text-2xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
+                  className="relative text-xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
                 >
                   <span className="absolute inset-0 opacity-0 hover:opacity-100">
                     programación
@@ -68,7 +68,7 @@ function ViveHeader() {
               <li>
                 <a
                   href="#"
-                  className="relative text-2xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
+                  className="relative text-xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
                 >
                   <span className="absolute inset-0 opacity-0 hover:opacity-100">
                     esto es señal
@@ -79,7 +79,7 @@ function ViveHeader() {
               <li>
                 <a
                   href="#"
-                  className="relative text-2xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
+                  className="relative text-xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
                 >
                   <span className="absolute inset-0 opacity-0 hover:opacity-100">
                     tickets
@@ -90,7 +90,7 @@ function ViveHeader() {
               <li>
                 <a
                   href="#"
-                  className="relative text-2xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
+                  className="relative text-xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
                 >
                   <span className="absolute inset-0 opacity-0 hover:opacity-100">
                     FAQ

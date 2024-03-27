@@ -54,20 +54,14 @@ function Section({ minHeight }) {
         <div className="w-full lg:w-5/12 flex items-center justify-center sd:hidden ">
 
         <div
-              className="text-white font-libre-franklin max-w-300 rounded-full  ml-6  mt-1.5 transform  skew-y-[170deg] hover:skew-y-[175deg]"
+              className="text-white font-libre-franklin max-w-300 rounded-full  ml-6  mt-1.5 transform  skew-y-[170deg]"
               style={{
                 maxWidth: "338px",
-                border: "2px solid white",
-                padding: "25px",
-                borderRadius: "50%",
-                paddingLeft: "50px",
-                paddingRight: "50px",
                 textAlign: "center",
               }}
             >
-              <p className="text-xl font-bold">
-              <strong>Arte alucinante:</strong> déjate envolver por las obras más vanguardistas y entretenidas que hay en Santiago. 
-              </p>
+                  <img src="images/Cloud3.png" />
+
             </div>
 
         </div>
@@ -98,7 +92,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <p className="font-unbounded text-base text-white  text-left w-8/12">
+                <p className="font-libre-franklin text-base text-white  text-left w-8/12">
                   Lo más interesante delarte son las conversaciones que éste
                   inspira, en SEÑAL conocerás a los creadores detrás de las
                   obras..{" "}
@@ -117,11 +111,8 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <p className="font-unbounded text-base text-white  text-left w-8/12">
-                  lo más interesante del arte son las conversaciones que éste
-                  inspira. Además de conocer a los creadores, en SEÑAL se crea
-                  un espacio para que puedas compartir con los demás
-                  participantes.{" "}
+                <p className="font-libre-franklin text-base text-white  text-left w-8/12">
+                  ...{" "}
                 </p>
               </div>
             </div>

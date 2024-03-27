@@ -19,7 +19,6 @@ function Section({ minHeight }) {
         backgroundImage: "url(images/t3.png)",
         backgroundSize: "contain",
         backgroundPosition: "right top",
-        minHeight: `${minHeight}px`,
         backgroundColor: "#eaeedd",
         backgroundRepeat: "no-repeat",
       }}

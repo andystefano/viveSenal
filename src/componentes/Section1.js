@@ -29,7 +29,7 @@ function Section({ minHeight }) {
           </h1>
 
           <div className="lg:w-7/12 sd:w-full mt-2">
-            <p className="text-xl text-white mb-4 font-libre-franklin text-justify">
+            <p className="text-p text-white mb-4 font-libre-franklin text-left">
               Una señal es un llamado, un signo, una forma de transmitir
               información. También es el nombre de una nueva experiencia que te
               invita a conocer Santiago y el mundo del arte y la cultura{" "}
@@ -37,12 +37,12 @@ function Section({ minHeight }) {
                 a través de conversaciones cercanas y música experimental.
               </strong>
             </p>
-            <p className="text-xl text-white mb-4 font-libre-franklin text-justify">
+            <p className="text-p text-white mb-4 font-libre-franklin text-justify">
               <span className="font-bold">SEÑAL</span> es un proyecto de{" "}
               <span className="font-bold">Fundación Antenna</span>
             </p>
             <button
-              className="z-10 flex items-center px-6 py-1 bg-black text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 mt-8 font-unbounded"
+              className="z-10 flex items-center px-6 py-1 text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 mt-8 font-unbounded"
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
             >

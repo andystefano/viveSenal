@@ -116,41 +116,26 @@ function Section({ minHeight, setActiveTab, activeTab }) {
           <div className="grid grid-cols-2">
             <div className="p-4">
               <div
-                className="text-white font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5 transform skew-y-[170deg] hover:skew-y-[175deg]"
+                className="text-white font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5 transform skew-y-[170deg]"
                 style={{
                   maxWidth: "338px",
-                  padding: "45px",
-                  paddingLeft: "50px",
-                  paddingRight: "50px",
                   textAlign: "center",
-                  backgroundImage: "url(images/wavesCloud.png)",
                   backgroundSize: "contain",
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                <p className="text-xl font-bold">
-                  No es necesario saber de arte, solo ganas de vivir una
-                  experiencia transformadora.
-                </p>
+                  <img src="images/wavesCloud1.png" />
               </div>
             </div>
             <div className="p-4">
               <div
-                className="text-pink-400 font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5 transform  skew-y-[3deg] hover:skew-y-[5deg]"
+                className="text-pink-400 font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5 transform  skew-y-[3deg]"
                 style={{
                   maxWidth: "338px",
-                  border: "2px solid #f175a3",
-                  padding: "45px",
-                  borderRadius: "50%",
-                  paddingLeft: "50px",
-                  paddingRight: "50px",
                   textAlign: "center",
                 }}
               >
-                <p className="text-xl font-bold">
-                  Si tienes entre 25 y 40 años te invitamos a ser parte de
-                  SEÑAL.
-                </p>
+                  <img src="images/Cloud2.png" />
               </div>
             </div>
           </div>
@@ -159,7 +144,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
 
       <div className="flex justify-center items-center w-1/2">
         <button
-          className="flex items-center px-6 py-1 bg-black text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded  mt-10 "
+          className="flex items-center px-6 py-1 text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded mb-14  xl:mt-10 "
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >
@@ -176,8 +161,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
 
       <button
         onClick={handleNextClick}
-        className="absolute bottom-14 right-8  flex items-center px-6 py-1  text-white text-3xl font-bold rounded-full border-2 border-white  font-unbounded py-3 hover:border-orange-200  hover:text-orange-200	"
-      >
+        className="absolute bottom-14 right-8  flex items-center px-6 py-1  text-white text-3xl font-bold rounded-full border-2 border-white  font-unbounded py-3 hover:border-orange-200  hover:text-orange-200">
         <GrLinkNext className="w-8 h-8" />
       </button>
 

@@ -146,6 +146,11 @@ h1, p {
 }
 
 
+.text-p {
+  font-size: 1.15rem;
+  line-height: 1.4rem;
+}
+
 
 @keyframes circle-out-top-left {
   from {
