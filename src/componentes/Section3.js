@@ -57,7 +57,7 @@ function Section({ minHeight }) {
                 <h1 className="text-3xl text-left font-bold font-unbounded ">
                   Lugar
                 </h1>
-                <p className="text-base mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-unbounded sd:mt-10 md:mt-10 lg:mt-10">
+                <p className="text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-unbounded sd:mt-10 md:mt-10 lg:mt-10">
                   Descripción del artista Lorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh Lorem
                   ipsum dolor sit amet, consectetuer{" "}
@@ -80,7 +80,7 @@ function Section({ minHeight }) {
                 <h1 className="text-3xl text-left font-bold font-unbounded ">
                   Lugar
                 </h1>
-                <p className="text-base mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-unbounded sd:mt-10 md:mt-10 lg:mt-10">
+                <p className="text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-unbounded sd:mt-10 md:mt-10 lg:mt-10">
                   Descripción del artista Lorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh Lorem
                   ipsum dolor sit amet, consectetuer{" "}
@@ -103,7 +103,7 @@ function Section({ minHeight }) {
                 <h1 className="text-3xl text-left font-bold font-unbounded ">
                   Lugar
                 </h1>
-                <p className="text-base mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-unbounded sd:mt-10 md:mt-10 lg:mt-10">
+                <p className="text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-unbounded sd:mt-10 md:mt-10 lg:mt-10">
                   Descripción del artista Lorem ipsum dolor sit amet,
                   consectetuer adipiscing elit, sed diam nonummy nibh Lorem
                   ipsum dolor sit amet, consectetuer{" "}
