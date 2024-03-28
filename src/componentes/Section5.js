@@ -4,11 +4,32 @@ import { MdTripOrigin } from "react-icons/md";
 
 function Section({minHeight}) {
 
-  return ( <section className="border-t border-black relative overflow-hidden " style={{  }}>
+  return ( <section className="border-t border-black relative overflow-hidden " style={{backgroundColor:'#eaeedd'  }}>
 
 
+<div class="grid grid-cols-1  sd:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+  <div class="col-span-1 flex justify-start sd:justify-end md:justify-end lg:justify-end  xl:justify-end">
+  <h1 className="mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8" style={{ 
+      paddingTop: '2.5rem',
+      color: 'black',
+      fontWeight: 400,
+    }}>¡HAZ TU <br /> DONACIÓN!</h1>
+  </div>
+  <div class="col-span-1 flex justify-center">
+  <img className='w-1/2 sd:w-8/12 md:w-8/12 lg:w-8/12 xl:w-8/12' src="images/Cloud4.png" />
+  </div>
+  <div class="col-span-1">
+  <p className="font-libre-franklin text-left pl-4 text-2xl" style={{ 
+      fontWeight: 400,
+      color: 'black',
+      paddingTop: '3.3rem',
+      paddingRight: '1.2rem',
+    }}><strong>SEÑAL</strong> no es una fiesta ni un evento convencional. Es un espacio que que se crea una vez al mes y que facilita la creación de comunidad. <strong> Al aportar a SEÑAL estás apoyando los programas de Fundación Antenna que impactan a artistas y espacios culturales.</strong> </p>
+
+  </div>
+</div>
     
-  <div className="p-14 pb-20 " style={{ 
+  <div className="sd:p-14 sd:pb-20 md:p-14 md:pb-20 lg:p-14 lg:pb-20 xl:p-14 xl:pb-20 " style={{ 
       backgroundColor: '#eaeedd',
       width: '100%',
       color: 'white',
@@ -17,13 +38,7 @@ function Section({minHeight}) {
 
 <div className="flex">
 <div className="w-full  sm:w-4/12 lg:w-4/12  p-4">
-<h1 className="mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8" style={{ 
-      paddingTop: '2.5rem',
-      paddingLeft: '3.75rem',
-      color: 'black',
-      fontWeight: 400,
-      textAlign: 'left',
-    }}>¡HAZ TU <br /> DONACIÓN!</h1>
+
 
 </div>
 <div className="w-full  sm:w-3/12 lg:w-3/12  p-4">
@@ -35,7 +50,6 @@ function Section({minHeight}) {
                 maxWidth: "338px",
               }}
             >
-                                <img src="images/Cloud4.png" />
 
             </div>
 
@@ -43,12 +57,6 @@ function Section({minHeight}) {
 <div className="w-full sm:w-5/12 lg:w-5/12  p-4">
  
 
-<p className="font-libre-franklin text-justify pl-4 text-2xl" style={{ 
-      fontWeight: 400,
-      color: 'black',
-      paddingTop: '3.3rem',
-      paddingRight: '1.2rem',
-    }}><strong>SEÑAL</strong> no es una fiesta ni un evento convencional. Es un espacio que que se crea una vez al mes y que facilita la creación de comunidad. <strong> Al aportar a SEÑAL estás apoyando los programas de Fundación Antenna que impactan a artistas y espacios culturales.</strong> </p>
 
 
 </div>

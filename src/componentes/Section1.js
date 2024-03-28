@@ -23,7 +23,7 @@ function Section({ minHeight }) {
           <CountDown />
         </div>
         <div className="col-span-1 p-4 md:pr-10">
-          <h1 className="text-6xl mt-10 font-thin	pr-4 mb-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
+          <h1 className="text-5xl sd:text-6xl md:text-6xl lg:text-6xl xl:text-6xl mt-10 font-thin	pr-4 mb-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
             Encuentros <br />
             de arte.
           </h1>

@@ -60,9 +60,8 @@ function Section({ minHeight }) {
                 textAlign: "center",
               }}
             >
-                  <img src="images/Cloud3.png" />
-
-            </div>
+              <img src="images/Cloud3.png" />
+        </div>
 
         </div>
         <div className="w-full  lg:w-7/12 sd:w-full">
@@ -92,7 +91,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <p className="font-libre-franklin text-base text-white  text-left w-8/12">
+                <p className="mt-3 font-libre-franklin text-base text-white  text-left w-8/12">
                   Lo más interesante delarte son las conversaciones que éste
                   inspira, en SEÑAL conocerás a los creadores detrás de las
                   obras.{" "}
@@ -151,8 +150,8 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <p className="font-libre-franklin text-base text-white  text-left w-12/12">
-                  para que puedas compartir con los<br/> artistas y demás
+                <p className="mt-3 font-libre-franklin text-base text-white  text-left w-12/12">
+                  Para que puedas compartir con los<br/> artistas y demás
                   participantes.
                 </p>
               </div>
