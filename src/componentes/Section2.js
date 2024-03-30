@@ -15,29 +15,23 @@ function Section({ minHeight, setActiveTab, activeTab }) {
 
   return (
     <section
-      className="border-t border-black relative overflow-hidden"
+      className="border-t border-black relative overflow-hidden p-4 sd:p-14 md:p-14 lg:p-14 xl:p-14 bg_t2_movil"
       style={{
-        position: "relative",
-        backgroundImage: "url(images/t2bg.png)",
-        minHeight: `${minHeight}px`,
-        backgroundColor: "#1a1a19",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
-        backgroundPosition: "right top",
+        minHeight: `${minHeight}px`
       }}
     >
       <div className="grid lg:grid-cols-2 sd:grid-cols-1">
-        <div className="col-span-1  p-4 ">
+        <div className="col-span-1 ">
+          
+          <div className="w-full flex items-center">
           <h1
-            className="mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-white text-left font-unbounded pt-8"
+            className="mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-white  font-unbounded pt-8"
             style={{
-              paddingTop: "4rem",
-              paddingLeft: "5rem",
-              color: "#ff799a",
             }}
           >
             ¿Cómo ser parte de señal?
-          </h1>
+          </h1>            
+          </div>
 
           <div className="hidden lg:block ">
             <div
@@ -111,22 +105,41 @@ Para sumarte a SEÑAL, te recomendamos inscribirte al programa completo, que tie
             </div>
           </div>
         </div>
-        <div className="col-span-1  p-4 ">
-          <div className="grid grid-cols-2">
-            <div className="p-4">
+        <div className="col-span-1   ">
+          
+          <div className="flex">
+           <div className="w-5/12 block sd:hidden md:hidden lg:hidden xl:hidden">
+            
+           <button
+          className="flex items-center px-4 py-1 text-white text-base font-bold rounded-full border-2 border-white font-unbounded mb-14  xl:mt-10 "
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          Tickets &nbsp;&nbsp;{" "}
+          {hovered ? (
+            <IoTicket size={15} className="w-6 h-6" />
+          ) : (
+            <FaLongArrowAltLeft size={15} className="w-6 h-6" />
+          )}
+        </button>
+
+            </div> 
+           <div className="w-7/12 grid sd:mt-12 md:mt-12 lg:mt-12 xl:mt-12  grid-cols-1 sd:grid-cols-2  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+            <div className="">
               <div
                 className="text-white font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5  "
                 style={{
                   maxWidth: "338px",
                   textAlign: "center",
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
                 }}
               >
+                
                   <img src="images/Cloud2.png" />
+
+
               </div>
             </div>
-            <div className="p-4">
+            <div className="p-4 hidden  sd:block ssmd:block md:block lg:block xl:block">
               <div
                 className="text-pink-400 font-libre-franklin max-w-300 rounded-full border-pink-400  mt-1.5  "
                 style={{
@@ -138,12 +151,15 @@ Para sumarte a SEÑAL, te recomendamos inscribirte al programa completo, que tie
               </div>
             </div>
           </div>
+          </div>
+
+
         </div>
       </div>
 
       <div className="flex justify-center items-center w-1/2">
         <button
-          className="flex items-center px-6 py-1 text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded mb-14  xl:mt-10 "
+          className="hidden sd:block sm:block lg:block xl:block flex items-center px-6 py-1 text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded mb-14  xl:mt-10 "
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >
@@ -157,6 +173,9 @@ Para sumarte a SEÑAL, te recomendamos inscribirte al programa completo, que tie
       </div>
 
       
+<img src="images/CloudT2Movil.png" alt=""
+        className="absolute bottom-14 left-8  flex items-center w-1/2 block sd:hidden md:hidden lg:hidden xl:hidden "
+/>
 
       <button
         onClick={handleNextClick}

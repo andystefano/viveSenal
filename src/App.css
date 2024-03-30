@@ -151,6 +151,17 @@ h1, p {
   line-height: 1.4rem;
 }
 
+.text-pink-400 {
+  color:#f472b6;
+}
+
+.bg_t2_movil{ 
+background-image: url('/public/images/bgMovil-t2.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: left top;
+background-color: rgb(26, 26, 25);
+}
 
 @keyframes circle-out-top-left {
   from {
@@ -164,3 +175,5 @@ h1, p {
 [transition-style="out:circle:top-left"] {
   animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-out-top-left both;
 }
+
+
