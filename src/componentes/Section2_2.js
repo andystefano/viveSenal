@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { MdTripOrigin } from "react-icons/md";
+import { MdTripOrigin, MdWidthFull } from "react-icons/md";
 import { IoTicket } from "react-icons/io5";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { GrLinkNext } from "react-icons/gr";
@@ -24,6 +24,9 @@ function Section({ minHeight, setActiveTab, activeTab }) {
         backgroundPosition: "right top",
       }}
     >
+
+<img src="images/bgtab2.png" style={{}} alt="" />
+
       <div className="flex flex-col w-full absolute bottom-6 mx-34 my-34">
         <div className="grid grid-cols-2 gap-4 pl-32 pr-32">
           <div className=" col-span-1 p-4">
