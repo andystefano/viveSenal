@@ -9,7 +9,7 @@ import { GrLinkPrevious } from "react-icons/gr";
 function Section({ minHeight, setActiveTab, activeTab }) {
   const [hovered, setHovered] = useState(false);
   const handleBackClick = () => {
-    setActiveTab(1); // Cambiar activeTab a 2 cuando se haga clic en el botón
+    setActiveTab(2); // Cambiar activeTab a 2 cuando se haga clic en el botón
   };
   const handleNextClick = () => {
     setActiveTab(3); // Cambiar activeTab a 2 cuando se haga clic en el botón
@@ -94,7 +94,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
           backgroundColor: "#242424",
         }}
       >
-        <img src="images/bgtab2_movil1.png" style={{ width: "100%" }} alt="" />
+        <img src="images/bgtab2_movil2.png" style={{ width: "100%" }} alt="" />
 
         <div className="grid grid-cols-1 gap-4  pl-7">
           <div className=" col-span-1 p-4">
@@ -132,7 +132,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
 
         <button
           onClick={handleNextClick}
-          className="absolute bottom-7 right-8 flex items-center px-6 py-1  text-white text-3xl font-bold rounded-full border-2 border-white font-unbounded py-3 hover:border-orange-200  hover:text-orange-200	"
+          className="hidden absolute bottom-7 right-8 flex items-center px-6 py-1  text-white text-3xl font-bold rounded-full border-2 border-white font-unbounded py-3 hover:border-orange-200  hover:text-orange-200	"
         >
           <GrLinkNext className="w-8 h-8" />
         </button>

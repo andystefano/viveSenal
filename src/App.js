@@ -3,6 +3,7 @@ import ViveHeader from "./componentes/ViveHeader.js";
 import Section1 from "./componentes/Section1.js";
 import Section2 from "./componentes/Section2.js";
 import Section2_2 from "./componentes/Section2_2.js";
+import Section2_3 from "./componentes/Section2_3.js";
 import Section3 from "./componentes/Section3.js";
 import Section4 from "./componentes/Section4.js";
 import Section5 from "./componentes/Section5.js";
@@ -36,8 +37,13 @@ function App() {
     }} >
       <ViveHeader />
       <Section1 minHeight={minHeight} />
-      {activeTab === 1 ? <Section2 minHeight={minHeight} setActiveTab={setActiveTab} activeTab={ activeTab } /> : <Section2_2 minHeight={minHeight}  setActiveTab={setActiveTab} activeTab={ activeTab }  />}
-      <div className="w-full"  style={{
+      {activeTab === 1 ? (
+  <Section2 minHeight={minHeight} setActiveTab={setActiveTab} activeTab={activeTab} />
+) : activeTab === 2 ? (
+  <Section2_2 minHeight={minHeight} setActiveTab={setActiveTab} activeTab={activeTab} />
+) : (
+  <Section2_3 minHeight={minHeight} setActiveTab={setActiveTab} activeTab={activeTab} />
+)}      <div className="w-full"  style={{
     backgroundColor: '#0cb259' 
   }}>
   <marquee className="text-2xl text-white font-bold mx-0" scrollamount="12" loop="100" vspace="1%" hspace="1%" scrolldelay="-1">
