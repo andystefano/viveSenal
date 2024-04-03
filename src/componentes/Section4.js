@@ -160,7 +160,8 @@ function Section({ minHeight }) {
         </div>
       </div>
 
-      <img className="absolute right-0 bottom-1/4" src="images/presentado.png" alt="" />
+      <img className="hidden sd:block md:block lg:block xl:block absolute right-0 bottom-1/4" src="images/presentado.png" alt="" />
+      <img className="block sd:hidden md:hidden lg:hidden xl:hidden  absolute right-0 bottom-1/4" src="images/presentado_movil.png" alt="" />
       
     </section>
   );

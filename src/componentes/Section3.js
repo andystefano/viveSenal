@@ -48,7 +48,10 @@ function Section({ minHeight }) {
         </h1>
       </div>
 
-      <div className="grid  sm:grid-cols-1 lg:grid-cols-3 gap-12 p-12">
+      <div className="grid  sm:grid-cols-1 lg:grid-cols-3 gap-5 sd:gap-12 md:gap-12 lg:gap-12 xl:gap-12 p-12 pt-0 sd:pt-12 md:pt-12 lg:pt-12 xl:pt-12">
+        <div className="relative block sd:hidden md:hidden lg:hidden xl:hidden">
+          <img src="images/cloudProgramacion.png" />
+        </div>
         <div className="relative">
           <img src="images/p3.png" alt="Imagen" className="w-full" />
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
@@ -66,7 +69,7 @@ function Section({ minHeight }) {
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                 Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="material-icons">
-                  <FaLongArrowAltLeft className=" text-pink-500" />
+                  <FaLongArrowAltLeft />
                 </span>
               </button></a>
             </div>

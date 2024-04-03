@@ -15,12 +15,11 @@ function Section({ minHeight, setActiveTab, activeTab }) {
 
   return (
     <section
-      className="border-t border-black relative overflow-hidden p-4 sd:p-14 md:p-14 lg:p-14 xl:p-14 bg_t2_movil"
-      style={{
-        minHeight: `${minHeight}px`,
-      }}
-    >
-      <div className="grid lg:grid-cols-2 sd:grid-cols-1">
+      className="border-t border-black relative overflow-hidden p-4 sd:p-14 md:p-14 lg:p-14 xl:p-14 bg_t2_movil h-auto sd:h-full sd:h-full md:h-full lg:h-full"
+      style={{minHeight:'580px'}}
+   >
+      <div className="grid lg:grid-cols-2 sd:grid-cols-1"       style={{minHeight:'580px'}}
+>
         <div className="col-span-1 ">
           <div className="w-full flex items-center">
             <h1
@@ -131,6 +130,25 @@ function Section({ minHeight, setActiveTab, activeTab }) {
           <div className="flex">
             <div className="w-5/12 block sd:hidden md:hidden lg:hidden xl:hidden">
              
+
+            <a href="#tickets">
+              <button
+                className="z-10 flex items-center px-6 py-1 text-white text-xl font-normal rounded-full border-2 border-white font-unbounded"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+              >
+                Tickets &nbsp;&nbsp;&nbsp;
+                {hovered ? (
+                  <IoTicket size={15} className="w-6 h-6  text-white" />
+                ) : (
+                  <FaLongArrowAltLeft
+                    size={15}
+                    className="w-6 h-6 text-white"
+                  />
+                )}
+              </button>
+            </a>
+
             </div>
             <div className="w-7/12 sd:w-full md:w-full lg:w-full xl:w-full  grid sd:mt-12 md:mt-12 lg:mt-12 xl:mt-12  grid-cols-1 sd:grid-cols-2  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
               <div className="">
@@ -166,8 +184,11 @@ function Section({ minHeight, setActiveTab, activeTab }) {
 
       <img
         src="images/CloudT2Movil.png"
+        style={{
+          marginTop: "50%",
+        }}
         alt=""
-        className="absolute bottom-4 left-8  flex items-center w-1/2 block sd:hidden md:hidden lg:hidden xl:hidden "
+        className="relative  flex items-center w-1/2 block sd:hidden md:hidden lg:hidden xl:hidden "
       />
 
       <button

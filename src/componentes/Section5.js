@@ -4,7 +4,7 @@ import { MdTripOrigin } from "react-icons/md";
 
 function Section({minHeight}) {
 
-  return ( <section id='tickets' className="border-t border-black relative overflow-hidden " style={{backgroundColor:'#eaeedd'  }}>
+  return ( <section id='tickets' className="pb-32 sd:pd-0 md:pd-0 lg:pd-0 xl:pd-0 border-t border-black relative overflow-hidden " style={{backgroundColor:'#eaeedd'  }}>
 
 
 <div class="grid grid-cols-1  sd:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
@@ -16,7 +16,7 @@ function Section({minHeight}) {
     }}>¡HAZ TU <br /> DONACIÓN!</h1>
   </div>
   <div class="col-span-1 flex justify-center">
-  <img className='w-1/2 sd:w-8/12 md:w-8/12 lg:w-8/12 xl:w-8/12' src="images/Cloud4.png" />
+  <img className='w-1/2 sd:w-8/12 md:w-6/12 lg:w-6/12 xl:w-6/12 h-auto' src="images/Cloud4.png" />
   </div>
   <div class="col-span-1">
   <p className="font-libre-franklin text-left pl-4 text-2xl" style={{ 

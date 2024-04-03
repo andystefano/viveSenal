@@ -3,28 +3,28 @@ import { useState } from "react";
 import CountDown from "./CountDown.js";
 import { IoTicket } from "react-icons/io5";
 import { FaLongArrowAltLeft } from "react-icons/fa";
-import { Link } from 'react-router-dom'; // Import the Link component
+import { Link } from "react-router-dom"; // Import the Link component
 
 function Section({ minHeight }) {
-
   const [hovered, setHovered] = useState(false);
+
+  const minHeightN = minHeight - 0;
 
   return (
     <section
-      className=""
+      className="h-auto sd:min-h-screen md:min-h-screen lg:min-h-screen  xl:min-h-screen"
       style={{
         backgroundImage: "url(images/bg_senal_home.png)",
         backgroundSize: "cover",
         backgroundColor: "black",
-        minHeight: `${minHeight}px`, // Use minHeight state here
       }}
     >
-      <div className="grid lg:grid-cols-2 sd:grid-cols-1">
+      <div className="grid grid-cols-1 sd:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 h-auto sd:min-h-screen md:min-h-screen lg:min-h-screen  xl:min-h-screen">
         <div className="col-span-1  p-0 sd:p-4 pt-0 sd:min-h-screen pt-10 md:pt-44 ">
           <CountDown />
         </div>
         <div className="col-span-1 p-4 md:pr-10">
-          <h1 className="text-5xl sd:text-6xl md:text-6xl lg:text-6xl xl:text-6xl mt-10 font-thin	pr-4 mb-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
+          <h1 className="mt-7 text-5xl sd:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-thin	pr-4 mb-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
             Encuentros <br />
             de arte.
           </h1>
@@ -43,56 +43,64 @@ function Section({ minHeight }) {
               <span className="font-bold">Fundación Antenna.</span>
             </p>
             <a href="#tickets">
-            <button
-              className="z-10 flex items-center px-6 py-1 text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 mt-8 font-unbounded"
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-            >
-              Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-              {hovered ? (
-                <IoTicket size={15} className="w-6 h-6  text-pink-500" />
-              ) : (
-                <FaLongArrowAltLeft size={15} className="w-6 h-6  text-pink-500" />
-              )}
-            </button></a>
+              <button
+                className="z-10 mb-4 flex items-center px-6 py-1 text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+              >
+                Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                {hovered ? (
+                  <IoTicket size={15} className="w-6 h-6  text-pink-500" />
+                ) : (
+                  <FaLongArrowAltLeft
+                    size={15}
+                    className="w-6 h-6  text-pink-500"
+                  />
+                )}
+              </button>
+            </a>
           </div>
         </div>
+        <div className="col-span-1  flex items-center">
+          <br />
+          <a
+            href="#"
+            className="  flex items-center justify-start  text-white  font-unbounded font-extralight  text-3xl text-right mb-4 ml-7"
+          >
+            <div className=" grid grid-cols-[auto,auto] gap-4">
+              <div className="  ">
+                <img className="w-16 pl-2" src="/images/spiral.png" alt="" />
+              </div>
+              <div className="text-p text-left sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl flex items-center justify-center	">
+                SEÑAL es una forma de crear comunidad{" "}
+                <br className="hidden sm:block" />y de apoyar espacios
+                culturales.
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="col-span-1  flex items-center justify-center sd:justify-end md:justify-end lg:justify-end xl:justify-end">
+          <a
+            href="https://cervezaloa.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"
+            className=" flex items-center justify-start sd:justify-end md:justify-end lg:justify-end xl:justify-end   text-white  font-unbounded font-extralight  text-2xl text-left sd:text-right sd:text-right sd:text-right md:text-right lg:text-right  xl:text-right mb-4 mr-7"
+          >
+            <div className="grid lg:grid-cols-2 sd:grid-cols-1 pr-2">
+              <div className="col-span-1 text-base flex items-center justify-center	">
+                Colabora:
+              </div>
+              <div className="col-span-1  ">
+                <img className="w-28 pr-2" src="/images/LOA_white.png" alt="" />
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
 
-      
-      <a
-        href="#"
-        className="hidden sm:block  flex items-center justify-center  text-white  font-unbounded font-extralight  text-3xl text-right md:absolute md:left-0  md:bottom-0 mb-4 ml-7"
-      >
-      <div className=" grid grid-cols-[auto,auto] gap-4">
-        <div className="hidden sm:block md:block lg:block xl:block  ">
-          <img className="w-16 pl-2" src="/images/spiral.png" alt="" />
-        </div>
-        <div className=" text-2xl flex items-center justify-center	">
-        SEÑAL es una forma de crear comunidad <br className="hidden sm:block" />y de apoyar espacios
-        culturales.
-        </div>        
-      </div>
-      </a>  
-
-
-      <a
-        href="http://google.cl"
-        className="hidden sm:block md:block lg:block xl:block  flex items-center justify-center  text-white  font-unbounded font-extralight  text-2xl text-right md:absolute md:right-0  md:bottom-0 mb-4 mr-7"
-      >
-      <div className=" hidden sm:block  grid lg:grid-cols-2 sd:grid-cols-1 pr-2">
-        <div className="col-span-1 text-base flex items-center justify-center	">
-          Colabora:
-        </div>
-        <div className="col-span-1  ">
-          <img className="w-28 pr-2" src="/images/LOA_white.png" alt="" />
-        </div>
-      </div>
-      </a>
-
-
-          <img className="hidden sm:block absolute right-0 bottom-1/4 w-16 mx-7 my-7 mt-52" src="images/2024_blanco.png" alt="2024" />
-         
+      <img
+        className="hidden sm:block absolute right-0 bottom-1/4 w-16 mx-7 my-7 mt-52"
+        src="images/2024_blanco.png"
+        alt="2024"
+      />
     </section>
   );
 }
