@@ -67,10 +67,10 @@ function Section({minHeight}) {
 <div className="grid sd:grid-cols-1 sd:grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-0  sm:py-3 sm:px-20 sm:mx-20">
   <div className="p-4 text-center">
       
-   <img className="" src="./images/ticketRosa.png" alt="imagen de fondo" style={{ 
+  <a href='https://membresias.antenna.cl/producto/ticket-10-encuentros-senal/' target='_blank' alt=''><img className="" src="./images/ticketRosa.png" alt="imagen de fondo" style={{ 
       width: '100%',
       height: 'auto',
-    }} />
+    }} /></a>
   <div>
       <div className="grid grid-cols-1 gap-4 mx-1 my-1">
           <div className="flex items-start">
@@ -114,10 +114,10 @@ function Section({minHeight}) {
   </div>
   <div className="p-4 text-center">
       
-   <img className="" src="./images/ticketGreen.png" alt="imagen de fondo" style={{ 
+  <a href=' https://membresias.antenna.cl/producto/ticket-6-encuentro-senal/' target='_blank' alt=''><img className="" src="./images/ticketGreen.png" alt="imagen de fondo" style={{ 
       width: '100%',
       height: 'auto',
-    }}/>
+    }}/></a>
    <div>
       <div className="grid grid-cols-1 gap-4 mx-1 my-1">
           <div className="flex items-start">
@@ -148,10 +148,10 @@ function Section({minHeight}) {
   </div>
   <div className="p-4 text-center">
       
-   <img className="" src="./images/ticketRed.png" alt="imagen de fondo" style={{ 
+  <a href=' https://membresias.antenna.cl/producto/ticket-3-encuentro-senal/' target='_blank' alt=''><img className="" src="./images/ticketRed.png" alt="imagen de fondo" style={{ 
       width: '100%',
       height: 'auto',
-    }} />
+    }} /></a>
    <div>
       <div className="grid grid-cols-1 gap-4 mx-1 my-1">
           <div className="flex items-start">
@@ -177,7 +177,7 @@ function Section({minHeight}) {
   </div>
   <div className="p-4 text-center">
       
-   <img className="" src="./images/ticketGray.png" alt="imagen de fondo"style={{width: '100%', height: 'auto'}} />
+   <a href='https://membresias.antenna.cl/producto/1-encuentro-senal/' target='_blank' alt=''><img className="" src="./images/ticketGray.png" alt="imagen de fondo"style={{width: '100%', height: 'auto'}} /></a>
    <div>
       <div className="grid grid-cols-1 gap-4 mx-1 my-1">
           <div className="flex items-start">

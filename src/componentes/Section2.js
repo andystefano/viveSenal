@@ -106,6 +106,23 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                   conectar con esta comunidad y conocer todos los espacios y
                   artistas que hacen parte de la programación.
                 </p>
+
+
+<div className="w-full flex justify-end items-end">
+                <button
+              className="z-10 flex items-center px-6 py-1 text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 mt-8 font-unbounded"
+              onMouseEnter={() => setHovered(true)}
+              onMouseLeave={() => setHovered(false)}
+            >
+              Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              {hovered ? (
+                <IoTicket size={15} className="w-6 h-6" />
+              ) : (
+                <FaLongArrowAltLeft size={15} className="w-6 h-6" />
+              )}
+            </button>
+</div>            
+
               </div>
             </div>
           </div>
@@ -113,18 +130,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
         <div className="col-span-1   ">
           <div className="flex">
             <div className="w-5/12 block sd:hidden md:hidden lg:hidden xl:hidden">
-              <button
-                className="flex items-center px-4 py-1 text-white text-base font-bold rounded-full border-2 border-white font-unbounded mb-14  xl:mt-10 "
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-              >
-                Tickets &nbsp;&nbsp;{" "}
-                {hovered ? (
-                  <IoTicket size={15} className="w-6 h-6" />
-                ) : (
-                  <FaLongArrowAltLeft size={15} className="w-6 h-6" />
-                )}
-              </button>
+             
             </div>
             <div className="w-7/12 sd:w-full md:w-full lg:w-full xl:w-full  grid sd:mt-12 md:mt-12 lg:mt-12 xl:mt-12  grid-cols-1 sd:grid-cols-2  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
               <div className="">
@@ -155,18 +161,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
       </div>
 
       <div className="flex justify-center items-center w-1/2">
-        <button
-          className="hidden sd:block sm:block lg:block xl:block flex items-center px-6 py-1 text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded mb-14  xl:mt-10 "
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-        >
-          Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-          {hovered ? (
-            <IoTicket size={15} className="w-6 h-6" />
-          ) : (
-            <FaLongArrowAltLeft size={15} className="w-6 h-6" />
-          )}
-        </button>
+         
       </div>
 
       <img
