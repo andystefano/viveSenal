@@ -104,21 +104,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                 <MdTripOrigin size={25} />
               </span>
               <div className="text-white text-xl  font-unbounded  ml-2 font-normal text-left">
-                Las sesiones <strong>SEÑAL</strong> están pensadas como un
-                programa para conocer espacios fundamentales para la cultura en
-                Santiago.
-              </div>
-            </div>
-          </div>
-          <div className=" col-span-1 p-4">
-            <div className="flex items-start">
-              <span className="material-icons w-6 h-6 text-pink-400  mt-1.5">
-                <MdTripOrigin size={25} />
-              </span>
-              <div className="text-white text-xl  font-unbounded  ml-2 font-normal text-left">
-                Las sesiones <strong>SEÑAL</strong> están pensadas como un
-                programa para conocer espacios fundamentales para la cultura en
-                Santiago.
+              SEÑAL es presentado por BTG Pactual, organización que ha mantenido durante décadas un fuerte compromiso con diversas iniciativas culturales y artísticas, así como con la promoción del debate y reflexión en torno a ideas como una forma de contribuir a nuestra comunidad.
               </div>
             </div>
           </div>

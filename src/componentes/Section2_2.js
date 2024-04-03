@@ -91,7 +91,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
       <section
         className="block sd:hidden  md:hidden  lg:hidden  xl:hidden border-t border-black relative overflow-hidden pb-24"
         style={{
-          minHeight: `300px`,
+          minHeight: `580px`,
           backgroundColor: "#242424",
         }}
       >

@@ -16,11 +16,13 @@ function Section({ minHeight, setActiveTab, activeTab }) {
   return (
     <section
       className="border-t border-black relative overflow-hidden p-4 sd:p-14 md:p-14 lg:p-14 xl:p-14 bg_t2_movil h-auto sd:h-full sd:h-full md:h-full lg:h-full"
-      style={{minHeight:'580px'}}
-   >
-      <div className="grid lg:grid-cols-2 sd:grid-cols-1"       style={{minHeight:'580px'}}
+      style={{minHeight:'330px'}} >
+
+<h1 class="bock sd:hidden sd:hidden md:hidden lg:hidden xl:hidden mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-white  font-unbounded pt-8">¿Cómo ser parte de señal?</h1>
+
+      <div className="grid lg:grid-cols-2 sd:grid-cols-1" style={{minHeight:'330px'}}
 >
-        <div className="col-span-1 ">
+        <div className="col-span-1 hidden sd:block md:block lg:block xl:block">
           <div className="w-full flex items-center">
             <h1
               className="mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-white  font-unbounded pt-8"
@@ -109,15 +111,15 @@ function Section({ minHeight, setActiveTab, activeTab }) {
 
 <div className="w-full flex justify-end items-end">
 <a href="#tickets"><button
-              className="z-10 flex items-center px-6 py-1 text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 mt-8 font-unbounded"
+              className="z-10 flex items-center px-6 py-1 text-white text-xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
             >
-              Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              Tickets &nbsp;&nbsp;
               {hovered ? (
-                <IoTicket size={15} className="w-6 h-6 text-pink-500" />
+                <IoTicket size={10} className="w-6 h-6 text-pink-500" />
               ) : (
-                <FaLongArrowAltLeft size={15} className="w-6 h-6 text-pink-500" />
+                <FaLongArrowAltLeft size={10} className="w-6 h-6 text-pink-500" />
               )}
             </button></a>
 </div>            
@@ -128,7 +130,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
         </div>
         <div className="col-span-1   ">
           <div className="flex">
-            <div className="w-5/12 block sd:hidden md:hidden lg:hidden xl:hidden">
+            <div className="w-auto block sd:hidden md:hidden lg:hidden xl:hidden">
              
 
             <a href="#tickets">
@@ -137,12 +139,12 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
               >
-                Tickets &nbsp;&nbsp;&nbsp;
+                Tickets&nbsp;&nbsp;&nbsp;
                 {hovered ? (
-                  <IoTicket size={15} className="w-6 h-6  text-white" />
+                  <IoTicket   className="w-6 h-6  text-white" />
                 ) : (
                   <FaLongArrowAltLeft
-                    size={15}
+                     
                     className="w-6 h-6 text-white"
                   />
                 )}
