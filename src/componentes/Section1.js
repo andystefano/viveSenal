@@ -24,10 +24,23 @@ function Section({ minHeight }) {
           <CountDown />
         </div>
         <div className="col-span-1 p-4 md:pr-10">
-          <h1 className="mt-7 text-5xl sd:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-thin	pr-4 mb-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
+          <h1 className="hidden sd:block md:block lg:block xl:block mt-7 text-5xl sd:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-thin	pr-4 mb-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
             Encuentros <br />
             de arte.
           </h1>
+
+          <div className="flex items-end justify-between block sd:hidden sd:hidden md:hidden lg:hidden xl:hidden ">
+            <h1 className="mt-7 text-5xl sd:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-thin pr-4 mb-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
+              Encuentros <br />
+              de arte.
+            </h1>
+
+            <img
+              class="align-top sm:block w-16 sd:w-16 md:w-16 lg:w-16 xl:w-16 mr-7 sd:mt-52 md:mt-52 lg:mt-52 xl:mt-52"
+              src="images/2024_blanco.png"
+              alt="2024"
+            />
+          </div>
 
           <div className="lg:w-7/12 sd:w-full mt-2">
             <p className="text-p text-white mb-4 font-libre-franklin text-left">
@@ -97,7 +110,7 @@ function Section({ minHeight }) {
       </div>
 
       <img
-        className="hidden sm:block absolute right-0 bottom-1/4 w-16 mx-7 my-7 mt-52"
+        className="hidden  sm:block absolute right-0 bottom-1/4 w-8 sd:w-16 md:w-16 lg:w-16 xl:w-16 mx-7 my-7 mt-8 sd:mt-52 md:mt-52 lg:mt-52 xl:mt-52"
         src="images/2024_blanco.png"
         alt="2024"
       />
