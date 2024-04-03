@@ -12,7 +12,7 @@ function Section({ minHeight }) {
   }, []);
 
   return (
-    <section
+    <section id="programacion"
       className="border-t border-black relative overflow-hidden"
       style={{
         position: "relative",
@@ -63,12 +63,12 @@ function Section({ minHeight }) {
                   ipsum dolor sit amet, consectetuer{" "}
                 </p>
               </div>
-              <button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+              <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                 Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="material-icons">
-                  <FaLongArrowAltLeft />
+                  <FaLongArrowAltLeft className=" text-pink-500" />
                 </span>
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
@@ -86,12 +86,12 @@ function Section({ minHeight }) {
                   ipsum dolor sit amet, consectetuer{" "}
                 </p>
               </div>
-              <button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+              <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                 Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="material-icons">
                   <FaLongArrowAltLeft />
                 </span>
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
@@ -109,12 +109,12 @@ function Section({ minHeight }) {
                   ipsum dolor sit amet, consectetuer{" "}
                 </p>
               </div>
-              <button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+              <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                 Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="material-icons">
                   <FaLongArrowAltLeft />
                 </span>
-              </button>
+              </button></a>
             </div>
           </div>
         </div>

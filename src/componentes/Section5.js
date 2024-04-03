@@ -4,7 +4,7 @@ import { MdTripOrigin } from "react-icons/md";
 
 function Section({minHeight}) {
 
-  return ( <section className="border-t border-black relative overflow-hidden " style={{backgroundColor:'#eaeedd'  }}>
+  return ( <section id='tickets' className="border-t border-black relative overflow-hidden " style={{backgroundColor:'#eaeedd'  }}>
 
 
 <div class="grid grid-cols-1  sd:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">

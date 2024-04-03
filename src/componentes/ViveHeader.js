@@ -56,7 +56,7 @@ function ViveHeader() {
             <ul className="flex flex-col font-normal lg:flex-row lg:space-x-14 lg:mt-0">
               <li>
                 <a
-                  href="#"
+                  href="#programacion"
                   className="relative text-xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
                 >
                   <span className="absolute inset-0 opacity-0 hover:opacity-100">
@@ -78,7 +78,7 @@ function ViveHeader() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#tickets"
                   className="relative text-xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
                 >
                   <span className="absolute inset-0 opacity-0 hover:opacity-100">
@@ -89,7 +89,7 @@ function ViveHeader() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#faq"
                   className="relative text-xl block py-2 pl-3 pr-4 text-white border-b border-gray-100 lg:border-0 lg:p-0"
                 >
                   <span className="absolute inset-0 opacity-0 hover:opacity-100">

@@ -34,18 +34,18 @@ function Section({ minHeight }) {
             EXPERIENCIA?
           </h1>
 
-          <button
+          <a href="#tickets"><button
               className="z-10 py-1 mt-6 ml-5 md:py-1 md:mt-8 sm:absolute sm:top-0 sm:right-14 flex items-center px-6  text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
             >
               Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
               {hovered ? (
-                <IoTicket size={15} className="w-6 h-6" />
+                <IoTicket size={15} className="w-6 h-6  text-pink-500" />
               ) : (
-                <FaLongArrowAltLeft size={15} className="w-6 h-6" />
+                <FaLongArrowAltLeft size={15} className="w-6 h-6  text-pink-500" />
               )}
-            </button>
+            </button></a>
 
         </div>
       </div>

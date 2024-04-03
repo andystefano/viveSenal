@@ -3,6 +3,7 @@ import { useState } from "react";
 import CountDown from "./CountDown.js";
 import { IoTicket } from "react-icons/io5";
 import { FaLongArrowAltLeft } from "react-icons/fa";
+import { Link } from 'react-router-dom'; // Import the Link component
 
 function Section({ minHeight }) {
 
@@ -41,6 +42,7 @@ function Section({ minHeight }) {
               <span className="font-bold">SEÑAL</span> es un proyecto de{" "}
               <span className="font-bold">Fundación Antenna.</span>
             </p>
+            <a href="#tickets">
             <button
               className="z-10 flex items-center px-6 py-1 text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 mt-8 font-unbounded"
               onMouseEnter={() => setHovered(true)}
@@ -48,11 +50,11 @@ function Section({ minHeight }) {
             >
               Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
               {hovered ? (
-                <IoTicket size={15} className="w-6 h-6" />
+                <IoTicket size={15} className="w-6 h-6  text-pink-500" />
               ) : (
-                <FaLongArrowAltLeft size={15} className="w-6 h-6" />
+                <FaLongArrowAltLeft size={15} className="w-6 h-6  text-pink-500" />
               )}
-            </button>
+            </button></a>
           </div>
         </div>
       </div>

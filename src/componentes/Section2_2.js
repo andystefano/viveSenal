@@ -42,6 +42,18 @@ function Section({ minHeight, setActiveTab, activeTab }) {
             </div>
             <div className=" col-span-1 p-4 flex justify-between">
               <img src="images/btgLogo.png" alt="" className="h-14" />
+              <a href="#tickets"><button
+          className=" mb-16 flex items-center px-6 py-1 bg-black text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded   "
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+          {hovered ? (
+            <IoTicket size={15} className="w-6 h-6  text-pink-500" />
+          ) : (
+            <FaLongArrowAltLeft size={15} className="w-6 h-6  text-pink-500" />
+          )}
+        </button></a>
             </div>
             <div className=" col-span-1 p-4">
               <div className="flex items-start">
@@ -67,18 +79,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
           </div>
         </div>
 
-        <button
-          className="absolute right-14 bottom-56 mb-16 flex items-center px-6 py-1 bg-black text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded   "
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-        >
-          Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
-          {hovered ? (
-            <IoTicket size={15} className="w-6 h-6" />
-          ) : (
-            <FaLongArrowAltLeft size={15} className="w-6 h-6" />
-          )}
-        </button>
+        
 
         <button
           onClick={handleBackClick}
