@@ -43,7 +43,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
             <div className=" col-span-1 p-4 flex justify-between">
               <img src="images/btgLogo.png" alt="" className="h-14" />
               <a href="#tickets"><button
-          className=" mb-16 flex items-center px-6 py-1 bg-black text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded   "
+          className=" mb-16 flex items-center px-6 py-1 text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded   "
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >

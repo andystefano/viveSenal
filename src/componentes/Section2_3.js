@@ -69,7 +69,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
 
         <a href="#tickets">
         <button
-          className="absolute right-14 bottom-56 mb-16 flex items-center px-6 py-1 bg-black text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded   "
+          className="absolute right-14 bottom-56 mb-16 flex items-center px-6 py-1  text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded   "
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >

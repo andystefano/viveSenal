@@ -77,9 +77,8 @@ function Section({ minHeight }) {
         <div className="col-span-1  flex items-center">
           <br />
           <a
-            href="#"
-            className="  flex items-center justify-start  text-white  font-unbounded font-extralight  text-3xl text-right mb-4 ml-7"
-          >
+            href="https://www.viveseñal.cl" alt=""
+            className="  flex items-center justify-start  text-white  font-unbounded font-extralight  text-3xl text-right mb-4 ml-7">
             <div className=" grid grid-cols-[auto,auto] gap-4">
               <div className="  ">
                 <img className="w-16 pl-2" src="/images/spiral.png" alt="" />
