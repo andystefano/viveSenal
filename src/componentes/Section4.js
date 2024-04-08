@@ -8,6 +8,7 @@ function Section({ minHeight }) {
 
   return (
     <section
+    id="QueTeEspera"
       className="border-t border-black relative overflow-hidden"
       style={{
         position: "relative",
@@ -21,7 +22,11 @@ function Section({ minHeight }) {
       <div>
         <div className="mr-auto place-self-center lg:col-span-7 text-white text-left">
           <h1
-            className="mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
+            className="
+            
+            ml-4 mr-4 sd:ml-0 sd:mr-0 md:ml-0 md:mr-0 lg:ml-0 lg:mr-0  xl:ml-0 xl:mr-0 
+
+            mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
             style={{
               paddingTop: "5.5rem",
               /* padding-left: '3.75rem', */ // Puedes comentar líneas usando esta sintaxis en JSX
@@ -35,7 +40,7 @@ function Section({ minHeight }) {
           </h1>
 
           <a href="#tickets"><button
-              className="z-10 py-1 mt-6 ml-5 md:py-1 md:mt-8 sm:absolute sm:top-0 sm:right-14 flex items-center px-6  text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
+              className="z-10 py-1 mt-6 ml-5 md:py-1 md:mt-8 sm:absolute sm:top-0 sm:right-14 flex items-center px-6  text-white text-base sd:text-2xl sm:text-2xl lg:text-2xl xl:text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
             >
@@ -92,7 +97,7 @@ function Section({ minHeight }) {
                 style={{ fontSize: "1.33rem" }}
               >
                 <p className="mt-3 font-libre-franklin text-base text-white  text-left w-8/12">
-                  Lo más interesante delarte son las conversaciones que éste
+                  Lo más interesante del arte son las conversaciones que éste
                   inspira, en SEÑAL conocerás a los creadores detrás de las
                   obras.{" "}
                 </p>

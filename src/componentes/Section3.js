@@ -11,19 +11,38 @@ function Section({ minHeight }) {
     }
   }, []);
 
+  let width = window.innerWidth;
   return (
     <section id="programacion"
       className="border-t border-black relative overflow-hidden"
       style={{
         position: "relative",
-        backgroundImage: "url(images/t3.png)",
+        backgroundImage: width >= 640 ? "url(images/t3.png)" : "none", 
         backgroundSize: "contain",
         backgroundPosition: "right top",
         backgroundColor: "#eaeedd",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="w-full">
+
+
+
+<div className="flex items-start justify-between block sd:hidden md:hidden lg:hidden xl:hidden">
+  <div className="w-full">
+    <h1 className="mb-4 text-5xl leading-none sd:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8
+    pl-7 sd:pl-14 md:pl-14 lg:pl-14 xl:pl-14 
+    " style={{ paddingTop: '3rem', color: 'rgb(0, 0, 0)', fontWeight: 900 }}>
+      PROGRA<span className="sd:hidden sm:hidden lg:hidden">-</span><br className="block sd:hidden sm:hidden lg:hidden" />MACIÓN
+    </h1>
+    <h1 className="text-3xl leading-none md:text-5xl xl:text-6xl text-white text-left font-unbounded  pl-7 sd:pl-14 md:pl-14 lg:pl-14 xl:pl-14 " style={{ color: 'rgb(0, 0, 0)' }}>
+      ABRIL / JUNIO
+    </h1>
+  </div>
+  <img style={{paddingTop:'3rem'}} src="images/cuposLimitados.png" className="align-top w-14 mt-5 sd:mt-0 md:mt-0 lg:mt-0 xl:mt-0" alt="Cupos limitados" />
+</div>
+
+      
+      <div className="w-full hidden sd:block md:block lg:block xl:block">
         <h1
           className="mb-4 text-5xl leading-none sd:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
           style={{

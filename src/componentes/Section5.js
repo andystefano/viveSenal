@@ -9,14 +9,14 @@ function Section({minHeight}) {
 
 <div class="grid grid-cols-1  sd:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
   <div class="col-span-1 flex justify-start sd:justify-end md:justify-end lg:justify-end  xl:justify-end">
-  <h1 className="mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8" style={{ 
+  <h1 className="mx-7 mb-4 text-5xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8" style={{ 
       paddingTop: '2.5rem',
       color: 'black',
       fontWeight: 400,
     }}>¡HAZ TU <br /> DONACIÓN!</h1>
   </div>
-  <div class="col-span-1 flex justify-center">
-  <img className='w-1/2 sd:w-8/12 md:w-6/12 lg:w-6/12 xl:w-6/12 h-auto' src="images/Cloud4.png" />
+  <div class="col-span-1 flex justify-end">
+  <img className='w-9/12 sd:w-8/12 md:w-6/12 lg:w-6/12 xl:w-6/12 h-auto' src="images/Cloud4.png" />
   </div>
   <div class="col-span-1">
   <p className="font-libre-franklin text-left pl-4 text-2xl" style={{ 

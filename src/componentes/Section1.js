@@ -24,7 +24,7 @@ function Section({ minHeight }) {
           <CountDown />
         </div>
         <div className="col-span-1 p-4 md:pr-10">
-          <h1 className="hidden sd:block md:block lg:block xl:block mt-7 text-5xl sd:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-thin	pr-4 mb-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
+          <h1 className="hidden sd:block md:block lg:block xl:block mt-7 text-4xl sd:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-thin	pr-4 mb-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
             Encuentros <br />
             de arte.
           </h1>
@@ -36,14 +36,14 @@ function Section({ minHeight }) {
             </h1>
 
             <img
-              class="align-top sm:block w-16 sd:w-16 md:w-16 lg:w-16 xl:w-16 mr-7 sd:mt-52 md:mt-52 lg:mt-52 xl:mt-52"
+              class="align-top mr-6  sm:block w-12 mb-4 sd:w-16 md:w-16 lg:w-16 xl:w-16 mr-7 sd:mt-52 md:mt-52 lg:mt-52 xl:mt-52"
               src="images/2024_blanco.png"
               alt="2024"
             />
           </div>
 
           <div className="lg:w-7/12 sd:w-full mt-2">
-            <p className="text-p text-white mb-4 font-libre-franklin text-left">
+            <p className="text-base leading-6 text-white mb-4 font-libre-franklin text-left">
               Una señal es un llamado, un signo, una forma de transmitir
               información. También es el nombre de una nueva experiencia que te
               invita a conocer Santiago y el mundo del arte y la cultura{" "}
@@ -51,13 +51,13 @@ function Section({ minHeight }) {
                 a través de conversaciones cercanas y música experimental.
               </strong>
             </p>
-            <p className="text-p text-white mb-4 font-libre-franklin text-justify">
+            <p className="text-base leading-6	 text-white mb-4 font-libre-franklin text-justify">
               <span className="font-bold">SEÑAL</span> es un proyecto de{" "}
               <span className="font-bold">Fundación Antenna.</span>
             </p>
-            <a href="#tickets">
+            <a className="flex items-center justify-center mt-5  sd:justify-left sd:mt-1 md:justify-left md:mt-1 lg:justify-left lg:mt-1  xl:justify-left xl:mt-1" href="#tickets">
               <button
-                className="z-10 mb-4 flex items-center px-6 py-1 text-white text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
+                className="z-10 mb-4 flex items-center px-6 py-1 text-white text-xl sd:text-2xl md:text-2xl  lg:text-2xl  xl:text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
               >
@@ -78,12 +78,12 @@ function Section({ minHeight }) {
           <br />
           <a
             href="https://www.viveseñal.cl" alt=""
-            className="  flex items-center justify-start  text-white  font-unbounded font-extralight  text-3xl text-right mb-4 ml-7">
+            className="  flex items-center justify-start  text-white  font-unbounded font-extralight  text-3xl text-right mb-7 sd:mb-4 md:mb-4 lg:mb-4 xl:mb-4 ml-7">
             <div className=" grid grid-cols-[auto,auto] gap-4">
               <div className="  ">
-                <img className="w-16 pl-2" src="/images/spiral.png" alt="" />
+                <img className="w-8  pl-0 sd:w-16 sd:pl-2 md:w-16 md:pl-2 lg:w-16 lg:pl-2 xl:w-16 xl:pl-2" src="/images/spiral.png" alt="" />
               </div>
-              <div className="text-p text-left sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl flex items-center justify-center	">
+              <div className="text-xs text-left sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl flex items-center justify-center mr-7	">
                 SEÑAL es una forma de crear comunidad{" "}
                 <br className="hidden sm:block" />y de apoyar espacios
                 culturales.
@@ -91,7 +91,7 @@ function Section({ minHeight }) {
             </div>
           </a>
         </div>
-        <div className="col-span-1  flex items-center justify-center sd:justify-end md:justify-end lg:justify-end xl:justify-end">
+        <div className="hidden sd:block md:block lg:block xl:block col-span-1  flex items-center justify-center sd:justify-end md:justify-end lg:justify-end xl:justify-end">
           <a
             href="https://cervezaloa.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"
             className=" flex items-center justify-start sd:justify-end md:justify-end lg:justify-end xl:justify-end   text-white  font-unbounded font-extralight  text-2xl text-left sd:text-right sd:text-right sd:text-right md:text-right lg:text-right  xl:text-right mb-4 mr-7"
