@@ -3,7 +3,6 @@ import { useState } from "react";
 import CountDown from "./CountDown.js";
 import { IoTicket } from "react-icons/io5";
 import { FaLongArrowAltLeft } from "react-icons/fa";
-import { Link } from "react-router-dom"; // Import the Link component
 
 function Section({ minHeight }) {
   const [hovered, setHovered] = useState(false);
@@ -41,8 +40,8 @@ function Section({ minHeight }) {
               alt="2024"
             />
           </div>
-
-          <div className="lg:w-7/12 sd:w-full mt-2">
+<div className="w-full grid grid-cols-1 sd:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+          <div className="w-full lg:w-10/12 sd:w-full mt-2">
             <p className="text-base leading-6 text-white mb-4 font-libre-franklin text-left">
               Una señal es un llamado, un signo, una forma de transmitir
               información. También es el nombre de una nueva experiencia que te
@@ -73,6 +72,12 @@ function Section({ minHeight }) {
               </button>
             </a>
           </div>
+          <div className="hidden sd:flex  sd:flex  md:flex  lg:flex  xl:flex items-start justify-end">
+          <img class="hidden  sm:block absolute  w-8 sd:w-16 md:w-16 lg:w-16 xl:w-16   my-7 mt-0 sd:mt-52 " src="images/2024_blanco.png" alt="2024" />
+          </div>
+  </div>
+
+          
         </div>
         <div className="col-span-1  flex items-center">
           <br />
@@ -108,11 +113,7 @@ function Section({ minHeight }) {
         </div>
       </div>
 
-      <img
-        className="hidden  sm:block absolute right-0 bottom-1/4 w-8 sd:w-16 md:w-16 lg:w-16 xl:w-16 mx-7 my-7 mt-8 sd:mt-52 md:mt-52 lg:mt-52 xl:mt-52"
-        src="images/2024_blanco.png"
-        alt="2024"
-      />
+ 
     </section>
   );
 }
