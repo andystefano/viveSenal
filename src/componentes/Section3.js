@@ -38,7 +38,7 @@ function Section({ minHeight }) {
       ABRIL / JUNIO
     </h1>
   </div>
-  <img style={{paddingTop:'3rem'}} src="images/cuposLimitados.png" className="align-top w-14 mt-5 sd:mt-0 md:mt-0 lg:mt-0 xl:mt-0" alt="Cupos limitados" />
+  <img style={{paddingTop:'3rem'}} src="images/cuposLimitados.png" className="hidden align-top w-14 mt-5 sd:mt-0 md:mt-0 lg:mt-0 xl:mt-0" alt="Cupos limitados" />
 </div>
 
       

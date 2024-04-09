@@ -160,7 +160,7 @@ function Section({minHeight}) {
           <div className="flex items-start">
               <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-gray-700  mt-1.5">
               </span>
-              <div className="text-red-500 font-libre-franklin italic  ml-2 font-light text-left text-xl">
+              <div className="text-red-500 font-libre-franklin italic  ml-2 font-light text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl">
                   Sí decides que quieres seguir haciendo parte después <br/> de esta prueba, tu pago inicial se cuenta como abono <br/> para seguir con el programa SEÑAL completo. 
               </div>
           </div>
@@ -174,7 +174,7 @@ function Section({minHeight}) {
    <div>
       <div className="grid grid-cols-1 gap-4 mx-1 my-1">
           <div className="flex items-start">
-              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-gray-700  mt-1.5">
+              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-gray-700 ">
                   <MdTripOrigin  />
               </span>
               <div  className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
