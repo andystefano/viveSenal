@@ -76,7 +76,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <h1 className="text-white text-4xl font-unbounded text-left mt-4">
+                <h1 className="text-white text-2xl font-unbounded text-left mt-4">
                   Espacios para
                   <br /> conversar:
                 </h1>
@@ -93,7 +93,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <p className="mt-3 font-libre-franklin text-base text-white  text-left w-8/12">
+                <p className="mt-3 font-libre-franklin text-base text-white  text-left  w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12">
                   Lo más interesante del arte son las conversaciones que éste
                   inspira, en SEÑAL conocerás a los creadores detrás de las
                   obras.{" "}
@@ -126,7 +126,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <h1 className="text-white text-4xl font-unbounded text-left mt-4">
+                <h1 className="text-white text-2xl font-unbounded text-left mt-4">
                   Arte 
                   <br /> Alucinante:
                 </h1>
@@ -143,7 +143,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <p className="mt-3 font-libre-franklin text-base text-white  text-left w-8/12">
+                <p className="mt-3 font-libre-franklin text-base text-white  text-left   w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12 ">
                 Dejate envolver por las obras más vanguardistas y entretenidas que hay en Santiago.{" "}
                 </p>
               </div>
@@ -203,7 +203,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <h1 className="text-white text-4xl font-unbounded text-left mt-4">
+                <h1 className="text-white text-2xl font-unbounded text-left mt-4">
                 Disfruta de
                   <br /> cerveza LOA:
                 </h1>
@@ -220,7 +220,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <p className="mt-3 font-libre-franklin text-base text-white  text-left w-8/12">
+                <p className="mt-3 font-libre-franklin text-base text-white  text-left  w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12">
                 Para que puedas compartir con los
 artistas y demás participantes.{" "}
                 </p>

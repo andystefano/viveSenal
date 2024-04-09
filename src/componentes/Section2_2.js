@@ -28,19 +28,16 @@ function Section({ minHeight, setActiveTab, activeTab }) {
 
         <div className="flex flex-col w-full mx-34 my-34">
           <div className="grid grid-cols-2 gap-4 pl-32 pr-32">
-            <div className=" col-span-1 p-4">
+            <div className=" col-span-1 p-4 pt-0">
               <div className="flex items-start">
                 <span className="material-icons w-6 h-6 text-pink-400  mt-1.5">
-                  <MdTripOrigin size={25} />
+                  
                 </span>
                 <div className="text-white text-xl  font-unbounded  ml-2 font-normal text-left">
-                  Las sesiones <strong>SEÑAL</strong> están pensadas como un
-                  programa para conocer espacios fundamentales para la cultura
-                  en Santiago.
                 </div>
               </div>
             </div>
-            <div className=" col-span-1 p-4 flex justify-between">
+            <div className=" col-span-1 p-4 pt-0 flex justify-between">
               <img src="images/btgLogo.png" alt="" className="h-14" />
               <a href="#tickets"><button
           className=" mb-16 flex items-center px-6 py-1 text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded   "
@@ -55,7 +52,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
           )}
         </button></a>
             </div>
-            <div className=" col-span-1 p-4">
+            <div className=" col-span-1 p-4  pt-0">
               <div className="flex items-start">
                 <span className="material-icons w-6 h-6 text-pink-400  mt-1.5">
                   <MdTripOrigin size={25} />
@@ -67,13 +64,9 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                 </div>
               </div>
             </div>
-            <div className=" col-span-1 p-4">
+            <div className=" col-span-1 p-4  pt-0">
               <p className="text-white text-xl  font-unbounded  ml-10 font-normal ">
-                SEÑAL es presentado por BTG Pactual, organización que ha
-                mantenido durante décadas un fuerte compromiso con diversas
-                iniciativas culturales y artísticas, así como con la promoción
-                del debate y reflexión en torno a ideas como una forma de
-                contribuir a nuestra comunidad.
+              SEÑAL es presentado por BTG Pactual, organización que ha mantenido durante décadas un fuerte compromiso con diversas iniciativas culturales y artísticas, así como con la promoción del debate y reflexión en torno a ideas como una forma de contribuir a nuestra comunidad.
               </p>
             </div>
           </div>
