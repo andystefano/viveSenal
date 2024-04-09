@@ -67,7 +67,7 @@ function Section({ minHeight }) {
         </h1>
       </div>
 
-      <div className="grid  sm:grid-cols-1 lg:grid-cols-3 gap-5 sd:gap-12 md:gap-12 lg:gap-12 xl:gap-12 p-12 pt-0 sd:pt-12 md:pt-12 lg:pt-12 xl:pt-12">
+      <div className="grid mt-4 sm:grid-cols-1 lg:grid-cols-3 gap-5 sd:gap-12 md:gap-12 lg:gap-12 xl:gap-12 p-12 pt-0 sd:pt-12 md:pt-12 lg:pt-12 xl:pt-12">
         <div className="relative block sd:hidden md:hidden lg:hidden xl:hidden">
           <img src="images/cloudProgramacion.png" />
         </div>

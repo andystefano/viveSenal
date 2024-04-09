@@ -28,12 +28,11 @@ function AcordeonTab({titulo,contenido}) {
                 <TiMinus className={openTab ? '' : 'hidden'} size={30} onClick={() => setOpenTab(false)} />
               </span>)}
             </div>
-              <div
-              >
+              <div>
 
               {openTab && (
                       <div className=" pb-5">
-                      <p className="mb-2 text-cream text-m  font-libre-franklin pl-5 pr-5">
+                      <p className="text-cream font-medium w-full text-xl  py-3 font-medium text-left pl-3">
                       {contenido}
                       </p>
                     </div>

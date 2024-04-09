@@ -16,7 +16,7 @@ function Section({minHeight}) {
     }}>¡HAZ TU <br /> DONACIÓN!</h1>
   </div>
   <div class="col-span-1 flex justify-center sd:justify-end sm:justify-end lg:justify-end xl:justify-end ">
-  <img className='w-9/12 sd:w-8/12 md:w-6/12 lg:w-6/12 xl:w-6/12 h-auto' src="images/Cloud4.png" />
+  <img className='w-7/12 sd:w-7/12 md:w-7/12 lg:w-8/12 xl:w-7/12 h-auto' src="images/Cloud4.png" />
   </div>
   <div class="col-span-1">
   <p className="font-libre-franklin text-left pl-4 pt-9  sd:pt-14 sd:pt-14 md:pt-14 lg:pt-14 xl:pt-14 text-sm sd:text-2xl sm:text-2xl lg:text-2xl xl:text-2xl" style={{ 

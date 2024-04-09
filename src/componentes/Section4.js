@@ -63,7 +63,6 @@ function Section({ minHeight }) {
                 textAlign: "center",
               }}
             >
-              <img src="images/Cloud3.png" />
         </div>
 
         </div>
@@ -118,17 +117,8 @@ function Section({ minHeight }) {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="md:flex md:ml-52">
-        <div className="flex items-center ml-auto mt-4 pl-7 sd:pl-0 md:pl-0 lg:pl-0 xl:pl-0 ">
-          <img src="images/LOA_white.png" className="h-32 sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
-        </div>
-
-        <div className="lg:flex lg:mt-10 mb-10 mt-4">
-          <div className="lg:w-12/12  sd:w-full">
-            <div className="flex items-center ml-auto mt-6">
+          <div className="w-full">
+            <div className="flex items-center ml-1">
               <span className="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
                 <MdTripOrigin size={30} />
               </span>
@@ -137,12 +127,12 @@ function Section({ minHeight }) {
                 style={{ fontSize: "1.33rem" }}
               >
                 <h1 className="text-white text-4xl font-unbounded text-left mt-4">
-                  Disfruta de <br />
-                  cerveza LOA:
+                  Arte 
+                  <br /> Alucinante:
                 </h1>
               </div>
             </div>
-            <div className="flex items-center ml-1">
+            <div className="flex sd:flex md:flex lg:flex items-center ml-1">
               <span
                 className="text-transparent opacity-0  mt-1.5"
                 style={{ marginLeft: "2.3rem" }}
@@ -153,15 +143,110 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <p className="mt-3 font-libre-franklin text-base text-white  text-left w-10/12">
-                  Para que puedas compartir con los<br/> artistas y demás
-                  participantes.
+                <p className="mt-3 font-libre-franklin text-base text-white  text-left w-8/12">
+                Dejate envolver por las obras más vanguardistas y entretenidas que hay en Santiago.{" "}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center ml-1">
+              <span
+                className="text-transparent opacity-0  mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={30} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+                style={{ fontSize: "1.33rem" }}>
+                <p className="font-libre-franklin text-base text-white  text-left w-10/12">
+                  {" "}
                 </p>
               </div>
             </div>
           </div>
+          <div className="w-full">
+            <div className="flex sd:flex md:flex lg:flex items-center ml-1">
+              <span
+                className="text-transparent opacity-100 mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={30} className="" />
+              </span>
+              <div className="flex items-center justify-left ">
+              <img src="images/LOA_white.png" className="h-32 sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
+            </div>
+            </div>
+
+            <div className="flex items-center ml-1">
+              <span
+                className="text-transparent opacity-0  mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={30} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+                style={{ fontSize: "1.33rem" }}>
+                <p className="font-libre-franklin text-base text-white  text-left w-10/12">
+                  {" "}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full">
+            <div className="flex items-center ml-1">
+              <span className="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
+                <MdTripOrigin size={30} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+                style={{ fontSize: "1.33rem" }}
+              >
+                <h1 className="text-white text-4xl font-unbounded text-left mt-4">
+                Disfruta de
+                  <br /> cerveza LOA:
+                </h1>
+              </div>
+            </div>
+            <div className="flex sd:flex md:flex lg:flex items-center ml-1">
+              <span
+                className="text-transparent opacity-0  mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={30} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+                style={{ fontSize: "1.33rem" }}
+              >
+                <p className="mt-3 font-libre-franklin text-base text-white  text-left w-8/12">
+                Para que puedas compartir con los
+artistas y demás participantes.{" "}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center ml-1">
+              <span
+                className="text-transparent opacity-0  mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={30} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+                style={{ fontSize: "1.33rem" }}>
+                <p className="font-libre-franklin text-base text-white  text-left w-10/12">
+                  {" "}
+                </p>
+              </div>
+            </div>
+          </div>                              
         </div>
       </div>
+
+   
 
       <img className="hidden sd:block md:block lg:block xl:block absolute right-0 bottom-1/4" src="images/presentado.png" alt="" />
       <img className="w-20 block sd:hidden md:hidden lg:hidden xl:hidden  absolute right-0 bottom-1/4" src="images/presentado_movil.png" alt="" />
