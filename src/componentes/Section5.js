@@ -15,14 +15,13 @@ function Section({minHeight}) {
       fontWeight: 400,
     }}>¡HAZ TU <br /> DONACIÓN!</h1>
   </div>
-  <div class="col-span-1 flex justify-end">
+  <div class="col-span-1 flex justify-center sd:justify-end sm:justify-end lg:justify-end xl:justify-end ">
   <img className='w-9/12 sd:w-8/12 md:w-6/12 lg:w-6/12 xl:w-6/12 h-auto' src="images/Cloud4.png" />
   </div>
   <div class="col-span-1">
-  <p className="font-libre-franklin text-left pl-4 text-2xl" style={{ 
+  <p className="font-libre-franklin text-left pl-4 pt-9  sd:pt-14 sd:pt-14 md:pt-14 lg:pt-14 xl:pt-14 text-sm sd:text-2xl sm:text-2xl lg:text-2xl xl:text-2xl" style={{ 
       fontWeight: 400,
       color: 'black',
-      paddingTop: '3.3rem',
       paddingRight: '1.2rem',
     }}><strong>SEÑAL</strong> no es una fiesta ni un evento convencional. Es un espacio que que se crea una vez al mes y que facilita la creación de comunidad. <strong> Al aportar a SEÑAL estás apoyando los programas de Fundación Antenna que impactan a artistas y espacios culturales.</strong> </p>
 
@@ -74,36 +73,36 @@ function Section({minHeight}) {
   <div>
       <div className="grid grid-cols-1 gap-4 mx-1 my-1">
           <div className="flex items-start">
-              <span className="material-icons w-6 h-6 text-pink-400  mt-1.5">
-                  <MdTripOrigin size={25} />
+              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-pink-400">
+                  <MdTripOrigin />
               </span>
-              <div className="text-black  font-unbounded  ml-2 font-normal text-left" style={{fontSize: '1.33rem'}}>
+              <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                   Acceso al <span className="font-bold">programa completo</span> de SEÑAL.
               </div>
           </div>
           <div className="flex items-start">
-              <span className="material-icons w-6 h-6 text-pink-400  mt-1.5">
-                  <MdTripOrigin size={25} />
+              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-pink-400">
+                  <MdTripOrigin  />
               </span>
-              <div className="text-black  font-unbounded  ml-2 font-normal text-left" style={{fontSize: '1.33rem'}}>
+              <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                   <span className="font-bold">Visitas
                       Antenna</span> seleccionadas.
               </div>
           </div>
           <div className="flex items-start">
-              <span className="material-icons w-6 h-6 text-pink-400  mt-1.5">
-                  <MdTripOrigin size={25} />
+              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-pink-400">
+                  <MdTripOrigin />
               </span>
-              <div className="text-black  font-unbounded  ml-2 font-normal text-left" style={{fontSize: '1.33rem'}}>
+              <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                   <span className="font-bold">Obra edición
                       limitada</span> de uno de los artistas que hizo parte de la programación.
               </div>
           </div>
           <div className="flex items-start">
-              <span className="material-icons w-6 h-6 text-pink-400  mt-1.5">
-                  <MdTripOrigin size={25} />
+              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-pink-400">
+                  <MdTripOrigin />
               </span>
-              <div className="text-black  font-unbounded  ml-2 font-normal text-left" style={{fontSize: '1.33rem'}}>
+              <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                   <span className="font-bold">Acceso
                       fiesta aniversario</span> Antenna.
               </div>
@@ -121,23 +120,19 @@ function Section({minHeight}) {
    <div>
       <div className="grid grid-cols-1 gap-4 mx-1 my-1">
           <div className="flex items-start">
-              <span className="material-icons w-6 h-6 text-green-700  mt-1.5">
-                  <MdTripOrigin size={25} />
+              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-green-700  mt-1.5">
+                  <MdTripOrigin />
               </span>
-              <div className="text-black  font-unbounded  ml-2 font-normal text-left" style={{ 
-      fontSize: '1.33rem',
-    }}>
+              <div  className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                   Acceso a <span className="font-bold">6 encuentros</span> SEÑAL consecutivos.
 
               </div>
           </div>
           <div className="flex items-start">
-              <span className="material-icons w-6 h-6 text-green-700  mt-1.5">
-                  <MdTripOrigin size={25} />
+              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-green-700  mt-1.5">
+                  <MdTripOrigin />
               </span>
-              <div className="text-black  font-unbounded  ml-2 font-normal text-left"  style={{ 
-      fontSize: '1.33rem',
-    }}>
+              <div  className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                   <span className="font-bold">Visitas
                       Antenna</span> seleccionadas.
               </div>
@@ -155,17 +150,15 @@ function Section({minHeight}) {
    <div>
       <div className="grid grid-cols-1 gap-4 mx-1 my-1">
           <div className="flex items-start">
-              <span className="material-icons w-6 h-6 text-red-700  mt-1.5">
-                  <MdTripOrigin size={25} />
+              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-red-700  mt-1.5">
+                  <MdTripOrigin />
               </span>
-              <div className="text-black  font-unbounded  ml-2 font-normal text-left" style={{ 
-      fontSize: '1.33rem',
-    }}>
+              <div  className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                   Acceso a <span className="font-bold">3 encuentros</span> SEÑAL consecutivos.
               </div>
           </div>
           <div className="flex items-start">
-              <span className="material-icons w-6 h-6 text-gray-700  mt-1.5">
+              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-gray-700  mt-1.5">
               </span>
               <div className="text-red-500 font-libre-franklin italic  ml-2 font-light text-left text-xl">
                   Sí decides que quieres seguir haciendo parte después <br/> de esta prueba, tu pago inicial se cuenta como abono <br/> para seguir con el programa SEÑAL completo. 
@@ -181,10 +174,10 @@ function Section({minHeight}) {
    <div>
       <div className="grid grid-cols-1 gap-4 mx-1 my-1">
           <div className="flex items-start">
-              <span className="material-icons w-6 h-6 text-gray-700  mt-1.5">
-                  <MdTripOrigin size={25} />
+              <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-gray-700  mt-1.5">
+                  <MdTripOrigin  />
               </span>
-              <div className="text-black  font-unbounded  ml-2 font-normal text-left"  style={{fontSize: '1.33rem'}}>
+              <div  className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                   Acceso a <span className="font-bold">1 encuentros</span> SEÑAL.
               </div>
           </div>
@@ -198,7 +191,7 @@ function Section({minHeight}) {
 </div>
 
 
-<img src='images/2024_negro_horizontal.png' alt='' className='absolute bottom-7 right-10 h-20'/>
+<img src='images/2024_negro_horizontal.png' alt='' className='absolute bottom-7 right-10 h-14 sd:h-20 sm:h-20 lg:h-20 xl:h-20'/>
 
 </div>
 

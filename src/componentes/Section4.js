@@ -26,10 +26,8 @@ function Section({ minHeight }) {
             
             ml-4 mr-4 sd:ml-0 sd:mr-0 md:ml-0 md:mr-0 lg:ml-0 lg:mr-0  xl:ml-0 xl:mr-0 
 
-            mb-4 text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
+            mb-4 text-xl sd:text-4xl md:text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
             style={{
-              paddingTop: "5.5rem",
-              /* padding-left: '3.75rem', */ // Puedes comentar líneas usando esta sintaxis en JSX
               color: "white",
               fontWeight: 400,
               textAlign: "center",
@@ -114,7 +112,7 @@ function Section({ minHeight }) {
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}>
-                <p className="font-libre-franklin text-base text-white  text-left w-8/12">
+                <p className="font-libre-franklin text-base text-white  text-left w-10/12">
                   {" "}
                 </p>
               </div>
@@ -124,8 +122,8 @@ function Section({ minHeight }) {
       </div>
 
       <div className="md:flex md:ml-52">
-        <div className="flex items-center justify-center ">
-          <img src="images/LOA_white.png" className="h-48 mt-12" alt="" />
+        <div className="flex items-center ml-auto mt-4 pl-7 sd:pl-0 md:pl-0 lg:pl-0 xl:pl-0 ">
+          <img src="images/LOA_white.png" className="h-32 sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
         </div>
 
         <div className="lg:flex lg:mt-10 mb-10 mt-4">
@@ -155,7 +153,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <p className="mt-3 font-libre-franklin text-base text-white  text-left w-12/12">
+                <p className="mt-3 font-libre-franklin text-base text-white  text-left w-10/12">
                   Para que puedas compartir con los<br/> artistas y demás
                   participantes.
                 </p>
@@ -166,7 +164,7 @@ function Section({ minHeight }) {
       </div>
 
       <img className="hidden sd:block md:block lg:block xl:block absolute right-0 bottom-1/4" src="images/presentado.png" alt="" />
-      <img className="block sd:hidden md:hidden lg:hidden xl:hidden  absolute right-0 bottom-1/4" src="images/presentado_movil.png" alt="" />
+      <img className="w-20 block sd:hidden md:hidden lg:hidden xl:hidden  absolute right-0 bottom-1/4" src="images/presentado_movil.png" alt="" />
       
     </section>
   );

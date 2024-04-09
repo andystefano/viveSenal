@@ -15,7 +15,7 @@ function AcordeonTab({titulo,contenido}) {
                 className="text-black  font-unbounded  font-normal text-left w-11/12"
                 style={{ fontSize: "1.33rem" }}
               >
-                <h3 className="text-cream font-medium w-full text-2xl  py-5 font-medium text-left pl-5">
+                <h3 onClick={() => setOpenTab(!openTab)}  className="text-cream font-medium w-full text-xl sd:text-2xl sm:text-2xl lg:text-2xl xl:text-2xl  py-5 font-medium text-left pl-5">
                 {titulo}
                 </h3>
               </div>
