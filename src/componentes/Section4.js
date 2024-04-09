@@ -9,7 +9,7 @@ function Section({ minHeight }) {
   return (
     <section
     id="QueTeEspera"
-      className="border-t border-black relative overflow-hidden"
+      className="border-t border-black relative overflow-hidden pr-4"
       style={{
         position: "relative",
         backgroundImage: "url('./images/t4.png')",
@@ -26,7 +26,7 @@ function Section({ minHeight }) {
             
             ml-4 mr-4 sd:ml-0 sd:mr-0 md:ml-0 md:mr-0 lg:ml-0 lg:mr-0  xl:ml-0 xl:mr-0 
 
-            mb-4 text-xl sd:text-4xl md:text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
+            mb-4 text-4xl sd:text-4xl md:text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
             style={{
               color: "white",
               fontWeight: 400,

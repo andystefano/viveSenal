@@ -29,7 +29,7 @@ function CountDown() {
       <div className="sm:w-2/2 text-white">
         <div className="grid grid-cols-7 mx-auto min-w-[300px] max-w-[75%] sm:min-w-[430px] md:min-w-[430px] lg:min-w-[430px] xl:min-w-[430px] 2xl:min-w-[430px]">
           <div className="text-center flex-grow">
-            <div className="text-4xl font-unbounded mb-1 font-extralight" id="days">
+            <div className="text-3xl sd:text-4xl md:text-4xl lg:text-4xl xl:text-4xl font-unbounded mb-1 font-extralight" id="days">
               00
             </div>
             <div className="text-xs font-bold">DÍAS</div>
@@ -40,7 +40,7 @@ function CountDown() {
           </div>
 
           <div className="text-center flex-grow">
-            <div className="text-4xl font-unbounded mb-1 font-extralight" id="hours">
+            <div className="text-3xl sd:text-4xl md:text-4xl lg:text-4xl xl:text-4xl  font-unbounded mb-1 font-extralight" id="hours">
              00
             </div>
             <div className="text-xs font-bold">HRS</div>
@@ -51,7 +51,7 @@ function CountDown() {
           </div>
 
           <div className="text-center flex-grow">
-            <div className="text-4xl font-unbounded mb-1 font-extralight" id="minutes">
+            <div className="text-3xl sd:text-4xl md:text-4xl lg:text-4xl xl:text-4xl  font-unbounded mb-1 font-extralight" id="minutes">
               00
             </div>
             <div className="text-xs font-bold">MIN</div>
@@ -62,7 +62,7 @@ function CountDown() {
           </div>
 
           <div className="text-center flex-grow">
-            <div className="text-4xl font-unbounded mb-1  font-extralight" id="seconds">
+            <div className="text-3xl sd:text-4xl md:text-4xl lg:text-4xl xl:text-4xl  font-unbounded mb-1  font-extralight" id="seconds">
               00
             </div>
             <div className="text-xs font-bold">SEG</div>
