@@ -35,14 +35,14 @@ function Section({ minHeight }) {
             </h1>
 
             <img
-              class="align-top mr-0  sm:block w-12 mb-4 sd:w-16 md:w-16 lg:w-16 xl:w-16 mr-7 sd:mt-52 md:mt-52 lg:mt-52 xl:mt-52"
+              class="align-top mr-0  sm:block w-12 mb-4 sd:w-16 md:w-16 lg:w-16 xl:w-16 sd:mt-52 md:mt-52 lg:mt-52 xl:mt-52"
               src="images/2024_blanco.png"
               alt="2024"
             />
           </div>
 <div className="w-full grid grid-cols-1 sd:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           <div className="w-full lg:w-10/12 sd:w-full mt-2">
-            <p className="text-xs sd:text-base md:text-base lg:text-base xl:text-base leading-6 text-white mb-4 font-libre-franklin text-left">
+            <p className="text-xs sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-left">
               Una señal es un llamado, un signo, una forma de transmitir
               información. También es el nombre de una nueva experiencia que te
               invita a conocer Santiago y el mundo del arte y la cultura{" "}
@@ -50,7 +50,7 @@ function Section({ minHeight }) {
                 a través de conversaciones cercanas y música experimental.
               </strong>
             </p>
-            <p className="text-xs sd:text-base md:text-base lg:text-base xl:text-base leading-6	 text-white mb-4 font-libre-franklin text-justify">
+            <p className="text-xs sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-justify">
               <span className="font-bold">SEÑAL</span> es un proyecto de{" "}
               <span className="font-bold">Fundación Antenna.</span>
             </p>

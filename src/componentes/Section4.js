@@ -70,7 +70,7 @@ function Section({ minHeight }) {
           <div className="w-full">
             <div className="flex items-center ml-1">
               <span className="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
-                <MdTripOrigin size={30} />
+                <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
@@ -87,7 +87,7 @@ function Section({ minHeight }) {
                 className="text-transparent opacity-0  mt-1.5"
                 style={{ marginLeft: "2.3rem" }}
               >
-                <MdTripOrigin size={30} />
+                <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
@@ -95,7 +95,7 @@ function Section({ minHeight }) {
               >
                 <p className="mt-3 font-libre-franklin text-base text-white  text-left  w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12">
                   Lo más interesante del arte son las conversaciones que éste
-                  inspira, en SEÑAL conocerás a los creadores detrás de las
+                  inspira,<br className="hidden sd:block md:block lg:block xl:block"/> en SEÑAL conocerás a los creadores detrás de las
                   obras.{" "}
                 </p>
               </div>
@@ -106,7 +106,7 @@ function Section({ minHeight }) {
                 className="text-transparent opacity-0  mt-1.5"
                 style={{ marginLeft: "2.3rem" }}
               >
-                <MdTripOrigin size={30} />
+                <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
@@ -120,7 +120,7 @@ function Section({ minHeight }) {
           <div className="w-full">
             <div className="flex items-center ml-1">
               <span className="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
-                <MdTripOrigin size={30} />
+                <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
@@ -137,7 +137,7 @@ function Section({ minHeight }) {
                 className="text-transparent opacity-0  mt-1.5"
                 style={{ marginLeft: "2.3rem" }}
               >
-                <MdTripOrigin size={30} />
+                <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
@@ -154,7 +154,7 @@ function Section({ minHeight }) {
                 className="text-transparent opacity-0  mt-1.5"
                 style={{ marginLeft: "2.3rem" }}
               >
-                <MdTripOrigin size={30} />
+                <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
@@ -171,7 +171,7 @@ function Section({ minHeight }) {
                 className="text-transparent opacity-100 mt-1.5"
                 style={{ marginLeft: "2.3rem" }}
               >
-                <MdTripOrigin size={30} className="" />
+                <MdTripOrigin size={20} className="" />
               </span>
               <div className="flex items-center justify-left ">
               <img src="images/LOA_white.png" className="h-32 sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
@@ -183,7 +183,7 @@ function Section({ minHeight }) {
                 className="text-transparent opacity-0  mt-1.5"
                 style={{ marginLeft: "2.3rem" }}
               >
-                <MdTripOrigin size={30} />
+                <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
@@ -197,7 +197,7 @@ function Section({ minHeight }) {
           <div className="w-full">
             <div className="flex items-center ml-1">
               <span className="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
-                <MdTripOrigin size={30} />
+                <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
@@ -214,7 +214,7 @@ function Section({ minHeight }) {
                 className="text-transparent opacity-0  mt-1.5"
                 style={{ marginLeft: "2.3rem" }}
               >
-                <MdTripOrigin size={30} />
+                <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
@@ -232,7 +232,7 @@ artistas y demás participantes.{" "}
                 className="text-transparent opacity-0  mt-1.5"
                 style={{ marginLeft: "2.3rem" }}
               >
-                <MdTripOrigin size={30} />
+                <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"

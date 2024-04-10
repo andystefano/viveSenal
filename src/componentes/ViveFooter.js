@@ -8,7 +8,7 @@ function ViveFooter({ minHeight }) {
   return (
     <footer className="bg-cream py-4 sd:py-10 md:py-10 lg:py-10 xl:py-10 px-4 sd:px-10 md:px-10 lg:px-10 xl:px-10">
       <div
-        className="grid grid-cols-4 sd:grid-cols-6 sm:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 grid-rows-2 gap-1"
+        className="grid grid-cols-3 sd:grid-cols-6 sm:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 grid-rows-2 gap-1"
         style={{ gridTemplateRows: "auto 2fr" }}
       >
         <div className="col-span-1">
@@ -42,7 +42,7 @@ function ViveFooter({ minHeight }) {
           </div>
         </div>
         <div className="col-span-1 hidden sd:block md:block lg:block xl:block"> </div>
-        <div className="col-span-1 row-span-2">
+        <div className="col-span-1 row-span-2 hidden sd:block sm:block lg:block xl:block">
           <img alt="Correo de contacto" src="images/email.png" />
         </div>
         <div className="col-span-1 row-span-1  hidden sd:block md:block lg:block xl:block ">

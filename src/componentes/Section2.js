@@ -34,7 +34,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
         <div className="w-full flex justify-left items-end">
           <a href="#tickets">
             <button
-              className="z-10 flex items-center px-6 py-1 text-white text-base font-normal	 rounded-full border-2 border-white font-unbounded"
+              className="z-10 flex items-center px-6 py-1 text-white text-xs font-normal	 rounded-full border-2 border-white font-unbounded"
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
             >
@@ -50,7 +50,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
         <br />
 
         <p
-          className="font-unbounded font-bold"
+          className="font-unbounded font-bold mt-56"
           style={{
             color: "white",
           }}
@@ -61,7 +61,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
         <br />
  
 
-<div className="grid grid-cols-1 gap-4 mx-1 my-1 mt-56">
+<div className="grid grid-cols-1 gap-4 mx-1 my-1 mt-14">
           <div className="flex items-start">
               <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-pink-400">
                   <MdTripOrigin />
@@ -106,7 +106,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
               <span className="opacity-0 material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-pink-400">
                   <MdTripOrigin className="" />
               </span>
-              <div className="w-10/12 text-right text-pink-500  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+              <div className="w-12/12 text-right text-pink-500  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
               No es necesario saber de arte, solo ganas de vivir una experiencia transformadora.
               </div>
           </div>                    
