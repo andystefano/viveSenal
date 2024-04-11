@@ -52,7 +52,175 @@ function Section({ minHeight }) {
         </div>
       </div>
 
-      <div className="sd:flex md:flex lg:flex md:mt-10 lg:mt-10 xl:mt-10">
+    <div id="versionDesk" className="hidden sd:flex md:flex lg:flex xl:flex items-end w-full min-h-[630px] mx-7">
+  <div class="grid grid-cols-2 gap-4 w-full h-full">
+    <div class="p-4">
+
+          <div className="w-full">
+            <div className="flex items-center ml-1">
+              <span className="text-white" style={{ marginLeft: "2.3rem" }}>
+                <MdTripOrigin size={20} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+                style={{ fontSize: "1.33rem" }}
+              >
+                <h1 className="text-white text-xl sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-unbounded text-left mt-4">
+                  Arte 
+                  <br /> Alucinante:
+                </h1>
+              </div>
+            </div>
+            <div className="flex sd:flex md:flex lg:flex items-center ml-1">
+              <span
+                className="text-transparent opacity-0  mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={20} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+              >
+                <p style={{lineHeight: "1.4rem"}} className="mt-3 font-libre-franklin text-base text-white  text-left   w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12 ">
+                Dejate envolver por las obras más vanguardistas y entretenidas que hay en Santiago.{" "}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center ml-1">
+              <span
+                className="text-transparent opacity-0  mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={20} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+              >
+                <p style={{lineHeight: "1.4rem"}} className="font-libre-franklin text-base text-white  text-left w-10/12">
+                  {" "}
+                </p>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    <div class="p-4">
+
+
+
+    <div className="w-full">
+            <div className="flex items-center ml-1">
+              <span className="text-white" style={{ marginLeft: "2.3rem" }}>
+                <MdTripOrigin size={20} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+                style={{ fontSize: "1.33rem" }}
+              >
+                <h1 className="text-white text-xl sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-unbounded text-left mt-4">
+                  Espacios para  
+                  <br /> conversar:
+                </h1>
+              </div>
+            </div>
+            <div className="flex sd:flex md:flex lg:flex items-center ml-1">
+              <span
+                className="text-transparent opacity-0  mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={20} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+              >
+                <p style={{lineHeight: "1.4rem"}} className="mt-3 font-libre-franklin text-base text-white  text-left   w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12 ">
+                Lo más interesante del arte son las conversaciones que éste inspira,<br class="hidden sd:block md:block lg:block xl:block" /> en SEÑAL conocerás a los creadores detrás de las obras.{" "}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center ml-1">
+              <span
+                className="text-transparent opacity-0  mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={20} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+              >
+                <p style={{lineHeight: "1.4rem"}} className="font-libre-franklin text-base text-white  text-left w-10/12">
+                  {" "}
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+    <div class="p-4">
+
+
+            <div className="flex items-center justify-left ">
+              <img src="images/LOA_white.png" style={{height:"6rem", marginLeft: "2.4rem"}} className="sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
+            </div>
+
+              <div className="w-full">
+            <div className="flex items-center ml-1">
+              <span className="text-white" style={{ marginLeft: "2.3rem" }}>
+                <MdTripOrigin size={20} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+                style={{ fontSize: "1.33rem" }}
+              >
+                <h1 className="text-white text-xl sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-unbounded text-left mt-4">
+                  Espacios para  
+                  <br /> conversar:
+                </h1>
+              </div>
+            </div>
+            <div className="flex sd:flex md:flex lg:flex items-center ml-1">
+              <span
+                className="text-transparent opacity-0  mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={20} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+              >
+                <p style={{lineHeight: "1.4rem"}} className="mt-3 font-libre-franklin text-base text-white  text-left   w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12 ">
+                Lo más interesante del arte son las conversaciones que éste inspira,<br class="hidden sd:block md:block lg:block xl:block" /> en SEÑAL conocerás a los creadores detrás de las obras.{" "}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center ml-1">
+              <span
+                className="text-transparent opacity-0  mt-1.5"
+                style={{ marginLeft: "2.3rem" }}
+              >
+                <MdTripOrigin size={20} />
+              </span>
+              <div
+                className="text-black  font-unbounded  ml-2 font-normal text-left"
+              >
+                <p style={{lineHeight: "1.4rem"}} className="font-libre-franklin text-base text-white  text-left w-10/12">
+                  {" "}
+                </p>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    <div class=" p-4"></div>
+  </div>
+</div>
+
+
+      <div id="versionMovil" className="block sd:hidden md:hidden lg:hidden xl:hidden lg:flex md:mt-10 lg:mt-10 xl:mt-10">
         <div className="w-full lg:w-5/12 flex items-center justify-center sd:hidden ">
 
         <div
