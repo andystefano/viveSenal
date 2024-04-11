@@ -28,8 +28,11 @@ function Section({ minHeight, setActiveTab, activeTab }) {
           backgroundColor: "#1a1a1a"
         }}
       >
-        <h1 class="bock sd:hidden sd:hidden md:hidden lg:hidden xl:hidden mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-pink-500  font-unbounded pt-8">
-          ¿Cómo ser parte de señal?
+        <h1 style={{
+          fontSize:'2.10rem',
+          lineHeight:'2.4rem'
+          }} class="bock sd:hidden sd:hidden md:hidden lg:hidden xl:hidden mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-pink-500  font-unbounded pt-8">
+          ¿Cómo ser parte de SEÑAL?
         </h1>
         <div className="w-full flex justify-left items-end">
           <a href="#tickets">
@@ -50,9 +53,10 @@ function Section({ minHeight, setActiveTab, activeTab }) {
         <br />
 
         <p
-          className="font-unbounded font-bold mt-56"
+          className="font-unbounded font-bold"
           style={{
             color: "white",
+            marginTop:"19rem"
           }}
         >
 Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL. 
@@ -61,7 +65,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
         <br />
  
 
-<div className="grid grid-cols-1 gap-4 mx-1 my-1 mt-14">
+<div className="grid grid-cols-1 gap-4 mx-1 my-1 mt-0">
           <div className="flex items-start">
               <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-pink-400">
                   <MdTripOrigin />
@@ -131,16 +135,16 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
           <div className="col-span-1 hidden sd:block md:block lg:block xl:block">
             <div className="w-full flex items-center">
               <h1
-                className="mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-white  font-unbounded pt-8"
-                style={{}}
+                className="mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl md:text-5xl xl:text-6xl text-white  font-unbounded pt-8"
+                style={{lineHeight:'normal'}}
               >
-                ¿Cómo ser parte de señal?
+                ¿Cómo ser parte <br/>de SEÑAL?
               </h1>
             </div>
 
             <div className="hidden lg:block ">
               <div
-                className="flex items-center sd:hidden"
+                className="flex items-start sd:hidden"
                 style={{
                   paddingLeft: "12.9rem",
                   paddingTop: "4.9rem",
@@ -173,10 +177,10 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
                 </div>
               </div>
               <div
-                className="flex items-center  sd:hidden"
+                className="flex items-start  sd:hidden"
                 style={{
                   paddingLeft: "12.9rem",
-                  paddingTop: "4.9rem",
+                  paddingTop: "2.0rem",
                   paddingRight: "1.2rem",
                 }}
               >
@@ -203,7 +207,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
                   </p>
 
                   <div className="w-full flex justify-end items-end">
-                    <a href="#tickets">
+                    <a href="#tickets" className="mt-5">
                       <button
                         className="z-10 flex items-center px-6 py-1 text-white text-xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
                         onMouseEnter={() => setHovered(true)}
@@ -255,7 +259,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
                       textAlign: "center",
                     }}
                   >
-                    <img src="images/Cloud2.png" />
+                    <img src="images/wavesCloud1.png" />
                   </div>
                 </div>
                 <div className="p-4 hidden  sd:block ssmd:block md:block lg:block xl:block">
@@ -266,7 +270,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
                       textAlign: "center",
                     }}
                   >
-                    <img src="images/wavesCloud1.png" />
+                    <img src="images/Cloud2.png" />
                   </div>
                 </div>
               </div>

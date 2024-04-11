@@ -14,7 +14,7 @@ function Section({ minHeight }) {
       className="h-auto sd:min-h-screen md:min-h-screen lg:min-h-screen  xl:min-h-screen"
       style={{
         backgroundImage: "url(images/bg_senal_home.png)",
-        backgroundSize: "cover",
+        backgroundSize: "auto",
         backgroundColor: "black",
       }}
     >

@@ -15,6 +15,7 @@ function Section({ minHeight }) {
         backgroundImage: "url('./images/t4.png')",
         backgroundSize: "cover",
         minHeight: `${minHeight}px`,
+        backgroundPositionX:'1044px'
       }}
     >
          
@@ -23,10 +24,8 @@ function Section({ minHeight }) {
         <div className="mr-auto place-self-center lg:col-span-7 text-white text-left">
           <h1
             className="
-            
             ml-4 mr-4 sd:ml-0 sd:mr-0 md:ml-0 md:mr-0 lg:ml-0 lg:mr-0  xl:ml-0 xl:mr-0 
-
-            mb-4 text-4xl sd:text-4xl md:text-4xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
+            mb-4 text-3xl sd:text-4xl md:text-4xl  md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
             style={{
               color: "white",
               fontWeight: 400,
@@ -69,14 +68,14 @@ function Section({ minHeight }) {
         <div className="w-full  lg:w-7/12 sd:w-full">
           <div className="w-full">
             <div className="flex items-center ml-1">
-              <span className="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
+              <span className="text-white" style={{ marginLeft: "2.3rem" }}>
                 <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <h1 className="text-white text-2xl font-unbounded text-left mt-4">
+                <h1 className="text-white text-xl sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-unbounded text-left mt-4">
                   Espacios para
                   <br /> conversar:
                 </h1>
@@ -91,9 +90,8 @@ function Section({ minHeight }) {
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
-                style={{ fontSize: "1.33rem" }}
               >
-                <p className="mt-3 font-libre-franklin text-base text-white  text-left  w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12">
+                <p style={{lineHeight: "1.4rem"}} className="mt-3 font-libre-franklin text-base leading-3 text-white  text-left  w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12">
                   Lo más interesante del arte son las conversaciones que éste
                   inspira,<br className="hidden sd:block md:block lg:block xl:block"/> en SEÑAL conocerás a los creadores detrás de las
                   obras.{" "}
@@ -119,14 +117,14 @@ function Section({ minHeight }) {
           </div>
           <div className="w-full">
             <div className="flex items-center ml-1">
-              <span className="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
+              <span className="text-white" style={{ marginLeft: "2.3rem" }}>
                 <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <h1 className="text-white text-2xl font-unbounded text-left mt-4">
+                <h1 className="text-white text-xl sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-unbounded text-left mt-4">
                   Arte 
                   <br /> Alucinante:
                 </h1>
@@ -141,9 +139,8 @@ function Section({ minHeight }) {
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
-                style={{ fontSize: "1.33rem" }}
               >
-                <p className="mt-3 font-libre-franklin text-base text-white  text-left   w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12 ">
+                <p style={{lineHeight: "1.4rem"}} className="mt-3 font-libre-franklin text-base text-white  text-left   w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12 ">
                 Dejate envolver por las obras más vanguardistas y entretenidas que hay en Santiago.{" "}
                 </p>
               </div>
@@ -158,8 +155,8 @@ function Section({ minHeight }) {
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
-                style={{ fontSize: "1.33rem" }}>
-                <p className="font-libre-franklin text-base text-white  text-left w-10/12">
+              >
+                <p style={{lineHeight: "1.4rem"}} className="font-libre-franklin text-base text-white  text-left w-10/12">
                   {" "}
                 </p>
               </div>
@@ -174,7 +171,7 @@ function Section({ minHeight }) {
                 <MdTripOrigin size={20} className="" />
               </span>
               <div className="flex items-center justify-left ">
-              <img src="images/LOA_white.png" className="h-32 sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
+              <img src="images/LOA_white.png" style={{height:"6rem"}} className="sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
             </div>
             </div>
 
@@ -186,8 +183,7 @@ function Section({ minHeight }) {
                 <MdTripOrigin size={20} />
               </span>
               <div
-                className="text-black  font-unbounded  ml-2 font-normal text-left"
-                style={{ fontSize: "1.33rem" }}>
+                className="text-black  font-unbounded  ml-2 font-normal text-left">
                 <p className="font-libre-franklin text-base text-white  text-left w-10/12">
                   {" "}
                 </p>
@@ -196,14 +192,14 @@ function Section({ minHeight }) {
           </div>
           <div className="w-full">
             <div className="flex items-center ml-1">
-              <span className="text-white  mt-1.5" style={{ marginLeft: "2.3rem" }}>
+              <span className="text-white" style={{ marginLeft: "2.3rem" }}>
                 <MdTripOrigin size={20} />
               </span>
               <div
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
                 style={{ fontSize: "1.33rem" }}
               >
-                <h1 className="text-white text-2xl font-unbounded text-left mt-4">
+                <h1 className="text-white text-xl sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-unbounded text-left mt-4">
                 Disfruta de
                   <br /> cerveza LOA:
                 </h1>

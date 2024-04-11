@@ -9,20 +9,26 @@ function Section({minHeight}) {
 
 <div class="grid grid-cols-1  sd:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
   <div class="col-span-1 flex justify-start sd:justify-end md:justify-end lg:justify-end  xl:justify-end">
-  <h1 className="mx-7 mb-4 text-5xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8" style={{ 
+  <h1 className="mt-5 mx-7 mb-4 text-5xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8" style={{ 
       paddingTop: '2.5rem',
       color: 'black',
       fontWeight: 400,
     }}>¡HAZ TU <br /> DONACIÓN!</h1>
   </div>
-  <div class="col-span-1 flex justify-center  items-center sd:justify-end sm:justify-end lg:justify-end xl:justify-end ">
+  <div class="col-span-1 flex justify-center  items-center sd:justify-center sm:justify-center  lg:justify-center  xl:justify-center  ">
   <img className='w-10/12 sd:w-9/12 md:w-9/12 lg:w-9/12 xl:w-9/12 h-auto' src="images/Cloud4.png" alt="" />
   </div>
   <div class="col-span-1">
-  <p className="leading-5 font-libre-franklin text-left pl-4 pt-9  sd:pt-14 sd:pt-14 md:pt-14 lg:pt-14 xl:pt-14 text-sm sd:text-2xl sm:text-2xl lg:text-2xl xl:text-2xl" style={{ 
+  
+  <p className="hidden sd:block md:block lg:block xl:block leading-5 font-libre-franklin text-left px-7 pt-9  sd:pt-14 sd:pt-14 md:pt-14 lg:pt-14 xl:pt-14 text-sm sd:text-2xl sm:text-2xl lg:text-2xl xl:text-2xl" style={{ 
       fontWeight: 400,
       color: 'black',
-      paddingRight: '1.2rem',
+      paddingRight: '4.2rem',
+    }}><strong>SEÑAL</strong> no es una fiesta ni un evento convencional. Es un espacio que que se crea una vez al mes y que facilita la creación de comunidad. <strong> Al aportar a SEÑAL estás apoyando los programas de Fundación Antenna que impactan a artistas y espacios culturales.</strong> </p>
+
+<p className="block sd:hidden md:hidden lg:hidden xl:block leading-5 font-libre-franklin text-left pl-4 pr-4 pt-9  sd:pt-14 sd:pt-14 md:pt-14 lg:pt-14 xl:pt-14 text-sm sd:text-2xl sm:text-2xl lg:text-2xl xl:text-2xl" style={{ 
+      fontWeight: 400,
+      color: 'black',
     }}><strong>SEÑAL</strong> no es una fiesta ni un evento convencional. Es un espacio que que se crea una vez al mes y que facilita la creación de comunidad. <strong> Al aportar a SEÑAL estás apoyando los programas de Fundación Antenna que impactan a artistas y espacios culturales.</strong> </p>
 
   </div>

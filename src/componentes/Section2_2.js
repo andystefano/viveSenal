@@ -37,8 +37,8 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                 </div>
               </div>
             </div>
-            <div className=" col-span-1 p-4 pt-0 flex justify-between">
-              <img src="images/btgLogo.png" alt="" className="h-14" />
+            <div className=" col-span-1 p-4 pt-0 flex justify-between items-end">
+              <img src="images/btgLogo.png" alt="" className="h-14  ml-10 " />
               <a href="#tickets"><button
           className=" mb-16 flex items-center px-6 py-1 text-white text-2xl font-bold rounded-full border-2 border-pink-500  font-unbounded   "
           onMouseEnter={() => setHovered(true)}
@@ -57,7 +57,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                 <span className="material-icons w-6 h-6 text-pink-400  mt-1.5">
                   <MdTripOrigin size={25} />
                 </span>
-                <div className="text-white text-xl  font-unbounded  ml-2 font-normal text-left">
+                <div className="text-white text-xl  font-unbounded  ml-4 font-extralight text-left">
                   Con tu aporte <strong>SEÑAL</strong> estás apoyando a
                   Fundación Antenna en el desarrollo de nuevos proyectos que
                   benefician a artistas y espacios culturales.
@@ -65,7 +65,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
               </div>
             </div>
             <div className=" col-span-1 p-4  pt-0">
-              <p className="text-white text-xl  font-unbounded  ml-10 font-normal ">
+              <p className="text-white text-xl  font-libre-franklin  ml-10 font-normal ">
               SEÑAL es presentado por BTG Pactual, organización que ha mantenido durante décadas un fuerte compromiso con diversas iniciativas culturales y artísticas, así como con la promoción del debate y reflexión en torno a ideas como una forma de contribuir a nuestra comunidad.
               </p>
             </div>
