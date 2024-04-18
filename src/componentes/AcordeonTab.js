@@ -31,8 +31,8 @@ function AcordeonTab({titulo,contenido}) {
 
               {openTab && (
                       <div className=" pb-5">
-                      <p className="text-cream font-medium w-full text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl py-3 font-medium text-left pl-3">
-                      {contenido}
+                      <p       dangerouslySetInnerHTML={{ __html: contenido }}
+ className="text-cream font-medium w-full text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl py-3 font-medium text-left pl-3">                      
                       </p>
                     </div>
                     )}

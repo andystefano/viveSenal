@@ -56,7 +56,7 @@ function Section({ minHeight }) {
             </p>
             <a className="flex items-center justify-center mt-5  sd:justify-left sd:mt-1 md:justify-left md:mt-1 lg:justify-left lg:mt-1  xl:justify-left xl:mt-1" href="#tickets">
               <button
-                className="z-10 mb-4 flex items-center px-6 py-1 text-white text-xl sd:text-2xl md:text-2xl  lg:text-2xl  xl:text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
+                className="z-10 mb-4 flex items-center px-6 py-1 text-white text-base sd:text-2xl md:text-2xl  lg:text-2xl  xl:text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
               >

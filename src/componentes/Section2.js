@@ -121,9 +121,14 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
   } else {
     return (
       <section
-        className="border-t border-black relative overflow-hidden p-4 sd:p-14 md:p-14 lg:p-14 xl:p-14 bg_t2_movil h-auto sd:h-full sd:h-full md:h-full lg:h-full"
+        className="bg_t2_movil_back"
         style={{ minHeight: "330px" }}
       >
+        <div
+                style={{ minHeight: "330px" }}
+                className="border-t border-black relative overflow-hidden p-4 sd:p-14 md:p-14 lg:p-14 xl:p-14  h-auto sd:h-full sd:h-full md:h-full lg:h-full bg_t2_movil"
+                >
+
         <h1 class="bock sd:hidden sd:hidden md:hidden lg:hidden xl:hidden mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-white  font-unbounded pt-8">
           ¿Cómo ser parte de señal?
         </h1>
@@ -295,6 +300,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
         >
           <GrLinkNext className="w-8 h-8" />
         </button>
+        </div>
       </section>
     );
   }

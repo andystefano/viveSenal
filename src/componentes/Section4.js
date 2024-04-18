@@ -9,7 +9,7 @@ function Section({ minHeight }) {
   return (
     <section
     id="QueTeEspera"
-      className="border-t border-black relative overflow-hidden pr-4"
+      className="border-t border-black relative overflow-hidden pr-4 pb-4 sd:pb-32 md:pb-32 lg:pb-32 xl:pb-32	"
       style={{
         position: "relative",
         backgroundImage: "url('./images/t4.png')",
@@ -52,11 +52,11 @@ function Section({ minHeight }) {
         </div>
       </div>
 
-    <div id="versionDesk" className="hidden sd:flex md:flex lg:flex xl:flex items-end w-full min-h-[630px] mx-7">
-  <div class="grid grid-cols-2 gap-4 w-full h-full">
+    <div id="versionDesk"  className="hidden sd:flex md:flex lg:flex xl:flex items-end w-full min-h-[630px] mx-7">
+  <div class="grid grid-cols-3 gap-4 w-full h-full">
     <div class="p-4">
 
-          <div className="w-full">
+          <div className="w-full" style={{marginTop: '10rem'}}>
             <div className="flex items-center ml-1">
               <span className="text-white" style={{ marginLeft: "2.3rem" }}>
                 <MdTripOrigin size={20} />
@@ -109,7 +109,7 @@ function Section({ minHeight }) {
 
 
 
-    <div className="w-full">
+    <div className="w-full"  style={{marginTop: '10rem'}}>
             <div className="flex items-center ml-1">
               <span className="text-white" style={{ marginLeft: "2.3rem" }}>
                 <MdTripOrigin size={20} />
@@ -339,7 +339,7 @@ function Section({ minHeight }) {
                 <MdTripOrigin size={20} className="" />
               </span>
               <div className="flex items-center justify-left ">
-              <img src="images/LOA_white.png" style={{height:"6rem"}} className="sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
+              <img src="images/LOA_white.png" style={{height:"5rem"}} className="sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
             </div>
             </div>
 

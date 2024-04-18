@@ -77,12 +77,16 @@ function Section({ minHeight }) {
             <div className="text-center w-full h-full px-7 py-7">
               <div>
                 <h1 className="text-3xl text-left font-bold font-unbounded ">
-                  Lugar
+                Ex-fábrica Caffarena, Yungay
                 </h1>
-                <p className="text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-unbounded sd:mt-10 md:mt-10 lg:mt-10">
-                  Descripción del artista Lorem ipsum dolor sit amet,
-                  consectetuer adipiscing elit, sed diam nonummy nibh Lorem
-                  ipsum dolor sit amet, consectetuer{" "}
+                <p className="text-sm mt-2 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-4 md:mt-4 lg:mt-4">
+                Te invitamos a descubrir a los más de 9 artistas que trabajan y conviven en la antigua fábrica Caffarena, ubicada en el histórico Barrio Yungay.
+                </p>
+                <p className="text-sm mt-0 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
+Beatrice Di Girolamo, Klaudia Kemper,  Jessica Briceño, Sebastián Maquieira, Tania González y otros artistas nos invitan a entrar a sus mundos en donde mezclan arte y vida.<br/>
+                </p>
+                <p className="text-sm mt-0 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
+Música a cargo de DJ Haití. 
                 </p>
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
@@ -99,13 +103,14 @@ function Section({ minHeight }) {
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
             <div className="text-center w-full h-full px-7 py-7">
               <div>
-                <h1 className="text-3xl text-left font-bold font-unbounded ">
-                  Lugar
+              <h1 className="text-3xl text-left font-bold font-unbounded ">
+                Edificio Alonso, Vitacura
                 </h1>
-                <p className="text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-unbounded sd:mt-10 md:mt-10 lg:mt-10">
-                  Descripción del artista Lorem ipsum dolor sit amet,
-                  consectetuer adipiscing elit, sed diam nonummy nibh Lorem
-                  ipsum dolor sit amet, consectetuer{" "}
+                <p className="text-sm mt-0 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-4 md:mt-4 lg:mt-4">
+                Las obras de Javier Toro Blum son capaces de alterar el espacio a través de la luz, la oscuridad y el volumen, generando diversas experiencias en el espectador. En este encuentro vamos a conocer las ideas y procesos creativos de Toro Blum, descubriendo como la lingüística, la psicología y la poesía aparecen en sus obras de arte. 
+                </p>
+                <p className="text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
+Música a cargo de Eigengrau.
                 </p>
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
@@ -122,13 +127,13 @@ function Section({ minHeight }) {
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
             <div className="text-center w-full h-full px-7 py-7">
               <div>
-                <h1 className="text-3xl text-left font-bold font-unbounded ">
-                  Lugar
-                </h1>
-                <p className="text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-unbounded sd:mt-10 md:mt-10 lg:mt-10">
-                  Descripción del artista Lorem ipsum dolor sit amet,
-                  consectetuer adipiscing elit, sed diam nonummy nibh Lorem
-                  ipsum dolor sit amet, consectetuer{" "}
+              <h1 className="text-3xl text-left font-bold font-unbounded ">
+              MNBA, Santiago Centro</h1>
+                <p className="text-sm mt-0 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-4 md:mt-4 lg:mt-4">
+                Una oportunidad única para visitar el Museo Nacional de Bellas Artes de noche en un recorrido privado por la exposición El día más hermoso, que revisa el legado de Carlos Leppe, uno de los mayores exponentes de la performance en Chile y Latinoamérica. La exposición cuenta con el diseño de Smiljan Radic y la curatoría de Amalia Cross. 
+                </p>
+                <p className="text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
+                Música y performance por confirmar.
                 </p>
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
