@@ -66,7 +66,6 @@ function ViveFooter({ minHeight }) {
           </div>
         </div>
       </div>
-
       <div className="text-center  text-base font-bold block sd:hidden md:hidden lg:hidden xl:hidden">senal@antenna.cl</div>
     </footer>
   );
