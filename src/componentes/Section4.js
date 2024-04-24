@@ -15,7 +15,7 @@ function Section({ minHeight }) {
         backgroundImage: "url('./images/t4.png')",
         backgroundSize: "cover",
         minHeight: `${minHeight}px`,
-        backgroundPositionX:'1044px'
+        ...(window.innerWidth < 640 && { backgroundPositionX: '1044px' })
       }}
     >
          
@@ -53,7 +53,7 @@ function Section({ minHeight }) {
       </div>
 
     <div id="versionDesk"  className="hidden sd:flex md:flex lg:flex xl:flex items-end w-full min-h-[630px] mx-7">
-  <div class="grid grid-cols-3 gap-4 w-full h-full">
+  <div class="grid grid-cols-3 gap-0 w-full h-full mx-16">
     <div class="p-4">
 
           <div className="w-full" style={{marginTop: '10rem'}}>

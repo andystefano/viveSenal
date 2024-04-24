@@ -45,7 +45,7 @@ function Section({ minHeight }) {
             <p className="text-xs sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-left">
               Una señal es un llamado, un signo, una forma de transmitir
               información. También es el nombre de una nueva experiencia que te
-              invita a conocer Santiago y el mundo del arte y la cultura{" "}
+              invita a conocer Santiago, el mundo del arte y la cultura{" "}
               <strong>
                 a través de conversaciones cercanas y música experimental.
               </strong>
