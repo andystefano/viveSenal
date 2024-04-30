@@ -18,7 +18,8 @@ function Section({ minHeight }) {
               fontWeight: 400,
             }}
           >
-            ¡HAZ TU <br /> DONACIÓN!
+            ¡HAZ TU <br /> DONACIÓN! <br/>
+            <span style={{fontSize:'16px'}}>Ticket válido para dos personas</span>
           </h1>
         </div>
         <div class="col-span-1 flex justify-center  items-center sd:justify-center sm:justify-center  lg:justify-center  xl:justify-center  ">

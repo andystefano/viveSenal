@@ -22,7 +22,7 @@ function CountDown() {
       }
       
       // Llamar a la función countdown cada segundo
-      setInterval(countdown, 1000);
+      //setInterval(countdown, 1000);
 
   return (
     <div id="countDown" className="w-full flex items-center justify-start flex-col  ">
