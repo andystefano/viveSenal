@@ -35,7 +35,7 @@ function Section({ minHeight }) {
       PROGRA<span className="sd:hidden sm:hidden lg:hidden">-</span><br className="block sd:hidden sm:hidden lg:hidden" />MACIÓN
     </h1>
     <h1 className="text-3xl leading-none md:text-5xl xl:text-6xl text-white text-left font-unbounded  pl-7 sd:pl-14 md:pl-14 lg:pl-14 xl:pl-14 " style={{ color: 'rgb(0, 0, 0)' }}>
-      ABRIL / JUNIO
+      MAYO / JULIO
     </h1>
   </div>
   <img style={{paddingTop:'3rem'}} src="images/cuposLimitados.png" className="hidden align-top w-14 mt-5 sd:mt-0 md:mt-0 lg:mt-0 xl:mt-0" alt="Cupos limitados" />
@@ -63,7 +63,7 @@ function Section({ minHeight }) {
             color: "#000",
           }}
         >
-          ABRIL / JUNIO
+          MAYO / JULIO
         </h1>
       </div>
 
