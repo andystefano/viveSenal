@@ -1,7 +1,7 @@
 function CountDown() {
 
     function countdown() {
-        const endDate = new Date("2024-04-25T20:00:00").getTime(); // Cambia esta fecha por la fecha deseada
+        const endDate = new Date("2024-05-23T20:00:00").getTime(); // Cambia esta fecha por la fecha deseada
         const now = new Date().getTime();
         const timeRemaining = endDate - now;
       
@@ -22,7 +22,7 @@ function CountDown() {
       }
       
       // Llamar a la función countdown cada segundo
-      //setInterval(countdown, 1000);
+      setInterval(countdown, 1000);
 
   return (
     <div id="countDown" className="w-full flex items-center justify-start flex-col  ">

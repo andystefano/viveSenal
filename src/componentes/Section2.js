@@ -173,7 +173,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
                       fontSize: "1.3rem",
                     }}
                   >
-                    <strong>SEÑAL</strong> es evento que se realiza una vez al
+                    <strong>SEÑAL</strong> es un evento que se realiza una vez al
                     mes en distintos espacios de arte y creación en Santiago de
                     Chile. <strong>Son 10 encuentros</strong> que se realizan a
                     lo largo del año, con la curatoría y mediación de Fundación

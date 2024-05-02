@@ -19,7 +19,7 @@ function Section({ minHeight }) {
             }}
           >
             ¡HAZ TU <br /> DONACIÓN! <br/>
-            <span style={{fontSize:'16px'}}>Ticket válido para dos personas</span>
+            <span className="text-2xl"  >Ticket válido para dos personas</span>
           </h1>
         </div>
         <div class="col-span-1 flex justify-center  items-center sd:justify-center sm:justify-center  lg:justify-center  xl:justify-center  ">
