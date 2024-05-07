@@ -28,6 +28,19 @@ function App() {
     };
   }, []);
 
+
+  useEffect(() => {
+      var url = window.location.href;
+      if (url.includes("#")) {
+          var fragmento = url.split("#")[1];
+          const targetElement = document.getElementById(fragmento);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+      }  
+  }, []); // El array de dependencias vacío [] indica que este efecto se ejecuta solo una vez al montar el componente
+
+
   return (
     <div className="App"       style={{
       backgroundImage: "url(images/bg_senal_home.png)",
