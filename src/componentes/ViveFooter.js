@@ -65,6 +65,28 @@ function ViveFooter({ minHeight }) {
             <div className=" p-3"><a href="https://web.facebook.com/antennaorg/"><FaFacebookF className="text-base" size={30} /></a></div>
           </div>
         </div>
+
+        <div className="col-span-1npm start sd:block md:block lg:block xl:block  ">
+        <a href="https://www.liptonteas.com/our-brands/portfolio/lipton/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Lipton" src="images/lipton.png" /></a>
+        </div>
+
+        <div className="col-span-1 sd:block md:block lg:block xl:block  ">
+        <a href="http://somosthesocias.com/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="The Socias" src="images/the_socias.png" /></a>
+        </div>
+
+        <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
+        </div>
+
+        <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
+        </div>
+
+        <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
+        </div>
+
+        <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
+        </div>
+
+
       </div>
       <div className="text-center  text-base font-bold block sd:hidden md:hidden lg:hidden xl:hidden">senal@antenna.cl</div>
     </footer>

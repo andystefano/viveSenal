@@ -248,7 +248,7 @@ function Section({ minHeight }) {
                       <MdTripOrigin />
                     </span>
                     <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
-                      Acceso a <span className="font-bold">1 encuentros</span>{" "}
+                      Acceso a <span className="font-bold">1 encuentro</span>{" "}
                       SEÑAL para dos personas.
                     </div>
                   </div>
