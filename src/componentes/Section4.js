@@ -176,8 +176,8 @@ function Section({ minHeight }) {
                 style={{ fontSize: "1.33rem" }}
               >
                 <h1 className="text-white text-xl sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-unbounded text-left mt-4">
-                  Espacios para  
-                  <br /> conversar:
+                Disfruta de 
+                  <br /> cerveza LOA:
                 </h1>
               </div>
             </div>
@@ -192,7 +192,7 @@ function Section({ minHeight }) {
                 className="text-black  font-unbounded  ml-2 font-normal text-left"
               >
                 <p style={{lineHeight: "1.4rem"}} className="mt-3 font-libre-franklin text-base text-white  text-left   w-10/12 sd:w-8/12  md:w-8/12  lg:w-8/12  xl:w-8/12 ">
-                Lo más interesante del arte son las conversaciones que éste inspira,<br class="hidden sd:block md:block lg:block xl:block" /> en SEÑAL conocerás a los creadores detrás de las obras.{" "}
+                Para que puedas compartir con los artistas y demás participantes.{" "}
                 </p>
               </div>
             </div>

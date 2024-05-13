@@ -67,6 +67,16 @@ function ViveFooter({ minHeight }) {
         </div>
 
         <div className="col-span-1npm start sd:block md:block lg:block xl:block  ">
+
+        <div className="flex items-start">
+            <span className="text-pink-400 ">
+              <MdTripOrigin className="text-base" />
+            </span>
+            <div className="text-black  font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
+              Apoyan
+            </div>
+          </div>
+
         <a href="https://www.liptonteas.com/our-brands/portfolio/lipton/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Lipton" src="images/lipton.png" /></a>
         </div>
 
