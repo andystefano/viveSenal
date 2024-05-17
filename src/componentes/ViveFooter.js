@@ -61,7 +61,7 @@ function ViveFooter({ minHeight }) {
           <div className="flex items-center justify-center  mt-4">
           <div className="p-3"><a href="https://www.tiktok.com/@antennaorg"><FaTiktok className="text-base" size={30} /></a></div>
           <div className="p-3"><a href="https://www.linkedin.com/company/antennaorg/"><FaLinkedin className="text-base" size={30} /></a></div> 
-            <div className="p-3"><a href="https://www.instagram.com/antennaorg/"><FaInstagram className="text-base" size={30} /></a></div>
+            <div className="p-3"><a href="https://www.instagram.com/vivesenal/"><FaInstagram className="text-base" size={30} /></a></div>
             <div className=" p-3"><a href="https://web.facebook.com/antennaorg/"><FaFacebookF className="text-base" size={30} /></a></div>
           </div>
         </div>
