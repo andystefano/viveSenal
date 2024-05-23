@@ -73,15 +73,15 @@ function ViveFooter({ minHeight }) {
               <MdTripOrigin className="text-base" />
             </span>
             <div className="text-black  font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
-              Apoyan
+              Apoya
             </div>
           </div>
 
-        <a href="https://www.liptonteas.com/our-brands/portfolio/lipton/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Lipton" src="images/lipton.png" /></a>
+          <a href="http://somosthesocias.com/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="The Socias" src="images/the_socias.png" /></a>
         </div>
 
         <div className="col-span-1 sd:block md:block lg:block xl:block  ">
-        <a href="http://somosthesocias.com/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="The Socias" src="images/the_socias.png" /></a>
+          &nbsp;
         </div>
 
         <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
