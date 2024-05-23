@@ -7,3 +7,6 @@
 # Ignorar la carpeta node_modules y sus contenidos
 node_modules/
 node_modules
+
+build/
+build
