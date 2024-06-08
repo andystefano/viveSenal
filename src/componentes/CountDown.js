@@ -1,7 +1,7 @@
 function CountDown() {
 
     function countdown() {
-        const endDate = new Date("2024-05-23T20:00:00").getTime(); // Cambia esta fecha por la fecha deseada
+        const endDate = new Date("2024-06-28T20:00:00").getTime(); // Cambia esta fecha por la fecha deseada
         const now = new Date().getTime();
         const timeRemaining = endDate - now;
       

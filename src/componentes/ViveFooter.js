@@ -81,10 +81,14 @@ function ViveFooter({ minHeight }) {
         </div>
 
         <div className="col-span-1 sd:block md:block lg:block xl:block  ">
-          &nbsp;
+        <div className="text-black  font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
+              &nbsp;
+            </div>
+        <a href="http://drkombu.com/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Dr Kombu" src="images/Dr_Kombu.png" /></a>
         </div>
 
         <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
+          
         </div>
 
         <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
