@@ -210,8 +210,8 @@ function Section({ minHeight }) {
                       <MdTripOrigin />
                     </span>
                     <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
-                    Acceso para dos personas a <span className="font-bold">3 encuentros</span>{" "}
-                      SEÑAL consecutivos.
+                    Acceso para dos personas a <span className="font-bold">1 encuentro</span>{" "}
+                      SEÑAL.
                     </div>
                   </div>
                   <div className="flex items-start">
