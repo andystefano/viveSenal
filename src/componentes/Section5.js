@@ -22,11 +22,9 @@ function Section({ minHeight }) {
           </h1>
         </div>
         <div class="col-span-1 flex justify-center  items-center sd:justify-center sm:justify-center  lg:justify-center  xl:justify-center  ">
-          <img
-            className="w-10/12 sd:w-9/12 md:w-9/12 lg:w-9/12 xl:w-9/12 h-auto"
-            src="images/Cloud4.png"
-            alt=""
-          />
+
+           
+
         </div>
         <div class="col-span-1">
           <p
@@ -219,10 +217,7 @@ function Section({ minHeight }) {
                   <div className="flex items-start">
                     <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-gray-700  mt-1.5"></span>
                     <div className="text-red-500 font-libre-franklin italic  ml-2 font-light text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl">
-                      Sí decides que quieres seguir siendo parte después{" "}
-                      <br /> de esta prueba, tu pago inicial se cuenta como
-                      abono <br /> para seguir con el programa SEÑAL completo. <br/>
-                      Obtén tu código de descuento en senal@antenna.cl
+                       
                     </div>
                   </div>
                 </div>
@@ -249,7 +244,7 @@ function Section({ minHeight }) {
                     </span>
                     <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                       Acceso a <span className="font-bold">1 encuentro</span>{" "}
-                      SEÑAL para dos personas.
+                      SEÑAL para una persona.
                     </div>
                   </div>
                 </div>

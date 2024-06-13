@@ -19,8 +19,7 @@ function Section({ minHeight }) {
             <AcordeonTab titulo={'¿Qué incluye mi ticket?'} contenido={'Tu ticket es personal e intransferible. Incluye el acceso a un número de experiencias, determinadas por el ticket que elijas. En algunos casos, tu ticket incluye la posibilidad de participar de Visitas Antenna mientras esté activa tu tiquetera.'} />
             <AcordeonTab titulo={'¿Por qué la relación entre arte y música?'} contenido={'Para muchos artistas visuales la música es fundamental para su práctica. Sea como acompañante del trabajo de taller que desarrollan, inspiración o herramienta de creación paralela, es un espacio para la creatividad y el desarrollo que pocas veces se comparte con quienes visitan las exposiciones. En SEÑAL queremos dar cuenta de esta conexión y potenciarla, para poder darte una visita que involucre todos los sentidos.'} />
             <AcordeonTab titulo={'¿Qúe se hace con mi donación?'} contenido={'Al comprar un ticket o grupo de tickets para SEÑAL estas apoyando a los artistas y creadores que visitaremos, además de contribuir al funcionamiento de los demás programas de Fundación Antenna, los cuales promueven el desarrollo de arte público en todo Chile y el reconocimiento a artistas mujeres y de la tercera edad. '} />
-            <AcordeonTab titulo={'¿Puedo ir a una sola experiencia?'} contenido={'SEÑAL está pensado como un programa de inmersión. Para que puedas conectar con el poder del arte, es necesario que tengas al menos 3 experiencias. Sí a pesar de esto quieres ir a una sola experiencia, puedes escribirnos a senal@antenna.cl y te contaremos si es posible hacerlo. En general tenemos un aforo muy reducido para garantizar una buena experiencia, así que esta opción no es posible en todos encuentros.'} />
-
+          
           </div>
         </div>
       </div>
