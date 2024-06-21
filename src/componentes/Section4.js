@@ -177,7 +177,7 @@ function Section({ minHeight }) {
               >
                 <h1 className="text-white text-xl sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-unbounded text-left mt-4">
                 Disfruta de 
-                  <br /> cerveza LOA:
+                  <br /> cerveza LOA y  y Kombucha Dr.Kombu:
                 </h1>
               </div>
             </div>
