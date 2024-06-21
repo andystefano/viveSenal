@@ -56,7 +56,9 @@ function ViveFooter({ minHeight }) {
         <div className="col-span-1">
           <a href="https://cervezaloa.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="LOA Cerveceria" src="images/logoLOABlack.png" /></a>
         </div>
-        <div className="col-span-1 hidden sd:block md:block lg:block xl:block "></div>
+        <div className="col-span-1  sd:block md:block lg:block xl:block ">
+          <a href="https://drkombu.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Dr. Kombu" src="images/Dr_Kombu.png" /></a>
+        </div>
         <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
           <div className="flex items-center justify-center  mt-4">
           <div className="p-3"><a href="https://www.tiktok.com/@antennaorg"><FaTiktok className="text-base" size={30} /></a></div>
@@ -81,10 +83,14 @@ function ViveFooter({ minHeight }) {
         </div>
 
         <div className="col-span-1 sd:block md:block lg:block xl:block  ">
-        <div className="text-black  font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
-              &nbsp;
+        <div className="flex items-start">
+            <span className="text-pink-400 ">
+              
+            </span>
+            <div className="text-black  font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
+              
             </div>
-        <a href="http://drkombu.com/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Dr Kombu" src="images/Dr_Kombu.png" /></a>
+          </div>
         </div>
 
         <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">

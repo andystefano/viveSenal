@@ -103,10 +103,10 @@ function Section({ minHeight }) {
           >
             <div className="grid lg:grid-cols-2 sd:grid-cols-1 pr-2">
               <div className="col-span-1 text-base flex items-center justify-center	">
-                Colabora:
+                Colaboran:
               </div>
               <div className="col-span-1  ">
-                <img className="w-28 pr-2" src="/images/LOA_white.png" alt="" />
+                <img className="w-40 pr-2" src="/images/LOA_white.png" alt="" />
               </div>
             </div>
           </a>
