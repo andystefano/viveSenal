@@ -4,16 +4,18 @@ function CountDown() {
         const endDate = new Date("2024-07-10T20:00:00").getTime(); // Cambia esta fecha por la fecha deseada
         const now = new Date().getTime();
         const timeRemaining = endDate - now;
-      
+        console.log('timeRemaining:::',timeRemaining);
         const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
       
+        if(timeRemaining>0){
         document.getElementById("days").innerText = formatTime(days);
         document.getElementById("hours").innerText = formatTime(hours);
         document.getElementById("minutes").innerText = formatTime(minutes);
         document.getElementById("seconds").innerText = formatTime(seconds);
+        }
         console.log(formatTime(days))
       }
       
