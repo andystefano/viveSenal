@@ -129,15 +129,6 @@ function Section({ minHeight }) {
                       <MdTripOrigin />
                     </span>
                     <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
-                      <span className="font-bold">Obra edición limitada</span>{" "}
-                      de uno de los artistas que hizo parte de la programación.
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-pink-400">
-                      <MdTripOrigin />
-                    </span>
-                    <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                       <span className="font-bold">
                         Acceso fiesta aniversario
                       </span>{" "}
