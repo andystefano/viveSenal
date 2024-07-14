@@ -103,7 +103,7 @@ function Section({ minHeight }) {
           </div>
         </div>
         <div className="relative">
-          <img src="images/p1.png" alt="Imagen" className="w-full" />
+          <img src="images/pv1.png" alt="Imagen" className="w-full" />
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
             <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
