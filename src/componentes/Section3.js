@@ -80,6 +80,7 @@ function Section({ minHeight }) {
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
                 Galería NAC, Vitacura
                 </h1>
+                <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                 <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-0 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-4 md:mt-4 lg:mt-4">
                 Arte digital, dibujos y mucho más en el corazón de Vitacura.
                 </p>
@@ -109,12 +110,16 @@ function Section({ minHeight }) {
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
               Taller 99, Providencia</h1>
-                <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-0 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-4 md:mt-4 lg:mt-4">
+              <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
+              <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-0 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-4 md:mt-4 lg:mt-4">
                 ¡Sé artista por una noche!
                 </p>
                 <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
                 Conoce la historia del mítico Taller 99, un lugar en el que han participado grandes artistas desde 1956. Aprenderás sobre la técnica del grabado y cómo hacer tu propia obra de arte. 
                 </p>
+                
+                <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
+                Música por confirmar.</p>
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
                 Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -133,6 +138,7 @@ function Section({ minHeight }) {
                 <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
                 Artistas del Talleres Origen, Lo Barnechea
                 </h1>
+                <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                 <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-2 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-4 md:mt-4 lg:mt-4">
                 Descubre a siete artistas mujeres y conoce de cerca su arte.
                 </p>
@@ -141,9 +147,8 @@ function Section({ minHeight }) {
                 Cerca de Plaza San Enrique y con una hermosa vista al río, un grupo de artistas dan vida a Talleres Origen. Además de visitar sus espacios creativos, podrás disfrutar de la naturaleza que rodea este lugar.
                 </p>
 
-                <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-0 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
-                Música por confirmar.
-                </p>
+                <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
+                Música por confirmar.</p>
 
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black  sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl  font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
