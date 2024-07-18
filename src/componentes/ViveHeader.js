@@ -1,7 +1,7 @@
 function ViveHeader() {
   return (
     <header className=" w-full px-7 py-7">
-      <nav className="bg-black border-gray-200 py-2.5 dark:bg-gray-900">
+      <nav className="  border-gray-200 py-2.5 ">
         <div className="flex flex-wrap items-start justify-between mx-auto">
           <a href="https://www.antenna.cl" className="flex items-center">
             <img
@@ -20,7 +20,7 @@ function ViveHeader() {
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
-              className="hidden inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="hidden inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="mobile-menu-2"
               aria-expanded="false"
             >
