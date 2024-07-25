@@ -88,7 +88,7 @@ function ViveFooter({ minHeight }) {
           </div>
         </div>
 
-        <div className="col-span-2 sd:col-span-1 lg:col-span-1 xl:col-span-1  sd:block md:block lg:block xl:block  ">
+        <div className="col-span-2 sd:col-span-1 lg:col-span-1 xl:col-span-3  sd:block md:block lg:block xl:block  ">
 
         <div className="flex items-start">
             <span className="text-pink-400 ">
@@ -99,8 +99,10 @@ function ViveFooter({ minHeight }) {
             </div>
           </div>
 
-          <a className="hidden sd:block md:block lg:block xl:block " href="http://somosthesocias.com/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="The Socias" src="images/the_socias.png" /></a>
+          <a className="hidden sd:hidden md:hidden lg:hidden xl:hidden " href="http://somosthesocias.com/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="The Socias" src="images/the_socias.png" /></a>
           <a className="block sd:hidden md:hidden lg:hidden xl:hidden " href="#"><img alt="Apoyan" src="images/apoyan.png" /></a>
+
+          <a className="hidden sd:block md:block lg:block xl:block " href="#"><img alt="Apoyan"  className="w-full" src="images/apoyan.png" /></a>
 
         </div>
 
