@@ -73,7 +73,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >
-          Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+          Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
           {hovered ? (
             <IoTicket size={15} className="w-6 h-6" />
           ) : (

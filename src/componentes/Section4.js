@@ -41,7 +41,7 @@ function Section({ minHeight }) {
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
             >
-              Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+              Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
               {hovered ? (
                 <IoTicket size={15} className="w-6 h-6  text-pink-500" />
               ) : (

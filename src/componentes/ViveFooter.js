@@ -56,8 +56,8 @@ function ViveFooter({ minHeight }) {
           <a href="https://btgpactual.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="BGT Pactual" src="images/logoBGTPactualBlack.png" /></a>
         </div>
 
-        <div className="col-span-1  block sd:hidden md:hidden lg:hidden xl:hidden ">
-          <div className="flex items-start">
+        <div className="col-span-2  block sd:hidden md:hidden lg:hidden xl:hidden ">
+          <div className="flex items-start justify-center ">
             <span className="text-pink-400 ">
               <MdTripOrigin  className="text-base"   />
             </span>
@@ -73,11 +73,11 @@ function ViveFooter({ minHeight }) {
           </div>
         </div>
 
-        <div className="col-span-1">
+        <div className="col-span-2 sd:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
           <a href="https://cervezaloa.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="LOA Cerveceria" src="images/logoLOABlack.png" /></a>
         </div>
-        <div className="col-span-1  sd:block md:block lg:block xl:block ">
-          <a href="https://drkombu.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Dr. Kombu" src="images/Dr_KombuB.png" /></a>
+        <div className="col-span-1 hidden sd:block md:block lg:block xl:block ">
+          <a className="hidden" href="https://drkombu.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Dr. Kombu" src="images/Dr_KombuB.png" /></a>
         </div>
         <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
           <div className="flex items-center justify-center  mt-4">
@@ -88,18 +88,20 @@ function ViveFooter({ minHeight }) {
           </div>
         </div>
 
-        <div className="col-span-1npm start sd:block md:block lg:block xl:block  ">
+        <div className="col-span-2 sd:col-span-1 lg:col-span-1 xl:col-span-1  sd:block md:block lg:block xl:block  ">
 
         <div className="flex items-start">
             <span className="text-pink-400 ">
               <MdTripOrigin className="text-base" />
             </span>
             <div className="text-black  font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
-              Apoya
+              Apoyan
             </div>
           </div>
 
-          <a href="http://somosthesocias.com/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="The Socias" src="images/the_socias.png" /></a>
+          <a className="hidden sd:block md:block lg:block xl:block " href="http://somosthesocias.com/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="The Socias" src="images/the_socias.png" /></a>
+          <a className="block sd:hidden md:hidden lg:hidden xl:hidden " href="#"><img alt="Apoyan" src="images/apoyan.png" /></a>
+
         </div>
 
         <div className="col-span-1 sd:block md:block lg:block xl:block  ">

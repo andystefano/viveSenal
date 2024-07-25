@@ -41,7 +41,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
             >
-              Tickets &nbsp;&nbsp;
+              Participa &nbsp;&nbsp;
               {hovered ? (
                 <IoTicket size={10} className="w-6 h-6 text-white" />
               ) : (
@@ -218,7 +218,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
                         onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)}
                       >
-                        Tickets &nbsp;&nbsp;
+                        Participa &nbsp;&nbsp;
                         {hovered ? (
                           <IoTicket
                             size={10}
@@ -246,7 +246,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
                   >
-                    Tickets&nbsp;&nbsp;&nbsp;
+                    Participa&nbsp;&nbsp;&nbsp;
                     {hovered ? (
                       <IoTicket className="w-6 h-6  text-white" />
                     ) : (

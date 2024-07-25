@@ -69,7 +69,7 @@ function Section({ minHeight }) {
 
       <div className="grid mt-4 sm:grid-cols-1 lg:grid-cols-3 gap-5 sd:gap-12 md:gap-12 lg:gap-12 xl:gap-12 p-12 pt-0 sd:pt-12 md:pt-12 lg:pt-12 xl:pt-12">
         <div className="relative block sd:hidden md:hidden lg:hidden xl:hidden">
-          <img src="images/cloudProgramacion.png" />
+           
         </div>
 
         <div className="relative">
@@ -95,7 +95,7 @@ function Section({ minHeight }) {
 
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black  sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl  font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
-                Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="material-icons">
                   <FaLongArrowAltLeft />
                 </span>
@@ -122,7 +122,7 @@ function Section({ minHeight }) {
                 Música por confirmar.</p>
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
-                Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="material-icons">
                   <FaLongArrowAltLeft />
                 </span>
@@ -152,7 +152,7 @@ function Section({ minHeight }) {
 
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black  sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl  font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
-                Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="material-icons">
                   <FaLongArrowAltLeft />
                 </span>
