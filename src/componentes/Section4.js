@@ -163,7 +163,7 @@ function Section({ minHeight }) {
 
 
             <div className="flex items-center justify-left ">
-              <img src="images/LOA_white.png" style={{height:"6rem", marginLeft: "2.4rem"}} className="sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
+              <img src="images/bg0.png" style={{height:"6rem", marginLeft: "2.4rem"}} className="sd:h-48 md:h-48 lg:h-48 xl:h-48 mt-12" alt="" />
             </div>
 
               <div className="w-full">
@@ -177,7 +177,7 @@ function Section({ minHeight }) {
               >
                 <h1 className="text-white text-xl sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-unbounded text-left mt-4">
                 Disfruta de 
-                  <br /> cerveza LOA y Kombucha Dr.Kombu:
+                  <br /> los productos de nuestros colaboradores:
                 </h1>
               </div>
             </div>

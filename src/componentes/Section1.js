@@ -96,17 +96,17 @@ function Section({ minHeight }) {
             </div>
           </a>
         </div>
-        <div className="hidden sd:block md:block lg:block xl:block col-span-1  flex items-center justify-center sd:justify-end md:justify-end lg:justify-end xl:justify-end">
+        <div className="hidden sd:block md:block lg:block xl:block col-span-1  flex items-end  sd:justify-end md:justify-end lg:justify-end xl:justify-end">
           <a
             href="https://cervezaloa.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"
-            className=" flex items-center justify-start sd:justify-end md:justify-end lg:justify-end xl:justify-end   text-white  font-unbounded font-extralight  text-2xl text-left sd:text-right sd:text-right sd:text-right md:text-right lg:text-right  xl:text-right mb-4 mr-7"
+            className=" flex items-end mt-10 pt-10 justify-start sd:justify-end md:justify-end lg:justify-end xl:justify-end   text-white  font-unbounded font-extralight  text-2xl text-left sd:text-right sd:text-right sd:text-right md:text-right lg:text-right  xl:text-right mb-1 mr-3"
           >
             <div className="grid lg:grid-cols-2 sd:grid-cols-1 pr-2">
               <div className="col-span-1 text-base flex items-center justify-center	">
                 Colaboran:
               </div>
               <div className="col-span-1  ">
-                <img className="w-40 pr-2" src="/images/LOA_white.png" alt="" />
+                <img className="w-[450px] pr-2" src="/images/LOA_white.png" alt="" />
               </div>
             </div>
           </a>

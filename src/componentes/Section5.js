@@ -8,8 +8,8 @@ function Section({ minHeight }) {
       className="pb-32 sd:pd-0 md:pd-0 lg:pd-0 xl:pd-0 border-t border-black relative overflow-hidden "
       style={{ backgroundColor: "#eaeedd" }}
     >
-      <div class="grid grid-cols-1  sd:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
-        <div class="col-span-1 flex justify-start sd:justify-end md:justify-end lg:justify-end  xl:justify-end">
+      <div class="grid grid-cols-1  sd:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+        <div class="col-span-1 flex justify-center sd:justify-center md:justify-center lg:justify-center  xl:justify-center">
           <h1
             className="mt-3 sd:mt-5 md:mt-5 lg:mt-5 xl:mt-5 mx-7 mb-4 text-5xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
             style={{
@@ -21,11 +21,6 @@ function Section({ minHeight }) {
             ¡HAZ TU <br /> DONACIÓN!
           </h1>
         </div>
-        <div class="col-span-1 flex justify-center  items-center sd:justify-center sm:justify-center  lg:justify-center  xl:justify-center  ">
-
-           
-
-        </div>
         <div class="col-span-1">
           <p
             className="hidden sd:block md:block lg:block xl:block leading-5 font-libre-franklin text-left px-7 pt-9  sd:pt-14 sd:pt-14 md:pt-14 lg:pt-14 xl:pt-14 text-sm sd:text-2xl sm:text-2xl lg:text-2xl xl:text-2xl"
@@ -35,18 +30,11 @@ function Section({ minHeight }) {
               paddingRight: "4.2rem",
             }}
           >
-            <strong>SEÑAL</strong> no es una fiesta ni un evento convencional.
-            Es un espacio que que se crea una vez al mes y que facilita la
-            creación de comunidad.{" "}
-            <strong>
-              {" "}
-              Al aportar a SEÑAL estás apoyando los programas de Fundación
-              Antenna que impactan a artistas y espacios culturales.
-            </strong>{" "}
+           <strong>SEÑAL</strong>  no es una fiesta ni un evento convencional; es un espacio mensual dedicado a fortalecer la comunidad. Al participar en SEÑAL, no sólo te unes a una red de personas con intereses comunes, sino que también contribuyes a los programas de Fundación Antenna. Estos programas tienen un impacto positivo en artistas y espacios culturales, fomentando el desarrollo creativo y la conexión social en nuestra comunidad. Tu apoyo es fundamental para seguir impulsando este cambio cultural
           </p>
 
           <p
-            className="block sd:hidden md:hidden lg:hidden xl:hidden leading-5 font-libre-franklin text-left pl-4 pr-4 pt-9  sd:pt-14 sd:pt-14 md:pt-14 lg:pt-14 xl:pt-14 text-sm sd:text-2xl sm:text-2xl lg:text-2xl xl:text-2xl"
+            className="block sd:hidden md:hidden lg:hidden xl:hidden leading-5 font-libre-franklin text-left pl-4 pr-4 pt-9  sd:pt-14 sd:pt-14 md:pt-14 lg:pt-14 xl:pt-14 text-sm sd:text-xl sm:text-xl lg:text-xl xl:text-xl"
             style={{
               fontWeight: 400,
               color: "black",
@@ -92,7 +80,7 @@ function Section({ minHeight }) {
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/ticket-10-encuentros-2/"
                 target="_blank"
-                alt=""
+                alt="" rel="noreferrer"
               >
                 <img
                   className=""
@@ -142,7 +130,7 @@ function Section({ minHeight }) {
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/ticket-6-encuentros/"
                 target="_blank"
-                alt=""
+                alt="" rel="noreferrer"
               >
                 <img
                   className=""
@@ -180,7 +168,7 @@ function Section({ minHeight }) {
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/ticket-3-encuentros/"
                 target="_blank"
-                alt=""
+                alt="" rel="noreferrer"
               >
                 <img
                   className=""
@@ -216,7 +204,7 @@ function Section({ minHeight }) {
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/ticket-1-encuentro/"
                 target="_blank"
-                alt=""
+                alt="" rel="noreferrer"
               >
                 <img
                   className=""

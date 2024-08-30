@@ -84,7 +84,7 @@ function ViveHeader() {
                   <span className="absolute inset-0 opacity-0 hover:opacity-100">
                     tickets
                   </span>
-                  <span className="opacity-100">tickets</span>
+                  <span className="opacity-100">participa</span>
                 </a>
               </li>
               <li>
