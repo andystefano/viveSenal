@@ -100,7 +100,7 @@ function Section({ minHeight }) {
                     </span>
                     <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                     Acceso para dos personas a{" "}
-                      <span className="font-bold">4 encuentros</span> SEÑAL consecutivos.
+                      <span className="font-bold">3 encuentros</span> SEÑAL consecutivos.
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -138,16 +138,8 @@ function Section({ minHeight }) {
                       <MdTripOrigin />
                     </span>
                     <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
-                    Acceso para dos personas a <span className="font-bold">3 encuentros</span>{" "} SEÑAL consecutivos.
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-green-700">
-                      <MdTripOrigin />
-                    </span>
-                    <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
-                      <span className="font-bold">Visitas Antenna</span>{" "}
-                      seleccionadas.
+                    Acceso para dos personas a <span className="font-bold">2 encuentros</span>{" "} SEÑAL consecutivos.
+                    
                     </div>
                   </div>
                 </div>
