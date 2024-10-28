@@ -146,7 +146,7 @@ function Section({ minHeight }) {
                 Explora la fábrica de de Cerveza LOA, su maquinaria de producción y los diversos procesos de elaboración detrás de una cerveza. Además, podrás disfrutar de una propuesta artística inmersiva que mezclará arte y sonido.</p>
 
                 <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
-                Música a cargo de Matadero Estadio.</p>
+                Música por confirmar.</p>
 
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black  sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl  font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
