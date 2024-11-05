@@ -89,7 +89,7 @@ function Section({ minHeight }) {
                 </p>
 
                 <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-3 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">     
-                Música por confirmar.</p>
+                Música a cargo de Vale Otro.</p>
 
                 
 
