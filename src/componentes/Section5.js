@@ -84,7 +84,7 @@ function Section({ minHeight }) {
               >
                 <img
                   className=""
-                  src="./images/ticket1.png"
+                  src="./images/ticket1.png?v=2"
                   alt="imagen de fondo"
                   style={{
                     width: "100%",
@@ -134,7 +134,7 @@ function Section({ minHeight }) {
               >
                 <img
                   className=""
-                  src="./images/ticketGreen.png"
+                  src="./images/ticketGreen.png?v=2"
                   alt="imagen de fondo"
                   style={{
                     width: "100%",
@@ -176,7 +176,7 @@ function Section({ minHeight }) {
               >
                 <img
                   className=""
-                  src="./images/ticketRosa.png"
+                  src="./images/ticketRosa.png?v=2"
                   alt="imagen de fondo"
                   style={{
                     width: "100%",
@@ -208,7 +208,7 @@ function Section({ minHeight }) {
               >
                 <img
                   className=""
-                  src="./images/ticketRed.png"
+                  src="./images/ticketRed.png?v=2"
                   alt="imagen de fondo"
                   style={{
                     width: "100%",
@@ -247,7 +247,7 @@ function Section({ minHeight }) {
               >
                 <img
                   className=""
-                  src="./images/ticketGray.png"
+                  src="./images/ticketGray.png?v=2"
                   alt="imagen de fondo"
                   style={{ width: "100%", height: "auto" }}
                 />
@@ -270,7 +270,7 @@ function Section({ minHeight }) {
         </div>
 
         <img
-          src="images/2024_negro_horizontal.png"
+          src="images/2024_negro_horizontal.png?v=2"
           alt=""
           className="absolute bottom-7 right-10 h-14 sd:h-20 sm:h-20 lg:h-20 xl:h-20"
         />
