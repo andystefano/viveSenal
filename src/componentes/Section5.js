@@ -76,7 +76,7 @@ function Section({ minHeight }) {
 
         <div className="w-full">
           <div className="grid sd:grid-cols-1 sd:grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-0  sm:py-3 sm:px-20 sm:mx-20">
-            <div className="p-4 text-center">
+          <div className="p-4 text-center">
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/ticket-10-encuentros-2/"
                 target="_blank"
@@ -84,7 +84,7 @@ function Section({ minHeight }) {
               >
                 <img
                   className=""
-                  src="./images/ticketRosa.png"
+                  src="./images/ticket1.png"
                   alt="imagen de fondo"
                   style={{
                     width: "100%",
@@ -100,7 +100,7 @@ function Section({ minHeight }) {
                     </span>
                     <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                     Acceso para dos personas a{" "}
-                      <span className="font-bold">3 encuentros</span> SEÑAL consecutivos.
+                      <span className="font-bold">programa completo</span> SEÑAL.
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -108,13 +108,24 @@ function Section({ minHeight }) {
                       <MdTripOrigin />
                     </span>
                     <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
-                      <span className="font-bold">Visitas Antenna</span>{" "}
-                      seleccionadas.
+                   {" "}
+                      <span className="font-bold"> Visitas Antenna</span> seleccionadas.
                     </div>
-                  </div>
+                  </div>                  
+                  <div className="flex items-start">
+                    <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-pink-400">
+                      <MdTripOrigin />
+                    </span>
+                    <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+                    Acceso a {" "}
+                      <span className="font-bold">fiesta aniversario SEÑAL</span>.
+                    </div>
+                  </div>                 
                 </div>
               </div>
             </div>
+
+
             <div className="p-4 text-center">
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/ticket-6-encuentros/"
@@ -138,13 +149,57 @@ function Section({ minHeight }) {
                       <MdTripOrigin />
                     </span>
                     <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
-                    Acceso para dos personas a <span className="font-bold">2 encuentros</span>{" "} SEÑAL consecutivos.
+                    Acceso para dos personas a <span className="font-bold">6 encuentros</span>{" "} SEÑAL consecutivos.
                     
                     </div>
                   </div>
                 </div>
+
+                <div className="flex items-start">
+                    <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-green-700">
+                      <MdTripOrigin />
+                    </span>
+                    <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+                   {" "}
+                      <span className="font-bold"> Visitas Antenna</span> seleccionadas.
+                    </div>
+                  </div>  
+
               </div>
             </div>
+
+            <div className="p-4 text-center">
+              <a
+                href="https://tickets.xn--viveseal-i3a.cl/producto/ticket-10-encuentros-2/"
+                target="_blank"
+                alt="" rel="noreferrer"
+              >
+                <img
+                  className=""
+                  src="./images/ticketRosa.png"
+                  alt="imagen de fondo"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </a>
+              <div>
+                <div className="grid grid-cols-1 gap-4 mx-1 my-1">
+                  <div className="flex items-start">
+                    <span className="material-icons w-3 h-3  mt-0 sd:w-6 sd:h-6  md:w-6 md:h-6  lg:w-6 lg:h-6  xl:w-6 sd:mt-1.5 md:mt-1.5 lg:mt-1.5 xl:mt-1.5 xl:h-6 text-[#4db0b0]">
+                      <MdTripOrigin />
+                    </span>
+                    <div className="text-black  font-unbounded  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+                    Acceso para dos personas a{" "}
+                      <span className="font-bold">3 encuentros</span> SEÑAL consecutivos.
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+
             <div className="p-4 text-center">
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/ticket-3-encuentros/"
@@ -181,6 +236,9 @@ function Section({ minHeight }) {
                 </div>
               </div>
             </div>
+
+
+            
             <div className="p-4 text-center">
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/ticket-1-encuentro/"
