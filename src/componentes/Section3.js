@@ -135,7 +135,7 @@ function Section({ minHeight }) {
             <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7 py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
                 <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
-                Galería CIMA, Santiago Centro
+                Galería CIMA, Stgo Centro
                 </h1>
                 <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                 <p className="text-xs sd:text-sm md:text-sm lg:text-sm xl:text-sm mt-2 sd:text-2xl md:text-2xl xl:text-2xl text-left font-libre-franklin sd:mt-4 md:mt-4 lg:mt-4">
