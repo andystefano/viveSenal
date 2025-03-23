@@ -1,5 +1,4 @@
 import "./App.css";
-import ViveHeader from "./componentes/ViveHeader.js";
 import Section1 from "./componentes/Section1.js";
 import Section2 from "./componentes/Section2.js";
 import Section2_2 from "./componentes/Section2_2.js";
@@ -48,11 +47,10 @@ function App() {
       backgroundColor: "black",
       minHeight: `${minHeight}px`, // Use minHeight state here
     }} >
-      <ViveHeader />
+   
       <Section1 minHeight={minHeight} />
       {activeTab === 1 ? (
-  <Section2 minHeight={minHeight} setActiveTab={setActiveTab} activeTab={activeTab} />
-) : activeTab === 2 ? (
+<div>&nbsp;</div>) : activeTab === 2 ? (
   <Section2_2 minHeight={minHeight} setActiveTab={setActiveTab} activeTab={activeTab} />
 ) : (
   <Section2_3 minHeight={minHeight} setActiveTab={setActiveTab} activeTab={activeTab} />
