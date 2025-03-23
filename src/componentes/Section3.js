@@ -17,8 +17,8 @@ function Section({ minHeight }) {
       className="border-t border-black relative overflow-hidden"
       style={{
         position: "relative",
-        backgroundImage: width >= 640 ? "url(images/t3.png)" : "none", 
-        backgroundSize: "contain",
+        backgroundImage: width >= 640 ? "url(images/fondos/2_desk.png)" : "none", 
+        backgroundSize: "cover",
         backgroundPosition: "right top",
         backgroundColor: "#eaeedd",
         backgroundRepeat: "no-repeat",
@@ -29,42 +29,45 @@ function Section({ minHeight }) {
 
 <div className="flex items-start justify-between block sd:hidden md:hidden lg:hidden xl:hidden">
   <div className="w-full">
-    <h1 className="mb-4 text-5xl leading-none sd:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8
-    pl-7 sd:pl-14 md:pl-14 lg:pl-14 xl:pl-14 
-    " style={{ paddingTop: '3rem', color: 'rgb(0, 0, 0)', fontWeight: 900 }}>
-      PROGRA<span className="sd:hidden sm:hidden lg:hidden">-</span><br className="block sd:hidden sm:hidden lg:hidden" />MACIÓN
-    </h1>
-    <h1 className="text-3xl leading-none md:text-5xl xl:text-6xl text-white text-left font-unbounded  pl-7 sd:pl-14 md:pl-14 lg:pl-14 xl:pl-14 " style={{ color: 'rgb(0, 0, 0)' }}>
+    <h1 className="text-3xl w-full leading-none md:text-5xl xl:text-6xl text-white text-center font-unbounded  pl-7 sd:pl-14 md:pl-14 lg:pl-14 xl:pl-14 " style={{ color: 'rgb(0, 0, 0)' }}>
       NOVIEMBRE / DICIEMBRE /ENERO
     </h1>
   </div>
-  <img style={{paddingTop:'3rem'}} src="images/cuposLimitados.png" className="hidden align-top w-14 mt-5 sd:mt-0 md:mt-0 lg:mt-0 xl:mt-0" alt="Cupos limitados" />
 </div>
 
       
       <div className="w-full hidden sd:block md:block lg:block xl:block">
-        <h1
-          className="mb-4 text-5xl leading-none sd:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
-          style={{
-            paddingTop: "3rem",
-            paddingLeft: "3.75rem",
-            color: "#000",
-            fontWeight: "900",
-          }}
-        >
-          PROGRA<span className="sd:hidden sm:hidden lg:hidden">-</span>
-          <br className="block sd:hidden sm:hidden lg:hidden" />
-          MACIÓN
-        </h1>
-        <h1
-          className=" text-4xl leading-none md:text-5xl xl:text-6xl text-white text-left font-unbounded"
-          style={{
-            paddingLeft: "4rem",
-            color: "#000",
-          }}
-        >
-          NOVIEMBRE / DICIEMBRE /ENERO
-        </h1>
+       
+      <h1
+  className="text-4xl leading-none md:text-5xl xl:text-6xl text-white text-center w-full font-unbounded pt-8 flex justify-center items-center"
+  style={{
+    color: "#000",
+    fontWeight: '200',
+  }}
+>
+  <img
+    src="images/decoracion/senal2-05.png"
+    className="w-1/12 mx-2" // Asegura que las imágenes sean proporcionales y tengan un margen entre ellas
+    style={{
+      maxWidth: "40px", // Puedes ajustar el tamaño máximo aquí según lo que necesites
+      height: "auto", // Mantiene la proporción de la imagen
+    }}
+  />
+  
+    PRÓXIMAS   <span className="text-black" style={{ fontWeight: '900' }}> &nbsp;
+    SEÑALES
+  </span>
+
+  <img
+    src="images/decoracion/senal2-05.png"
+    className="w-1/12 mx-2" // Asegura que las imágenes sean proporcionales y tengan un margen entre ellas
+    style={{
+      maxWidth: "40px", // Puedes ajustar el tamaño máximo aquí según lo que necesites
+      height: "auto", // Mantiene la proporción de la imagen
+    }}
+  />
+</h1>
+
       </div>
 
       <div className="grid mt-4 sm:grid-cols-1 lg:grid-cols-3 gap-5 sd:gap-12 md:gap-12 lg:gap-12 xl:gap-12 p-12 pt-0 sd:pt-12 md:pt-12 lg:pt-12 xl:pt-12">
@@ -73,7 +76,7 @@ function Section({ minHeight }) {
         </div>
 
         <div className="relative">
-          <img src="images/p2.png" alt="Imagen" className="w-full" />
+          <img src="images/programacion/p1.png" alt="Imagen" className="w-full" />
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
             <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7 py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
@@ -104,7 +107,7 @@ function Section({ minHeight }) {
           </div>
         </div>
         <div className="relative">
-          <img src="images/pv1.png" alt="Imagen" className="w-full" />
+          <img src="images/programacion/p2.png" alt="Imagen" className="w-full" />
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
             <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
@@ -130,7 +133,7 @@ function Section({ minHeight }) {
           </div>
         </div>
         <div className="relative">
-          <img src="images/p3.png?v=1" alt="Imagen" className="w-full" />
+          <img src="images/programacion/p3.png" alt="Imagen" className="w-full" />
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
             <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7 py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>

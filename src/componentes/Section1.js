@@ -60,13 +60,13 @@ function Section({ minHeight }) {
                     <p className="text-xs sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-left">
                       Una señal es un llamado, un signo, una forma de transmitir
                       información. También es el nombre de una nueva experiencia que te
-                      invita a conocer Santiago, el mundo del arte y la cultura{" "}
+                      invita a conocer Santiago, el mundo del arte y la cultura
                       <strong>
                         a través de conversaciones cercanas y música experimental.
                       </strong>
                     </p>
                     <p className="text-xs sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-justify">
-                      <span className="font-bold">SEÑAL</span> es un proyecto de{" "}
+                      <span className="font-bold">SEÑAL</span> es un proyecto de
                       <span className="font-bold">Fundación Antenna.</span>
                     </p>
                     <a className="flex items-center justify-center mt-5  sd:justify-left sd:mt-1 md:justify-left md:mt-1 lg:justify-left lg:mt-1  xl:justify-left xl:mt-1" href="#tickets">
@@ -75,7 +75,7 @@ function Section({ minHeight }) {
                         onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)}
                       >
-                        Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                        Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {hovered ? (
                           <IoTicket size={15} className="w-6 h-6  text-pink-500" />
                         ) : (
