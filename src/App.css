@@ -184,3 +184,25 @@ background-position: right top;
 }
 
 
+
+@keyframes color-shift {
+  0% {
+    filter: hue-rotate(0deg) saturate(100%);
+  }
+  25% {
+    filter: hue-rotate(60deg) saturate(120%);
+  }
+  50% {
+    filter: hue-rotate(120deg) saturate(150%);
+  }
+  75% {
+    filter: hue-rotate(180deg) saturate(120%);
+  }
+  100% {
+    filter: hue-rotate(240deg) saturate(100%);
+  }
+}
+
+.color-shift {
+  animation: color-shift 6s infinite alternate;
+}
