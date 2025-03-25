@@ -22,7 +22,7 @@ function Section({ minHeight }) {
 
 
       <div className="flex flex-col space-y-4 p-4 max-w-[50%] mx-auto">
-      <div className="mt-[15%]  bg-blue-500 text-white rounded-lg">
+      <div className="mt-[15%]  text-white rounded-lg">
         
 
         <div className="w-full">
@@ -34,7 +34,7 @@ function Section({ minHeight }) {
         </div>
 
       </div>
-      <div className="bg-green-500 text-white rounded-lg">
+      <div className=" text-white rounded-lg">
 
       <div className="w-full ">
         <img
@@ -45,7 +45,7 @@ function Section({ minHeight }) {
 </div>
 
       </div>
-      <div className="bg-red-500 text-white rounded-lg">
+      <div className=" text-white rounded-lg">
 
       <h1 className="hidden sd:block md:block lg:block xl:block  text-4xl sd:text-6xl md:text-xl lg:text-xl xl:text-xl font-thin	pr-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
             Encuentros de<br />
@@ -53,7 +53,7 @@ function Section({ minHeight }) {
           </h1>
 
       </div>
-      <div className="bg-yellow-500 text-white p-4 rounded-lg">
+      <div className="text-white p-4 rounded-lg">
 
 
          <div className="w-full lg:w-10/12 sd:w-full mt-2">
