@@ -30,7 +30,7 @@ const Section4 = ({ minHeight }) => {
     return () => clearInterval(intervalo);
   }, [imagenes.length]);
 
-  return (
+  return (<>
     <div 
       className="fondo-animado"
       style={{
@@ -43,6 +43,21 @@ const Section4 = ({ minHeight }) => {
     >
       {/* Contenido adicional de tu sección */}
     </div>
+<div className='w-full' 
+  style={{
+    backgroundImage: "url(images/fondos/3_desk.png)",
+    backgroundSize: "cover",
+    backgroundColor: "white",
+  }}
+>
+
+<p className='mx-auto text-4xl text-center font-unbounded  px-10 py-20'>CON TU APORTE <span className='font-bold'>SEÑAL</span> ESTÁS APOYANDO A<br/>
+&nbsp;<span className='font-bold'>FUNDACIÓN ANTENNA</span> EN EL DESARROLLO<br/>
+DE NUEVOS PROYECTOS QUE BENEFICIAN A<br/>
+ARTISTAS Y ESPACIOS CULTURALES.</p>
+
+</div>
+    </>
   );
 };
 
