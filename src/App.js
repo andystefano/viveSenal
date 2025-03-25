@@ -57,17 +57,18 @@ function App() {
 )}      <div className="w-full"  style={{
     backgroundColor: '#0cb259' 
   }}>
-  <marquee className="text-xs sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl  text-white font-bold mx-0 my-1" scrollamount="12" loop="100" vspace="1%" hspace="1%" scrolldelay="-1">
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.&nbsp;&nbsp;
-      Desafia lo convencional y abraza lo extraordinario en estos encuentros.
-  </marquee>
+ 
   </div>
-      <Section3 minHeight={minHeight} />
+      <Section3 minHeight={minHeight} className=" bg-black " />
+      <marquee className="text-xs  font-unbounded  sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl  text-[#009d5a] bg-black font-bold mx-0 py-3" scrollamount="12" loop="100" scrolldelay="-1">
+      DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
+      DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
+      DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
+      DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
+      DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
+      DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
+      DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.
+  </marquee>
       <Section4 minHeight={minHeight} />
       <Section5 minHeight={minHeight} />
       <Section6 minHeight={minHeight} />

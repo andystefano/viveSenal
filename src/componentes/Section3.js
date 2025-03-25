@@ -42,7 +42,7 @@ function Section({ minHeight }) {
   className="text-4xl leading-none md:text-5xl xl:text-6xl text-white text-center w-full font-unbounded pt-8 flex justify-center items-center"
   style={{
     color: "#000",
-    fontWeight: '200',
+    fontWeight: '400',
   }}
 >
   <img
@@ -54,8 +54,7 @@ function Section({ minHeight }) {
     }}
   />
   
-    PRÓXIMAS   <span className="text-black" style={{ fontWeight: '900' }}> &nbsp;
-    SEÑALES
+    PRÓXIMAS<span className="" style={{ fontWeight: '900' }}>&nbsp;SEÑALES
   </span>
 
   <img

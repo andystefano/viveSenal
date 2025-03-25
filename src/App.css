@@ -1,5 +1,5 @@
 /* Importar la fuente de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -205,4 +205,31 @@ background-position: right top;
 
 .color-shift {
   animation: color-shift 6s infinite alternate;
+}
+
+
+.fondos-fotos {
+  width: 100%;
+  height: 100vh;
+  animation: cambio-fondo 36s infinite linear;
+  background-image: var(--imagen1);
+  background-size: cover;
+  background-position: center;
+  animation: cambio_fondo 36s infinite linear;
+}
+
+@keyframes cambio_fondo {
+  0% { opacity: 0; background-image: var(--imagen1); }
+  8.33% { opacity: 1; background-image: var(--imagen2); }
+  16.66% { opacity: 1; background-image: var(--imagen3); }
+  25% { opacity: 1; background-image: var(--imagen4); }
+  33.33% { opacity: 1; background-image: var(--imagen5); }
+  41.66% { opacity: 1; background-image: var(--imagen6); }
+  50% { opacity: 1; background-image: var(--imagen7); }
+  58.33% { opacity: 1; background-image: var(--imagen8); }
+  66.66% { opacity: 1; background-image: var(--imagen9); }
+  75% { opacity: 1; background-image: var(--imagen10); }
+  83.33% { opacity: 1; background-image: var(--imagen11); }
+  91.66% { opacity: 1; background-image: var(--imagen12); }
+  100% { opacity: 0; background-image: var(--imagen1); }
 }

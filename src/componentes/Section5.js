@@ -5,55 +5,40 @@ function Section({ minHeight }) {
   return (
     <section
       id="tickets"
-      className="pb-32 sd:pd-0 md:pd-0 lg:pd-0 xl:pd-0 border-t border-black relative overflow-hidden "
+      className=" sd:pd-0 md:pd-0 lg:pd-0 xl:pd-0 border-t border-black relative overflow-hidden "
       style={{ backgroundColor: "#eaeedd" }}
     >
-      <div class="grid grid-cols-1  sd:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-        <div class="col-span-1 flex justify-center sd:justify-center md:justify-center lg:justify-center  xl:justify-center">
-          <h1
-            className="mt-3 sd:mt-5 md:mt-5 lg:mt-5 xl:mt-5 mx-7 mb-4 text-5xl leading-none md:text-5xl xl:text-6xl text-black text-left font-unbounded pt-8"
-            style={{
-              paddingTop: "2.5rem",
-              color: "black",
-              fontWeight: 400,
-            }}
-          >
-            ¡HAZ TU <br /> DONACIÓN!
-          </h1>
-        </div>
-        <div class="col-span-1">
-          <p
-            className="hidden sd:block md:block lg:block xl:block leading-5 font-libre-franklin text-left px-7 pt-9  sd:pt-14 sd:pt-14 md:pt-14 lg:pt-14 xl:pt-14 text-sm sd:text-2xl sm:text-2xl lg:text-2xl xl:text-2xl"
-            style={{
-              fontWeight: 400,
-              color: "black",
-              paddingRight: "4.2rem",
-            }}
-          >
-           <strong>SEÑAL</strong>  no es una fiesta ni un evento convencional; es un espacio mensual dedicado a fortalecer la comunidad. Al participar en SEÑAL, no sólo te unes a una red de personas con intereses comunes, sino que también contribuyes a los programas de Fundación Antenna. Estos programas tienen un impacto positivo en artistas y espacios culturales, fomentando el desarrollo creativo y la conexión social en nuestra comunidad. Tu apoyo es fundamental para seguir impulsando este cambio cultural
-          </p>
-
-          <p
-            className="block sd:hidden md:hidden lg:hidden xl:hidden leading-5 font-libre-franklin text-left pl-4 pr-4 pt-9  sd:pt-14 sd:pt-14 md:pt-14 lg:pt-14 xl:pt-14 text-sm sd:text-xl sm:text-xl lg:text-xl xl:text-xl"
-            style={{
-              fontWeight: 400,
-              color: "black",
-            }}
-          >
-            <strong>SEÑAL</strong> no es una fiesta ni un evento convencional.
-            Es un espacio que que se crea una vez al mes y que facilita la
-            creación de comunidad.{" "}
-            <strong>
-              {" "}
-              Al aportar a SEÑAL estás apoyando los programas de Fundación
-              Antenna que impactan a artistas y espacios culturales.
-            </strong>{" "}
-          </p>
-        </div>
-      </div>
+ <div className="flex justify-center">
+  <h1 className="flex items-center mt-8 mx-7 mb-4 text-5xl leading-none text-black text-center font-unbounded font-light">
+    {/* Imágenes decorativas con estilos consistentes */}
+    <img
+      src="images/decoracion/2025_negro.png"
+      className="h-10 w-auto mx-2"
+      alt="2025"
+    />
+    <img
+      src="images/decoracion/senal2-05.png"
+      className="h-7 w-auto mx-6"
+      alt="Decoración"
+    />
+    
+    TICKETS
+    
+    <img
+      src="images/decoracion/senal2-05.png"
+      className="h-7 w-auto mx-6"
+      alt="Decoración"
+    />
+    <img
+      src="images/decoracion/2025_negro.png"
+      className="h-10 w-auto mx-2"
+      alt="2025"
+    />
+  </h1>
+</div>
 
       <div
-        className="sd:p-14 sd:pb-20 md:p-14 md:pb-20 lg:p-14 lg:pb-20 xl:p-14 xl:pb-20 "
+        className="pt-0 sd:pt-0  md:pt-0  lg:pt-0 xl:pt-0   sd:p-14 sd:pb-5 md:p-11 md:pb-5 lg:p-11 lg:pb-5 xl:p-11 xl:pb-5 "
         style={{
           backgroundColor: "#eaeedd",
           width: "100%",
@@ -75,7 +60,7 @@ function Section({ minHeight }) {
         </div>
 
         <div className="w-full">
-          <div className="grid sd:grid-cols-1 sd:grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-0  sm:py-3 sm:px-20 sm:mx-20">
+          <div className="grid sd:grid-cols-1 sd:grid-cols-1 lg:grid-cols-3 gap-x-20 gap-y-0  sm:py-3 ">
           <div className="p-4 text-center">
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/tickets-programa-completo/"
@@ -269,11 +254,7 @@ function Section({ minHeight }) {
           </div>
         </div>
 
-        <img
-          src="images/2024_negro_horizontal.png?v=2"
-          alt=""
-          className="absolute bottom-7 right-10 h-14 sd:h-20 sm:h-20 lg:h-20 xl:h-20"
-        />
+       
       </div>
     </section>
   );
