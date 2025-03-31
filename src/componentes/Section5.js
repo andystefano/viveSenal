@@ -180,7 +180,7 @@ function Section({ minHeight }) {
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 sm:py-3">
-  <div className="flex flex-col items-center p-4 max-w-[33%] bg-red-500">
+  <div className="flex flex-col items-center p-4 max-w-[33%]">
     <a
       href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro/"
       target="_blank"
@@ -208,7 +208,7 @@ function Section({ minHeight }) {
     </div>
   </div>
 
-  <div className="flex flex-col items-center p-4 max-w-[33%] bg-blue-500">
+  <div className="flex flex-col items-center p-4 max-w-[33%]">
     <a
       href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro-individual/"
       target="_blank"
