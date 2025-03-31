@@ -6,133 +6,38 @@ import { FaFacebookF } from "react-icons/fa6";
 
 function ViveFooter({ minHeight }) {
   return (
-    <footer className="bg-cream py-4 sd:py-10 md:py-10 lg:py-10 xl:py-10 px-4 sd:px-10 md:px-10 lg:px-10 xl:px-10">
-      <div
-        className="grid grid-cols-2 sd:grid-cols-6 sm:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 grid-rows-2 gap-1"
-        style={{ gridTemplateRows: "auto 2fr" }}
-      >
-        <div className="col-span-1">
-          <div className="flex items-start">
-            <span className="text-pink-400 ">
-              <MdTripOrigin className="text-base" />
-            </span>
-            <div className="text-black  font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
-              Un proyecto de
-            </div>
-          </div>
-        </div>
-        <div className="col-span-1">
-          <div className="flex items-start">
-            <span className="text-pink-400 ">
-              <MdTripOrigin  className="text-base"   />
-            </span>
-            <div className="text-black  font-libre-franklin ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd  text-left">
-              Presentado por
-            </div>
-          </div>
-        </div>
-        <div className="col-span-1  hidden sd:block md:block lg:block xl:block ">
-          <div className="flex items-start">
-            <span className="text-pink-400 ">
-              <MdTripOrigin  className="text-base"   />
-            </span>
-            <div className="text-black font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
-              Colaboran
-            </div>
-          </div>
-        </div>
-        <div className="col-span-1 hidden sd:block md:block lg:block xl:block"> </div>
-        <div className="col-span-1 row-span-2 hidden sd:block sm:block lg:block xl:block">
-          <img alt="Correo de contacto" src="images/email.png" />
-        </div>
-        <div className="col-span-1 row-span-1  hidden sd:block md:block lg:block xl:block ">
-        </div>
+    <footer className="bg-black py-4 sd:py-10 md:py-10 lg:py-10 xl:py-10 px-4 sd:px-10 md:px-10 lg:px-10 xl:px-10">
+ <div class="flex w-full ">
+        <div class="w-1/2">
+        
+        <div class="flex flex-col items-start ">
+    <img src="/images/logos/footer.png" class="w-4/5" />
+    <p class="text-white text-2xl text-center mt-2 ml-4">@ 2025, SEÑAL. Todos los derechos reservados.</p>
 
-
-        <div className="col-span-1">
-          <a href="http://www.antenna.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Fundación Antenna" src="images/logoAntennaBlack.png" /></a>
-        </div>
-        <div className="col-span-1">
-          <a href="https://btgpactual.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="BGT Pactual" src="images/logoBGTPactualBlack.png" /></a>
-        </div>
-
-        <div className="col-span-2  block sd:hidden md:hidden lg:hidden xl:hidden ">
-          <div className="flex items-start justify-center ">
-            <span className="text-pink-400 ">
-              <MdTripOrigin  className="text-base"   />
-            </span>
-            <div className="text-black font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
-              Colaboran
-            </div>
-          </div>
-        </div>
-
-        <div className="col-span-1  block sd:hidden md:hidden lg:hidden xl:hidden ">
-          <div className="flex items-start">
-           
-          </div>
-        </div>
-
-        <div className="col-span-2 sd:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
-          <a href="https://cervezaloa.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="LOA Cerveceria" src="images/logoLOABlack.png" /></a>
-        </div>
-        <div className="col-span-1 hidden sd:block md:block lg:block xl:block ">
-          <a className="hidden" href="https://drkombu.cl/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="Dr. Kombu" src="images/Dr_KombuB.png" /></a>
-        </div>
-        <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
-          <div className="flex items-center justify-center  mt-4">
-          <div className="p-3"><a href="https://www.tiktok.com/@antennaorg"><FaTiktok className="text-base" size={30} /></a></div>
-          <div className="p-3"><a href="https://www.linkedin.com/company/antennaorg/"><FaLinkedin className="text-base" size={30} /></a></div> 
-            <div className="p-3"><a href="https://www.instagram.com/vivesenal/"><FaInstagram className="text-base" size={30} /></a></div>
-            <div className=" p-3"><a href="https://web.facebook.com/antennaorg/"><FaFacebookF className="text-base" size={30} /></a></div>
-          </div>
-        </div>
-
-        <div className="col-span-2 sd:col-span-1 lg:col-span-1 xl:col-span-3  sd:block md:block lg:block xl:block  ">
-
-        <div className="flex items-start">
-            <span className="text-pink-400 ">
-              <MdTripOrigin className="text-base" />
-            </span>
-            <div className="text-black  font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
-              Apoyan
-            </div>
-          </div>
-
-          <a className="hidden sd:hidden md:hidden lg:hidden xl:hidden " href="http://somosthesocias.com/?utm_source=Antenna&utm_medium=Antenna&utm_campaign=ViveSenal"><img alt="The Socias" src="images/the_socias.png" /></a>
-          <a className="block sd:hidden md:hidden lg:hidden xl:hidden " href="#"><img alt="Apoyan" src="images/apoyan.png" /></a>
-
-          <a className="hidden sd:block md:block lg:block xl:block " href="#"><img alt="Apoyan"  className="w-full" src="images/apoyan.png" /></a>
-
-        </div>
-
-        <div className="col-span-1 sd:block md:block lg:block xl:block  ">
-        <div className="flex items-start">
-            <span className="text-pink-400 ">
-              
-            </span>
-            <div className="text-black  font-libre-franklin   ml-1 sd:ml-2 md:ml-2 lg:ml-2 xl:ml-2  text-xs sd:font-sd md:font-sd lg:font-sd xl:font-sd text-left">
-              
-            </div>
-          </div>
-        </div>
-
-        <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
-          
-        </div>
-
-        <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
-        </div>
-
-        <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
-        </div>
-
-        <div className="col-span-1 hidden sd:block md:block lg:block xl:block  ">
-        </div>
-
-
+    <div className="flex w-full text-white font-unbounded text-2xl mt-5">
+      {/* Columna Izquierda */}
+      <div className="w-4/5 text-left">
+        <div>Contactanos:</div>
+        <div>señal@antenna.cl</div>
       </div>
-      <div className="text-center  text-base font-bold block sd:hidden md:hidden lg:hidden xl:hidden">senal@antenna.cl</div>
+      {/* Columna Derecha */}
+      <div className="w-1/5 text-left flex justify-start items-center">
+        <FaInstagram size={50} />
+      </div>
+    </div>
+        
+</div>
+        </div>
+        <div class="w-1/2 text-center">
+
+ 
+        <img src="/images/logos/footer_movilydesk.png" />
+ 
+
+
+        
+        </div>
+    </div>
     </footer>
   );
 }

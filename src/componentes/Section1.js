@@ -83,7 +83,7 @@ function Section({ minHeight }) {
         </div>
 
         <div className="w-full lg:w-10/12 sd:w-full mt-2 mx-auto">
-          <img src="/images/logos/home_desk.png" className="w-full" />
+          <img src="/images/logos/home_desk.png" className="w-full" alt="Colaboran" />
         </div>
 
         <div></div>
