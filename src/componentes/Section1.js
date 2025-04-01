@@ -19,7 +19,7 @@ function Section({ minHeight }) {
     >
       <div className="h-auto sd:min-h-screen md:min-h-screen lg:min-h-screen  xl:min-h-screen">
         <div className="flex flex-col space-y-4 p-4 max-w-[50%] mx-auto">
-          <div className="mt-[15%]  text-white rounded-lg">
+          <div className="mt-[18%]  text-white rounded-lg">
             <div className="w-full">
               <img
                 src="images/2025_blanco.png"

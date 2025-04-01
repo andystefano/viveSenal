@@ -58,7 +58,7 @@ function Section({ minHeight }) {
         </div>
 
         <div className="w-full">
-          <div className="grid sd:grid-cols-1 sd:grid-cols-1 lg:grid-cols-3 gap-x-20 gap-y-0  sm:py-3 ">
+          <div className="grid sd:grid-cols-1 sd:grid-cols-1 lg:grid-cols-3  ">
             <div className="p-4 text-center">
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/tickets-programa-completo/"
@@ -77,7 +77,7 @@ function Section({ minHeight }) {
                 />
               </a>
               <div>
-                <div className="grid grid-cols-1 gap-4 mx-1 my-1">
+                <div className="grid grid-cols-1 ">
                   <div className="flex items-start">
                     
                     <div className="text-black  font-libre-franklin  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
@@ -195,7 +195,7 @@ function Section({ minHeight }) {
     <div className="mt-4">
       <div className="flex flex-col gap-4 mx-1 my-1">
         <div className="flex items-start">
-          <div className="text-blackfont-libre-franklin ml-2 text-xs sm:text-xl">
+          <div className="text-black font-libre-franklin ml-2 text-xs sm:text-xl">
             Acceso para dos personas a&nbsp;
             <span className="font-bold">1 encuentro</span> SEÑAL.
           </div>
@@ -223,7 +223,7 @@ function Section({ minHeight }) {
     <div className="mt-4">
       <div className="flex flex-col gap-4 mx-1 my-1">
         <div className="flex items-start">
-          <div className="text-blackfont-libre-franklin ml-2 text-xs sm:text-xl">
+          <div className="text-black font-libre-franklin ml-2 text-xs sm:text-xl">
             Acceso para dos personas a&nbsp;
             <span className="font-bold">1 encuentro</span> SEÑAL.
           </div>
