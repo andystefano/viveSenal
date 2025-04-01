@@ -9,11 +9,11 @@ function Section({ minHeight }) {
       style={{ backgroundColor: "#eaeedd" }}
     >
       <div className="flex justify-center">
-        <h1 className="flex items-center mt-8 mx-7 mb-4 text-5xl leading-none text-black text-center font-unbounded font-light">
+        <h1 className="flex items-center mt-8 mx-7 mb-4 text-4xl  sd:text-5xl sm:text-5xl lg:text-5xl xl:text-5xl leading-none text-black text-center font-unbounded font-light">
           {/* Imágenes decorativas con estilos consistentes */}
           <img
             src="images/decoracion/2025_negro.png"
-            className="h-10 w-auto mx-2"
+            className="h-5 sd:h-10 sm:h-10 lg:h-10 xl:h-10 w-auto mx-2 hidden sd:block  sm:block  lg:block xl:block"
             alt="2025"
           />
           <img
@@ -24,12 +24,12 @@ function Section({ minHeight }) {
           TICKETS
           <img
             src="images/decoracion/senal2-05.png"
-            className="h-7 w-auto mx-6"
+            className="h-7 w-auto mx-6  "
             alt="Decoración"
           />
           <img
             src="images/decoracion/2025_negro.png"
-            className="h-10 w-auto mx-2"
+            className="h-5 sd:h-10 sm:h-10 lg:h-10 xl:h-10 w-auto mx-2 hidden sd:block  sm:block  lg:block xl:block"
             alt="2025"
           />
         </h1>
@@ -130,7 +130,7 @@ function Section({ minHeight }) {
                   <div className="flex items-start">
                     <div className="text-black  font-libre-franklin  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                       Acceso para dos personas a
-                      <span className="font-bold">&nbsp;6 encuentros</span> SEÑAL
+                      <span className="font-bold">&nbsp;6 encuentros</span>&nbsp;SEÑAL
                       consecutivos.
                     </div>
                   </div>
@@ -139,7 +139,7 @@ function Section({ minHeight }) {
                 <div className="flex items-start">
                   <div className="text-black  font-libre-franklin  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                     <span className="font-bold">&nbsp;Visitas Antenna</span>
-                    seleccionadas.
+                    &nbsp;seleccionadas.
                   </div>
                 </div>
               </div>
@@ -176,11 +176,87 @@ function Section({ minHeight }) {
               </div>
             </div>
 
+
+
+
+
+
+
+
+
+
+
+            <div className="p-4 text-center block sd:hidden md:hidden lg:hidden xl:hidden">
+  <a
+    href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <img
+      className=""
+      src="./images/ticketRed.png?v=2"
+      alt="imagen de fondo"
+      style={{
+        width: "100%",
+        height: "auto",
+      }}
+    />
+  </a>
+  <div>
+    <div className="grid grid-cols-1 gap-4 mx-1 my-1">
+      <div className="flex items-start">
+        <div className="text-black font-libre-franklin ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+          Acceso para dos personas a&nbsp;
+          <span className="font-bold">1 encuentro</span> SEÑAL.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="p-4 text-center block sd:hidden md:hidden lg:hidden xl:hidden">
+  <a
+    href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro-individual/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <img
+      className=""
+      src="./images/ticketGray.png?v=2"
+      alt="imagen de fondo"
+      style={{
+        width: "100%",
+        height: "auto",
+      }}
+    />
+  </a>
+  <div>
+    <div className="grid grid-cols-1 gap-4 mx-1 my-1">
+      <div className="flex items-start">
+        <div className="text-black font-libre-franklin ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+          Acceso para dos personas a&nbsp;
+          <span className="font-bold">1 encuentro</span> SEÑAL.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+            
+
            
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 sm:py-3">
-  <div className="flex flex-col items-center p-4 max-w-[33%]">
+          <div className="hidden sm:flex flex-wrap justify-center gap-6 sm:py-3">
+          <div className="flex flex-col items-center p-4 max-w-[33%]">
     <a
       href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro/"
       target="_blank"

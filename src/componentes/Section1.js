@@ -38,7 +38,7 @@ function Section({ minHeight }) {
             </div>
           </div>
           <div className=" text-white rounded-lg">
-            <h1 className="hidden sd:block md:block lg:block xl:block  text-4xl sd:text-6xl md:text-xl lg:text-xl xl:text-xl font-thin	pr-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded lg:text-right sd:text-left">
+            <h1 className="block  sd:block md:block lg:block xl:block  text-xs sd:text-6xl md:text-xl lg:text-xl xl:text-xl font-thin	pr-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded text-right lg:text-right sd:text-left">
               Encuentros de
               <br />
               arte y música
@@ -82,8 +82,9 @@ function Section({ minHeight }) {
           </div>
         </div>
 
-        <div className="w-full lg:w-10/12 sd:w-full mt-2 mx-auto">
-          <img src="/images/logos/home_desk.png" className="w-full" alt="Colaboran" />
+        <div className="w-[90%] lg:w-10/12 sd:w-full mt-2 mx-auto  justify-center items-center mx-auto text-center">
+          <img src="/images/logos/home_desk.png" className="w-full hidden sd:block md:block lg:block xl:block" alt="Colaboran" />
+          <img src="/images/logos/home_movil.png" className="block sd:hidden md:hidden lg:hidden xl:hidden " alt="Colaboran" />
         </div>
 
         <div></div>

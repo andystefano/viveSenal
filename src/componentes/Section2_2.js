@@ -57,7 +57,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                 <span className="material-icons w-6 h-6 text-pink-400  mt-1.5">
                   <MdTripOrigin size={25} />
                 </span>
-                <div className="text-white text-xl  font-unbounded  ml-4 font-extralight text-left">
+                <div className="text-white sd:text-xl lg:text-xl xl:text-xl  font-unbounded  ml-4 font-extralight text-left">
                   Con tu aporte <strong>SEÑAL</strong> estás apoyando a
                   Fundación Antenna en el desarrollo de nuevos proyectos que
                   benefician a artistas y espacios culturales.
