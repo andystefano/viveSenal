@@ -27,13 +27,29 @@ function Section({ minHeight }) {
 
 
 
-<div className="flex items-start justify-between block sd:hidden md:hidden lg:hidden xl:hidden">
-  <div className="w-full">
-    <h1 className="text-3xl w-full leading-none md:text-5xl xl:text-6xl text-white text-center font-unbounded  pl-7 sd:pl-14 md:pl-14 lg:pl-14 xl:pl-14 " style={{ color: 'rgb(0, 0, 0)' }}>
-      NOVIEMBRE / DICIEMBRE /ENERO
-    </h1>
+<div className="w-full block sd:hidden md:hidden lg:hidden xl:hidden text-center pt-8">
+  <div className="flex justify-center items-center">
+    <img
+      src="images/decoracion/senal2-05.png"
+      className="w-1/12 mx-2 mt-5"
+      style={{ maxWidth: "20px", height: "auto" }}
+    />
+
+    
+    <div className="text-4xl md:text-5xl xl:text-6xl font-unbounded pt-4" style={{ color: "#000", fontWeight: '400' }}>
+      PRÓXIMAS
+    </div>
+    <img
+      src="images/decoracion/senal2-05.png"
+      className="w-1/12 mx-2  mt-5"
+      style={{ maxWidth: "20px", height: "auto" }}
+    />
+  </div>
+  <div className="text-4xl md:text-5xl xl:text-6xl font-unbounded" style={{ fontWeight: '900' }}>
+    SEÑALES
   </div>
 </div>
+
 
       
       <div className="w-full hidden sd:block md:block lg:block xl:block">
