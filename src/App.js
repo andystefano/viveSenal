@@ -57,7 +57,7 @@ function App() {
  
   </div>
       <Section3 minHeight={minHeight} className=" bg-black " />
-      <marquee className="text-xs  font-unbounded  sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl  text-[#009d5a] bg-black font-bold mx-0 py-3" scrollamount="12" loop="100" scrolldelay="-1">
+      <marquee className="text-lg  font-unbounded  sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl  text-[#009d5a] bg-black font-bold mx-0 py-3" scrollamount="12" loop="100" scrolldelay="-1">
       DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
       DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
       DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;

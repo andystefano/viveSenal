@@ -23,7 +23,7 @@ function Section({ minHeight }) {
             <div className="w-full">
               <img
                 src="images/2025_blanco.png"
-                className=" max-w-[25%] md:max-w-[15%] lg:max-w-[15%] sm:max-w-[15%] "
+                className="ml-4 max-w-[25%] md:max-w-[15%] lg:max-w-[15%] sm:max-w-[15%] "
                 alt="Vive Señal"
               />
             </div>
@@ -38,15 +38,15 @@ function Section({ minHeight }) {
             </div>
           </div>
           <div className=" text-white rounded-lg">
-            <h1 className="block  sd:block md:block lg:block xl:block  text-xs sd:text-6xl md:text-xl lg:text-xl xl:text-xl font-thin	pr-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded text-right lg:text-right sd:text-left">
-              Encuentros de
+            <h1 className="block mt-0  sd:block md:block lg:block xl:block  text-base leading-5 sd:text-6xl md:text-xl lg:text-xl xl:text-xl font-thin	pr-4 sd:mr-14 leading-none sd:text-h1 text-white font-unbounded text-right lg:text-right sd:text-left">
+              encuentros de
               <br />
               arte y música
             </h1>
           </div>
           <div className="text-white p-4 rounded-lg">
             <div className="w-full lg:w-10/12 sd:w-full mt-2">
-              <p className="text-xs sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-center sm:text-left lg:text-left xl:text-left">
+              <p className="text-lg leading-6 sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-center sm:text-left lg:text-left xl:text-left">
                 Una señal es un llamado, un signo, una forma de transmitir
                 información. También es el nombre de una nueva experiencia que
                 te invita a conocer Santiago, el mundo del arte y la cultura&nbsp;
@@ -54,7 +54,7 @@ function Section({ minHeight }) {
                   a través de conversaciones cercanas y música experimental.
                 </strong>
               </p>
-              <p className="text-xs sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-center sm:text-left lg:text-left xl:text-left">
+              <p className="text-lg leading-6 sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-center sm:text-left lg:text-left xl:text-left">
                 <span className="font-bold">SEÑAL</span> es un proyecto de&nbsp;
                 <span className="font-bold">Fundación Antenna.</span>
               </p>
@@ -63,7 +63,7 @@ function Section({ minHeight }) {
                 href="#tickets"
               >
                 <button
-                  className="z-10 mb-4 flex items-center px-6 py-1 text-white text-base sd:text-2xl md:text-2xl  lg:text-2xl  xl:text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
+                  className="z-10 mb-4 flex items-center px-6 py-1 text-white text-2xl sd:text-2xl md:text-2xl  lg:text-2xl  xl:text-2xl font-normal	 rounded-full border-2 border-pink-500 font-unbounded"
                   onMouseEnter={() => setHovered(true)}
                   onMouseLeave={() => setHovered(false)}
                 >

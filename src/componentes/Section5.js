@@ -9,7 +9,7 @@ function Section({ minHeight }) {
       style={{ backgroundColor: "#eaeedd" }}
     >
       <div className="flex justify-center">
-        <h1 className="flex items-center mt-8 mx-7 mb-4 text-4xl  sd:text-5xl sm:text-5xl lg:text-5xl xl:text-5xl leading-none text-black text-center font-unbounded font-light">
+        <h1 className="flex items-center mt-8 mx-7 mb-4 text-6xl  sd:text-5xl sm:text-5xl lg:text-5xl xl:text-6xl leading-none text-black text-center font-unbounded font-normal">
           {/* Imágenes decorativas con estilos consistentes */}
           <img
             src="images/decoracion/2025_negro.png"
@@ -80,15 +80,15 @@ function Section({ minHeight }) {
                 <div className="grid grid-cols-1 ">
                   <div className="flex items-start">
                     
-                    <div className="text-black  font-libre-franklin  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+                    <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-2xl sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                       Acceso para dos personas a{" "}
-                      <span className="font-bold">programa completo</span>{" "}
+                      <br/><span className="font-bold">programa completo</span>{" "}
                       SEÑAL.
                     </div>
                   </div>
                   <div className="flex items-start">
                     
-                    <div className="text-black  font-libre-franklin  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+                    <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-2xl sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                       {" "}
                       <span className="font-bold"> Visitas Antenna</span>{" "}
                       seleccionadas.
@@ -128,16 +128,16 @@ function Section({ minHeight }) {
               <div>
                 <div className="grid grid-cols-1 gap-4 mx-1 my-1">
                   <div className="flex items-start">
-                    <div className="text-black  font-libre-franklin  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+                    <div className="mt-4  text-black  font-libre-franklin  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                       Acceso para dos personas a
-                      <span className="font-bold">&nbsp;6 encuentros</span>&nbsp;SEÑAL
+                      <span className="font-bold">&nbsp;6 encuentros</span>&nbsp;<br/>SEÑAL
                       consecutivos.
                     </div>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="text-black  font-libre-franklin  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+                  <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-2xl sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                     <span className="font-bold">&nbsp;Visitas Antenna</span>
                     &nbsp;seleccionadas.
                   </div>
@@ -166,9 +166,9 @@ function Section({ minHeight }) {
                 <div className="grid grid-cols-1 gap-4 mx-1 my-1">
                   <div className="flex items-start">
                    
-                    <div className="text-black  font-libre-franklin  ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+                    <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-2xl sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
                       Acceso para dos personas a&nbsp;
-                      <span className="font-bold">3 encuentros</span> SEÑAL
+                      <span className="font-bold">3 encuentros</span><br/> SEÑAL
                       consecutivos.
                     </div>
                   </div>
@@ -205,9 +205,9 @@ function Section({ minHeight }) {
   <div>
     <div className="grid grid-cols-1 gap-4 mx-1 my-1">
       <div className="flex items-start">
-        <div className="text-black font-libre-franklin ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+        <div className="mt-4 text-black font-libre-franklin ml-2 font-normal text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
           Acceso para dos personas a&nbsp;
-          <span className="font-bold">1 encuentro</span> SEÑAL.
+          <span className="font-bold">1 encuentro</span><br/> SEÑAL.
         </div>
       </div>
     </div>
