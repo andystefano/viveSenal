@@ -8,7 +8,7 @@ function ViveFooter({ minHeight }) {
   return (
     <footer className="bg-black py-4 sd:py-10 md:py-10 lg:py-10 xl:py-10 px-4 sd:px-10 md:px-10 lg:px-10 xl:px-10">
  <div class="flex w-full ">
-        <div class="w-1/2">
+        <div class="w-full hidden sd:block sm:block lg:block x:block sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2">
         
         <div class="flex flex-col items-start ">
     <img src="/images/logos/footer.png" class="w-4/5" />
@@ -28,7 +28,7 @@ function ViveFooter({ minHeight }) {
         
 </div>
         </div>
-        <div class="w-1/2 text-center">
+        <div class="w-full sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2 text-center">
 
  
         <img src="/images/logos/footer_movilydesk.png" />
