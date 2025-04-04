@@ -87,7 +87,6 @@ function Section({ minHeight }) {
           <img src="/images/logos/home_movil.png" className="block sd:hidden md:hidden lg:hidden xl:hidden " alt="Colaboran" />
         </div>
 
-        <div></div>
       </div>
     </section>
   );
