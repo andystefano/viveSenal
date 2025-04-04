@@ -190,16 +190,16 @@ background-position: right top;
     filter: hue-rotate(0deg) saturate(100%);
   }
   25% {
-    filter: hue-rotate(60deg) saturate(120%);
+    filter: hue-rotate(-25deg) saturate(150%);
   }
   50% {
-    filter: hue-rotate(120deg) saturate(150%);
+    filter: hue-rotate(0deg) saturate(150%);
   }
   75% {
-    filter: hue-rotate(180deg) saturate(120%);
+    filter: hue-rotate(25deg) saturate(100%);
   }
   100% {
-    filter: hue-rotate(240deg) saturate(100%);
+    filter: hue-rotate(0deg) saturate(100%);
   }
 }
 
@@ -226,10 +226,5 @@ background-position: right top;
   33.33% { opacity: 1; background-image: var(--imagen5); }
   41.66% { opacity: 1; background-image: var(--imagen6); }
   50% { opacity: 1; background-image: var(--imagen7); }
-  58.33% { opacity: 1; background-image: var(--imagen8); }
-  66.66% { opacity: 1; background-image: var(--imagen9); }
-  75% { opacity: 1; background-image: var(--imagen10); }
-  83.33% { opacity: 1; background-image: var(--imagen11); }
-  91.66% { opacity: 1; background-image: var(--imagen12); }
   100% { opacity: 0; background-image: var(--imagen1); }
 }
