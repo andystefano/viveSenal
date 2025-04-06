@@ -31,7 +31,7 @@ function ViveFooter({ minHeight }) {
       <div class="flex w-full ">
         <div class="w-full hidden sd:block sm:block lg:block x:block sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2">
           <div class="flex flex-col items-start ">
-            <img src="/images/logos/footer.png" class="w-3/5 mt-5" />
+            <img src="/images/logos/footer.png" class="w-3/5 mt-5" alt="Logo" />
             <p class="text-white text-xl text-center mt-2 ml-4" >
               @ 2025, SEÑAL. Todos los derechos reservados.
             </p>
