@@ -44,7 +44,7 @@ function ViveFooter({ minHeight }) {
               </div>
               {/* Columna Derecha */}
               <div className="w-1/5 text-left flex justify-start items-center">
-                <FaInstagram size={50} />
+                <a href="https://www.instagram.com/vivesenal/" target="_blank" rel="noreferrer"><FaInstagram size={50} /></a>
               </div>
             </div>
           </div>
