@@ -85,29 +85,26 @@ function Section({ minHeight }) {
 
       </div>
 
-      <div className="grid mt-4 sm:grid-cols-1 lg:grid-cols-3 gap-5 sd:gap-12 md:gap-12 lg:gap-12 xl:gap-12 p-12 pt-0 sd:pt-12 md:pt-12 lg:pt-12 xl:pt-12">
+      <div className="grid mt-4 sm:grid-cols-1 lg:grid-cols-3 gap-5 sd:gap-15 md:gap-15 lg:gap-15 xl:gap-15 p-12 pt-0 sd:pt-12 md:pt-12 lg:pt-12 xl:pt-12">
         <div className="relative block sd:hidden md:hidden lg:hidden xl:hidden">
            
         </div>
 
-        <div className="relative p-5">
+        <div className="relative p-10">
           <img src="images/programacion/p1.png" alt="Imagen" className="w-full" />
           <div className="m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
-              MAVI UC</h1>
+              MUSEO PRECOLOMBINO</h1>
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
-              Lastarria</h2>
+              Arte precolombino.
+              </h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              Bernardo Oyarzún Y Macarena Cuevas
+              Disfruta de un especial recorrido nocturno en uno de los museos más fascinantes de Santiago y descubre el legado de nuestros antepasados a través de las piezas de arte precolombino.
+<br/>Música por confirmar.
                 </p>
-                <p className="text-xs mt-3 sd:text-2xl md:text-xl lg:text-xl xl:text-xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
-                Descubre a dos artistas de distintas generaciones, el reconocido artista Bernardo Oyarzún y la ganadora del Premio Arte Joven LarrainVial 2023, Macarena Cuevas.</p>
-                
-                <p className="text-xs mt-3 sd:text-xl md:text-xl  lg:text-xl xl:text-xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
-                Música a cargo de Thomas Woodroffe.</p>
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
               Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -118,24 +115,22 @@ function Section({ minHeight }) {
             </div>
           </div>
         </div>
-        <div className="relative p-5">
+        <div className="relative p-10">
           <img src="images/programacion/p2.png" alt="Imagen" className="w-full" />
           <div className="m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
-              MAVI UC</h1>
+              ARTISTAS DEL TALLER POCURO</h1>
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
-              Lastarria</h2>
+              Providencia</h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              Bernardo Oyarzún Y Macarena Cuevas
+              <b>Isidora Villarino, Jacinta Besa, Colomba Fontaine, Josefina Valenzuela, Macarena Jofré, Maite Zubizarreta y Sergio Loayza.</b>
+&nbsp;Siete artistas te invitan a conocer su intimidad y espacio creativo para conocer sus inspiraciones y obras de arte.
+<br/>Música por confirmar.
                 </p>
-                <p className="text-xs mt-3 sd:text-2xl md:text-xl lg:text-xl xl:text-xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
-                Descubre a dos artistas de distintas generaciones, el reconocido artista Bernardo Oyarzún y la ganadora del Premio Arte Joven LarrainVial 2023, Macarena Cuevas.</p>
-                
-                <p className="text-xs mt-3 sd:text-xl md:text-xl  lg:text-xl xl:text-xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
-                Música a cargo de Thomas Woodroffe.</p>
+              
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
               Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -146,24 +141,21 @@ function Section({ minHeight }) {
             </div>
           </div>
         </div>
-        <div className="relative p-5">
+        <div className="relative p-10">
           <img src="images/programacion/p3.png" alt="Imagen" className="w-full" />
           <div className="m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
-              MAVI UC</h1>
+              CAMILA LOBOS EN SALA DE ARTE CCU</h1>
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
-              Lastarria</h2>
+              Las Condes</h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              Bernardo Oyarzún Y Macarena Cuevas
+              Instalación inmersiva.<br/>
+              Sumérgete en un bosque flotante de árboles secos y raíces que te lleva a despertar emociones y reflexiones sobre los territorios en los que vivimos.
+              <br/>Música por confirmar.
                 </p>
-                <p className="text-xs mt-3 sd:text-2xl md:text-xl lg:text-xl xl:text-xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
-                Descubre a dos artistas de distintas generaciones, el reconocido artista Bernardo Oyarzún y la ganadora del Premio Arte Joven LarrainVial 2023, Macarena Cuevas.</p>
-                
-                <p className="text-xs mt-3 sd:text-xl md:text-xl  lg:text-xl xl:text-xl text-left font-libre-franklin sd:mt-3 md:mt-3 lg:mt-3">
-                Música a cargo de Thomas Woodroffe.</p>
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
               Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
