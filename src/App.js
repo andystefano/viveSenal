@@ -5,6 +5,7 @@ import Section2_2 from "./componentes/Section2_2.js";
 import Section2_3 from "./componentes/Section2_3.js";
 import Section3 from "./componentes/Section3.js";
 import Section4 from "./componentes/Section4.js";
+import Section4Movil from "./componentes/Section4Movil.js";
 import Section5 from "./componentes/Section5.js";
 import Section6 from "./componentes/Section6.js";
 import ViveFooter from "./componentes/ViveFooter.js";
@@ -65,7 +66,8 @@ function App() {
       DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
       DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.
   </marquee>
-      <Section4 minHeight={minHeight} />
+  <div className="block sd:hidden  md:hidden lg:hidden xl:hidden"><Section4Movil minHeight={minHeight} /> </div>
+  <div className="hidden sd:block  md:block lg:block xl:block"><Section4 minHeight={minHeight} /> </div>  
       <Section5 minHeight={minHeight} />
       <Section6 minHeight={minHeight} />
       <ViveFooter />

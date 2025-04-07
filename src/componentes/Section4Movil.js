@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 // Importa todas las imágenes
-import imagen1 from '../images/fotos/desk/1.png';
-import imagen2 from '../images/fotos/desk/2.png';
-import imagen3 from '../images/fotos/desk/3.png';
-import imagen4 from '../images/fotos/desk/4.png';
-import imagen5 from '../images/fotos/desk/5.png';
-import imagen6 from '../images/fotos/desk/6.png';
-import imagen7 from '../images/fotos/desk/7.png';
-import imagen8 from '../images/fotos/desk/8.png';
-import imagen9 from '../images/fotos/desk/9.png';
-import imagen10 from '../images/fotos/desk/10.png';
-import imagen11 from '../images/fotos/desk/11.png';
-import imagen12 from '../images/fotos/desk/12.png';
+import imagen1 from '../images/fotos/movil/1.png';
+import imagen2 from '../images/fotos/movil/2.png';
+import imagen3 from '../images/fotos/movil/3.png';
+import imagen4 from '../images/fotos/movil/4.png';
+import imagen5 from '../images/fotos/movil/5.png';
+import imagen6 from '../images/fotos/movil/6.png';
+import imagen7 from '../images/fotos/movil/7.png';
+import imagen8 from '../images/fotos/movil/8.png';
+import imagen9 from '../images/fotos/movil/9.png';
+import imagen10 from '../images/fotos/movil/10.png';
+import imagen11 from '../images/fotos/movil/11.png';
+import imagen12 from '../images/fotos/movil/12.png';
 
 
 const Section4 = ({ minHeight }) => {

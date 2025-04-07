@@ -1,8 +1,4 @@
-import { MdTripOrigin } from "react-icons/md";
-import { FaTiktok } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa6";
 
 function ViveFooter({ minHeight }) {
   return (
@@ -11,7 +7,7 @@ function ViveFooter({ minHeight }) {
 
       <div className="w-1/2">
       
-      <img src="/images/logos/footer.png" class="w-full" />
+      <img src="/images/logos/footer.png" alt="Logo Señal" class="w-full" />
             <p class="text-white text-xs text-left mt-2 " style={{fontSize: '0.73rem'}}>
               @ 2025, SEÑAL. Todos los derechos reservados.
             </p>
@@ -50,7 +46,7 @@ function ViveFooter({ minHeight }) {
           </div>
         </div>
         <div class="mt-5 sd:mt-0 sm:mt-0  lg:mt-0  xl:mt-0  w-full sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2 text-center">
-          <img src="/images/logos/footer_movilydesk.png" />
+          <img src="/images/logos/footer_movilydesk.png" alt="Logos Colaboradores" />
         </div>
       </div>
     </footer>
