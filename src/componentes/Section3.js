@@ -90,19 +90,19 @@ function Section({ minHeight }) {
            
         </div>
 
-        <div className="relative p-10">
+        <div className="relative p-0 md:p-10 lg:p-10 xl:p-10">
           <img src="images/programacion/p1.png" alt="Imagen" className="w-full" />
-          <div className="m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
+          <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
               MUSEO PRECOLOMBINO</h1>
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
-              Arte precolombino.
+              Santiago Centro.
               </h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              Disfruta de un especial recorrido nocturno en uno de los museos más fascinantes de Santiago y descubre el legado de nuestros antepasados a través de las piezas de arte precolombino.
+              Disfruta de un especial recorrido nocturno en uno de los museos más fascinantes de Santiago y descubre el legado de nuestros antepasados a través de las piezas de <b>arte precolombino</b>.
 <br/>Música por confirmar.
                 </p>
               </div>
@@ -115,9 +115,9 @@ function Section({ minHeight }) {
             </div>
           </div>
         </div>
-        <div className="relative p-10">
+        <div className="relative p-0 md:p-10 lg:p-10 xl:p-10">
           <img src="images/programacion/p2.png" alt="Imagen" className="w-full" />
-          <div className="m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
+          <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
@@ -141,9 +141,9 @@ function Section({ minHeight }) {
             </div>
           </div>
         </div>
-        <div className="relative p-10">
+        <div className="relative  p-0 md:p-10 lg:p-10 xl:p-10">
           <img src="images/programacion/p3.png" alt="Imagen" className="w-full" />
-          <div className="m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
+          <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
@@ -152,7 +152,7 @@ function Section({ minHeight }) {
               Las Condes</h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              Instalación inmersiva.<br/>
+              <b>Instalación inmersiva</b>.<br/>
               Sumérgete en un bosque flotante de árboles secos y raíces que te lleva a despertar emociones y reflexiones sobre los territorios en los que vivimos.
               <br/>Música por confirmar.
                 </p>

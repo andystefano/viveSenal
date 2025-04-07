@@ -13,7 +13,7 @@ function Section({ minHeight }) {
             id="accordion"
           >
             <AcordeonTab titulo={'¿Qué ocurre en SEÑAL?'} contenido={'Cada experiencia SEÑAL tiene 3 momentos: una conversación para conocer a los creadores detrás de una exposición o proyecto que visitemos, una activación musical pensada específicamente para ese lugar y un espacio relajado para que puedas tomarte algo con los demás participantes.'} />
-            <AcordeonTab titulo={'¿Cuándo ocurre?'} contenido={'Las experiencias SEÑAL se hacen una vez al mes. El primer ciclo tiene una duración de 10 experiencias. '} />
+            <AcordeonTab titulo={'¿Cuándo ocurre?'} contenido={'Las experiencias SEÑAL se hacen una vez al mes. El segundo ciclo tiene una duración de 10 experiencias. '} />
             <AcordeonTab titulo={'¿Cuáles son los horarios?'} contenido={'Nuestros encuentros empiezan a las 19:30 hrs. y tienen una duración de 2 horas y 30 minutos. Se hacen en días de semana.'} />
             <AcordeonTab titulo={'¿Cómo puedo participar?'} contenido={'En <a class="underline" href="https://tickets.viveseñal.cl">tickets.viveseñal.cl</a>, realizando tu donación podrás adquirir tu ticket o haciendo click <a class="underline" href="http://tickets.viveseñal.cl/">aquí</a>.'} />
             <AcordeonTab titulo={'¿Qué incluye mi aporte?'} contenido={'"Tu acceso es personal e intransferible. Incluye un número de experiencias determinadas por el aporte que elijas. En algunos casos, podrás participar de Visitas Guiadas Antenna seleccionadas mientras tu aporte este activo.'} />
