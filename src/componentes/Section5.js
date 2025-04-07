@@ -228,7 +228,7 @@ function Section({ minHeight }) {
     <div className="grid grid-cols-1 gap-4 mx-1 my-1">
       <div className="flex items-start">
         <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-2xl sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
-          Acceso para dos personas a&nbsp;
+          Acceso para una persona a&nbsp;
           <span className="font-bold">1 encuentro</span> SEÑAL.
         </div>
       </div>
@@ -294,7 +294,7 @@ function Section({ minHeight }) {
       <div className="flex flex-col gap-4 mx-1 my-1">
         <div className="flex items-start">
           <div className="text-black font-libre-franklin ml-2 text-xs sm:text-xl">
-            Acceso para dos personas a&nbsp;
+            Acceso para una persona a&nbsp;
             <span className="font-bold">1 encuentro</span> SEÑAL.
           </div>
         </div>
