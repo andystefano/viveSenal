@@ -96,14 +96,13 @@ function Section({ minHeight }) {
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
-              MUSEO PRECOLOMBINO</h1>
+              MATUCANA100</h1>
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
-              Santiago Centro.
+              Quinta normal.
               </h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              Disfruta de un especial recorrido nocturno en uno de los museos más fascinantes de Santiago y descubre el legado de nuestros antepasados a través de las piezas de <b>arte precolombino</b>.
-<br/>Música por confirmar.
+              Reconocidos internacionalmente por su trabajo en animación y videoarte, Cristóbal León y Joaquín Cociña nos invitan a conocer el set de su nueva película en Matucana 100. La jornada cerrará con una selección especial de su música.
                 </p>
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
