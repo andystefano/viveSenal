@@ -36,7 +36,7 @@ function Section({ minHeight }) {
     />
 
     
-    <div className="text-5xl md:text-5xl xl:text-6xl font-unbounded pt-4" style={{ color: "#000", fontWeight: '400' }}>
+    <div className="text-[2.7rem] md:text-5xl xl:text-6xl font-unbounded pt-4" style={{ color: "#000", fontWeight: '400' }}>
       PRÓXIMAS
     </div>
     <img
@@ -45,7 +45,7 @@ function Section({ minHeight }) {
       style={{ maxWidth: "36px", height: "auto" }}
     />
   </div>
-  <div className="text-5xl md:text-5xl xl:text-6xl font-unbounded mt-3" style={{ fontWeight: '900' }}>
+  <div className="text-[2.7rem] md:text-5xl xl:text-6xl font-unbounded mt-0" style={{ fontWeight: '900' }}>
     SEÑALES
   </div>
 </div>
@@ -116,7 +116,7 @@ function Section({ minHeight }) {
         </div>
         <div className="relative p-0 md:p-10 lg:p-10 xl:p-10">
           <img src="images/programacion/p2.png" alt="Imagen" className="w-full" />
-          <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
+          <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
@@ -142,7 +142,7 @@ function Section({ minHeight }) {
         </div>
         <div className="relative  p-0 md:p-10 lg:p-10 xl:p-10">
           <img src="images/programacion/p3.png" alt="Imagen" className="w-full" />
-          <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
+          <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">

@@ -8,18 +8,19 @@ function ViveFooter({ minHeight }) {
       <div className="w-1/2">
       
       <img src="/images/logos/footer.png" alt="Logo Señal" class="w-full" />
-            <p class="text-white text-xs text-left mt-2 " style={{fontSize: '0.73rem'}}>
+            <p class="text-white text-xs text-left mt-2 text-[#e9eedc] " style={{fontSize: '0.73rem'}}>
               @ 2025, SEÑAL. Todos los derechos reservados.
             </p>
 
       </div>
-      <div className="w-1/2 grid grid-cols-[auto_1fr] items-center justify-end gap-2 text-white p-1 pl-8  text-left">
+      <div className="w-1/2 flex flex-col items-center text-white p-1 pl-8 pt-1 text-center text-[#e9eedc]">
   <FaInstagram size={32} />
   <div>
     <div>Contáctenos</div>
     <div>señal@antenna.cl</div>
   </div>
 </div>
+
 
 
 
@@ -32,17 +33,21 @@ function ViveFooter({ minHeight }) {
               @ 2025, SEÑAL. Todos los derechos reservados.
             </p>
 
-            <div className="flex w-full text-white font-unbounded text-2xl mt-5">
-              {/* Columna Izquierda */}
-              <div className="w-4/5 text-left">
-                <div>Contactanos:</div>
-                <div>señal@antenna.cl</div>
-              </div>
-              {/* Columna Derecha */}
-              <div className="w-1/5 text-left flex justify-start items-center">
-                <a href="https://www.instagram.com/vivesenal/" target="_blank" rel="noreferrer"><FaInstagram size={50} /></a>
-              </div>
-            </div>
+            <div className="flex w-full text-white font-libre-franklin text-2xl mt-5">
+  {/* Columna Única */}
+  <div className="w-full flex justify-between items-center">
+    <div className="flex flex-col">
+      <div className="flex items-center gap-2">
+        <span>Contáctanos:</span>
+        <a href="https://www.instagram.com/vivesenal/" target="_blank" rel="noreferrer">
+          <FaInstagram size={30} />
+        </a>
+      </div>
+      <div>señal@antenna.cl</div>
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
         <div class="mt-5 sd:mt-0 sm:mt-0  lg:mt-0  xl:mt-0  w-full sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2 text-center">
