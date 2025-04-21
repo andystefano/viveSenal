@@ -120,16 +120,15 @@ function Section({ minHeight }) {
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
-              ARTISTAS DEL TALLER POCURO</h1>
+              CAMILA LOBOS EN SALA DE ARTE CCU</h1>
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
-              Providencia</h2>
+              Las Condes</h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              <b>Isidora Villarino, Jacinta Besa, Colomba Fontaine, Josefina Valenzuela, Macarena Jofré, Maite Zubizarreta y Sergio Loayza.</b>
-&nbsp;Siete artistas te invitan a conocer su intimidad y espacio creativo para conocer sus inspiraciones y obras de arte.
-<br/>Música por confirmar.
+              <b>Instalación inmersiva</b>.<br/>
+              Sumérgete en un bosque flotante de árboles secos y raíces que te lleva a despertar emociones y reflexiones sobre los territorios en los que vivimos.
+              <br/>Música por confirmar.
                 </p>
-              
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
               Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -144,17 +143,18 @@ function Section({ minHeight }) {
           <img src="images/programacion/p3.png" alt="Imagen" className="w-full" />
           <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
-              <div>
+          <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
-              CAMILA LOBOS EN SALA DE ARTE CCU</h1>
+              ARTISTAS DEL TALLER POCURO</h1>
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
-              Las Condes</h2>
+              Providencia</h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              <b>Instalación inmersiva</b>.<br/>
-              Sumérgete en un bosque flotante de árboles secos y raíces que te lleva a despertar emociones y reflexiones sobre los territorios en los que vivimos.
-              <br/>Música por confirmar.
+              <b>Isidora Villarino, Jacinta Besa, Colomba Fontaine, Josefina Valenzuela, Macarena Jofré, Maite Zubizarreta y Sergio Loayza.</b>
+&nbsp;Siete artistas te invitan a conocer su intimidad y espacio creativo para conocer sus inspiraciones y obras de arte.
+<br/>Música por confirmar.
                 </p>
+              
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
               Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
