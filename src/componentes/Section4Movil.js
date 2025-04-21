@@ -46,7 +46,7 @@ const Section4 = ({ minHeight }) => {
 <div className='w-full block sd:hidden md:hidden lg:hidden xl:hidden' 
   style={{
     backgroundImage: "url(images/fondos/3_movil.png)",
-    backgroundSize: "cover",
+    backgroundSize: "contain",
     backgroundColor: "white",
   }}
 >
