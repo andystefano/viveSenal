@@ -51,12 +51,9 @@ const Section4 = ({ minHeight }) => {
   }}
 >
 
-<p className='mx-auto hidden sd:block sm:block lg:block xl:block text-base sd:text-4xl md:text-4xl lg:text-4xl  xl:text-4xl text-center font-unbounded  px-10 py-20' style={{lineHeight:'2.8rem'}}>CON TU APORTE <span className='font-bold'>SEÑAL</span> ESTÁS APOYANDO A<br/>
-&nbsp;<span className='font-bold'>FUNDACIÓN ANTENNA</span> EN EL DESARROLLO<br/>
-DE NUEVOS PROYECTOS QUE BENEFICIAN A<br/>
-ARTISTAS Y ESPACIOS CULTURALES.</p>
+ 
 
-<p className='mx-auto text-2xl block sd:hidden  sm:hidden  lg:hidden  xl:hidden  sd:text-4xl md:text-4xl lg:text-4xl  xl:text-4xl text-center font-unbounded  px-10 py-20'>CON TU APORTE <span className='font-bold'>SEÑAL</span> ESTÁS APOYANDO A
+<p className='mx-auto text-xl block sd:hidden  sm:hidden  lg:hidden  xl:hidden  sd:text-4xl md:text-4xl lg:text-4xl  xl:text-4xl text-center font-unbounded  px-6 py-12'>CON TU APORTE <span className='font-bold'>SEÑAL</span> ESTÁS APOYANDO A
 &nbsp;<span className='font-bold'>FUNDACIÓN ANTENNA</span> EN EL DESARROLLO
 DE NUEVOS PROYECTOS QUE BENEFICIAN A
 ARTISTAS Y ESPACIOS CULTURALES.</p>
