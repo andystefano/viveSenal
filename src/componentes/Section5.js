@@ -18,13 +18,13 @@ function Section({ minHeight }) {
           />
           <img
             src="images/decoracion/senal2-05.png"
-            className="h-7 w-auto mx-5"
+            className="h-7 w-auto mx-2"
             alt="Decoración"
           />
           TICKETS
           <img
             src="images/decoracion/senal2-05.png"
-            className="h-7 w-auto mx-5  "
+            className="h-7 w-auto mx-2  "
             alt="Decoración"
           />
           <img
@@ -81,7 +81,7 @@ function Section({ minHeight }) {
               <div>
                 <div className="grid grid-cols-1 gap-4 mx-1 my-1">
                   <div className="flex items-start">
-                    <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-xl sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
+                    <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
                       Acceso para dos personas a
                       <span className="font-bold">&nbsp;6 encuentros</span>&nbsp;<br/>SEÑAL
                       consecutivos.
@@ -90,7 +90,7 @@ function Section({ minHeight }) {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-xl sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
+                  <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
                     <span className="font-bold">&nbsp;Visitas Antenna</span>
                     &nbsp;seleccionadas.
                   </div>
@@ -119,7 +119,7 @@ function Section({ minHeight }) {
                 <div className="grid grid-cols-1 gap-4 mx-1 my-1">
                   <div className="flex items-start">
                    
-                    <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-xl sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
+                    <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
                       Acceso para dos personas a&nbsp;
                       <span className="font-bold">3 encuentros</span><br/> SEÑAL
                       consecutivos.
@@ -149,7 +149,7 @@ function Section({ minHeight }) {
                 <div className="grid grid-cols-1 gap-4 mx-1 my-1">
                   <div className="flex items-start">
                    
-                    <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-xl sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
+                    <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
                       Acceso para dos personas a##&nbsp;
                       <span className="font-bold">1 encuentro</span><br/> SEÑAL
                       consecutivos.
@@ -179,7 +179,7 @@ function Section({ minHeight }) {
   <div>
     <div className="grid grid-cols-1 gap-4 mx-1 my-1">
       <div className="flex items-start">
-        <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-xl sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
+        <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
           Acceso para dos personas a//&nbsp;
           <span className="font-bold">1 encuentro</span><br/> SEÑAL.
         </div>

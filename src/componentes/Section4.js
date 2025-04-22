@@ -37,8 +37,7 @@ const Section4 = ({ minHeight }) => {
         backgroundImage: `url(${imagenes[imagenActual]})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: `${minHeight}px`,
-        transition: 'background-image 1s ease-in-out'
+        minHeight: `${minHeight}px`
       }}
     >
       {/* Contenido adicional de tu sección */}
