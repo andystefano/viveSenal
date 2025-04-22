@@ -19,7 +19,7 @@ function Section({ minHeight }) {
     >
       <div className="h-auto sd:min-h-screen md:min-h-screen lg:min-h-screen  xl:min-h-screen">
         <div className="flex flex-col space-y-4 p-4 w-full md:max-w-[50%] lg:max-w-[50%] xl:max-w-[50%] mx-auto">
-          <div className="mt-[18%]  text-white rounded-lg">
+          <div className="mt-[52%]  text-white rounded-lg">
             <div className="w-full">
               <img
                 src="images/2025_blanco.png"
@@ -46,7 +46,7 @@ function Section({ minHeight }) {
           </div>
           <div className="text-white p-4 rounded-lg">
             <div className="w-full lg:w-10/12 sd:w-full mt-2">
-              <p className="text-lg leading-6 sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-center sm:text-left lg:text-left xl:text-left">
+              <p className="text-[1rem] leading-6 sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-center sm:text-left lg:text-left xl:text-left">
                 Una señal es un llamado, un signo, una forma de transmitir
                 información. También es el nombre de una nueva experiencia que
                 te invita a conocer Santiago, el mundo del arte y la cultura&nbsp;
@@ -54,7 +54,7 @@ function Section({ minHeight }) {
                   a través de conversaciones cercanas y música experimental.
                 </strong>
               </p>
-              <p className="text-lg leading-6 sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-center sm:text-left lg:text-left xl:text-left">
+              <p className="text-[1rem] leading-6 sd:text-base md:text-base lg:text-base xl:text-base text-white mb-4 font-libre-franklin text-center sm:text-left lg:text-left xl:text-left">
                 <span className="font-bold">SEÑAL</span> es un proyecto de&nbsp;
                 <span className="font-bold">Fundación Antenna.</span>
               </p>
@@ -99,7 +99,7 @@ function Section({ minHeight }) {
     >
       <div className="h-auto sd:min-h-screen md:min-h-screen lg:min-h-screen  xl:min-h-screen">
         <div className="flex flex-col space-y-4 p-4 w-full md:max-w-[50%] lg:max-w-[50%] xl:max-w-[50%] mx-auto">
-          <div className="mt-[18%]  text-white rounded-lg">
+          <div className="mt-[34%]  text-white rounded-lg">
             <div className="w-full">
               <img
                 src="images/2025_blanco.png"

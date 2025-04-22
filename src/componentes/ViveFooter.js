@@ -39,9 +39,14 @@ function ViveFooter({ minHeight }) {
     <div className="flex flex-col">
       <div className="flex items-center gap-2">
         <span>Contáctanos:</span>
-        <a href="https://www.instagram.com/vivesenal/" target="_blank" rel="noreferrer">
+        <a className="hidden sd:block md:block lg:block xl:block" style={{marginLeft:'45%'}}  href="https://www.instagram.com/vivesenal/" target="_blank" rel="noreferrer">
           <FaInstagram size={30} />
         </a>
+
+        <a className="block sd:hidden md:hidden lg:hidden xl:hidden" href="https://www.instagram.com/vivesenal/" target="_blank" rel="noreferrer">
+          <FaInstagram size={30} />
+        </a>
+
       </div>
       <div>señal@antenna.cl</div>
     </div>
@@ -51,7 +56,9 @@ function ViveFooter({ minHeight }) {
           </div>
         </div>
         <div class="mt-5 sd:mt-0 sm:mt-0  lg:mt-0  xl:mt-0  w-full sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2 text-center">
-          <img src="/images/logos/footer_movilydesk.png" alt="Logos Colaboradores" />
+          <img  className="hidden sd:block md:block lg:block xl:block" src="/images/logos/footer_movilydesk.png" alt="Logos Colaboradores" />
+          <img className="block w-[83%] sd:hidden md:hidden lg:hidden xl:hidden" src="/images/logos/footer_movilydesk.png" alt="Logos Colaboradores" />
+
         </div>
       </div>
     </footer>
