@@ -8,6 +8,7 @@ import Section4 from "./componentes/Section4.js";
 import Section4Movil from "./componentes/Section4Movil.js";
 import Section5 from "./componentes/Section5.js";
 import Section6 from "./componentes/Section6.js";
+import SectionBlack from "./componentes/SectionBlack.js";
 import ViveFooter from "./componentes/ViveFooter.js";
 
 
@@ -68,6 +69,9 @@ function App() {
   </marquee>
   <div className="block sd:hidden  md:hidden lg:hidden xl:hidden"><Section4Movil minHeight={minHeight} /> </div>
   <div className="hidden sd:block  md:block lg:block xl:block"><Section4 minHeight={minHeight} /> </div>  
+
+  <SectionBlack minHeight={minHeight} />
+
       <Section5 minHeight={minHeight} />
       <Section6 minHeight={minHeight} />
       <ViveFooter />
