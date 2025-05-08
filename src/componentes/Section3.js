@@ -90,19 +90,20 @@ function Section({ minHeight }) {
            
         </div>
 
-        <div className="relative p-0 md:p-10 lg:p-10 xl:p-10">
+        <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
           <img src="images/programacion/p1.png" alt="Imagen" className="w-full" />
-          <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
+          <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
-              MATUCANA100</h1>
+              LEÓN & COCIÑA EN M100</h1>
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
-              Quinta normal.
+              Estación Central.
               </h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              Reconocidos internacionalmente por su trabajo en animación y videoarte, Cristóbal León y Joaquín Cociña nos invitan a conocer el set de su nueva película en Matucana 100. La jornada cerrará con una selección especial de su música.
+              <strong>Artes visuales y cine.</strong><br/>
+              Reconocidos internacionalmente por su trabajo en animación y videoarte, Cristóbal León y Joaquín Cociña nos invitan a recorrer el set de su nueva película “La Plaga". Cerraremos la noche con una especial selección de música.
                 </p>
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
@@ -114,20 +115,19 @@ function Section({ minHeight }) {
             </div>
           </div>
         </div>
-        <div className="relative p-0 md:p-10 lg:p-10 xl:p-10">
+        <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5">
           <img src="images/programacion/p2.png" alt="Imagen" className="w-full" />
-          <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
+          <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
               CAMILA LOBOS EN SALA DE ARTE CCU</h1>
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
-              Las Condes</h2>
+              Las Condes.</h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              <b>Instalación inmersiva</b>.<br/>
-              Sumérgete en un bosque flotante de árboles secos y raíces que te lleva a despertar emociones y reflexiones sobre los territorios en los que vivimos.
-              <br/>Música por confirmar.
+              <b>Instalación inmersiva.</b><br/>
+              Sumérgete en un bosque flotante de árboles y raíces que te llevará a despertar reflexiones sobre los lugares en los que vivimos. Finalizaremos con un set de música conectado al trabajo de Camila.
                 </p>
               </div>
               <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
@@ -139,20 +139,19 @@ function Section({ minHeight }) {
             </div>
           </div>
         </div>
-        <div className="relative  p-0 md:p-10 lg:p-10 xl:p-10">
+        <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5">
           <img src="images/programacion/p3.png" alt="Imagen" className="w-full" />
-          <div className="m-0 md:m-5 lg:m-5 xl:m-5  absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
+          <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
           <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
           <div>
               <h1 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-bold font-unbounded ">
-              ARTISTAS DEL TALLER POCURO</h1>
+              ARTE JOVEN EN CENTRO PERDIDO</h1>
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
-              Providencia</h2>
+              Recoleta.</h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
               <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
-              <b>Isidora Villarino, Jacinta Besa, Colomba Fontaine, Josefina Valenzuela, Macarena Jofré, Maite Zubizarreta y Sergio Loayza.</b>
-&nbsp;Siete artistas te invitan a conocer su intimidad y espacio creativo para conocer sus inspiraciones y obras de arte.
-<br/>Música por confirmar.
+              <b>Artistas emergentes.</b><br/>
+              Dentro de una antigua fábrica, este espacio independiente reúne galerías, talleres y residencias, mostrando lo más reciente del arte. Visitaremos a Isidora Miller en Galería Cripta y disfrutaremos de un increíble DJ set.
                 </p>
               
               </div>
