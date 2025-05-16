@@ -18,6 +18,9 @@ function Section({ minHeight }) {
       }}
     >
       <div className="h-auto sd:min-h-screen md:min-h-screen lg:min-h-screen  xl:min-h-screen">
+      <div className="absolute top-0 left-0 w-full">
+  <img alt="" src="/images/header/encabezado_movil.png" className="w-full" />
+</div>
         <div className="flex flex-col space-y-4 p-4 w-full md:max-w-[50%] lg:max-w-[50%] xl:max-w-[50%] mx-auto">
           <div className="mt-[52%]  text-white rounded-lg">
             <div className="w-full">
@@ -98,6 +101,12 @@ function Section({ minHeight }) {
       }}
     >
       <div className="h-auto sd:min-h-screen md:min-h-screen lg:min-h-screen  xl:min-h-screen">
+
+      <div className="absolute top-0 left-0 w-full">
+  <img alt="" src="/images/header/encabezado_desk.png" className="w-full" />
+</div>
+
+
         <div className="flex flex-col space-y-4 p-4 w-full md:max-w-[50%] lg:max-w-[50%] xl:max-w-[50%] mx-auto">
           <div className="mt-[34%]  text-white rounded-lg">
             <div className="w-full">
