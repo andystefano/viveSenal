@@ -1,6 +1,7 @@
 function ViveHeader() {
   return (
     <header className=" w-full px-7 py-7">
+      <img alt="" src="/images/header/encabezado_desk.png" className="w-full" />
       <nav className="  border-gray-200 py-2.5 ">
         <div className="flex flex-wrap items-start justify-between mx-auto">
           <a href="https://www.antenna.cl" className="flex items-center">
