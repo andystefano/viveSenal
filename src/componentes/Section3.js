@@ -101,7 +101,7 @@ function Section({ minHeight }) {
               Estación Central.
               </h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-              <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
+              <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
               <strong>Artes visuales y cine.</strong><br/>
               Reconocidos internacionalmente por su trabajo en animación y videoarte, Cristóbal León y Joaquín Cociña nos invitan a recorrer el set de su nueva película “La Plaga". Cerraremos la noche con una especial selección de música.
                 </p>
@@ -125,7 +125,7 @@ function Section({ minHeight }) {
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
               Providencia.</h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-              <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
+              <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
               <b>Artistas de renombre.</b><br/>
               Taller Pan, ubicado en una ex fábrica de pan, cumple 15 años como taller independiente. Lo integran Tomás Rivas, Rodrigo Canala, Rodrigo Galecio, Mono Lira, Matías Santa María, Iván Melnick, Ximena Silva-Riesco, Agustín Encina, Fernanda López, Rodrigo Araya, Paula Gastelo, Pato Kind, Rodrigo Lobos y Cristián Elizalde. Además, cuenta con la Galería Tiki Taka, donde exponen artistas nacionales e internacionales. Cerraremos la noche con un dj set de Dj Haití.
               </p>
@@ -149,7 +149,7 @@ function Section({ minHeight }) {
               <h2 className="text-normal sd:text-3xl md:text-3xl lg:text-3xl xl:text-3xl text-left font-medium font-unbounded ">
               Recoleta.</h2>
               <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-              <p className="text-xs mt-0 sd:text-xl md:text-xl  lg:textxl xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
+              <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-6 xl:mt-9">
               <b>Artistas emergentes.</b><br/>
               Dentro de una antigua fábrica, este espacio independiente reúne galerías, talleres y residencias, mostrando lo más reciente del arte. Visitaremos a Isidora Miller en Galería Cripta y disfrutaremos de un increíble DJ set.
                 </p>
