@@ -14,7 +14,7 @@ on:
 
 jobs:
   call-centralized-workflow:
-    uses: andystefano/.github/workflows/deploid_manual.yml@master
+    uses: andystefano/actions/.github/workflows/deploid_manual.yml@master
     with:
       deployment_target: ${{ github.event.inputs.deployment_target }}
     secrets: inherit
