@@ -13,8 +13,41 @@ on:
         - DEVQA
 
 jobs:
-  call-centralized-workflow:
-    uses: andystefano/actions/.github/workflows/deploid_manual.yml@master
-    with:
-      deployment_target: ${{ github.event.inputs.deployment_target }}
-    secrets: inherit
+  deploid-manual:
+    runs-on: ubuntu-latest
+    name: "Deploy a ${{ github.event.inputs.deployment_target }} por ${{ github.actor }}"
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Configurar Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Crear tag
+        run: |
+          # Obtener la fecha y hora actual
+          DATETIME=$(date +"%Y%m%d-%H%M%S")
+          # Obtener la rama de origen (por defecto main)
+          BRANCH=${GITHUB_REF_NAME:-main}
+          # Obtener el nombre del usuario que inició la action
+          USER=${GITHUB_ACTOR:-unknown}
+          # Determinar el prefijo según el servidor destino
+          if [ "${{ github.event.inputs.deployment_target }}" == "DES" ]; then
+            PREFIX="dev"
+          else
+            PREFIX="devqa"
+          fi
+          # Crear el nombre del tag
+          TAG_NAME="${PREFIX}_${BRANCH}-${USER}-${DATETIME}"
+          # Crear el tag
+          git tag $TAG_NAME
+          echo "Tag creado: $TAG_NAME"
+
+      - name: Push tag
+        run: |
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} --tags
