@@ -1,0 +1,20 @@
+name: 🚀 Deploid Manual
+
+on:
+  workflow_dispatch:
+    inputs:
+      deployment_target:
+        description: 'Servidor destino'
+        required: true
+        default: 'DES'
+        type: choice
+        options:
+        - DES
+        - DEVQA
+
+jobs:
+  call-centralized-workflow:
+    uses: andystefano/actions/.github/workflows/deploid_manual.yml@master
+    with:
+      deployment_target: ${{ github.event.inputs.deployment_target }}
+    secrets: inherit
