@@ -149,13 +149,13 @@ function Section({ minHeight }) {
               <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
                   <div>
                   <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded">
-                  {eventos[0]?.titulo || "Cargando..."}</h1>
+                  {eventos[0]?.titulo || ""}</h1>
                   <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded">
-                  {eventos[0]?.subtitulo || "Cargando..."}
+                  {eventos[0]?.subtitulo || ""}
                   </h2>
                   <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                   <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
-                  <strong>{eventos[0]?.bajada || "Cargando..."}</strong><br/>
+                  <strong>{eventos[0]?.bajada || ""}</strong><br/>
                   {eventos[0]?.descripcion || "Cargando descripción..."}
                     </p>
                   </div>
@@ -174,12 +174,12 @@ function Section({ minHeight }) {
               <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
                   <div>
                   <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded">
-                  {eventos[1]?.titulo || "Cargando..."}</h1>
+                  {eventos[1]?.titulo || ""}</h1>
                   <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded ">
-                  {eventos[1]?.subtitulo || "Cargando..."}</h2>
+                  {eventos[1]?.subtitulo || ""}</h2>
                   <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                   <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
-                  <b>{eventos[1]?.bajada || "Cargando..."}</b><br/>
+                  <b>{eventos[1]?.bajada || ""}</b><br/>
                   {eventos[1]?.descripcion || "Cargando descripción..."}
                   </p>
                   </div>
@@ -198,12 +198,12 @@ function Section({ minHeight }) {
               <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
                   <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded ">
-                  {eventos[2]?.titulo || "Cargando..."}</h1>
+                  {eventos[2]?.titulo || ""}</h1>
                   <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded ">
-                  {eventos[2]?.subtitulo || "Cargando..."}</h2>
+                  {eventos[2]?.subtitulo || ""}</h2>
                   <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                   <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
-                  <b>{eventos[2]?.bajada || "Cargando..."}</b><br/>
+                  <b>{eventos[2]?.bajada || ""}</b><br/>
                   {eventos[2]?.descripcion || "Cargando descripción..."}
                     </p>
                   
