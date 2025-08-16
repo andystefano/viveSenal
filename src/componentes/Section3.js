@@ -154,7 +154,7 @@ function Section({ minHeight }) {
                   {eventos[0]?.subtitulo || ""}
                   </h2>
                   <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-                  <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
+                  <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-1 2xl:mt-1">
                   <strong>{eventos[0]?.bajada || ""}</strong><br/>
                   {eventos[0]?.descripcion || "Cargando descripción..."}
                     </p>
@@ -178,7 +178,7 @@ function Section({ minHeight }) {
                   <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded ">
                   {eventos[1]?.subtitulo || ""}</h2>
                   <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-                  <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
+                  <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-1 2xl:mt-1">
                   <b>{eventos[1]?.bajada || ""}</b><br/>
                   {eventos[1]?.descripcion || "Cargando descripción..."}
                   </p>
@@ -202,7 +202,7 @@ function Section({ minHeight }) {
                   <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded ">
                   {eventos[2]?.subtitulo || ""}</h2>
                   <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-                  <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
+                  <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-1 2xl:mt-1">
                   <b>{eventos[2]?.bajada || ""}</b><br/>
                   {eventos[2]?.descripcion || "Cargando descripción..."}
                     </p>
