@@ -1,8 +1,10 @@
 import { FaLongArrowAltLeft } from "react-icons/fa";
-import { useEffect, useInsertionEffect, useRef } from "react";
+import { useEffect, useInsertionEffect, useRef, useState } from "react";
 
 function Section({ minHeight }) {
   const headerRef = useRef(null);
+  const [eventos, setEventos] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (headerRef.current) {
@@ -11,7 +13,56 @@ function Section({ minHeight }) {
     }
   }, []);
 
+  useEffect(() => {
+    const cargarEventos = async () => {
+      try {
+        const promesas = [];
+        for (let i = 1; i <= 3; i++) {
+          promesas.push(
+            fetch(`https://admin.xn--viveseal-i3a.cl/ver_detalles_fecha.php?orden=${i}`)
+              .then(response => response.json())
+              .then(data => data.datos)
+              .catch(error => {
+                console.error(`Error cargando evento ${i}:`, error);
+                return null;
+              })
+          );
+        }
+        
+        const resultados = await Promise.all(promesas);
+        setEventos(resultados.filter(evento => evento !== null));
+        setLoading(false);
+      } catch (error) {
+        console.error("Error cargando eventos:", error);
+        setLoading(false);
+      }
+    };
+
+    cargarEventos();
+  }, []);
+
   let width = window.innerWidth;
+  
+  if (loading) {
+    return (
+      <section id="programacion" className="border-t border-black relative overflow-hidden" style={{
+        position: "relative",
+        backgroundImage: width >= 640 ? "url(images/fondos/2_desk.png)" : "none", 
+        backgroundSize: "cover",
+        backgroundPosition: "right top",
+        backgroundColor: "#eaeedd",
+        backgroundRepeat: "no-repeat",
+      }}>
+        <div className="flex justify-center items-center h-64">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-black mx-auto"></div>
+            <p className="mt-4 text-lg">Cargando eventos...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="programacion"
       className="border-t border-black relative overflow-hidden"
@@ -90,80 +141,84 @@ function Section({ minHeight }) {
            
         </div>
 
-        <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
-          <img src={`images/programacion/p1.png?t=${Date.now()}`} alt="Imagen" className="w-full" />
-          <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
-          <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
+        {eventos.length > 0 && (
+          <>
+            <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
+              <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=1&t=${Date.now()}`} alt="Imagen" className="w-full" />
+              <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
+              <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
+                  <div>
+                  <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded">
+                  {eventos[0]?.titulo || "Cargando..."}</h1>
+                  <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded">
+                  {eventos[0]?.subtitulo || "Cargando..."}
+                  </h2>
+                  <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
+                  <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
+                  <strong>{eventos[0]?.bajada || "Cargando..."}</strong><br/>
+                  {eventos[0]?.descripcion || "Cargando descripción..."}
+                    </p>
+                  </div>
+                  <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                  Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span className="material-icons">
+                      <FaLongArrowAltLeft />
+                    </span>
+                  </button></a>
+                </div>
+              </div>
+            </div>
+            <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5">
+              <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=2&t=${Date.now()}`} alt="Imagen" className="w-full" />
+              <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
+              <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
+                  <div>
+                  <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded">
+                  {eventos[1]?.titulo || "Cargando..."}</h1>
+                  <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded ">
+                  {eventos[1]?.subtitulo || "Cargando..."}</h2>
+                  <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
+                  <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
+                  <b>{eventos[1]?.bajada || "Cargando..."}</b><br/>
+                  {eventos[1]?.descripcion || "Cargando descripción..."}
+                  </p>
+                  </div>
+                  <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                  Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span className="material-icons">
+                      <FaLongArrowAltLeft />
+                    </span>
+                  </button></a>
+                </div>
+              </div>
+            </div>
+            <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5">
+              <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=3&t=${Date.now()}`} alt="Imagen" className="w-full" />
+              <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
+              <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
               <div>
-              <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded">
-              LEÓN & COCIÑA EN M100</h1>
-              <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded">
-              Estación Central.
-              </h2>
-              <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-              <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
-              <strong>Artes visuales y cine.</strong><br/>
-              Reconocidos internacionalmente por su trabajo en animación y videoarte, Cristóbal León y Joaquín Cociña nos invitan a recorrer el set de su nueva película “La Plaga". Cerraremos la noche con una especial selección de música.
-                </p>
+                  <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded ">
+                  {eventos[2]?.titulo || "Cargando..."}</h1>
+                  <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded ">
+                  {eventos[2]?.subtitulo || "Cargando..."}</h2>
+                  <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
+                  <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
+                  <b>{eventos[2]?.bajada || "Cargando..."}</b><br/>
+                  {eventos[2]?.descripcion || "Cargando descripción..."}
+                    </p>
+                  
+                  </div>
+                  <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                  Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span className="material-icons">
+                      <FaLongArrowAltLeft />
+                    </span>
+                  </button></a>
+                </div>
               </div>
-              <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
-              Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span className="material-icons">
-                  <FaLongArrowAltLeft />
-                </span>
-              </button></a>
             </div>
-          </div>
-        </div>
-        <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5">
-          <img src={`images/programacion/p2.png?t=${Date.now()}`} alt="Imagen" className="w-full" />
-          <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
-          <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
-              <div>
-              <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded">
-              Taller Pan</h1>
-              <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded ">
-              Providencia.</h2>
-              <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-              <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
-              <b>Artistas de renombre.</b><br/>
-              Celebra los 15 años de este espacio independiente ubicado en una ex fábrica de pan. Lo integran Tomás Rivas, Rodrigo Canala, Rodrigo Galecio, Mono Lira, Matías Santa María, Iván Melnick, Ximena Silva-Riesco, Agustín Encina, Fernanda López, Rodrigo Araya, Paula Gastelo, Pato Kind, Rodrigo Lobos y Cristián Elizalde. Cerraremos la noche con un set de Dj Haití.
-              </p>
-              </div>
-              <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
-              Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span className="material-icons">
-                  <FaLongArrowAltLeft />
-                </span>
-              </button></a>
-            </div>
-          </div>
-        </div>
-        <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5">
-          <img src={`images/programacion/p3.png?t=${Date.now()}`} alt="Imagen" className="w-full" />
-          <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
-          <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
-          <div>
-              <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded ">
-              ARTE JOVEN EN CENTRO PERDIDO</h1>
-              <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded ">
-              Recoleta.</h2>
-              <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-              <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-9">
-              <b>Artistas emergentes.</b><br/>
-              Dentro de una antigua fábrica, este espacio independiente reúne galerías, talleres y residencias, mostrando lo más reciente del arte. Visitaremos a Isidora Miller en Galería Cripta y disfrutaremos de un increíble DJ set.
-                </p>
-              
-              </div>
-              <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
-              Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span className="material-icons">
-                  <FaLongArrowAltLeft />
-                </span>
-              </button></a>
-            </div>
-          </div>
-        </div>
+          </>
+        )}
       </div>
     </section>
   );
