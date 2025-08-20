@@ -6,7 +6,7 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 function Section({ minHeight }) {
   const [hovered, setHovered] = useState(false);
 
-  const minHeightN = minHeight - 0;
+  
 
   return (
     <section
