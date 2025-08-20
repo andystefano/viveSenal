@@ -1,20 +1,93 @@
-name: 🚀 Deploid Manual
+name: 🚀 Deploy React build to Plesk via SFTP
 
 on:
-  workflow_dispatch:
-    inputs:
-      deployment_target:
-        description: 'Servidor destino'
-        required: true
-        default: 'DES'
-        type: choice
-        options:
-        - DES
-        - DEVQA
+  workflow_dispatch:  # permite ejecutar manualmente
 
 jobs:
-  call-centralized-workflow:
-    uses: andystefano/actions/.github/workflows/deploid_manual.yml@master
-    with:
-      deployment_target: ${{ github.event.inputs.deployment_target }}
-    secrets: inherit
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Show deployment info
+        run: |
+          echo "🚀 Starting deployment..."
+          echo "Environment: ${{ github.event.inputs.environment || 'production (auto-triggered)' }}"
+          echo "Target: /var/www/vhosts/xn--viveseal-i3a.cl/httpdocs/"
+          echo "Files to deploy (build directory):"
+          ls -la build/
+          echo "Working directory:"
+          pwd
+          echo "Total files in build:"
+          find build -type f | wc -l
+
+      - name: Pre-deployment diagnostics
+        run: |
+          echo "Installing required tools..."
+          apt-get update && apt-get install -y sshpass
+          
+          echo "=== PRE-DEPLOYMENT DIAGNOSTICS ==="
+          echo "Testing SSH connection..."
+          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} "echo 'SSH Connection: SUCCESS'"
+          
+          echo "Checking server directory structure..."
+          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} \
+            "ls -la /var/www/vhosts/"
+          
+          echo "Checking if target directory exists..."
+          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} \
+            "ls -la /var/www/vhosts/xn--viveseal-i3a.cl/httpdocs/ || echo 'Directory does not exist'"
+          
+          echo "Creating target directory if it doesn't exist..."
+          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} \
+            "mkdir -p /var/www/vhosts/xn--viveseal-i3a.cl/httpdocs/"
+          
+          echo "Checking permissions..."
+          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} \
+            "ls -la /var/www/vhosts/xn--viveseal-i3a.cl/httpdocs/"
+
+      - name: Deploy via SCP (Simple Method)
+        run: |
+          echo "=== DEPLOYMENT ==="
+          echo "Deploying files via SCP..."
+          sshpass -p "${{ secrets.SSH_PASS }}" scp -v -r -o StrictHostKeyChecking=no \
+            build/* ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }}:/var/www/vhosts/xn--viveseal-i3a.cl/httpdocs/
+          
+          echo "SCP exit code: $?"
+
+      - name: Post-deployment verification
+        run: |
+          echo "=== POST-DEPLOYMENT VERIFICATION ==="
+          echo "Listing files in target directory..."
+          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} \
+            "ls -la /var/www/vhosts/xn--viveseal-i3a.cl/httpdocs/"
+          
+          echo "Checking file count..."
+          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} \
+            "find /var/www/vhosts/xn--viveseal-i3a.cl/httpdocs/ -type f | wc -l"
+          
+          echo "Checking for specific files..."
+          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} \
+            "test -f /var/www/vhosts/xn--viveseal-i3a.cl/httpdocs/index.html && echo 'index.html: FOUND' || echo 'index.html: NOT FOUND'"
