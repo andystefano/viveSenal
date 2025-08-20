@@ -1,8 +1,7 @@
 import "./App.css";
 import Section1 from "./componentes/Section1.js";
-import Section2 from "./componentes/Section2.js";
-import Section2_2 from "./componentes/Section2_2.js";
-import Section2_3 from "./componentes/Section2_3.js";
+import SectionTwo from "./componentes/Section2_2.js";
+import SectionThree from "./componentes/Section2_3.js";
 import Section3 from "./componentes/Section3.js";
 import Section4 from "./componentes/Section4.js";
 import Section4Movil from "./componentes/Section4Movil.js";
@@ -49,15 +48,16 @@ function App() {
    
       <Section1 minHeight={minHeight} />
       {activeTab === 1 ? (<div></div>) : activeTab === 2 ? (
-  <Section2_2 minHeight={minHeight} setActiveTab={setActiveTab} activeTab={activeTab} />
+  <SectionTwo minHeight={minHeight} setActiveTab={setActiveTab} activeTab={activeTab} />
 ) : (
-  <Section2_3 minHeight={minHeight} setActiveTab={setActiveTab} activeTab={activeTab} />
+  <SectionThree minHeight={minHeight} setActiveTab={setActiveTab} activeTab={activeTab} />
 )}      <div className="w-full"  style={{
     backgroundColor: '#0cb259' 
   }}>
  
   </div>
       <Section3 minHeight={minHeight} className=" bg-black " />
+      {/* eslint-disable jsx-a11y/no-distracting-elements */}
       <marquee className="text-lg  font-unbounded  sd:text-2xl md:text-2xl lg:text-2xl xl:text-2xl  text-[#009d5a] bg-black font-bold mx-0 py-3" scrollamount="12" loop="100" scrolldelay="-1" style={{paddingBottom:'5px'}}>
       DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
       DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
@@ -67,6 +67,7 @@ function App() {
       DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.&nbsp;&nbsp;
       DESAFIA LO CONVENCIONAL Y ABRAZA LO EXTRAORDINARIO EN ESTOS ENCUENTROS.
   </marquee>
+  {/* eslint-enable jsx-a11y/no-distracting-elements */}
   <div className="block sd:hidden  md:hidden lg:hidden xl:hidden"><Section4Movil minHeight={minHeight} /> </div>
   <div className="hidden sd:block  md:block lg:block xl:block"><Section4 minHeight={minHeight} /> </div>  
 

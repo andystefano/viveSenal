@@ -1,5 +1,4 @@
 import React from "react";
-import { MdTripOrigin } from "react-icons/md";
 
 function Section({ minHeight }) {
   return (
@@ -65,7 +64,6 @@ function Section({ minHeight }) {
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/6-encuentros/"
                 target="_blank"
-                alt=""
                 rel="noreferrer"
               >
                 <img
@@ -102,7 +100,6 @@ function Section({ minHeight }) {
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/3-encuentros/"
                 target="_blank"
-                alt=""
                 rel="noreferrer"
               >
                 <img

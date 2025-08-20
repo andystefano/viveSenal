@@ -1,5 +1,5 @@
 import { FaLongArrowAltLeft } from "react-icons/fa";
-import { useEffect, useInsertionEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Section({ minHeight }) {
   const headerRef = useRef(null);
@@ -84,6 +84,7 @@ function Section({ minHeight }) {
       src="images/decoracion/senal2-05.png"
       className="w-1/12 mx-2 mt-5"
       style={{ maxWidth: "36px", height: "auto" }}
+      alt="Decoración"
     />
 
     
@@ -94,6 +95,7 @@ function Section({ minHeight }) {
       src="images/decoracion/senal2-05.png"
       className="w-1/12 mx-2  mt-5"
       style={{ maxWidth: "36px", height: "auto" }}
+      alt="Decoración"
     />
   </div>
   <div className="text-[2.7rem] md:text-5xl xl:text-6xl font-unbounded mt-0" style={{ fontWeight: '900' }}>
@@ -114,11 +116,12 @@ function Section({ minHeight }) {
 >
   <img
     src="images/decoracion/senal2-05.png"
-    className="w-1/12 mx-2" // Asegura que las imágenes sean proporcionales y tengan un margen entre ellas
+    className="w-1/12 mx-2"
     style={{
-      maxWidth: "40px", // Puedes ajustar el tamaño máximo aquí según lo que necesites
-      height: "auto", // Mantiene la proporción de la imagen
+      maxWidth: "40px",
+      height: "auto",
     }}
+    alt="Decoración"
   />
   
     PRÓXIMAS<span className="" style={{ fontWeight: '900' }}>&nbsp;SEÑALES
@@ -126,11 +129,12 @@ function Section({ minHeight }) {
 
   <img
     src="images/decoracion/senal2-05.png"
-    className="w-1/12 mx-2" // Asegura que las imágenes sean proporcionales y tengan un margen entre ellas
+    className="w-1/12 mx-2"
     style={{
-      maxWidth: "40px", // Puedes ajustar el tamaño máximo aquí según lo que necesites
-      height: "auto", // Mantiene la proporción de la imagen
+      maxWidth: "40px",
+      height: "auto",
     }}
+    alt="Decoración"
   />
 </h1>
 
@@ -145,7 +149,7 @@ function Section({ minHeight }) {
           <>
             {eventos[0] && eventos[0].titulo && (
               <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
-                <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=1&t=${Date.now()}`} alt="Imagen" className="w-full" />
+                <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=1&t=${Date.now()}`} alt="Imagen del evento 1" className="w-full" />
                 <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTGreen bg-opacity-100 text-black">
                 <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                     <div>
@@ -172,7 +176,7 @@ function Section({ minHeight }) {
             )}
             {eventos[1] && eventos[1].titulo && (
                  <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
-                 <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=2&t=${Date.now()}`} alt="Imagen" className="w-full" />
+                 <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=2&t=${Date.now()}`} alt="Imagen del evento 2" className="w-full" />
                  <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
@@ -199,7 +203,7 @@ function Section({ minHeight }) {
             )}
             {eventos[2] && eventos[2].titulo && (
                  <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
-                 <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=3&t=${Date.now()}`} alt="Imagen" className="w-full" />
+                 <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=3&t=${Date.now()}`} alt="Imagen del evento 3" className="w-full" />
                  <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>

@@ -4,7 +4,6 @@ import { MdTripOrigin } from "react-icons/md";
 import { IoTicket } from "react-icons/io5";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { GrLinkNext } from "react-icons/gr";
-import { GrLinkPrevious } from "react-icons/gr";
 
 function Section({ minHeight, setActiveTab, activeTab }) {
   const [hovered, setHovered] = useState(false);
@@ -92,7 +91,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
           </div>
           <div className="flex items-start">
               <span className="">
-                  <img src="/images/btlLogoTop.png" className="w-20 h-auto" /> 
+                  <img src="/images/btlLogoTop.png" className="w-20 h-auto" alt="BTG Pactual" /> 
               </span>
               <div className="text-white  font-unbounded  ml-2 font-extralight text-left text-xs sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
               </div>
@@ -264,7 +263,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
                       textAlign: "center",
                     }}
                   >
-                    <img src="images/wavesCloud1.png" />
+                    <img src="images/wavesCloud1.png" alt="Decoración ondas" />
                   </div>
                 </div>
                 <div className="p-4 hidden  sd:block ssmd:block md:block lg:block xl:block">
@@ -275,7 +274,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
                       textAlign: "center",
                     }}
                   >
-                    <img src="images/Cloud2.png" />
+                    <img src="images/Cloud2.png" alt="Decoración nube" />
                   </div>
                 </div>
               </div>

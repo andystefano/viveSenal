@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { MdTripOrigin, MdWidthFull } from "react-icons/md";
+import { MdTripOrigin } from "react-icons/md";
 import { IoTicket } from "react-icons/io5";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { GrLinkNext } from "react-icons/gr";
