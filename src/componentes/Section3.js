@@ -171,57 +171,58 @@ function Section({ minHeight }) {
               </div>
             )}
             {eventos[1] && eventos[1].titulo && (
-              <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5">
-                <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=2&t=${Date.now()}`} alt="Imagen" className="w-full" />
-                <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
-                <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
-                    <div>
-                    <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded">
-                    {eventos[1].titulo}</h1>
-                    <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded ">
-                    {eventos[1].subtitulo || ""}</h2>
-                    <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-                    <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-1 2xl:mt-1">
-                    <b>{eventos[1].bajada || ""}</b><br/>
-                    {eventos[1].descripcion || ""}
-                    </p>
-                    </div>
-                    <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
-                    Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <span className="material-icons">
-                        <FaLongArrowAltLeft />
-                      </span>
-                    </button></a>
-                  </div>
-                </div>
-              </div>
+                 <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
+                 <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=2&t=${Date.now()}`} alt="Imagen" className="w-full" />
+                 <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTRed bg-opacity-100 text-black">
+                 <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
+                     <div>
+                     <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
+                     {eventos[1].titulo}</h1>
+                     <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xs xl:text-xl 2xl:text-[1.65rem]  text-left font-medium font-unbounded">
+                     {eventos[1].subtitulo || ""}
+                     </h2>
+                     <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
+                     <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-0 xl:mt-1 2xl:mt-1">
+                     <strong>{eventos[1].bajada || ""}</strong><br/>
+                     {eventos[1].descripcion }
+                       </p>
+                     </div>
+                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                     Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <span className="material-icons">
+                         <FaLongArrowAltLeft />
+                       </span>
+                     </button></a>
+                   </div>
+                 </div>
+               </div>
             )}
             {eventos[2] && eventos[2].titulo && (
-              <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5">
-                <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=3&t=${Date.now()}`} alt="Imagen" className="w-full" />
-                <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
-                <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-7  py-3 sd:py-7 md:py-7 lg:py-7 xl:py-7">
-                <div>
-                    <h1 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl text-left font-bold font-unbounded ">
-                    {eventos[2].titulo}</h1>
-                    <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl  text-left font-medium font-unbounded ">
-                    {eventos[2].subtitulo || ""}</h2>
-                    <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
-                    <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-4 xl:mt-1 2xl:mt-1">
-                    <b>{eventos[2].bajada || ""}</b><br/>
-                    {eventos[2].descripcion || ""}
-                      </p>
-                    
-                    </div>
-                    <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-2xl xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
-                    Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <span className="material-icons">
-                        <FaLongArrowAltLeft />
-                      </span>
-                    </button></a>
-                  </div>
-                </div>
-              </div>
+                 <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
+                 <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=3&t=${Date.now()}`} alt="Imagen" className="w-full" />
+                 <div className="m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bgTPink bg-opacity-100 text-black">
+                 <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
+                     <div>
+                     <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
+                     {eventos[2].titulo}</h1>
+                     <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xs xl:text-xl 2xl:text-[1.65rem]  text-left font-medium font-unbounded">
+                     {eventos[2].subtitulo || ""}
+                     </h2>
+                     <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
+                     <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-0 xl:mt-1 2xl:mt-1">
+                     <strong>{eventos[2].bajada || ""}</strong><br/>
+                     {eventos[2].descripcion }
+                       </p>
+                     </div>
+                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                     Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <span className="material-icons">
+                         <FaLongArrowAltLeft />
+                       </span>
+                     </button></a>
+                   </div>
+                 </div>
+               </div>
             )}
           </>
         )}
