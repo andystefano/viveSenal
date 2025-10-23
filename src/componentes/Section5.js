@@ -8,7 +8,7 @@ function Section({ minHeight }) {
       style={{ backgroundColor: "#eaeedd" }}
     >
       <div className="flex justify-center">
-        <h1 className="flex items-center mt-8 mx-7 mb-4 text-5xl  sd:text-5xl sm:text-5xl lg:text-5xl xl:text-6xl leading-none text-black text-center font-unbounded font-normal">
+        <h1 className="flex items-center mt-24 mx-7 mb-4 text-5xl  sd:text-5xl sm:text-5xl lg:text-5xl xl:text-6xl leading-none text-black text-center font-unbounded font-normal">
           {/* Imágenes decorativas con estilos consistentes */}
           <img
             src="images/decoracion/2025_negro.png"
@@ -35,7 +35,7 @@ function Section({ minHeight }) {
       </div>
 
       <div
-        className="pt-0 sd:pt-0  md:pt-0  lg:pt-0 xl:pt-0   sd:p-14 sd:pb-5 md:p-11 md:pb-5 lg:p-11 lg:pb-5 xl:p-11 xl:pb-5 "
+        className="pt-0 sd:pt-0  md:pt-0  lg:pt-0 xl:pt-0  md:pb-5 xl:pb-5 "
         style={{
           backgroundColor: "#eaeedd",
           width: "100%",
@@ -211,23 +211,23 @@ function Section({ minHeight }) {
 </div>
 
         </div>
-        <div className="w-1/3 bg-yellow-500 px-5">
+        <div className="w-1/3 px-9 gradient-background">
 
-        <h1 className="text-4xl leading-none md:text-4xl xl:text-4xl text-black text-left w-full font-unbounded pt-4 flex justify-start items-center font-semibold">
+        <h1 className="text-6xl leading-none md:text-5xl xl:text-5xl text-black text-left w-full font-unbounded pt-4 flex justify-start items-center font-semibold">
           FIESTAS
         </h1> 
 
-        <h2 className="text-normal leading-none md:text-normal xl:text-normal font-light text-left w-full font-unbounded pt-4 flex justify-start items-center  text-black">
-        <span className="font-normal">Preventa:</span>&nbsp;Primeras 100 entradas.
+        <h2 className="text-normal leading-none md:text-normal xl:text-normal font-light text-left w-full font-unbounded pt-4 flex justify-start items-center  text-black mb-5">
+        <span className="font-semibold">Preventa:</span>&nbsp;Primeras 100 entradas.
         </h2> 
 
 
 
-        <div class="p-4 text-center"><a href="https://tickets.xn--viveseal-i3a.cl/producto/3-encuentros/" target="_blank" rel="noreferrer"><img className="w-full" src="./images/ticketRosa.png?v=2" alt="imagen de fondo"/></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">Acceso para dos personas a&nbsp;<span class="font-bold">3 encuentros</span><br/> SEÑAL consecutivos.</div></div></div></div></div>
+        <div class="text-left"><a href="https://tickets.xn--viveseal-i3a.cl/producto/3-encuentros/" target="_blank" rel="noreferrer"><img className="w-[95%]" src="./images/ticketRosaNegro.png?v=2" alt="imagen de fondo"/></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  "></div></div></div></div></div>
 
 
 
-        <div class="p-4 text-center"><a href="https://tickets.xn--viveseal-i3a.cl/producto/3-encuentros/" target="_blank" rel="noreferrer"><img className="w-full" src="./images/ticketRosa.png?v=2" alt="imagen de fondo" /></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">Acceso para dos personas a&nbsp;<span class="font-bold">3 encuentros</span><br/> SEÑAL consecutivos.</div></div></div></div></div>
+        <div class="text-left"><a href="https://tickets.xn--viveseal-i3a.cl/producto/3-encuentros/" target="_blank" rel="noreferrer"><img className="w-[95%]" src="./images/verdeNegro.png?v=2" alt="imagen de fondo" /></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  "></div></div></div></div></div>
         
 
         
