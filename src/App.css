@@ -7,9 +7,14 @@ body {
   background-color: black;
 }
 
-.gradient-background {
+.gradient-background-top {
   height: 100vh;
   background: linear-gradient(to bottom, #eaeedd, #ff7bab);
+}
+
+.gradient-background-botton {
+  height: 100vh;
+  background: linear-gradient(to bottom, #ff7bab, #eaeedd);
 }
 
 
