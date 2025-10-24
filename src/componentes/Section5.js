@@ -219,13 +219,10 @@ function Section({ minHeight }) {
 
 
 
-        <div class="text-left"><a href="https://tickets.xn--viveseal-i3a.cl/producto/3-encuentros/" target="_blank" rel="noreferrer"><img className="w-[95%]" src="./images/ticketRosaNegro.png?v=2" alt="imagen de fondo"/></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  "></div></div></div></div></div>
+        <div class="text-left"><a href="https://tickets.xn--viveseal-i3a.cl/producto/1-fiesta-senal/" target="_blank" rel="noreferrer"><img className="w-[95%]" src="./images/ticketRosaNegro.png?v=2" alt="imagen de fondo"/></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl"></div></div></div></div></div>
 
-
-
-        <div class="text-left"><a href="https://tickets.xn--viveseal-i3a.cl/producto/3-encuentros/" target="_blank" rel="noreferrer"><img className="w-[95%]" src="./images/verdeNegro.png?v=2" alt="imagen de fondo" /></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  "></div></div></div></div></div>
+        <div class="text-left"><a href="https://tickets.xn--viveseal-i3a.cl/producto/2-fiesta-senal/" target="_blank" rel="noreferrer"><img className="w-[95%]" src="./images/verdeNegro.png?v=2" alt="imagen de fondo" /></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl"></div></div></div></div></div>
         
-
         
         </div>
 </div>
