@@ -56,8 +56,8 @@ function Section({ minHeight }) {
           <div className="w-full sm:w-5/12 lg:w-5/12  p-4"></div>
         </div>
 
-<div className="flex">
-        <div className="w-2/3">
+<div className="block lg:flex">
+        <div className="w-full lg:w-2/3">
 
 
 
@@ -74,11 +74,10 @@ function Section({ minHeight }) {
                 rel="noreferrer"
               >
                 <img
-                  className=""
+                  className="w-[95%]"
                   src="./images/ticketGreen.png?v=2"
                   alt="imagen de fondo"
                   style={{
-                    width: "100%",
                     height: "auto",
                   }}
                 />
@@ -110,11 +109,10 @@ function Section({ minHeight }) {
                 rel="noreferrer"
               >
                 <img
-                  className=""
+                  className="w-[95%]"
                   src="./images/ticketRosa.png?v=2"
                   alt="imagen de fondo"
                   style={{
-                    width: "100%",
                     height: "auto",
                   }}
                 />
@@ -140,11 +138,10 @@ function Section({ minHeight }) {
     rel="noreferrer"
   >
     <img
-      className=""
+      className="w-[95%]"
       src="./images/ticketRed.png?v=2"
       alt="imagen de fondo"
       style={{
-        width: "100%",
         height: "auto",
       }}
     />
@@ -170,11 +167,10 @@ function Section({ minHeight }) {
                 rel="noreferrer"
               >
                 <img
-                  className=""
+                  className="w-[95%]"
                   src="./images/ticketGray.png?v=2"
                   alt="imagen de fondo"
                   style={{
-                    width: "100%",
                     height: "auto",
                   }}
                 />
@@ -211,7 +207,7 @@ function Section({ minHeight }) {
 </div>
 
         </div>
-        <div className="w-1/3 px-9 gradient-background">
+        <div className="w-full lg:w-1/3 px-9 gradient-background-botton lg:gradient-background-top pt-12 lg:pt-0">
 
         <h1 className="text-6xl leading-none md:text-5xl xl:text-5xl text-black text-left w-full font-unbounded pt-4 flex justify-start items-center font-semibold">
           FIESTAS
