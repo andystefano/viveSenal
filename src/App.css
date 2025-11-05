@@ -7,14 +7,15 @@ body {
   background-color: black;
 }
 
-.gradient-background-top {
-  height: 100vh;
-  background: linear-gradient(to bottom, #eaeedd, #ff7bab);
+/* Gradiente responsive: rosa a beige en móvil, beige a rosa en desktop */
+.gradient-fiestas {
+  background: linear-gradient(to bottom, #ff7bab, #eaeedd);
 }
 
-.gradient-background-botton {
-  height: 100vh;
-  background: linear-gradient(to bottom, #ff7bab, #eaeedd);
+@media (min-width: 1024px) {
+  .gradient-fiestas {
+    background: linear-gradient(to bottom, #eaeedd, #ff7bab);
+  }
 }
 
 
