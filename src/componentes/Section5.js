@@ -207,7 +207,7 @@ function Section({ minHeight }) {
 </div>
 
         </div>
-        <div className="w-full lg:w-1/3 px-9 gradient-background-botton lg:gradient-background-top pt-12 lg:pt-0">
+        <div className="w-full lg:w-1/3 px-9 gradient-fiestas pt-12 lg:pt-0">
 
         <h1 className="text-6xl leading-none md:text-5xl xl:text-5xl text-black text-left w-full font-unbounded pt-4 flex justify-start items-center font-semibold">
           FIESTAS
