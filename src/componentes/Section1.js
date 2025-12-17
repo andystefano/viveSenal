@@ -86,8 +86,8 @@ function Section({ minHeight }) {
         </div>
 
         <div className="w-[90%] lg:w-10/12 sd:w-full mt-2 mx-auto  justify-center items-center mx-auto text-center pb-0 sd:pb-10 md:pb-10 lg:pb-10 xl:pb-10">
-          <img src="/images/logos/home_desk.png" className="w-full hidden sd:block md:block lg:block xl:block" alt="Colaboran" />
-          <img src="/images/logos/home_movil.png" className="block sd:hidden md:hidden lg:hidden xl:hidden " alt="Colaboran" />
+          <img src="/images/logos/home_desk.png?v=2" className="w-full hidden sd:block md:block lg:block xl:block" alt="Colaboran" />
+          <img src="/images/logos/home_movil.png?v=2" className="block sd:hidden md:hidden lg:hidden xl:hidden " alt="Colaboran" />
         </div>
 
       </div>
@@ -172,8 +172,8 @@ function Section({ minHeight }) {
         </div>
 
         <div className="w-[90%] lg:w-10/12 sd:w-full mt-2 mx-auto  justify-center items-center mx-auto text-center pb-0 sd:pb-10 md:pb-10 lg:pb-10 xl:pb-10">
-          <img src="/images/logos/home_desk.png" className="w-full hidden sd:block md:block lg:block xl:block" alt="Colaboran" />
-          <img src="/images/logos/home_movil.png" className="block sd:hidden md:hidden lg:hidden xl:hidden " alt="Colaboran" />
+          <img src="/images/logos/home_desk.png?v=2" className="w-full hidden sd:block md:block lg:block xl:block" alt="Colaboran" />
+          <img src="/images/logos/home_movil.png?v=2" className="block sd:hidden md:hidden lg:hidden xl:hidden " alt="Colaboran" />
         </div>
 
       </div>

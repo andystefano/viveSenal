@@ -56,8 +56,8 @@ function ViveFooter({ minHeight }) {
           </div>
         </div>
         <div class="mt-5 sd:mt-0 sm:mt-0  lg:mt-0  xl:mt-0  w-full sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2 text-center">
-          <img  className="hidden sd:block md:block lg:block xl:block" src="/images/logos/footer_movilydesk.png" alt="Logos Colaboradores" />
-          <img className="block w-[83%] sd:hidden md:hidden lg:hidden xl:hidden" src="/images/logos/footer_movilydesk.png" alt="Logos Colaboradores" />
+          <img  className="hidden sd:block md:block lg:block xl:block" src="/images/logos/footer_movilydesk.png?v=2" alt="Logos Colaboradores" />
+          <img className="block w-[83%] sd:hidden md:hidden lg:hidden xl:hidden" src="/images/logos/footer_movilydesk.png?v=2" alt="Logos Colaboradores" />
 
         </div>
       </div>
