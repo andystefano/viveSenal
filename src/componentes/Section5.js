@@ -8,7 +8,7 @@ function Section({ minHeight }) {
       style={{ backgroundColor: "#eaeedd" }}
     >
       <div className="flex justify-center">
-        <h1 className="flex items-center mt-24 mx-7 mb-4 text-5xl  sd:text-5xl sm:text-5xl lg:text-5xl xl:text-6xl leading-none text-black text-center font-unbounded font-normal">
+        <h1 className="flex items-center mt-8 mx-7 mb-4 text-5xl  sd:text-5xl sm:text-5xl lg:text-5xl xl:text-6xl leading-none text-black text-center font-unbounded font-normal">
           {/* Imágenes decorativas con estilos consistentes */}
           <img
             src="images/decoracion/2025_negro.png"
@@ -35,7 +35,7 @@ function Section({ minHeight }) {
       </div>
 
       <div
-        className="pt-0 sd:pt-0  md:pt-0  lg:pt-0 xl:pt-0  md:pb-5 xl:pb-5 "
+        className="pt-0 sd:pt-0  md:pt-0  lg:pt-0 xl:pt-0   sd:p-14 sd:pb-5 md:p-11 md:pb-5 lg:p-11 lg:pb-5 xl:p-11 xl:pb-5 "
         style={{
           backgroundColor: "#eaeedd",
           width: "100%",
@@ -56,15 +56,8 @@ function Section({ minHeight }) {
           <div className="w-full sm:w-5/12 lg:w-5/12  p-4"></div>
         </div>
 
-<div className="block lg:flex">
-        <div className="w-full lg:w-2/3">
-
-
-
-
-
-        
-          <div className="grid sd:grid-cols-1 sd:grid-cols-1 lg:grid-cols-2  ">
+        <div className="w-full">
+          <div className="grid sd:grid-cols-1 sd:grid-cols-1 lg:grid-cols-3  ">
       
 
             <div className="p-4 text-center">
@@ -74,10 +67,11 @@ function Section({ minHeight }) {
                 rel="noreferrer"
               >
                 <img
-                  className="w-[95%]"
+                  className=""
                   src="./images/ticketGreen.png?v=2"
                   alt="imagen de fondo"
                   style={{
+                    width: "100%",
                     height: "auto",
                   }}
                 />
@@ -109,10 +103,11 @@ function Section({ minHeight }) {
                 rel="noreferrer"
               >
                 <img
-                  className="w-[95%]"
+                  className=""
                   src="./images/ticketRosa.png?v=2"
                   alt="imagen de fondo"
                   style={{
+                    width: "100%",
                     height: "auto",
                   }}
                 />
@@ -138,10 +133,11 @@ function Section({ minHeight }) {
     rel="noreferrer"
   >
     <img
-      className="w-[95%]"
+      className=""
       src="./images/ticketRed.png?v=2"
       alt="imagen de fondo"
       style={{
+        width: "100%",
         height: "auto",
       }}
     />
@@ -151,7 +147,7 @@ function Section({ minHeight }) {
                   <div className="flex items-start">
                    
                     <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
-                      Acceso para dos personas a&nbsp;
+                      Acceso para dos personas a##&nbsp;
                       <span className="font-bold">1 encuentro</span><br/> SEÑAL
                       consecutivos.
                     </div>
@@ -160,34 +156,62 @@ function Section({ minHeight }) {
               </div>
             </div>
 
-            <div className="p-4 text-center">
-              <a
-                href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro-individual/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="w-[95%]"
-                  src="./images/ticketGray.png?v=2"
-                  alt="imagen de fondo"
-                  style={{
-                    height: "auto",
-                  }}
-                />
-              </a>
-              <div>
-                <div className="grid grid-cols-1 gap-4 mx-1 my-1">
-                  <div className="flex items-start">
-                    <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
-                      Acceso para una persona a&nbsp;
-                      <span className="font-bold">1 encuentro</span> SEÑAL.
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+            <div className="p-4 text-center hidden sd:hidden md:hidden lg:hidden xl:hidden">
+  <a
+    href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <img
+      className=""
+      src="./images/ticketRed.png?v=2"
+      alt="imagen de fondo"
+      style={{
+        width: "100%",
+        height: "auto",
+      }}
+    />
+  </a>
+  <div>
+    <div className="grid grid-cols-1 gap-4 mx-1 my-1">
+      <div className="flex items-start">
+        <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
+          Acceso para dos personas a//&nbsp;
+          <span className="font-bold">1 encuentro</span><br/> SEÑAL.
+        </div>
+      </div>
+    </div>
+  </div>
             </div>
 
-
+<div className="p-4 text-center block sd:hidden md:hidden lg:hidden xl:hidden">
+  <a
+    href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro-individual/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <img
+      className=""
+      src="./images/ticketGray.png?v=2"
+      alt="imagen de fondo"
+      style={{
+        width: "100%",
+        height: "auto",
+      }}
+    />
+  </a>
+  <div>
+    <div className="grid grid-cols-1 gap-4 mx-1 my-1">
+      <div className="flex items-start">
+        <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-2xl sd:text-xl md:text-xl lg:text-xl xl:text-xl ">
+          Acceso para una persona a&nbsp;
+          <span className="font-bold">1 encuentro</span> SEÑAL.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -202,34 +226,39 @@ function Section({ minHeight }) {
            
           </div>
 
-<div>
+          <div className="hidden sm:flex flex-wrap justify-center gap-6 sm:py-3">
+         
 
+          <div className="flex flex-col items-center p-4 max-w-[33%]">
+            <a
+              href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro-individual/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="w-full h-auto"
+                src="./images/ticketGray.png?v=2"
+                alt="imagen de fondo"
+              />
+            </a>
+            <div className="mt-4">
+              <div className="flex flex-col gap-4 mx-1 my-1">
+                <div className="flex items-start">
+                  <div className="text-black font-libre-franklin ml-2 text-xs sm:text-xl">
+                    Acceso para una persona a&nbsp;
+                    <span className="font-bold">1 encuentro</span> SEÑAL.
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="material-icons w-6 h-6 mt-1.5 text-gray-700"></span>
+                  <div className="text-red-500 font-libre-franklin italic ml-2 text-xs sm:text-xl"></div>
+                </div>
+              </div>
+            </div>
+          </div>
 </div>
 
         </div>
-        <div className="w-full lg:w-1/3 px-9 gradient-fiestas pt-12 lg:pt-0">
-
-        <h1 className="text-6xl leading-none md:text-5xl xl:text-5xl text-black text-left w-full font-unbounded pt-4 flex justify-start items-center font-semibold">
-          FIESTAS
-        </h1> 
-
-        <h2 className="text-normal leading-none md:text-normal xl:text-normal font-light text-left w-full font-unbounded pt-4 flex justify-start items-center  text-black mb-5">
-        <span className="font-semibold">Preventa:</span>&nbsp;Primeras 100 entradas.
-        </h2> 
-
-
-
-        <div class="text-left"><a href="https://tickets.xn--viveseal-i3a.cl/producto/1-fiesta-senal/" target="_blank" rel="noreferrer"><img className="w-[95%]" src="./images/ticketRosaNegro.png?v=2" alt="imagen de fondo"/></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl"></div></div></div></div></div>
-
-        <div class="text-left"><a href="https://tickets.xn--viveseal-i3a.cl/producto/2-fiesta-senal/" target="_blank" rel="noreferrer"><img className="w-[95%]" src="./images/verdeNegro.png?v=2" alt="imagen de fondo" /></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl"></div></div></div></div></div>
-        
-        <div class="text-left"><a href="https://tickets.xn--viveseal-i3a.cl/producto/participa-en-1-fiestas-senal/" target="_blank" rel="noreferrer"><img className="w-[95%]" src="./images/ticketRojoNegro.png?v=2" alt="imagen de fondo" /></a><div><div class="grid grid-cols-1 gap-4 mx-1 my-1"><div class="flex items-start"><div class="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl"></div></div></div></div></div>
-        
-        
-
-        </div>
-</div>
-
       </div>
 
 
