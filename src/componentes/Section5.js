@@ -147,7 +147,7 @@ function Section({ minHeight }) {
                   <div className="flex items-start">
                    
                     <div className="mt-4 text-black  font-libre-franklin  ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl  ">
-                      Acceso para dos personas a##&nbsp;
+                      Acceso para dos personas a&nbsp;
                       <span className="font-bold">1 encuentro</span><br/> SEÑAL
                       consecutivos.
                     </div>
