@@ -126,19 +126,19 @@ h1, p {
 .bgTRed {
   background-image: url('../public/images/bgtred.png');
   background-size: cover; /* Ajusta el tamaño de la imagen */
-  background-color: #E01C24;
+  /*background-color: #E01C24;*/
 }
 
 .bgTGreen {
   background-image: url('../public/images/bgtgreen.png');
   background-size: cover; /* Ajusta el tamaño de la imagen */
-  background-color: #019E5B;
+  /*background-color: #019E5B;*/
 }
 
 .bgTPink {
   background-image: url('../public/images/bgtpink.png');
   background-size: cover; /* Ajusta el tamaño de la imagen */
-  background-color: #F676A6;
+  /*background-color: #F676A6;*/
 }
 
 .mt-44{
