@@ -112,7 +112,7 @@ function Section({ minHeight }) {
             <img alt="" src="/images/header/encabezado_desk.png" className="w-full" />
           </div>
 
-          <div className="flex flex-col space-y-4 p-4 w-full md:max-w-[85%] lg:max-w-[85%] xl:max-w-[85%] mx-auto">
+          <div className="flex flex-col space-y-4 p-4 w-full md:max-w-[90%] lg:max-w-[90%] xl:max-w-[90%] mx-auto">
             <div className="mt-[0%] text-white rounded-lg">
               <div className="w-full"></div>
             </div>
