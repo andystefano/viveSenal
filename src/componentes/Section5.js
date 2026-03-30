@@ -4,33 +4,25 @@ function Section({ minHeight }) {
   return (
     <section
       id="tickets"
-      className=" sd:pd-0 md:pd-0 lg:pd-0 xl:pd-0 border-t border-black relative overflow-hidden "
+      className=" sd:pd-0 md:pd-0 lg:pd-0 xl:pd-0 relative overflow-hidden "
       style={{ backgroundColor: "#eaeedd" }}
     >
       <div className="flex justify-center">
         <h1 className="flex items-center mt-8 mx-7 mb-4 text-5xl  sd:text-5xl sm:text-5xl lg:text-5xl xl:text-6xl leading-none text-black text-center font-unbounded font-normal">
           {/* Imágenes decorativas con estilos consistentes */}
+
           <img
-            src="images/decoracion/2025_negro.png"
-            className="h-5 sd:h-10 sm:h-10 lg:h-10 xl:h-10 w-auto mx-2 hidden sd:block  sm:block  lg:block xl:block"
-            alt="2025"
-          />
-          <img
-            src="images/decoracion/senal2-05.png"
+            src="images/decoracion/senal-deco-black.png"
             className="h-7 w-auto mx-2"
             alt="Decoración"
           />
           TICKETS
           <img
-            src="images/decoracion/senal2-05.png"
+            src="images/decoracion/senal-deco-black.png"
             className="h-7 w-auto mx-2  "
             alt="Decoración"
           />
-          <img
-            src="images/decoracion/2025_negro.png"
-            className="h-5 sd:h-10 sm:h-10 lg:h-10 xl:h-10 w-auto mx-2 hidden sd:block  sm:block  lg:block xl:block"
-            alt="2025"
-          />
+
         </h1>
       </div>
 

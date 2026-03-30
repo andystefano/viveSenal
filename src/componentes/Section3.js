@@ -1,7 +1,9 @@
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
-function Section({ minHeight }) {
+function Section({ minHeight, anchorId = "programacion" }) {
+  const sectionDomId =
+    anchorId === null || anchorId === undefined || anchorId === "" ? {} : { id: anchorId };
   const headerRef = useRef(null);
   const [eventos, setEventos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -45,17 +47,12 @@ function Section({ minHeight }) {
   
   if (loading) {
     return (
-      <section id="programacion" className="border-t border-black relative overflow-hidden" style={{
+      <section {...sectionDomId} className="relative overflow-hidden" style={{
         position: "relative",
-        backgroundImage: width >= 640 ? "url(images/fondos/2_desk.png)" : "none", 
-        backgroundSize: "cover",
-        backgroundPosition: "right top",
-        backgroundColor: "#eaeedd",
-        backgroundRepeat: "no-repeat",
       }}>
         <div className="flex justify-center items-center h-64">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-black mx-auto"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2  mx-auto"></div>
             <p className="mt-4 text-lg">Cargando eventos...</p>
           </div>
         </div>
@@ -64,15 +61,10 @@ function Section({ minHeight }) {
   }
 
   return (
-    <section id="programacion"
-      className="border-t border-black relative overflow-hidden"
+    <section {...sectionDomId}
+      className="relative overflow-hidden"
       style={{
         position: "relative",
-        backgroundImage: width >= 640 ? "url(images/fondos/2_desk.png)" : "none", 
-        backgroundSize: "cover",
-        backgroundPosition: "right top",
-        backgroundColor: "#eaeedd",
-        backgroundRepeat: "no-repeat",
       }}
     >
 
@@ -88,7 +80,10 @@ function Section({ minHeight }) {
     />
 
     
-    <div className="text-[2.7rem] md:text-5xl xl:text-6xl font-unbounded pt-4" style={{ color: "#000", fontWeight: '400' }}>
+    <div
+      className="text-[2.7rem] md:text-5xl xl:text-6xl font-unbounded pt-4 !text-white"
+      style={{ color: "#ffffff", fontWeight: "400" }}
+    >
       PRÓXIMAS
     </div>
     <img
@@ -98,7 +93,10 @@ function Section({ minHeight }) {
       alt="Decoración"
     />
   </div>
-  <div className="text-[2.7rem] md:text-5xl xl:text-6xl font-unbounded mt-0" style={{ fontWeight: '900' }}>
+  <div
+    className="text-[2.7rem] md:text-5xl xl:text-6xl font-unbounded mt-0 !text-white"
+    style={{ color: "#ffffff", fontWeight: "900" }}
+  >
     SEÑALES
   </div>
 </div>
@@ -110,7 +108,7 @@ function Section({ minHeight }) {
       <h1
   className="text-4xl leading-none md:text-5xl xl:text-6xl text-white text-center w-full font-unbounded pt-12 flex justify-center items-center"
   style={{
-    color: "#000",
+    color: "#fff",
     fontWeight: '400',
   }}
 >
@@ -124,7 +122,7 @@ function Section({ minHeight }) {
     alt="Decoración"
   />
   
-    PRÓXIMAS<span className="" style={{ fontWeight: '900' }}>&nbsp;SEÑALES
+    PRÓXIMAS9<span className="" style={{ fontWeight: '900' }}>&nbsp;SEÑALES
   </span>
 
   <img
@@ -150,7 +148,7 @@ function Section({ minHeight }) {
             {eventos[0] && eventos[0].titulo && (
               <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
                 <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=1&t=${Date.now()}`} alt="Imagen del evento 1" className="w-full" />
-                <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[0].color || 'bgTPink'} bg-opacity-100 text-black`}>
+                <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[0].color || 'bgTPink'} bg-opacity-100 text-white`}>
                 <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                     <div>
                     <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
@@ -164,7 +162,7 @@ function Section({ minHeight }) {
                     {eventos[0].descripcion }
                       </p>
                     </div>
-                    <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                    <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-white text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2  mt-4 font-unbounded hover:text-white hover:border-white">
                     Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <span className="material-icons">
                         <FaLongArrowAltLeft />
@@ -177,7 +175,7 @@ function Section({ minHeight }) {
             {eventos[1] && eventos[1].titulo && (
                  <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
                  <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=2&t=${Date.now()}`} alt="Imagen del evento 2" className="w-full" />
-                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[1].color || 'bgTPink'} bg-opacity-100 text-black`}>
+                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[1].color || 'bgTPink'} bg-opacity-100 text-whiet`}>
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
                      <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
@@ -191,7 +189,7 @@ function Section({ minHeight }) {
                      {eventos[1].descripcion }
                        </p>
                      </div>
-                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-white text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2  mt-4 font-unbounded hover:text-white hover:border-white">
                      Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                        <span className="material-icons">
                          <FaLongArrowAltLeft />
@@ -204,7 +202,7 @@ function Section({ minHeight }) {
             {eventos[2] && eventos[2].titulo && (
                  <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
                  <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=3&t=${Date.now()}`} alt="Imagen del evento 3" className="w-full" />
-                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[2].color || 'bgTPink'} bg-opacity-100 text-black`}>
+                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[2].color || 'bgTPink'} bg-opacity-100 text-white`}>
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
                      <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
@@ -218,7 +216,7 @@ function Section({ minHeight }) {
                      {eventos[2].descripcion }
                        </p>
                      </div>
-                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-white hover:border-white">
+                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-white text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2  mt-4 font-unbounded hover:text-white hover:border-white">
                      Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                        <span className="material-icons">
                          <FaLongArrowAltLeft />
@@ -231,6 +229,14 @@ function Section({ minHeight }) {
           </>
         )}
       </div>
+
+      <img
+      src="images/decoracion/huincha.png"
+      className="w-full"
+      style={{ height: "auto" }}
+      alt=""
+    />
+
     </section>
   );
 }
