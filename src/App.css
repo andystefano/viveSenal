@@ -18,6 +18,17 @@ body {
   }
 }
 
+/* Gradiente responsive: rosa a beige en móvil, beige a rosa en desktop */
+.gradient-fiestas {
+  background: linear-gradient(to bottom, #ff7bab, #eaeedd);
+}
+
+@media (min-width: 1024px) {
+  .gradient-fiestas {
+    background: linear-gradient(to bottom, #eaeedd, #ff7bab);
+  }
+}
+
 
 /* Scrollbar global: paleta negro/gris */
 * {

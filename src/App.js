@@ -45,6 +45,7 @@ function App() {
       backgroundColor: "black"
     }} >
    
+   
       <Section1 minHeight={minHeight} />
      <div className="w-full"  style={{
     backgroundColor: '#0cb259' 
