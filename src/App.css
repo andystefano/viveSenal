@@ -19,29 +19,29 @@ body {
 }
 
 
+/* Scrollbar global: paleta negro/gris */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #525053 #181a14;
+}
+
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 12px;
+  height: 12px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-background: rgb(0,0,0);
-background: linear-gradient(97deg, rgba(0,0,0,1) 0%, rgba(193,55,55,1) 25%, rgba(239,68,68,0.6564399441417192) 31%, rgba(12,178,89,0.6676444259344363) 65%, rgba(0,0,0,1) 90%);
-border-radius: 5px;
-
+  background: #181a14;
 }
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
-  background: gray; 
-  border-radius: 5px;
-
+  background-color: #525053;
+  border-radius: 8px;
+  border: 2px solid #181a14;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: pink; 
-  border-radius: 5px;
+  background-color: #6a686c;
 }
 
 a, button {
