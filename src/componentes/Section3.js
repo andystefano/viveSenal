@@ -148,7 +148,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
             {eventos[0] && eventos[0].titulo && (
               <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
                 <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=1&t=${Date.now()}`} alt="Imagen del evento 1" className="w-full" />
-                <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[0].color || 'bgTPink'} bg-opacity-100 text-white`}>
+                <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[0].color || 'bgTPink'} bg-opacity-100 text-black`}>
                 <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                     <div>
                     <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
@@ -162,7 +162,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
                     {eventos[0].descripcion }
                       </p>
                     </div>
-                    <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-white text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2  mt-4 font-unbounded hover:text-white hover:border-white">
+                    <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
                     Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <span className="material-icons">
                         <FaLongArrowAltLeft />
@@ -175,7 +175,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
             {eventos[1] && eventos[1].titulo && (
                  <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
                  <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=2&t=${Date.now()}`} alt="Imagen del evento 2" className="w-full" />
-                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[1].color || 'bgTPink'} bg-opacity-100 text-whiet`}>
+                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[1].color || 'bgTPink'} bg-opacity-100 text-black`}>
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
                      <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
@@ -189,7 +189,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
                      {eventos[1].descripcion }
                        </p>
                      </div>
-                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-white text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2  mt-4 font-unbounded hover:text-white hover:border-white">
+                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
                      Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                        <span className="material-icons">
                          <FaLongArrowAltLeft />
@@ -202,7 +202,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
             {eventos[2] && eventos[2].titulo && (
                  <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
                  <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=3&t=${Date.now()}`} alt="Imagen del evento 3" className="w-full" />
-                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[2].color || 'bgTPink'} bg-opacity-100 text-white`}>
+                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[2].color || 'bgTPink'} bg-opacity-100 text-black`}>
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
                      <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
@@ -216,7 +216,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
                      {eventos[2].descripcion }
                        </p>
                      </div>
-                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-white text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2  mt-4 font-unbounded hover:text-white hover:border-white">
+                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
                      Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                        <span className="material-icons">
                          <FaLongArrowAltLeft />

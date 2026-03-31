@@ -109,7 +109,12 @@ function Section({ minHeight }) {
       >
         <div className="h-auto sd:min-h-screen md:min-h-screen lg:min-h-screen xl:min-h-screen">
           <div className="absolute top-0 left-0 w-full">
-            <img alt="" src="/images/header/encabezado_desk.png" className="w-full" />
+            <img
+              alt=""
+              src="/images/header/encabezado_desk.png"
+              className="w-full animate__animated animate__slideInDown"
+              style={{ filter: "brightness(1) invert(0)" }}
+            />
           </div>
 
           <div className="flex flex-col space-y-4 p-4 w-full md:max-w-[90%] lg:max-w-[90%] xl:max-w-[90%] mx-auto">
@@ -120,7 +125,7 @@ function Section({ minHeight }) {
               <div className="w-full">
                 <img
                   src="images/graficaDesk.png?v=desk"
-                  className="max-w-full mt-1 max-w-[95%] md:max-w-[95%] lg:max-w-[95%] sm:max-w-[95%] mx-auto"
+                  className="max-w-full mt-1 max-w-[95%] md:max-w-[95%] lg:max-w-[95%] sm:max-w-[95%] mx-auto animate__animated animate__bounceInUp"
                   alt="Vive Señal"
                 />
               </div>
