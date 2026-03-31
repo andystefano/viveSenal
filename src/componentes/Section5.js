@@ -33,8 +33,8 @@ function Section({ minHeight }) {
         }}
       >
         <div className="w-full flex justify-center">
-          <div className="grid sd:grid-cols-1 lg:grid-cols-1 w-full lg:w-auto">
-            <div className="p-4 text-center lg:max-w-md xl:max-w-lg mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
+            <div className="p-4 text-center w-full max-w-xl mx-auto">
               <a
                 href="https://tickets.xn--viveseal-i3a.cl/producto/6-encuentros/"
                 target="_blank"
@@ -65,6 +65,36 @@ function Section({ minHeight }) {
                   <div className="mt-4 text-black font-libre-franklin ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl">
                     <span className="font-bold">&nbsp;Visitas Antenna</span>
                     &nbsp;seleccionadas.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-4 text-center w-full max-w-xl mx-auto">
+              <a
+                href="https://tickets.xn--viveseal-i3a.cl/producto/3-encuentros/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./images/ticketRosa.png?v=2"
+                  alt="Ticket 3 encuentros"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </a>
+
+              <div>
+                <div className="grid grid-cols-1 gap-4 mx-1 my-1">
+                  <div className="flex items-start">
+                    <div className="mt-4 text-black font-libre-franklin ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl">
+                      Acceso para dos personas a&nbsp;
+                      <span className="font-bold">3 encuentros</span>
+                      <br />
+                      SEÑAL consecutivos.
+                    </div>
                   </div>
                 </div>
               </div>
