@@ -9,7 +9,7 @@ function ViveFooter({ minHeight }) {
       
       <img src="/images/logos/footer.png" alt="Logo Señal" class="w-full" />
             <p class="text-white text-xs text-left mt-2 text-[#e9eedc] " style={{fontSize: '0.73rem'}}>
-              @ 2025, SEÑAL. Todos los derechos reservados.
+              @ 2026, SEÑAL. Todos los derechos reservados.
             </p>
 
       </div>
@@ -30,7 +30,7 @@ function ViveFooter({ minHeight }) {
           <div class="flex flex-col items-start ">
             <img src="/images/logos/footer.png" class="w-3/5 mt-5" alt="Logo" />
             <p class="text-white text-xl text-center mt-2 ml-4" >
-              @ 2025, SEÑAL. Todos los derechos reservados.
+              @ 2026, SEÑAL. Todos los derechos reservados.
             </p>
 
             <div className="flex w-full text-white font-libre-franklin text-2xl mt-5">

@@ -9,6 +9,12 @@ function Section({ minHeight }) {
     >
       <div className="flex justify-center">
         <h1 className="flex items-center mt-8 mx-7 mb-4 text-5xl sd:text-5xl sm:text-5xl lg:text-5xl xl:text-6xl leading-none text-black text-center font-unbounded font-normal">
+
+        <img
+            src="images/decoracion/2026_negro.png"
+            className="h-11 w-auto mx-1"
+            alt="2026"
+          />
           <img
             src="images/decoracion/senal-deco-black.png"
             className="h-7 w-auto mx-2"
@@ -20,6 +26,11 @@ function Section({ minHeight }) {
             className="h-7 w-auto mx-2"
             alt="Decoración"
           />
+        <img
+            src="images/decoracion/2026_negro.png"
+            className="h-11 w-auto mx-2"
+            alt="2026"
+          />          
         </h1>
       </div>
 
