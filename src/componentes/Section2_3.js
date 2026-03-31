@@ -49,7 +49,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
                   <MdTripOrigin size={25} />
                 </span>
                 <div className="text-white text-xl  font-unbounded  ml-2 font-normal text-left ">
-                  Con tu aporte <strong>SEÑAL</strong> estás apoyando a
+                  Con tu aporte!2 <strong>SEÑAL</strong> estás apoyando a
                   Fundación Antenna en el desarrollo de nuevos proyectos que
                   benefician a artistas y espacios culturales.
                 </div>

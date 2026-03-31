@@ -58,8 +58,12 @@ function App() {
  
 
       <Section5 minHeight={minHeight} />
-      <Section4 minHeight={minHeight} />
-      <Section4Movil minHeight={minHeight} />
+      <div className="hidden sd:block md:block lg:block xl:block">
+        <Section4 minHeight={minHeight} />
+      </div>
+      <div className="block sd:hidden md:hidden lg:hidden xl:hidden">
+        <Section4Movil minHeight={minHeight} />
+      </div>
 
       <Section6 minHeight={minHeight} />
       <ViveFooter />
