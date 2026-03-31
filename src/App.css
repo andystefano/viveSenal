@@ -32,13 +32,13 @@ body {
 
 /* Scrollbar global: paleta negro/gris */
 * {
-  scrollbar-width: thin;
+  scrollbar-width: auto;
   scrollbar-color: #525053 #181a14;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
 }
 
 ::-webkit-scrollbar-track {
