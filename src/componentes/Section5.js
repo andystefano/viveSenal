@@ -12,23 +12,23 @@ function Section({ minHeight }) {
 
         <img
             src="images/decoracion/2026_negro.png"
-            className="h-11 w-auto mx-1"
+            className="h-11 w-auto mx-2  hidden sd:block md:block lg:block xl:block"
             alt="2026"
           />
           <img
             src="images/decoracion/senal-deco-black.png"
-            className="h-7 w-auto mx-2"
+            className="h-4 sd:h-11 w-auto mx-2 "
             alt="Decoración"
           />
           TICKETS
           <img
             src="images/decoracion/senal-deco-black.png"
-            className="h-7 w-auto mx-2"
+            className="h-4 sd:h-11 w-auto mx-2"
             alt="Decoración"
           />
         <img
             src="images/decoracion/2026_negro.png"
-            className="h-11 w-auto mx-2"
+            className="h-11 w-auto mx-2  hidden sd:block md:block lg:block xl:block "
             alt="2026"
           />          
         </h1>
@@ -62,22 +62,9 @@ function Section({ minHeight }) {
               </a>
 
               <div>
-                <div className="grid grid-cols-1 gap-4 mx-1 my-1">
-                  <div className="flex items-start">
-                    <div className="mt-4 text-black font-libre-franklin ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl">
-                     &nbsp;
-                      <span className="font-bold">&nbsp;&nbsp;</span>&nbsp;
-                      <br />
-                    </div>
-                  </div>
-                </div>
+              
 
-                <div className="flex items-start">
-                  <div className="mt-4 text-black font-libre-franklin ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl">
-                    <span className="font-bold">&nbsp;</span>
-                    &nbsp;
-                  </div>
-                </div>
+                 
               </div>
             </div>
 
@@ -88,8 +75,19 @@ function Section({ minHeight }) {
                 rel="noreferrer"
               >
                 <img
+                  src="./images/ticketRosaMovil.png?v=2"
+                  alt="Ticket 10 encuentros"
+                  className="block sd:hidden md:hidden lg:hidden xl:hidden"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+
+<img
                   src="./images/ticketRosa.png?v=2"
-                  alt="Ticket 3 encuentros"
+                  alt="Ticket 10 encuentros"
+                  className="hidden sd:block md:block lg:block xl:block"
                   style={{
                     width: "100%",
                     height: "auto",
