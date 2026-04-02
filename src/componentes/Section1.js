@@ -26,8 +26,8 @@ function Section({ minHeight }) {
             <div className="text-white rounded-lg mt-0">
               <div className="w-full">
                 <img
-                  src="images/graficaDesk.png?v=movil"
-                  className="max-w-full max-w-[95%] md:max-w-[95%] lg:max-w-[95%] sm:max-w-[95%] mx-auto"
+                  src="images/graficaMovil.png?v=movil"
+                  className="max-w-full max-w-[100%] mx-auto"
                   alt="Vive Señal"
                 />
               </div>
