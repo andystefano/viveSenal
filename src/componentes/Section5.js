@@ -47,7 +47,7 @@ function Section({ minHeight }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
             <div className="p-4 text-center w-full max-w-xl mx-auto">
               <a
-                href="https://tickets.xn--viveseal-i3a.cl/producto/6-encuentros/"
+                href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro-individual/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -70,7 +70,7 @@ function Section({ minHeight }) {
 
             <div className="p-4 text-center w-full max-w-xl mx-auto">
               <a
-                href="https://tickets.xn--viveseal-i3a.cl/producto/3-encuentros/"
+                href="https://tickets.xn--viveseal-i3a.cl/producto/tickets-programa-completo/"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -43,7 +43,7 @@ function Section({ minHeight }) {
             />
             <img
               src="/images/logos/home_movil.png?v=2"
-              className="block sd:hidden md:hidden lg:hidden xl:hidden"
+              className="block w-[90%] mx-auto sd:hidden md:hidden lg:hidden xl:hidden"
               alt="Colaboran"
             />
           </div>

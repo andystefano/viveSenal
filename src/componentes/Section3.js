@@ -163,7 +163,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
                       </p>
                     </div>
                     <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
-                    Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <span className="material-icons">
                         <FaLongArrowAltLeft />
                       </span>
@@ -190,7 +190,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
                        </p>
                      </div>
                      <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
-                     Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                        <span className="material-icons">
                          <FaLongArrowAltLeft />
                        </span>
@@ -217,7 +217,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
                        </p>
                      </div>
                      <a href="#tickets"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
-                     Participa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                        <span className="material-icons">
                          <FaLongArrowAltLeft />
                        </span>
