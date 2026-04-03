@@ -95,7 +95,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
   </div>
   <div
     className="text-[2.7rem] md:text-5xl xl:text-6xl font-unbounded mt-0 !text-white"
-    style={{ color: "#ffffff", fontWeight: "900" }}
+    style={{ color: "#ffffff", fontWeight: "400" }}
   >
     SEÑALES
   </div>
@@ -122,7 +122,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
     alt="Decoración"
   />
   
-    PRÓXIMAS9<span className="" style={{ fontWeight: '900' }}>&nbsp;SEÑALES
+    PRÓXIMAS9<span className="" style={{ fontWeight: '400' }}>&nbsp;SEÑALES
   </span>
 
   <img
@@ -151,12 +151,12 @@ function Section({ minHeight, anchorId = "programacion" }) {
                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[0].color || 'bgTPink'} bg-opacity-100 text-black`}>
                 <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                     <div>
-                    <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
+                    <h1 className="text-[0.9rem] sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
                     {eventos[0].titulo}</h1>
-                    <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xs xl:text-xl 2xl:text-[1.65rem]  text-left font-medium font-unbounded">
+                    <h2 className="text-[0.8rem] sd:text-3xl md:text-xl lg:text-xs xl:text-xl 2xl:text-[1.65rem]  text-left font-medium font-unbounded">
                     {eventos[0].subtitulo || ""}
                     </h2>
-                    <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
+                    <br className="hidden xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                     <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-0 xl:mt-1 2xl:mt-1">
                     <strong>{eventos[0].bajada || ""}</strong><br/>
                     {eventos[0].descripcion }
@@ -178,12 +178,12 @@ function Section({ minHeight, anchorId = "programacion" }) {
                  <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[1].color || 'bgTPink'} bg-opacity-100 text-black`}>
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
-                     <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
-                     {eventos[1].titulo}</h1>
-                     <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xs xl:text-xl 2xl:text-[1.65rem]  text-left font-medium font-unbounded">
-                     {eventos[1].subtitulo || ""}
-                     </h2>
-                     <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
+                     <h1 className="text-[0.9rem] sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
+                    {eventos[0].titulo}</h1>
+                    <h2 className="text-[0.8rem] sd:text-3xl md:text-xl lg:text-xs xl:text-xl 2xl:text-[1.65rem]  text-left font-medium font-unbounded">
+                    {eventos[0].subtitulo || ""}
+                    </h2>
+                     <br className="hidden xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                      <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-0 xl:mt-1 2xl:mt-1">
                      <strong>{eventos[1].bajada || ""}</strong><br/>
                      {eventos[1].descripcion }
@@ -205,11 +205,11 @@ function Section({ minHeight, anchorId = "programacion" }) {
                  <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${eventos[2].color || 'bgTPink'} bg-opacity-100 text-black`}>
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
-                     <h1 className="text-normal sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
-                     {eventos[2].titulo}</h1>
-                     <h2 className="text-normal sd:text-3xl md:text-xl lg:text-xs xl:text-xl 2xl:text-[1.65rem]  text-left font-medium font-unbounded">
-                     {eventos[2].subtitulo || ""}
-                     </h2>
+                     <h1 className="text-[0.9rem] sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
+                    {eventos[0].titulo}</h1>
+                    <h2 className="text-[0.8rem] sd:text-3xl md:text-xl lg:text-xs xl:text-xl 2xl:text-[1.65rem]  text-left font-medium font-unbounded">
+                    {eventos[0].subtitulo || ""}
+                    </h2>
                      <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                      <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-0 xl:mt-1 2xl:mt-1">
                      <strong>{eventos[2].bajada || ""}</strong><br/>
