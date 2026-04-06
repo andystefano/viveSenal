@@ -230,12 +230,20 @@ function Section({ minHeight, anchorId = "programacion" }) {
         )}
       </div>
 
-      <img
-      src="images/decoracion/huincha.png"
-      className="w-full"
-      style={{ height: "auto" }}
-      alt=""
-    />
+      <a
+        href="https://tickets.xn--viveseal-i3a.cl/producto/tickets-programa-completo/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block w-full"
+        aria-label="Participa Programa Completo — comprar tickets"
+      >
+        <img
+          src="images/decoracion/huincha.png"
+          className="w-full"
+          style={{ height: "auto" }}
+          alt=""
+        />
+      </a>
 
     </section>
   );
