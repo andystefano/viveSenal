@@ -106,7 +106,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
       <div className="w-full hidden sd:block md:block lg:block xl:block">
        
       <h1
-  className="text-4xl leading-none md:text-5xl xl:text-6xl text-white text-center w-full font-unbounded pt-12 flex justify-center items-center"
+  className="text-4xl leading-none md:text-5xl xl:text-6xl text-white text-center w-full font-unbounded pt-56 pb-6 flex justify-center items-center"
   style={{
     color: "#fff",
     fontWeight: '400',

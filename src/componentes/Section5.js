@@ -106,7 +106,7 @@ function Section({ minHeight }) {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="mt-4 text-black font-libre-franklin ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl">
+                  <div className=" text-black font-libre-franklin ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl">
                     <span className="font-bold">&nbsp;Visitas Antenna</span>
                     &nbsp;seleccionadas.
                   </div>
