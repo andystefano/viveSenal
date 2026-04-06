@@ -122,7 +122,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
     alt="Decoración"
   />
   
-    PRÓXIMAS9<span className="" style={{ fontWeight: '400' }}>&nbsp;SEÑALES
+    PRÓXIMAS<span className="" style={{ fontWeight: '400' }}>&nbsp;SEÑALES
   </span>
 
   <img
@@ -179,9 +179,9 @@ function Section({ minHeight, anchorId = "programacion" }) {
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
                      <h1 className="text-[0.9rem] sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
-                    {eventos[0].titulo}</h1>
+                    {eventos[1].titulo}</h1>
                     <h2 className="text-[0.8rem] sd:text-3xl md:text-xl lg:text-xs xl:text-xl 2xl:text-[1.65rem]  text-left font-medium font-unbounded">
-                    {eventos[0].subtitulo || ""}
+                    {eventos[1].subtitulo || ""}
                     </h2>
                      <br className="hidden xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                      <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-0 xl:mt-1 2xl:mt-1">
@@ -206,9 +206,9 @@ function Section({ minHeight, anchorId = "programacion" }) {
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
                      <h1 className="text-[0.9rem] sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.65rem] text-left font-bold font-unbounded">
-                    {eventos[0].titulo}</h1>
+                    {eventos[2].titulo}</h1>
                     <h2 className="text-[0.8rem] sd:text-3xl md:text-xl lg:text-xs xl:text-xl 2xl:text-[1.65rem]  text-left font-medium font-unbounded">
-                    {eventos[0].subtitulo || ""}
+                    {eventos[2].subtitulo || ""}
                     </h2>
                      <br className="xs:block sd:block sm:hidden md:hidden lg:hidden "/>
                      <p className="text-xs mt-0 sd:text-xl md:text-md lg:text-md xl:text-md 2xl:text-xl text-left font-libre-franklin sd:mt-6 md:mt-4 lg:mt-0 xl:mt-1 2xl:mt-1">
