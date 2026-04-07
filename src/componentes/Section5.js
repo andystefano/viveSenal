@@ -47,7 +47,7 @@ function Section({ minHeight }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
             <div className="p-4 text-center w-full max-w-xl mx-auto">
               <a
-                href="https://tickets.xn--viveseal-i3a.cl/producto/1-encuentro-individual/"
+                href="https://senal.evently.cl/"
                 target="_blank"
                 rel="noreferrer"
               >
