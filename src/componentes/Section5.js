@@ -75,7 +75,7 @@ function Section({ minHeight }) {
                 rel="noreferrer"
               >
                 <img
-                  src="./images/ticketRosaMovil.png?v=2"
+                  src="./images/ticketRosa.png?v=2"
                   alt="Ticket 10 encuentros"
                   className="block sd:hidden md:hidden lg:hidden xl:hidden"
                   style={{
@@ -95,23 +95,7 @@ function Section({ minHeight }) {
                 />
               </a>
 
-              <div>
-                <div className="grid grid-cols-1 gap-4 mx-1 my-1">
-                  <div className="flex items-start">
-                    <div className="mt-4 text-black font-libre-franklin ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl">
-                      Acceso para dos personas{" "}
-                      <span className="font-bold">&nbsp;al programa completo</span>&nbsp;
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className=" text-black font-libre-franklin ml-2 font-normal text-left text-md sd:text-xl md:text-xl lg:text-xl xl:text-xl">
-                    <span className="font-bold">&nbsp;Visitas Antenna</span>
-                    &nbsp;seleccionadas.
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

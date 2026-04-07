@@ -17,7 +17,7 @@ function ViveFooter({ minHeight }) {
   <FaInstagram size={32} />
   <div>
     <div>Contáctenos</div>
-    <div>señal@antenna.cl</div>
+    <div>senal@antenna.cl</div>
   </div>
 </div>
 
@@ -48,7 +48,7 @@ function ViveFooter({ minHeight }) {
         </a>
 
       </div>
-      <div>señal@antenna.cl</div>
+      <div>senal@antenna.cl</div>
     </div>
   </div>
 </div>

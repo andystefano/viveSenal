@@ -58,7 +58,7 @@ function Section({ minHeight }) {
         id="vdeskHeader"
         className="h-auto hidden sd:block md:block lg:block xl:block sd:min-h-screen md:min-h-screen lg:min-h-screen xl:min-h-screen"
         style={{
-          backgroundImage: "url(images/fondos/1_desk.webp)",
+          backgroundImage: "url(images/fondos/1_desk.png)",
           backgroundSize: "cover",
           backgroundColor: "black",
         }}
