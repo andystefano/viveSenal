@@ -239,10 +239,18 @@ function Section({ minHeight, anchorId = "programacion" }) {
       >
         <img
           src="images/decoracion/huincha.png"
-          className="w-full"
+          className="w-full hidden md:block lg:block xl:block"
           style={{ height: "auto" }}
           alt=""
         />
+
+<img
+          src="images/decoracion/huinchaMovil.png"
+          className="w-full  block md:hidden lg:hidden xl:hidden"
+          style={{ height: "auto" }}
+          alt=""
+        />
+
       </a>
 
     </section>
