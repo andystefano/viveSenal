@@ -70,7 +70,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
 
 
 
-<div className="w-full block sd:hidden md:hidden lg:hidden xl:hidden text-center pt-8">
+<div className="w-full block sd:hidden md:hidden lg:hidden xl:hidden text-center pt-36 xs:pt-4 sd:pt-4 md:pt-4 lg:pt-4 xl:pt-4">
   <div className="flex justify-center items-center">
     <img
       src="images/decoracion/senal2-05.png"
@@ -81,7 +81,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
 
     
     <div
-      className="text-[2.7rem] md:text-5xl xl:text-6xl font-unbounded pt-4 !text-white"
+      className="text-[2.7rem] md:text-5xl xl:text-6xl font-unbounded  xs:pt-4 sd:pt-4 md:pt-4 lg:pt-4 xl:pt-4 !text-white"
       style={{ color: "#ffffff", fontWeight: "400" }}
     >
       PRÓXIMAS
