@@ -77,7 +77,7 @@ function Section({ minHeight }) {
                 <img
                   src="./images/ticketRosaMovil.png?v=2"
                   alt="Ticket 10 encuentros"
-                  className="block sd:hidden md:hidden lg:hidden xl:hidden"
+                  className="block sd:block md:block lg:hidden xl:hidden"
                   style={{
                     width: "100%",
                     height: "auto",
@@ -87,7 +87,7 @@ function Section({ minHeight }) {
 <img
                   src="./images/ticketRosa.png?v=1"
                   alt="Ticket 10 encuentros"
-                  className="hidden sd:block md:block lg:block xl:block"
+                  className="hidden sd:hidden md:hidden lg:block xl:block"
                   style={{
                     width: "100%",
                     height: "auto",
