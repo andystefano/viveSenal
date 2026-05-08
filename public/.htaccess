@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(www\.)?vivesenal\.cl$ [NC]
+RewriteRule ^(.*)$ https://www.viveseñal.cl/$1 [R=301,L]
