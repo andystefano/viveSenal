@@ -1,4 +1,4 @@
-name: AI Review Only ia
+name: AI Review Only
 
 on:
   pull_request:
