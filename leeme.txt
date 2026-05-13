@@ -1,0 +1,3 @@
+Este proyecto es una página web hecha con React para presentar el evento Vive Señal. Muestra información visual del evento, secciones de contenido, imágenes y elementos de diseño para que las personas conozcan de forma clara qué es y qué ofrece.
+
+La aplicación está pensada para verse bien en computador y en celular, por eso incluye versiones de algunas secciones para pantallas grandes y pequeñas. También tiene estructura para desplegarse en producción y scripts para desarrollar, probar y compilar el sitio.
