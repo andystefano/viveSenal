@@ -20,16 +20,26 @@ jobs:
         with:
           github_token: ${{ github.token }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          track_progress: true
           prompt: |
-            Revisa este Pull Request.
+            Revisa los archivos modificados en este Pull Request buscando bugs y problemas de seguridad.
 
-            SOLO debes:
-            - detectar bugs
-            - detectar problemas de seguridad
-            - comentar hallazgos
+            Al terminar el análisis DEBES publicar UN comentario en este Pull Request usando
+            las herramientas de GitHub disponibles. El comentario debe tener este formato exacto:
 
-            NO hagas cambios.
-            NO generes commits.
-            NO modifiques archivos.
-            NO abras PRs.
-            crear un comentario en el PR con los hallazgos sean buenos o malos, pero debe ser breve categorizados y directo.
+            ## 🔍 Revisión de código
+
+            ### 🐛 Bugs encontrados
+            - (lista o "Ninguno detectado")
+
+            ### 🔒 Problemas de seguridad
+            - (lista o "Ninguno detectado")
+
+            ### ✅ Resumen
+            (una línea con el veredicto general)
+
+            RESTRICCIONES:
+            - NO hagas cambios en el código.
+            - NO generes commits.
+            - NO modifiques archivos.
+            - NO abras PRs adicionales.
