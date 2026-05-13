@@ -1,9 +1,9 @@
-# 📋 Descripción
+# Descripción
 Describe brevemente los cambios realizados.
 
 ---
 
-# 🔥 Nivel de Riesgo
+# Nivel de Riesgo
 
 Selecciona una opción:
 
@@ -14,6 +14,6 @@ Selecciona una opción:
 
 ---
 
-# 🧪 Evidencia
+# Evidencia
 
 Adjuntar screenshots, logs, reversión BD o ejemplos si aplica.
