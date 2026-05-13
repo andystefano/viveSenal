@@ -32,3 +32,4 @@ jobs:
             NO generes commits.
             NO modifiques archivos.
             NO abras PRs.
+            crear un comentario en el PR con los hallazgos.
