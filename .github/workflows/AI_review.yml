@@ -2,30 +2,61 @@ name: 🤖 AI Review Only
 
 on:
   pull_request:
+    types: [opened, synchronize, ready_for_review]
     branches:
       - master
+      - main
+
+# Cancela revisiones anteriores del mismo PR cuando llega un nuevo push.
+concurrency:
+  group: ai-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
   pull-requests: write
 
 jobs:
-  review:
+  ai-code-review:
     runs-on: ubuntu-latest
+    # Solo ejecuta en PRs del mismo repo (no de forks) y que no sean borradores.
+    if: |
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.event.pull_request.draft == false
+    timeout-minutes: 15
 
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: anthropics/claude-code-action@v1
+      - uses: anthropics/claude-code-action@f4fb5c6cdccc1ee7af63692f5d08d56efaa64cc8 # v1
         with:
           github_token: ${{ github.token }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           track_progress: true
+          claude_args: "--max-turns 10"
           prompt: |
-            Revisa los archivos modificados en este Pull Request buscando bugs y problemas de seguridad.
+            PR #${{ github.event.pull_request.number }} — rama: ${{ github.head_ref }} → ${{ github.base_ref }}
 
-            Al terminar el análisis DEBES publicar UN comentario en este Pull Request usando
-            las herramientas de GitHub disponibles. El comentario debe tener este formato exacto:
+            Revisa EXCLUSIVAMENTE los archivos modificados en este Pull Request.
+
+            Debes analizar:
+            - Bugs y errores lógicos
+            - Problemas de seguridad y riesgos OWASP comunes
+            - Secretos expuestos
+            - Dependencias inseguras
+            - Problemas importantes de rendimiento
+            - Code smells relevantes
+            - Posibles fallos de validación o autorización
+
+            Prioriza problemas REALES y evita falsos positivos.
+
+            Si detectas vulnerabilidades:
+            - Explica el riesgo
+            - Indica el archivo afectado
+            - Sugiere una solución breve
+
+            Al finalizar el análisis DEBES publicar SOLO UN comentario
+            en este Pull Request usando las herramientas de GitHub disponibles.
+
+            El comentario debe tener EXACTAMENTE este formato:
 
             ## 🔍 Revisión de código
 
@@ -35,11 +66,17 @@ jobs:
             ### 🔒 Problemas de seguridad
             - (lista o "Ninguno detectado")
 
+            ### ⚡ Calidad y rendimiento
+            - (lista o "Sin observaciones relevantes")
+
             ### ✅ Resumen
             (una línea con el veredicto general)
 
-            RESTRICCIONES:
-            - NO hagas cambios en el código.
-            - NO generes commits.
-            - NO modifiques archivos.
-            - NO abras PRs adicionales.
+            RESTRICCIONES OBLIGATORIAS:
+            - NO hagas cambios en el código
+            - NO generes commits
+            - NO modifiques archivos
+            - NO abras Pull Requests adicionales
+            - NO publiques comentarios inline
+            - Publica SOLO UN comentario final
+            - Mantén el comentario breve y técnico
