@@ -152,6 +152,12 @@ h1, p {
   /*background-color: #F676A6;*/
 }
 
+.bgTGray {
+  background-image: url('../public/images/bgGray.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  /*background-color: #F676A6;*/
+}
+
 .mt-44{
   margin-top: 11rem;
 
