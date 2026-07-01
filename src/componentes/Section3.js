@@ -190,7 +190,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
                     {eventos[0].descripcion }
                       </p>
                     </div>
-                    <a href="https://senal.evently.cl/COLECCION-MUSEO-NACIONAL-DE-BELLAS-ARTES-29-04-2026"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
+                    <a href="#"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
                     Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <span className="material-icons">
                         <FaLongArrowAltLeft />
@@ -217,7 +217,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
                     {eventos[1].descripcion }
                       </p>
                      </div>
-                     <a href="https://senal.evently.cl/Taller-Samy-Benmayor-26-05-2026"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
+                     <a href="https://senal.evently.cl/VETA-Espacio-creativo-23-07-2026"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
                      Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                        <span className="material-icons">
                          <FaLongArrowAltLeft />
@@ -244,7 +244,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
                     {eventos[2].descripcion }
                       </p>
                      </div>
-                     <a href="https://senal.evently.cl/DISENO-Y-ARTE-POR-COLLECTIO-18-06-2026"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
+                     <a href="https://senal.evently.cl/Taller-Nicolas-Franco-26-08-2026"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
                      Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                        <span className="material-icons">
                          <FaLongArrowAltLeft />
