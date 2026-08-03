@@ -1,7 +1,7 @@
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
-function Section({ minHeight, anchorId = "programacion" }) {
+function Section({ anchorId = "programacion" }) {
   const sectionDomId =
     anchorId === null || anchorId === undefined || anchorId === "" ? {} : { id: anchorId };
   const headerRef = useRef(null);
@@ -74,8 +74,6 @@ function Section({ minHeight, anchorId = "programacion" }) {
   const claseFondoOverlay = (evento) =>
     esEventoPasado(evento.fecha) ? "bgTGray" : evento.color || "bgTPink";
 
-  let width = window.innerWidth;
-  
   if (loading) {
     return (
       <section {...sectionDomId} className="relative overflow-hidden" style={{
@@ -193,7 +191,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
                     {eventos[0].descripcion }
                       </p>
                     </div>
-                    <a href="#"><button className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
+                    <a href="https://senal.evently.cl/Taller-Nicolas-Franco-26-08-2026" target="_blank" rel="noopener noreferrer"><button type="button" className="absolute bottom-0 left-0 mx-7 my-7 flex items-center justify-center px-6 py-1 text-black text-normal sd:text-normal md:text-2xl lg:text-xs xl:text-2xl font-bold rounded-full border-2 border-black mt-4 font-unbounded hover:text-black hover:border-black">
                     Tickets &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <span className="material-icons">
                         <FaLongArrowAltLeft />

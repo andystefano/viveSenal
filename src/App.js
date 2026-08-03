@@ -1,12 +1,9 @@
 import "./App.css";
 import Section1 from "./componentes/Section1.js";
-import SectionTwo from "./componentes/Section2_2.js";
-import SectionThree from "./componentes/Section2_3.js";
 import Section4 from "./componentes/Section4.js";
 import Section4Movil from "./componentes/Section4Movil.js";
 import Section5 from "./componentes/Section5.js";
 import Section6 from "./componentes/Section6.js";
-import SectionBlack from "./componentes/SectionBlack.js";
 import ViveFooter from "./componentes/ViveFooter.js";
 
 
@@ -15,7 +12,6 @@ import React, { useState, useEffect } from "react";
 
 function App() {
   const [minHeight, setMinHeight] = useState(window.innerHeight);
-  const [activeTab, setActiveTab] = useState(1);
 
   useEffect(() => {
     const handleResize = () => {
@@ -46,7 +42,7 @@ function App() {
     }} >
    
    
-      <Section1 minHeight={minHeight} />
+      <Section1 />
      <div className="w-full"  style={{
     backgroundColor: '#0cb259' 
   }}>
@@ -57,7 +53,7 @@ function App() {
   {/* eslint-enable jsx-a11y/no-distracting-elements */}
  
 
-      <Section5 minHeight={minHeight} />
+      <Section5 />
       <div className="hidden sd:block md:block lg:block xl:block">
         <Section4 minHeight={minHeight} />
       </div>
@@ -65,7 +61,7 @@ function App() {
         <Section4Movil minHeight={minHeight} />
       </div>
 
-      <Section6 minHeight={minHeight} />
+      <Section6 />
       <ViveFooter />
     </div>
   );

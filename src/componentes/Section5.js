@@ -1,6 +1,6 @@
 import React from "react";
 
-function Section({ minHeight }) {
+function Section() {
   return (
     <section
       id="tickets"

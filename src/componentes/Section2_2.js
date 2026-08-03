@@ -6,7 +6,7 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 import { GrLinkNext } from "react-icons/gr";
 import { GrLinkPrevious } from "react-icons/gr";
 
-function Section({ minHeight, setActiveTab, activeTab }) {
+function Section({ setActiveTab }) {
   const [hovered, setHovered] = useState(false);
   const handleBackClick = () => {
     setActiveTab(1); // Cambiar activeTab a 2 cuando se haga clic en el botón

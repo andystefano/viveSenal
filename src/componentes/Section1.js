@@ -1,7 +1,7 @@
 import React from "react";
 import Section3 from "./Section3.js";
 
-function Section({ minHeight }) {
+function Section() {
   return (
     <>
       <section
@@ -37,7 +37,7 @@ function Section({ minHeight }) {
         </div>
 
         <div className="block sd:hidden md:hidden lg:hidden xl:hidden">
-          <Section3 minHeight={minHeight} />
+          <Section3 />
         </div>
       </section>
 
@@ -77,7 +77,7 @@ function Section({ minHeight }) {
           </div>
 
           <div className="hidden sd:block md:block lg:block xl:block">
-            <Section3 minHeight={minHeight} anchorId={null} />
+            <Section3 anchorId={null} />
           </div>
         </div>
       </section>

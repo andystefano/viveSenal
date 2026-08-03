@@ -5,7 +5,7 @@ import { IoTicket } from "react-icons/io5";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { GrLinkNext } from "react-icons/gr";
 
-function Section({ minHeight, setActiveTab, activeTab }) {
+function Section({ setActiveTab }) {
   const [hovered, setHovered] = useState(false);
 
   const handleNextClick = () => {
@@ -30,7 +30,7 @@ function Section({ minHeight, setActiveTab, activeTab }) {
         <h1 style={{
           fontSize:'2.10rem',
           lineHeight:'2.4rem'
-          }} class="bock sd:hidden sd:hidden md:hidden lg:hidden xl:hidden mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-pink-500  font-unbounded pt-8">
+          }} className="block sd:hidden sd:hidden md:hidden lg:hidden xl:hidden mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-pink-500  font-unbounded pt-8">
           ¿Cómo ser parte de SEÑAL?
         </h1>
         <div className="w-full flex justify-left items-end">
@@ -128,7 +128,7 @@ Si tienes entre 25 y 40 años te <br/> invitamos a ser parte de SEÑAL.
                 className="border-t border-black relative overflow-hidden p-4 sd:p-14 md:p-14 lg:p-14 xl:p-14  h-auto sd:h-full sd:h-full md:h-full lg:h-full bg_t2_movil"
                 >
 
-        <h1 class="bock sd:hidden sd:hidden md:hidden lg:hidden xl:hidden mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-white  font-unbounded pt-8">
+        <h1 className="block sd:hidden sd:hidden md:hidden lg:hidden xl:hidden mb-4 text-green-500 sd:text-pink-400 md:text-pink-400 lg:text-pink-400  xl:text-pink-400  text-4xl leading-none md:text-5xl xl:text-6xl text-white  font-unbounded pt-8">
           ¿Cómo ser parte de señal?
         </h1>
 

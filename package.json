@@ -27,6 +27,19 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "rules": {
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_"
+        }
+      ],
+      "react/no-unknown-property": "error"
+    },
+    "ignorePatterns": [
+      "src/componentes/Section1 - copia.js"
     ]
   },
   "browserslist": {
@@ -42,6 +55,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "tailwindcss": "^3.4.1"
   }
 }

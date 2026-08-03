@@ -2,7 +2,7 @@ import { FaInstagram } from "react-icons/fa";
 import footerDesk from "../images/footer/desk.png";
 import footerMovil from "../images/footer/movil.png";
 
-function ViveFooter({ minHeight }) {
+function ViveFooter() {
   return (
     <footer className="bg-black py-4 sd:py-10 md:py-10 lg:py-10 xl:py-10 px-4 sd:px-10 md:px-10 lg:px-10 xl:px-10">
       
@@ -23,8 +23,8 @@ function ViveFooter({ minHeight }) {
 
       <div className="w-1/2">
       
-      <img src="/images/logos/footer.png" alt="Logo Señal" class="w-full" />
-            <p class="text-white text-xs text-left mt-2 text-[#e9eedc] " style={{fontSize: '0.73rem'}}>
+      <img src="/images/logos/footer.png" alt="Logo Señal" className="w-full" />
+            <p className="text-white text-xs text-left mt-2 text-[#e9eedc] " style={{fontSize: '0.73rem'}}>
               @ 2026, SEÑAL. Todos los derechos reservados.
             </p>
 
@@ -41,11 +41,11 @@ function ViveFooter({ minHeight }) {
 
 
       </div>
-      <div class="flex w-full ">
-        <div class="w-full hidden sd:block sm:block lg:block x:block sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2">
-          <div class="flex flex-col items-start ">
-            <img src="/images/logos/footer.png" class="w-3/5 mt-5" alt="Logo" />
-            <p class="text-white text-xl text-center mt-2 ml-4" >
+      <div className="flex w-full ">
+        <div className="w-full hidden sd:block sm:block lg:block xl:block sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2">
+          <div className="flex flex-col items-start ">
+            <img src="/images/logos/footer.png" className="w-3/5 mt-5" alt="Logo" />
+            <p className="text-white text-xl text-center mt-2 ml-4" >
               @ 2026, SEÑAL. Todos los derechos reservados.
             </p>
 

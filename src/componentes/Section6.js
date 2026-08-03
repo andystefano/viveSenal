@@ -1,7 +1,7 @@
 import AcordeonTab from "./AcordeonTab.js";
 
 
-function Section({ minHeight }) {
+function Section() {
   return (
     <section id="faq" className="bg-black">
       <div className="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 ">
