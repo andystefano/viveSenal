@@ -1,8 +1,24 @@
 import { FaInstagram } from "react-icons/fa";
+import footerDesk from "../images/footer/desk.png";
+import footerMovil from "../images/footer/movil.png";
 
 function ViveFooter({ minHeight }) {
   return (
     <footer className="bg-black py-4 sd:py-10 md:py-10 lg:py-10 xl:py-10 px-4 sd:px-10 md:px-10 lg:px-10 xl:px-10">
+      
+      <div className="w-full">
+        <img
+          src={footerDesk}
+          alt=""
+          className="w-full max-w-full block mx-auto hidden sd:block md:block lg:block xl:block"
+        />
+        <img
+          src={footerMovil}
+          alt=""
+          className="w-full max-w-full block mx-auto sd:hidden md:hidden lg:hidden xl:hidden"
+        />
+      </div>
+      
       <div className="flex w-full block sd:hidden sm:hidden lg:hiddden xl:hidden">
 
       <div className="w-1/2">
@@ -55,11 +71,7 @@ function ViveFooter({ minHeight }) {
 
           </div>
         </div>
-        <div class="mt-5 sd:mt-0 sm:mt-0  lg:mt-0  xl:mt-0  w-full sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2 text-center">
-          <img  className="hidden sd:block md:block lg:block xl:block" src="/images/logos/footer_movilydesk.png?v=2" alt="Logos Colaboradores" />
-          <img className="mx-auto block w-[83%] sd:hidden md:hidden lg:hidden xl:hidden" src="/images/logos/footer_movilydesk.png?v=2" alt="Logos Colaboradores" />
-
-        </div>
+     
       </div>
     </footer>
   );

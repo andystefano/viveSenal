@@ -71,6 +71,9 @@ function Section({ minHeight, anchorId = "programacion" }) {
     return fechaEvento < hoy;
   };
 
+  const claseFondoOverlay = (evento) =>
+    esEventoPasado(evento.fecha) ? "bgTGray" : evento.color || "bgTPink";
+
   let width = window.innerWidth;
   
   if (loading) {
@@ -134,7 +137,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
       <div className="w-full hidden sd:block md:block lg:block xl:block">
        
       <h1
-  className="text-4xl leading-none md:text-5xl xl:text-6xl text-white text-center w-full font-unbounded pt-56 pb-6 flex justify-center items-center"
+  className="text-4xl leading-none md:text-5xl xl:text-6xl text-white text-center w-full font-unbounded pt-0 pb-6 flex justify-center items-center"
   style={{
     color: "#fff",
     fontWeight: '400',
@@ -176,7 +179,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
             {eventos[0] && eventos[0].titulo && (
               <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
                 <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=1&t=${Date.now()}`} alt="Imagen del evento 1" className={`w-full ${esEventoPasado(eventos[0].fecha) ? "grayscale" : ""}`} />
-                <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${esEventoPasado(eventos[0].fecha) ? "bgTGray" : "bgTPink"} bg-opacity-100 text-black`}>
+                <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${claseFondoOverlay(eventos[0])} bg-opacity-100 text-black`}>
                 <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                     <div>
                     <h1 className="text-[0.9rem] sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.2rem] text-left font-bold font-unbounded">
@@ -203,7 +206,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
             {eventos[1] && eventos[1].titulo && (
                  <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
                  <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=2&t=${Date.now()}`} alt="Imagen del evento 2" className={`w-full ${esEventoPasado(eventos[1].fecha) ? "grayscale" : ""}`} />
-                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${esEventoPasado(eventos[1].fecha) ? "bgTGray" : "bgTPink"} bg-opacity-100 text-black`}>
+                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${claseFondoOverlay(eventos[1])} bg-opacity-100 text-black`}>
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
                      <h1 className="text-[0.9rem] sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.2rem] text-left font-bold font-unbounded">
@@ -230,7 +233,7 @@ function Section({ minHeight, anchorId = "programacion" }) {
             {eventos[2] && eventos[2].titulo && (
                  <div className="relative p-0 sd:p-5 md:p-5 lg:p-5 xl:p-5 ">
                  <img src={`https://admin.xn--viveseal-i3a.cl/ver_imagen.php?orden=3&t=${Date.now()}`} alt="Imagen del evento 3" className={`w-full ${esEventoPasado(eventos[2].fecha) ? "grayscale" : ""}`} />
-                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${esEventoPasado(eventos[2].fecha) ? "bgTGray" : "bgTGreen"} bg-opacity-100 text-black`}>
+                 <div className={`m-0 sd:m-5 md:m-5 lg:m-5 xl:m-5 absolute inset-0 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 ${claseFondoOverlay(eventos[2])} bg-opacity-100 text-black`}>
                  <div className="text-center w-full h-full px-3 sd:px-7 md:px-7 lg:px-4 xl:py-7 xl:px-7  py-3 sd:py-7 md:py-7 lg:py-4 xl:py-7">
                      <div>
                      <h1 className="text-[0.9rem] sd:text-3xl md:text-xl lg:text-sm xl:text-xl 2xl:text-[1.2rem] text-left font-bold font-unbounded">

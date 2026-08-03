@@ -34,19 +34,6 @@ function Section({ minHeight }) {
             </div>
 
           </div>
-
-          <div className="w-[90%] lg:w-10/12 sd:w-full mt-2 mx-auto justify-center items-center text-center pb-0 sd:pb-10 md:pb-10 lg:pb-10 xl:pb-10">
-            <img
-              src="/images/logos/home_desk.png?v=2"
-              className="w-full hidden sd:block md:block lg:block xl:block"
-              alt="Colaboran"
-            />
-            <img
-              src="/images/logos/home_movil.png?v=2"
-              className="block w-[90%] mx-auto sd:hidden md:hidden lg:hidden xl:hidden"
-              alt="Colaboran"
-            />
-          </div>
         </div>
 
         <div className="block sd:hidden md:hidden lg:hidden xl:hidden">
@@ -87,19 +74,6 @@ function Section({ minHeight }) {
               </div>
             </div>
             <div className="text-white p-4 rounded-lg"></div>
-          </div>
-
-          <div className="w-[90%] lg:w-10/12 sd:w-full mt-2 mx-auto justify-center items-center text-center pb-0 sd:pb-10 md:pb-10 lg:pb-10 xl:pb-10">
-            <img
-              src="/images/logos/home_desk.png?v=2"
-              className="w-full hidden sd:block md:block lg:block xl:block"
-              alt="Colaboran"
-            />
-            <img
-              src="/images/logos/home_movil.png?v=2"
-              className="block sd:hidden md:hidden lg:hidden xl:hidden"
-              alt="Colaboran"
-            />
           </div>
 
           <div className="hidden sd:block md:block lg:block xl:block">
