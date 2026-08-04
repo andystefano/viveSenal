@@ -99,7 +99,7 @@ function Section({ anchorId = "programacion" }) {
 
 
 
-<div className="w-full block sd:hidden md:hidden lg:hidden xl:hidden text-center pt-36 xs:pt-4 sd:pt-4 md:pt-4 lg:pt-4 xl:pt-4">
+<div className="w-full block sd:hidden md:hidden lg:hidden xl:hidden text-center pt-0 xs:pt-4 sd:pt-4 md:pt-4 lg:pt-4 xl:pt-4">
   <div className="flex justify-center items-center">
     <img
       src="images/decoracion/senal2-05.png"
