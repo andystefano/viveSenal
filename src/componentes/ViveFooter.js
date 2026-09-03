@@ -1,5 +1,4 @@
 import { FaInstagram } from "react-icons/fa";
-import footerMovil from "../images/footer/movil.png";
 
 function ViveFooter() {
   return (
@@ -24,11 +23,6 @@ function ViveFooter() {
             </div>
           </div>
         </div>
-        <img
-          src={footerMovil}
-          alt=""
-          className="w-full max-w-full block mx-auto"
-        />
       </div>
       <div className="flex w-full ">
         <div className="w-full hidden sd:block sm:block lg:block xl:block sd:w-1/2  sm:w-1/2  lg:w-1/2 xl:w-1/2">
@@ -62,8 +56,13 @@ function ViveFooter() {
         </div>
         <div className="mt-5 sd:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 w-full sd:w-1/2 sm:w-1/2 lg:w-1/2 xl:w-1/2 text-center">
           <img
-            className="hidden sd:block md:block lg:block xl:block"
+            className="hidden sd:block md:block lg:block xl:block w-full mx-auto"
             src="/images/logos/FooterDesk.png"
+            alt="Logos Colaboradores"
+          />
+          <img
+            className="block sd:hidden md:hidden lg:hidden xl:hidden w-full max-w-full mx-auto"
+            src="/images/logos/FooterMovil.png"
             alt="Logos Colaboradores"
           />
         </div>
