@@ -7,7 +7,8 @@ Sitio público (React) y backoffice en una sola aplicación **Laravel 12**.
 | `/` | Sitio público (React, compilado con Vite) |
 | `/api/fechas/{orden}` | JSON de un bloque de “Próximas Señales” (orden 1–3) |
 | `/api/fechas/{orden}/imagen` | Imagen del bloque (guardada como BLOB en `fechas.foto`) |
-| `/admin` | Backoffice: edición de fechas y usuarios. **No se enlaza desde el sitio.** |
+| `/admin` | Backoffice: edición y orden de fechas, y usuarios. **No se enlaza desde el sitio.** |
+| `/up` | Health check (Cloud Run) |
 
 ## Requisitos
 
@@ -45,15 +46,46 @@ php artisan test     # usa SQLite en memoria, no toca la base real
 npm run lint
 ```
 
-## Deploy (Plesk)
+## Despliegue en Google Cloud Run
 
-Workflow manual `.github/workflows/deploid_manual.yml`: compila assets, corre tests, sube la app a
-`/var/www/vhosts/xn--viveseal-i3a.cl/app` y ejecuta `migrate` + `optimize`.
+Un solo contenedor (`Dockerfile`): Vite compila los assets, Composer instala dependencias y
+`php:8.3-apache` sirve `public/`. El entrypoint (`docker/entrypoint.sh`) toma el puerto de `$PORT`,
+arma los caches de Laravel con las variables de runtime y, con `RUN_MIGRATIONS=1`, ejecuta
+`migrate --force` + `db:seed` (usuario inicial, solo si no existe).
 
-Antes del primer deploy, en el servidor:
+Requisito: Cloud SQL (MySQL 8). Las imágenes de las fechas están en la BD (`fechas.foto`), así que
+**no se necesita bucket**.
 
-1. Crear `/var/www/vhosts/xn--viveseal-i3a.cl/app/.env` a partir de `.env.example` (`APP_KEY` con `php artisan key:generate --show`).
-2. En Plesk → Hosting Settings, cambiar **Document root** a `app/public` y usar PHP ≥ 8.2.
-3. Ejecutar el workflow con `seed = true` la primera vez.
+### Primer deploy (manual)
 
-La carpeta `httpdocs` anterior no se toca: volver a apuntar el Document root a `httpdocs` es el rollback.
+```bash
+cp env.cloudrun.example.yaml env.cloudrun.yaml   # completar valores (no se versiona)
+
+gcloud run deploy vivesenal \
+  --source . \
+  --region southamerica-west1 \
+  --allow-unauthenticated \
+  --env-vars-file env.cloudrun.yaml \
+  --add-cloudsql-instances PROYECTO:REGION:INSTANCIA
+```
+
+Para migrar los datos actuales a Cloud SQL, importar un dump de la tabla `fechas`
+(`mysqldump --hex-blob BD fechas > fechas.sql`) en la base `web_senal`.
+
+### Deploys siguientes
+
+Workflow manual `.github/workflows/deploid_manual.yml`: corre lint, build y tests, y publica con
+`gcloud run deploy --source .`. Las variables y la conexión a Cloud SQL se heredan de la revisión
+anterior. Requiere `secrets.GCP_SA_KEY` y `vars.GCP_PROJECT_ID`, `vars.GCP_REGION`, `vars.CLOUD_RUN_SERVICE`.
+
+### Dominio
+
+Mapear `www.xn--viveseal-i3a.cl` (y `vivesenal.cl`, que redirige al dominio con ñ vía `public/.htaccess`)
+con Cloud Run domain mappings o un Load Balancer.
+
+### Probar el contenedor en local
+
+```bash
+docker build -t vivesenal .
+docker run --rm -p 8080:8080 --env-file .env -e DB_HOST=host.docker.internal vivesenal
+```

@@ -1,101 +1,73 @@
-name: 🚀 Deploy Laravel (web + admin) to Plesk via SSH
+name: 🚀 Deploy to Google Cloud Run
 
 on:
   workflow_dispatch:  # permite ejecutar manualmente
-    inputs:
-      seed:
-        description: "Ejecutar db:seed (crea el usuario inicial de /admin si no existe)"
-        type: boolean
-        default: false
 
-# Carpeta de la app en el servidor. En Plesk, la raíz de documentos del dominio
-# debe apuntar a "<APP_DIR>/public" (Hosting Settings → Document root: app/public).
-# La carpeta httpdocs anterior (build de React) queda intacta como respaldo.
-env:
-  APP_DIR: /var/www/vhosts/xn--viveseal-i3a.cl/app
-  PHP_BIN: ${{ vars.PHP_BIN || '/opt/plesk/php/8.3/bin/php' }}
+# Configurar en GitHub → Settings → Secrets and variables → Actions:
+#   secrets.GCP_SA_KEY         JSON de una service account con roles:
+#                              Cloud Run Admin, Cloud Build Editor, Artifact Registry Writer,
+#                              Service Account User y Storage Admin (bucket de --source).
+#   vars.GCP_PROJECT_ID        ID del proyecto
+#   vars.GCP_REGION            ej. southamerica-west1
+#   vars.CLOUD_RUN_SERVICE     ej. vivesenal
+#
+# El primer deploy se hace a mano (ver README) con --env-vars-file y --add-cloudsql-instances.
+# Los siguientes heredan esa configuración: este workflow solo publica código nuevo.
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'npm'
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+      - uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
-          extensions: mbstring, pdo_mysql, fileinfo, sqlite3, pdo_sqlite
+          extensions: mbstring, pdo_sqlite, fileinfo, gd
           tools: composer:v2
 
-      - name: Install JS dependencies & build assets
+      - name: Lint & build assets
         run: |
           npm ci
+          npm run lint
           npm run build
 
-      - name: Install PHP dependencies
-        run: composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader --no-scripts
-
-      - name: Run tests
+      - name: PHP tests
         run: |
-          composer install --prefer-dist --no-interaction --no-scripts
+          composer install --prefer-dist --no-interaction
           cp .env.example .env
           php artisan key:generate
           php artisan test
-          rm .env
-          composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader --no-scripts
 
-      - name: Package release
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ vars.GCP_PROJECT_ID }}
+
+      - name: Deploy (Cloud Build + Cloud Run)
         run: |
-          tar -czf release.tar.gz \
-            --exclude=.git --exclude=.github --exclude=node_modules --exclude=tests \
-            --exclude=build --exclude=devtools --exclude=.env --exclude=release.tar.gz \
-            .
-          ls -lh release.tar.gz
+          gcloud run deploy "${{ vars.CLOUD_RUN_SERVICE }}" \
+            --source . \
+            --region "${{ vars.GCP_REGION }}" \
+            --quiet
 
-      - name: Install sshpass
-        run: sudo apt-get update && sudo apt-get install -y sshpass
-
-      - name: Upload release
+      - name: Health check
         run: |
-          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
-            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} "mkdir -p $APP_DIR"
-          sshpass -p "${{ secrets.SSH_PASS }}" scp -o StrictHostKeyChecking=no \
-            release.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }}:$APP_DIR/release.tar.gz
-
-      - name: Extract & run Laravel tasks
-        run: |
-          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
-            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} bash -s <<EOF
-          set -e
-          cd "$APP_DIR"
-          if [ ! -f .env ]; then
-            echo "❌ Falta $APP_DIR/.env en el servidor. Créalo a partir de .env.example antes de desplegar."
-            rm -f release.tar.gz
-            exit 1
-          fi
-          "$PHP_BIN" artisan down --retry=15 || true
-          trap '"$PHP_BIN" artisan up || true' EXIT
-          rm -rf public/build
-          tar -xzf release.tar.gz
-          rm -f release.tar.gz
-          mkdir -p storage/framework/{cache,sessions,views} storage/logs bootstrap/cache
-          "$PHP_BIN" artisan migrate --force
-          if [ "${{ inputs.seed }}" = "true" ]; then "$PHP_BIN" artisan db:seed --force; fi
-          "$PHP_BIN" artisan optimize
-          echo "✅ Deploy terminado"
-          EOF
-
-      - name: Post-deployment verification
-        run: |
-          sshpass -p "${{ secrets.SSH_PASS }}" ssh -o StrictHostKeyChecking=no \
-            ${{ secrets.SSH_USER }}@${{ secrets.SFTP_HOST }} \
-            "cd $APP_DIR && \"$PHP_BIN\" artisan about --only=environment && test -f public/build/manifest.json && echo 'manifest.json: FOUND'"
+          URL=$(gcloud run services describe "${{ vars.CLOUD_RUN_SERVICE }}" --region "${{ vars.GCP_REGION }}" --format='value(status.url)')
+          echo "Servicio: $URL"
+          curl -fsS "$URL/up" > /dev/null && echo "✅ /up OK"
+          curl -fsS "$URL/api/fechas/1" | head -c 300; echo
