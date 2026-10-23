@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Vive Señal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sitio público (React) y backoffice en una sola aplicación **Laravel 12**.
 
-## Available Scripts
+| Ruta | Qué es |
+|---|---|
+| `/` | Sitio público (React, compilado con Vite) |
+| `/api/fechas/{orden}` | JSON de un bloque de “Próximas Señales” (orden 1–3) |
+| `/api/fechas/{orden}/imagen` | Imagen del bloque (guardada como BLOB en `fechas.foto`) |
+| `/admin` | Backoffice: edición de fechas y usuarios. **No se enlaza desde el sitio.** |
 
-In the project directory, you can run:
+## Requisitos
 
-### `npm start`
+- PHP ≥ 8.2 con `pdo_mysql`, `mbstring`, `fileinfo`
+- Composer 2, Node 22, MySQL 8
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalación local (Laragon)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+composer install
+npm install
+cp .env.example .env        # ajustar DB_* y ADMIN_* (ver abajo)
+php artisan key:generate
+php artisan migrate         # crea `users` y agrega columnas que falten en `fechas` sin tocar datos
+php artisan db:seed         # crea el usuario inicial ADMIN_EMAIL / ADMIN_PASSWORD si no existe
+npm run build               # o `npm run dev` mientras se desarrolla
+```
 
-### `npm test`
+> En Laragon, el `php` del PATH puede ser otro; usa `C:\laragon\bin\php\php-8.3.*\php.exe` si `php -v` muestra 7.x.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Variables de entorno propias
 
-### `npm run build`
+| Variable | Uso |
+|---|---|
+| `DB_DATABASE` | Base de datos con la tabla `fechas` (local: `web_senal`) |
+| `ADMIN_NAME`, `ADMIN_EMAIL`, `ADMIN_PASSWORD` | Usuario inicial que crea `db:seed`. Si ya existe, no se modifica. |
+| `APP_TIMEZONE` | `America/Santiago`: define cuándo una fecha pasa a gris |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Los demás usuarios se crean desde `/admin/usuarios`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+php artisan test     # usa SQLite en memoria, no toca la base real
+npm run lint
+```
 
-### `npm run eject`
+## Deploy (Plesk)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Workflow manual `.github/workflows/deploid_manual.yml`: compila assets, corre tests, sube la app a
+`/var/www/vhosts/xn--viveseal-i3a.cl/app` y ejecuta `migrate` + `optimize`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Antes del primer deploy, en el servidor:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Crear `/var/www/vhosts/xn--viveseal-i3a.cl/app/.env` a partir de `.env.example` (`APP_KEY` con `php artisan key:generate --show`).
+2. En Plesk → Hosting Settings, cambiar **Document root** a `app/public` y usar PHP ≥ 8.2.
+3. Ejecutar el workflow con `seed = true` la primera vez.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+La carpeta `httpdocs` anterior no se toca: volver a apuntar el Document root a `httpdocs` es el rollback.

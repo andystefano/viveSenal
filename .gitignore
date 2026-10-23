@@ -1,13 +1,28 @@
 # Ignorar archivos generados por el sistema operativo
 .DS_Store
+Thumbs.db
 
 # Ignorar archivos de configuración de entorno
 .env
+.env.backup
+.env.production
 
-# Ignorar la carpeta node_modules y sus contenidos
+# Dependencias
 node_modules/
-node_modules
+/vendor
 
+# Build antiguo de CRA y build de Vite
 build/
-build
+/public/build
+/public/hot
+/public/storage
+
+# Laravel
+*.log
+/storage/*.key
+/storage/pail
+/.phpunit.cache
+.phpunit.result.cache
+/auth.json
+
 .codegpt

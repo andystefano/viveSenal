@@ -1,0 +1,70 @@
+import "./App.css";
+import Section1 from "./componentes/Section1.jsx";
+import Section4 from "./componentes/Section4.jsx";
+import Section4Movil from "./componentes/Section4Movil.jsx";
+import Section5 from "./componentes/Section5.jsx";
+import Section6 from "./componentes/Section6.jsx";
+import ViveFooter from "./componentes/ViveFooter.jsx";
+
+
+import React, { useState, useEffect } from "react";
+
+
+function App() {
+  const [minHeight, setMinHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMinHeight(window.innerHeight);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+
+  useEffect(() => {
+      var url = window.location.href;
+      if (url.includes("#")) {
+          var fragmento = url.split("#")[1];
+          const targetElement = document.getElementById(fragmento);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+      }  
+  }, []); // El array de dependencias vacío [] indica que este efecto se ejecuta solo una vez al montar el componente
+
+
+  return (
+    <div className="App"       style={{
+      backgroundColor: "black"
+    }} >
+   
+   
+      <Section1 />
+     <div className="w-full"  style={{
+    backgroundColor: '#0cb259' 
+  }}>
+ 
+  </div>
+      {/* eslint-disable jsx-a11y/no-distracting-elements */}
+
+  {/* eslint-enable jsx-a11y/no-distracting-elements */}
+ 
+
+      <Section5 />
+      <div className="hidden sd:block md:block lg:block xl:block">
+        <Section4 minHeight={minHeight} />
+      </div>
+      <div className="block sd:hidden md:hidden lg:hidden xl:hidden">
+        <Section4Movil minHeight={minHeight} />
+      </div>
+
+      <Section6 />
+      <ViveFooter />
+    </div>
+  );
+}
+
+export default App;
