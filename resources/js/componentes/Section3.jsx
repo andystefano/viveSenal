@@ -260,7 +260,7 @@ function Section({ anchorId = "programacion" }) {
       </div>
 
       <a
-        href="https://tickets.xn--viveseal-i3a.cl/producto/tickets-programa-completo/"
+        href="https://tickets.vivesenal.cl/producto/tickets-programa-completo/"
         target="_blank"
         rel="noopener noreferrer"
         className="block w-full"

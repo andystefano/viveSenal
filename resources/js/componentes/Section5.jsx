@@ -70,7 +70,7 @@ function Section() {
 
             <div className="p-4 text-center w-full max-w-xl mx-auto">
               <a
-                href="https://tickets.xn--viveseal-i3a.cl/producto/tickets-programa-completo/"
+                href="https://tickets.vivesenal.cl/producto/tickets-programa-completo/"
                 target="_blank"
                 rel="noreferrer"
               >
